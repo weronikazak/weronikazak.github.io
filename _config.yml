@@ -1,0 +1,32 @@
+title:               portfolio - weronika zak
+url:                 https://tableClothed.github.io
+baseurl:             ""
+
+markdown:            kramdown
+highlighter:         rouge
+
+exclude:             ['*.sublime-*', 'README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'vendor/bundle']
+
+permalink:           pretty
+paginate:            5
+paginate_path:       /project/:num
+
+sass:
+  sass_dir:          _sass
+  style:             :compressed
+
+author:
+  name:              Weronika Żak
+  url:               tableClothed.github.io
+  email:             weronika.w.zak@gmail.com
+
+plugins:
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-gist
+
+defaults:
+- scope:
+    path: "assets/img"
+  values:
+    image: true
