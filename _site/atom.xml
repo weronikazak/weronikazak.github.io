@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>portfolio - weronika zak</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000"/>
+ <updated>2020-09-30T14:13:54+02:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Weronika Żak</name>
+   <email>weronika.w.zak@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2020/09/22/AI-plays/"/>
+   <updated>2020-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2020/09/22/AI-plays</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2020/09/22/AI-plays-kopia/"/>
+   <updated>2020-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2020/09/22/AI-plays — kopia</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2020/09/22/AI-plays-kopia-kopia/"/>
+   <updated>2020-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2020/09/22/AI-plays — kopia — kopia</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2020/09/22/AI-plays-kopia-(2)/"/>
+   <updated>2020-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2020/09/22/AI-plays — kopia (2)</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2014/01/01/example-content/"/>
+   <updated>2014-01-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2014/01/01/example-content</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2014/01/01/example-content-kopia/"/>
+   <updated>2014-01-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2014/01/01/example-content — kopia</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2014/01/01/example-content-kopia-kopia/"/>
+   <updated>2014-01-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2014/01/01/example-content — kopia — kopia</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2014/01/01/example-content-kopia-kopia-kopia/"/>
+   <updated>2014-01-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2014/01/01/example-content — kopia — kopia — kopia</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2014/01/01/example-content-kopia-kopia-(2)/"/>
+   <updated>2014-01-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2014/01/01/example-content — kopia — kopia (2)</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2014/01/01/example-content-kopia-(3)/"/>
+   <updated>2014-01-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2014/01/01/example-content — kopia (3)</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2014/01/01/example-content-kopia-(2)/"/>
+   <updated>2014-01-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2014/01/01/example-content — kopia (2)</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2014/01/01/example-content-kopia-(2)-kopia/"/>
+   <updated>2014-01-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2014/01/01/example-content — kopia (2) — kopia</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2013/12/31/whats-jekyll/"/>
+   <updated>2013-12-31T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2013/12/31/whats-jekyll</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2013/12/31/whats-jekyll-kopia/"/>
+   <updated>2013-12-31T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2013/12/31/whats-jekyll — kopia</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Social Meta Tags</title>
+   <link href="http://localhost:4000/2013/12/31/whats-jekyll-kopia-(2)/"/>
+   <updated>2013-12-31T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2013/12/31/whats-jekyll — kopia (2)</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+
+</feed>

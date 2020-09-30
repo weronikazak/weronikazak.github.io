@@ -1,5 +1,5 @@
 title:               portfolio - weronika zak
-url:                 https://tableClothed.github.io
+url:                 https://weronikazak.github.io
 baseurl:             ""
 
 markdown:            kramdown
@@ -11,13 +11,16 @@ permalink:           pretty
 paginate:            5
 paginate_path:       /project/:num
 
+contacturl:           /pages/contact/
+abouturl:             /pages/about/
+
 sass:
   sass_dir:          _sass
   style:             :compressed
 
 author:
   name:              Weronika Żak
-  url:               tableClothed.github.io
+  url:               weronikazak.github.io
   email:             weronika.w.zak@gmail.com
 
 plugins:
@@ -27,6 +30,6 @@ plugins:
 
 defaults:
 - scope:
-    path: "assets/img"
+    path: "images"
   values:
     image: true
