@@ -26,3 +26,20 @@
 @import "pages/landing";
 @import "pages/posts";
 
+.card {
+    background-color: #1E1E1E;
+}
+
+.card-title{
+    color: #e1e1e1;
+}
+
+.card-img-top {
+    border-radius: 20%;
+    padding: 10px;
+}
+
+
+.card img {
+    opacity: 0.5;
+}
