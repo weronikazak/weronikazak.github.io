@@ -4,7 +4,7 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2020-10-01T14:59:03+02:00</updated>
+ <updated>2020-10-02T21:58:50+02:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
@@ -13,46 +13,208 @@
 
  
  <entry>
-   <title>Social Meta Tags</title>
-   <link href="http://localhost:4000/project/2020/09/22/AI-plays/"/>
-   <updated>2020-09-22T00:00:00+02:00</updated>
-   <id>http://localhost:4000/project/2020/09/22/AI-plays</id>
+   <title>Mobile Trash Classifier</title>
+   <link href="http://localhost:4000/2019/09/22/trash-mobile/"/>
+   <updated>2019-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2019/09/22/trash-mobile</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
-   <title>Social Meta Tags</title>
-   <link href="http://localhost:4000/project/2020/09/22/AI-plays-kopia/"/>
-   <updated>2020-09-22T00:00:00+02:00</updated>
-   <id>http://localhost:4000/project/2020/09/22/AI-plays — kopia</id>
+   <title>Cars' Prices Comparison</title>
+   <link href="http://localhost:4000/2019/09/20/cars-price/"/>
+   <updated>2019-09-20T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2019/09/20/cars-price</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
-   <title>Social Meta Tags</title>
-   <link href="http://localhost:4000/project/2014/01/01/example-content/"/>
-   <updated>2014-01-01T00:00:00+01:00</updated>
-   <id>http://localhost:4000/project/2014/01/01/example-content</id>
+   <title>Depression Tweets Analysis</title>
+   <link href="http://localhost:4000/2019/09/19/depression-tweets/"/>
+   <updated>2019-09-19T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2019/09/19/depression-tweets</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
-   <title>Social Meta Tags</title>
-   <link href="http://localhost:4000/project/2014/01/01/example-content-kopia/"/>
-   <updated>2014-01-01T00:00:00+01:00</updated>
-   <id>http://localhost:4000/project/2014/01/01/example-content — kopia</id>
+   <title>AI Rock-Paper-Scissors</title>
+   <link href="http://localhost:4000/2018/10/21/ai-rock-paper-scissors/"/>
+   <updated>2018-10-21T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2018/10/21/ai-rock-paper-scissors</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
-   <title>Social Meta Tags</title>
-   <link href="http://localhost:4000/project/2013/12/31/whats-jekyll/"/>
-   <updated>2013-12-31T00:00:00+01:00</updated>
-   <id>http://localhost:4000/project/2013/12/31/whats-jekyll</id>
+   <title>COVID Tracking Dashboard</title>
+   <link href="http://localhost:4000/2018/10/19/COVID-dash/"/>
+   <updated>2018-10-19T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2018/10/19/COVID-dash</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Oslo and Rome Neighbourhoods Clustering</title>
+   <link href="http://localhost:4000/2018/09/22/south-north/"/>
+   <updated>2018-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2018/09/22/south-north</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Finding Match Highlights</title>
+   <link href="http://localhost:4000/2018/09/22/match/"/>
+   <updated>2018-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2018/09/22/match</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Movie Recommender</title>
+   <link href="http://localhost:4000/2017/10/22/movie/"/>
+   <updated>2017-10-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2017/10/22/movie</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Algorithms</title>
+   <link href="http://localhost:4000/2017/09/27/matura/"/>
+   <updated>2017-09-27T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2017/09/27/matura</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>COVID mask</title>
+   <link href="http://localhost:4000/2017/09/26/COVID-mask/"/>
+   <updated>2017-09-26T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2017/09/26/COVID-mask</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Facial Filters</title>
+   <link href="http://localhost:4000/2017/09/22/facial-filters/"/>
+   <updated>2017-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2017/09/22/facial-filters</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Digit Recognizer</title>
+   <link href="http://localhost:4000/2016/09/22/digit/"/>
+   <updated>2016-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2016/09/22/digit</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>COVID Literature Clustering</title>
+   <link href="http://localhost:4000/2016/09/22/COVID-literature/"/>
+   <updated>2016-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2016/09/22/COVID-literature</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>COVID Social Distancing</title>
+   <link href="http://localhost:4000/2016/09/22/COVID-distancing/"/>
+   <updated>2016-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2016/09/22/COVID-distancing</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Angular Timesheet</title>
+   <link href="http://localhost:4000/2015/09/22/timesheet/"/>
+   <updated>2015-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2015/09/22/timesheet</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Penguin Diner Bot</title>
+   <link href="http://localhost:4000/2015/09/22/penguin/"/>
+   <updated>2015-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2015/09/22/penguin</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dating App</title>
+   <link href="http://localhost:4000/2015/09/22/dating/"/>
+   <updated>2015-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2015/09/22/dating</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Food Multiclassification</title>
+   <link href="http://localhost:4000/2008/09/22/food-multilass/"/>
+   <updated>2008-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2008/09/22/food-multilass</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Bubble Shooter</title>
+   <link href="http://localhost:4000/2006/09/22/bubble/"/>
+   <updated>2006-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2006/09/22/bubble</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Uber Clone</title>
+   <link href="http://localhost:4000/2000/09/22/uber/"/>
+   <updated>2000-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2000/09/22/uber</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Platform Game</title>
+   <link href="http://localhost:4000/2000/09/22/platform/"/>
+   <updated>2000-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2000/09/22/platform</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Platform Shooter</title>
+   <link href="http://localhost:4000/2000/09/22/gamemaker/"/>
+   <updated>2000-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2000/09/22/gamemaker</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Flappy Bird Clone</title>
+   <link href="http://localhost:4000/2000/09/22/flappy-bird/"/>
+   <updated>2000-09-22T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2000/09/22/flappy-bird</id>
    <content type="html">
 </content>
  </entry>

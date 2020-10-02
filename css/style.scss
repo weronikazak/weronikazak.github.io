@@ -41,5 +41,44 @@
 
 
 .card img {
-    opacity: 0.5;
+    opacity: 0.9;
+}
+
+.btn-category{
+    background: #1DDECB;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn-category:hover{
+    background: #15a597;
+}
+
+.item {
+    color: #1DDECB;
+    border: #1DDECB solid 1px;
+    background: #1E1E1E;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    margin-top: 0.2rem;
+    font-size: small;
+}
+
+.link_button {
+    height: 100%;
+    margin-bottom: 20px;
+    // width: 100%;
+    // margin: auto;
+    position: relative;
+    // margin-bottom: 10px;
+}
+
+.link_button a {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    bottom: 0px;
 }
