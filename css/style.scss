@@ -88,10 +88,43 @@
 }
 
 
-.about-container div h5 {
+.about-container section h5 {
     color: #e6e6e6;
 }
 
 .details {
     margin:60px;
+}
+
+section {
+    margin-bottom: 20vh;
+    background: #1E1E1E;
+    padding: 30px 0;
+}
+
+section div li {
+    list-style: none;
+}
+
+section div li::before {
+    color: #15a597;
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+    margin-left: -2em;
+}
+
+.details i {
+    color: #777777;
+    font-style: normal;
+}
+
+.role {
+    font-size: 14px;
+    color: #15a597;
+}
+
+body {
+    margin: 0;
 }

@@ -30,6 +30,12 @@
     }
   }
 
+  li:hover {
+    a {
+      color: $nav-link-color-hover;
+    }
+  }
+
   li.logo a {
     color: $nav-icon-color;
     background: $nav-icon-background-color;
