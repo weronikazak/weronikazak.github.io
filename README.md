@@ -1,4 +1,4 @@
-# tableclothed.github.io ✨
+# weronikazak.github.io ✨
 A portfolio of mine. Made with Jekyll and hosted via Github
 
 
