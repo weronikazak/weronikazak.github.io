@@ -50,6 +50,12 @@
     font-weight: bold;
 }
 
+.btn-certificate{
+    background: #f1fffe;
+    display: inline-block;
+    font-weight: bold;
+}
+
 .btn-category:hover{
     background: #15a597;
 }
@@ -97,7 +103,7 @@
 }
 
 section {
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
     background: #1E1E1E;
     padding: 30px 0;
 }
@@ -123,6 +129,10 @@ section div li::before {
 .role {
     font-size: 14px;
     color: #15a597;
+}
+
+.turquoise {
+    background-color: #15a597;
 }
 
 body {
