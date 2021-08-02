@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="page">
+  <header>
+    <h1 class="landing-title">My <span style="color: #e6e6e6;"> notes</span></h1>
+  </header>
+  
+  <div class="text-center">
+    <div>
+      <button type="button" class="btn btn-category text-uppercase rounded-pill">CRYPTOCURRENCIES</button>
+      <button type="button" class="btn btn-category text-uppercase rounded-pill" >MACHINE LEARNING</button>
+      <button type="button" class="btn btn-category text-uppercase rounded-pill">Computer Vision</button>
+    </div>
+  </div>
+
+  <div class="listing">
+    {% for post in site.categories.blog %}
+    <div class="post other link">
+      <h2></span> <a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="post-date">{{ post.date | date_to_string }}</p>
+      {{ post.excerpt }}
+    </div>
+    {% endfor %}
+</div>

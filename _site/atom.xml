@@ -4,7 +4,7 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-08-01T22:35:58+01:00</updated>
+ <updated>2021-08-02T18:55:01+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
@@ -13,208 +13,243 @@
 
  
  <entry>
+   <title>Welcome to Jekyll!</title>
+   <link href="http://localhost:4000/2021/welcome-to-jekyll/"/>
+   <updated>2021-08-02T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2021/welcome-to-jekyll</id>
+   <content type="html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>Mobile Trash Classifier</title>
-   <link href="http://localhost:4000/2019/09/22/trash-mobile/"/>
+   <link href="http://localhost:4000/2019/trash-mobile/"/>
    <updated>2019-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2019/09/22/trash-mobile</id>
+   <id>http://localhost:4000/2019/trash-mobile</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Cars' Prices Comparison</title>
-   <link href="http://localhost:4000/2019/09/20/cars-price/"/>
+   <link href="http://localhost:4000/2019/cars-price/"/>
    <updated>2019-09-20T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2019/09/20/cars-price</id>
+   <id>http://localhost:4000/2019/cars-price</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Depression Tweets Analysis</title>
-   <link href="http://localhost:4000/2019/09/19/depression-tweets/"/>
+   <link href="http://localhost:4000/2019/depression-tweets/"/>
    <updated>2019-09-19T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2019/09/19/depression-tweets</id>
+   <id>http://localhost:4000/2019/depression-tweets</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>AI Rock-Paper-Scissors</title>
-   <link href="http://localhost:4000/2018/10/21/ai-rock-paper-scissors/"/>
+   <link href="http://localhost:4000/2018/ai-rock-paper-scissors/"/>
    <updated>2018-10-21T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2018/10/21/ai-rock-paper-scissors</id>
+   <id>http://localhost:4000/2018/ai-rock-paper-scissors</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>COVID Tracking Dashboard</title>
-   <link href="http://localhost:4000/2018/10/19/COVID-dash/"/>
+   <link href="http://localhost:4000/2018/COVID-dash/"/>
    <updated>2018-10-19T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2018/10/19/COVID-dash</id>
+   <id>http://localhost:4000/2018/COVID-dash</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Oslo and Rome Neighbourhoods Clustering</title>
-   <link href="http://localhost:4000/2018/09/22/south-north/"/>
+   <link href="http://localhost:4000/2018/south-north/"/>
    <updated>2018-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2018/09/22/south-north</id>
+   <id>http://localhost:4000/2018/south-north</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Finding Match Highlights</title>
-   <link href="http://localhost:4000/2018/09/22/match/"/>
+   <link href="http://localhost:4000/2018/match/"/>
    <updated>2018-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2018/09/22/match</id>
+   <id>http://localhost:4000/2018/match</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Movie Recommender</title>
-   <link href="http://localhost:4000/2017/10/22/movie/"/>
+   <link href="http://localhost:4000/2017/movie/"/>
    <updated>2017-10-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2017/10/22/movie</id>
+   <id>http://localhost:4000/2017/movie</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Algorithms</title>
-   <link href="http://localhost:4000/2017/09/27/matura/"/>
+   <link href="http://localhost:4000/2017/matura/"/>
    <updated>2017-09-27T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2017/09/27/matura</id>
+   <id>http://localhost:4000/2017/matura</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>COVID mask</title>
-   <link href="http://localhost:4000/2017/09/26/COVID-mask/"/>
+   <link href="http://localhost:4000/2017/COVID-mask/"/>
    <updated>2017-09-26T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2017/09/26/COVID-mask</id>
+   <id>http://localhost:4000/2017/COVID-mask</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Facial Filters</title>
-   <link href="http://localhost:4000/2017/09/22/facial-filters/"/>
+   <link href="http://localhost:4000/2017/facial-filters/"/>
    <updated>2017-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2017/09/22/facial-filters</id>
+   <id>http://localhost:4000/2017/facial-filters</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Digit Recognizer</title>
-   <link href="http://localhost:4000/2016/09/22/digit/"/>
+   <link href="http://localhost:4000/2016/digit/"/>
    <updated>2016-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2016/09/22/digit</id>
+   <id>http://localhost:4000/2016/digit</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>COVID Literature Clustering</title>
-   <link href="http://localhost:4000/2016/09/22/COVID-literature/"/>
+   <link href="http://localhost:4000/2016/COVID-literature/"/>
    <updated>2016-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2016/09/22/COVID-literature</id>
+   <id>http://localhost:4000/2016/COVID-literature</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>COVID Social Distancing</title>
-   <link href="http://localhost:4000/2016/09/22/COVID-distancing/"/>
+   <link href="http://localhost:4000/2016/COVID-distancing/"/>
    <updated>2016-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2016/09/22/COVID-distancing</id>
+   <id>http://localhost:4000/2016/COVID-distancing</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Angular Timesheet</title>
-   <link href="http://localhost:4000/2015/09/22/timesheet/"/>
+   <link href="http://localhost:4000/2015/timesheet/"/>
    <updated>2015-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2015/09/22/timesheet</id>
+   <id>http://localhost:4000/2015/timesheet</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Penguin Diner Bot</title>
-   <link href="http://localhost:4000/2015/09/22/penguin/"/>
+   <link href="http://localhost:4000/2015/penguin/"/>
    <updated>2015-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2015/09/22/penguin</id>
+   <id>http://localhost:4000/2015/penguin</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Dating App</title>
-   <link href="http://localhost:4000/2015/09/22/dating/"/>
+   <link href="http://localhost:4000/2015/dating/"/>
    <updated>2015-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2015/09/22/dating</id>
+   <id>http://localhost:4000/2015/dating</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Food Multiclassification</title>
-   <link href="http://localhost:4000/2008/09/22/food-multilass/"/>
+   <link href="http://localhost:4000/2008/food-multilass/"/>
    <updated>2008-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2008/09/22/food-multilass</id>
+   <id>http://localhost:4000/2008/food-multilass</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Bubble Shooter</title>
-   <link href="http://localhost:4000/2006/09/22/bubble/"/>
+   <link href="http://localhost:4000/2006/bubble/"/>
    <updated>2006-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2006/09/22/bubble</id>
+   <id>http://localhost:4000/2006/bubble</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Uber Clone</title>
-   <link href="http://localhost:4000/2000/09/22/uber/"/>
+   <link href="http://localhost:4000/2000/uber/"/>
    <updated>2000-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2000/09/22/uber</id>
+   <id>http://localhost:4000/2000/uber</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Platform Game</title>
-   <link href="http://localhost:4000/2000/09/22/platform/"/>
+   <link href="http://localhost:4000/2000/platform/"/>
    <updated>2000-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2000/09/22/platform</id>
+   <id>http://localhost:4000/2000/platform</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Platform Shooter</title>
-   <link href="http://localhost:4000/2000/09/22/gamemaker/"/>
+   <link href="http://localhost:4000/2000/gamemaker/"/>
    <updated>2000-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2000/09/22/gamemaker</id>
+   <id>http://localhost:4000/2000/gamemaker</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>Flappy Bird Clone</title>
-   <link href="http://localhost:4000/2000/09/22/flappy-bird/"/>
+   <link href="http://localhost:4000/2000/flappy-bird/"/>
    <updated>2000-09-22T00:00:00+01:00</updated>
-   <id>http://localhost:4000/2000/09/22/flappy-bird</id>
+   <id>http://localhost:4000/2000/flappy-bird</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Uber Clone</title>
+   <link href="http://localhost:4000/2000/uber/"/>
+   <updated>2000-09-22T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2000/uber</id>
    <content type="html">
 </content>
  </entry>

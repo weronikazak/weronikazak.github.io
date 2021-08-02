@@ -11,9 +11,7 @@ title: Home
   <div class="text-center">
     <p>
        Since you're already here, why don't you take a look at my projects?
-      <br>
-      This site is still under development, so not everything works, but hey, bear with me a little longer!
-      </p>
+    </p>
   <br/>
     <div>
       <button type="button" class="btn btn-category text-uppercase rounded-pill">ALL</button>
@@ -29,7 +27,7 @@ title: Home
   </div>
   <br/>
   <div class="row p-2">
-    {% for post in site.posts %}
+    {% for post in site.categories.code %}
      <div class="card col-4">
         <img class="card-img-top" src="{{ site.baseurl }}/{{ post.image }}" alt="Card">
         <div class="card-block">
