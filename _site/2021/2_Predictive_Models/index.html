@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Predictive Models &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <article class="page">
+    <header>
+        <h1 class="landing-title">
+            Predictive Models...
+            <span style="color: #e6e6e6;">
+            Predictive Models
+            </span>
+        </h1>
+    </header>
+
+  <h3 id="linear-regression">Linear Regression</h3>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p>Least squares minimizes the sum of squared errors</p>
+
+<p>This is the same as maximizing the likelihood of observed data if you start thinking of the problem in terms of probabilities and probability distribution functions</p>
+
+<p>Sometimes called “maximum likelihood estimation”</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">pageSpeed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">purchaseAmount</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">-</span> <span class="p">(</span><span class="n">pageSpeed</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">))</span> <span class="o">*</span> <span class="mi">3</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_3_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+
+<span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r_value</span><span class="p">,</span> <span class="n">p_value</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>R squared value shows a really good fit</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r_value</span> <span class="o">**</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.9902693736994506
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">slope</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">intercept</span>
+
+<span class="n">fitline</span> <span class="o">=</span> <span class="n">predict</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">fitline</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_7_0.png" alt="png" /></p>
+
+<h3 id="polynomial-regression">Polynomial Regression</h3>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+
+<span class="n">pageSpeed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">purchaseAmount</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">50.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> <span class="o">/</span> <span class="n">pageSpeed</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_11_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">purchaseAmount</span><span class="p">)</span>
+
+<span class="n">p4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">p4</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>poly1d([   2.43355681,  -33.88400278,  168.02869346, -354.05850288,
+        286.61089763])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span> <span class="n">p4</span><span class="p">(</span><span class="n">xp</span><span class="p">),</span> <span class="n">c</span><span class="o">=</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_14_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
+
+<span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">p4</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">r2</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.6980067595161712
+</code></pre></div></div>
+
+<h3 id="multiple-regression">Multiple regression</h3>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s">"http://cdn.sundog-soft.com/Udemy/DataScience/cars.xls"</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Price</th>
+      <th>Mileage</th>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Trim</th>
+      <th>Type</th>
+      <th>Cylinder</th>
+      <th>Liter</th>
+      <th>Doors</th>
+      <th>Cruise</th>
+      <th>Sound</th>
+      <th>Leather</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>17314.103129</td>
+      <td>8221</td>
+      <td>Buick</td>
+      <td>Century</td>
+      <td>Sedan 4D</td>
+      <td>Sedan</td>
+      <td>6</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>17542.036083</td>
+      <td>9135</td>
+      <td>Buick</td>
+      <td>Century</td>
+      <td>Sedan 4D</td>
+      <td>Sedan</td>
+      <td>6</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>16218.847862</td>
+      <td>13196</td>
+      <td>Buick</td>
+      <td>Century</td>
+      <td>Sedan 4D</td>
+      <td>Sedan</td>
+      <td>6</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>16336.913140</td>
+      <td>16342</td>
+      <td>Buick</td>
+      <td>Century</td>
+      <td>Sedan 4D</td>
+      <td>Sedan</td>
+      <td>6</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>16339.170324</td>
+      <td>19832</td>
+      <td>Buick</td>
+      <td>Century</td>
+      <td>Sedan 4D</td>
+      <td>Sedan</td>
+      <td>6</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df1</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s">"Mileage"</span><span class="p">,</span> <span class="s">"Price"</span><span class="p">]]</span>
+
+<span class="n">bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="n">groups</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="s">"Mileage"</span><span class="p">],</span> <span class="n">bins</span><span class="p">))</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">groups</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Mileage</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <th>Mileage</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>(0, 10000]</th>
+      <td>5588.629630</td>
+      <td>24096.714451</td>
+    </tr>
+    <tr>
+      <th>(10000, 20000]</th>
+      <td>15898.496183</td>
+      <td>21955.979607</td>
+    </tr>
+    <tr>
+      <th>(20000, 30000]</th>
+      <td>24114.407104</td>
+      <td>20278.606252</td>
+    </tr>
+    <tr>
+      <th>(30000, 40000]</th>
+      <td>33610.338710</td>
+      <td>19463.670267</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">groups</span><span class="p">[</span><span class="s">"Price"</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">line</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x292b9325488&gt;
+</code></pre></div></div>
+
+<p><img src="output_22_1.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="n">sm</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="n">scale</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s">"Mileage"</span><span class="p">,</span> <span class="s">"Cylinder"</span><span class="p">,</span> <span class="s">"Doors"</span><span class="p">]]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">"Price"</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span><span class="p">[[</span><span class="s">"Mileage"</span><span class="p">,</span> <span class="s">"Cylinder"</span><span class="p">,</span> <span class="s">"Doors"</span><span class="p">]]</span> <span class="o">=</span> <span class="n">scale</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span>
+    <span class="n">X</span><span class="p">[[</span><span class="s">"Mileage"</span><span class="p">,</span> <span class="s">"Cylinder"</span><span class="p">,</span> <span class="s">"Doors"</span><span class="p">]])</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>R:\Work\Anacond\lib\site-packages\ipykernel_launcher.py:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  
+R:\Work\Anacond\lib\site-packages\pandas\core\indexing.py:965: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self.obj[item] = s
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span>
+</code></pre></div></div>
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Mileage</th>
+      <th>Cylinder</th>
+      <th>Doors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-1.417485</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>-1.305902</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-0.810128</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-0.426058</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.000008</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>799</th>
+      <td>-0.439853</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>800</th>
+      <td>-0.089966</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>801</th>
+      <td>0.079605</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>802</th>
+      <td>0.750446</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>803</th>
+      <td>1.932565</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+  </tbody>
+</table>
+<p>804 rows × 3 columns</p>
+</div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">est</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="n">est</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</code></pre></div></div>
+
+<table class="simpletable">
+<caption>OLS Regression Results</caption>
+<tr>
+  <th>Dep. Variable:</th>          <td>Price</td>      <th>  R-squared (uncentered):</th>      <td>   0.064</td> 
+</tr>
+<tr>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.060</td> 
+</tr>
+<tr>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   18.11</td> 
+</tr>
+<tr>
+  <th>Date:</th>             <td>Wed, 28 Oct 2020</td> <th>  Prob (F-statistic):</th>          <td>2.23e-11</td> 
+</tr>
+<tr>
+  <th>Time:</th>                 <td>14:40:09</td>     <th>  Log-Likelihood:    </th>          <td> -9207.1</td> 
+</tr>
+<tr>
+  <th>No. Observations:</th>      <td>   804</td>      <th>  AIC:               </th>          <td>1.842e+04</td>
+</tr>
+<tr>
+  <th>Df Residuals:</th>          <td>   801</td>      <th>  BIC:               </th>          <td>1.843e+04</td>
+</tr>
+<tr>
+  <th>Df Model:</th>              <td>     3</td>      <th>                     </th>              <td> </td>    
+</tr>
+<tr>
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>              <td> </td>    
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+      <td></td>        <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P&gt;|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>Mileage</th>  <td>-1272.3412</td> <td>  804.623</td> <td>   -1.581</td> <td> 0.114</td> <td>-2851.759</td> <td>  307.077</td>
+</tr>
+<tr>
+  <th>Cylinder</th> <td> 5587.4472</td> <td>  804.509</td> <td>    6.945</td> <td> 0.000</td> <td> 4008.252</td> <td> 7166.642</td>
+</tr>
+<tr>
+  <th>Doors</th>    <td>-1404.5513</td> <td>  804.275</td> <td>   -1.746</td> <td> 0.081</td> <td>-2983.288</td> <td>  174.185</td>
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+  <th>Omnibus:</th>       <td>157.913</td> <th>  Durbin-Watson:     </th> <td>   0.008</td>
+</tr>
+<tr>
+  <th>Prob(Omnibus):</th> <td> 0.000</td>  <th>  Jarque-Bera (JB):  </th> <td> 257.529</td>
+</tr>
+<tr>
+  <th>Skew:</th>          <td> 1.278</td>  <th>  Prob(JB):          </th> <td>1.20e-56</td>
+</tr>
+<tr>
+  <th>Kurtosis:</th>      <td> 4.074</td>  <th>  Cond. No.          </th> <td>    1.03</td>
+</tr>
+</table>
+<p><br /><br />Warnings:<br />[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">y</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Doors</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Doors
+2    23807.135520
+4    20580.670749
+Name: Price, dtype: float64
+</code></pre></div></div>
+
+<p>Surprisingly more doors doesn’t mean higher price.</p>
+
+<p>So it’s pretty useless as a predictor here.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">scaled</span> <span class="o">=</span> <span class="n">scale</span><span class="o">.</span><span class="n">transform</span><span class="p">([[</span><span class="mi">45000</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">predicted</span> <span class="o">=</span> <span class="n">est</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">scaled</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">scaled</span><span class="p">,</span> <span class="n">predicted</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(array([[3.07256589, 1.96971667, 0.55627894]]), array([6315.01330583]))
+</code></pre></div></div>
+
+<h3 id="multi-level-models">Multi-Level Models</h3>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-03T22:20:34+01:00">2021</time> Weronika Żak</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a href="https://github.com/tableClothed"><i class="fa fa-github-alt"></i></a>
+          <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

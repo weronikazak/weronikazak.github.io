@@ -41,12 +41,1084 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2018/COVID-dash/">
-        COVID Tracking Dashboard
+      <a href="/2021/2_Predictive_Models/">
+        Predictive Models
       </a>
     </h1>
 
-    <time datetime="2018-10-19T00:00:00+01:00" class="post-date">19 Oct 2018</time>
+    <time datetime="2021-05-16T16:10:35+01:00" class="post-date">16 May 2021</time>
+
+    <h3 id="linear-regression">Linear Regression</h3>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p>Least squares minimizes the sum of squared errors</p>
+
+<p>This is the same as maximizing the likelihood of observed data if you start thinking of the problem in terms of probabilities and probability distribution functions</p>
+
+<p>Sometimes called “maximum likelihood estimation”</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">pageSpeed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">purchaseAmount</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">-</span> <span class="p">(</span><span class="n">pageSpeed</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">))</span> <span class="o">*</span> <span class="mi">3</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_3_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+
+<span class="n">slope</span><span class="p">,</span> <span class="n">intercept</span><span class="p">,</span> <span class="n">r_value</span><span class="p">,</span> <span class="n">p_value</span><span class="p">,</span> <span class="n">std_err</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">linregress</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>R squared value shows a really good fit</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r_value</span> <span class="o">**</span> <span class="mi">2</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.9902693736994506
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">slope</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">intercept</span>
+
+<span class="n">fitline</span> <span class="o">=</span> <span class="n">predict</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">fitline</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_7_0.png" alt="png" /></p>
+
+<h3 id="polynomial-regression">Polynomial Regression</h3>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+
+<span class="n">pageSpeed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">purchaseAmount</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">50.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> <span class="o">/</span> <span class="n">pageSpeed</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_11_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">purchaseAmount</span><span class="p">)</span>
+
+<span class="n">p4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">p4</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>poly1d([   2.43355681,  -33.88400278,  168.02869346, -354.05850288,
+        286.61089763])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span> <span class="n">p4</span><span class="p">(</span><span class="n">xp</span><span class="p">),</span> <span class="n">c</span><span class="o">=</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_14_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
+
+<span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">p4</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">r2</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.6980067595161712
+</code></pre></div></div>
+
+<h3 id="multiple-regression">Multiple regression</h3>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s">"http://cdn.sundog-soft.com/Udemy/DataScience/cars.xls"</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Price</th>
+      <th>Mileage</th>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Trim</th>
+      <th>Type</th>
+      <th>Cylinder</th>
+      <th>Liter</th>
+      <th>Doors</th>
+      <th>Cruise</th>
+      <th>Sound</th>
+      <th>Leather</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>17314.103129</td>
+      <td>8221</td>
+      <td>Buick</td>
+      <td>Century</td>
+      <td>Sedan 4D</td>
+      <td>Sedan</td>
+      <td>6</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>17542.036083</td>
+      <td>9135</td>
+      <td>Buick</td>
+      <td>Century</td>
+      <td>Sedan 4D</td>
+      <td>Sedan</td>
+      <td>6</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>16218.847862</td>
+      <td>13196</td>
+      <td>Buick</td>
+      <td>Century</td>
+      <td>Sedan 4D</td>
+      <td>Sedan</td>
+      <td>6</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>16336.913140</td>
+      <td>16342</td>
+      <td>Buick</td>
+      <td>Century</td>
+      <td>Sedan 4D</td>
+      <td>Sedan</td>
+      <td>6</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>16339.170324</td>
+      <td>19832</td>
+      <td>Buick</td>
+      <td>Century</td>
+      <td>Sedan 4D</td>
+      <td>Sedan</td>
+      <td>6</td>
+      <td>3.1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df1</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s">"Mileage"</span><span class="p">,</span> <span class="s">"Price"</span><span class="p">]]</span>
+
+<span class="n">bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="n">groups</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="s">"Mileage"</span><span class="p">],</span> <span class="n">bins</span><span class="p">))</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">groups</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Mileage</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <th>Mileage</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>(0, 10000]</th>
+      <td>5588.629630</td>
+      <td>24096.714451</td>
+    </tr>
+    <tr>
+      <th>(10000, 20000]</th>
+      <td>15898.496183</td>
+      <td>21955.979607</td>
+    </tr>
+    <tr>
+      <th>(20000, 30000]</th>
+      <td>24114.407104</td>
+      <td>20278.606252</td>
+    </tr>
+    <tr>
+      <th>(30000, 40000]</th>
+      <td>33610.338710</td>
+      <td>19463.670267</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">groups</span><span class="p">[</span><span class="s">"Price"</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">line</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.axes._subplots.AxesSubplot at 0x292b9325488&gt;
+</code></pre></div></div>
+
+<p><img src="output_22_1.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="n">sm</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="n">scale</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s">"Mileage"</span><span class="p">,</span> <span class="s">"Cylinder"</span><span class="p">,</span> <span class="s">"Doors"</span><span class="p">]]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">"Price"</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span><span class="p">[[</span><span class="s">"Mileage"</span><span class="p">,</span> <span class="s">"Cylinder"</span><span class="p">,</span> <span class="s">"Doors"</span><span class="p">]]</span> <span class="o">=</span> <span class="n">scale</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span>
+    <span class="n">X</span><span class="p">[[</span><span class="s">"Mileage"</span><span class="p">,</span> <span class="s">"Cylinder"</span><span class="p">,</span> <span class="s">"Doors"</span><span class="p">]])</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>R:\Work\Anacond\lib\site-packages\ipykernel_launcher.py:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  
+R:\Work\Anacond\lib\site-packages\pandas\core\indexing.py:965: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self.obj[item] = s
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span>
+</code></pre></div></div>
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Mileage</th>
+      <th>Cylinder</th>
+      <th>Doors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-1.417485</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>-1.305902</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-0.810128</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-0.426058</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.000008</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>799</th>
+      <td>-0.439853</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>800</th>
+      <td>-0.089966</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>801</th>
+      <td>0.079605</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>802</th>
+      <td>0.750446</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+    <tr>
+      <th>803</th>
+      <td>1.932565</td>
+      <td>0.52741</td>
+      <td>0.556279</td>
+    </tr>
+  </tbody>
+</table>
+<p>804 rows × 3 columns</p>
+</div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">est</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">OLS</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="n">est</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</code></pre></div></div>
+
+<table class="simpletable">
+<caption>OLS Regression Results</caption>
+<tr>
+  <th>Dep. Variable:</th>          <td>Price</td>      <th>  R-squared (uncentered):</th>      <td>   0.064</td> 
+</tr>
+<tr>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared (uncentered):</th> <td>   0.060</td> 
+</tr>
+<tr>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>          <td>   18.11</td> 
+</tr>
+<tr>
+  <th>Date:</th>             <td>Wed, 28 Oct 2020</td> <th>  Prob (F-statistic):</th>          <td>2.23e-11</td> 
+</tr>
+<tr>
+  <th>Time:</th>                 <td>14:40:09</td>     <th>  Log-Likelihood:    </th>          <td> -9207.1</td> 
+</tr>
+<tr>
+  <th>No. Observations:</th>      <td>   804</td>      <th>  AIC:               </th>          <td>1.842e+04</td>
+</tr>
+<tr>
+  <th>Df Residuals:</th>          <td>   801</td>      <th>  BIC:               </th>          <td>1.843e+04</td>
+</tr>
+<tr>
+  <th>Df Model:</th>              <td>     3</td>      <th>                     </th>              <td> </td>    
+</tr>
+<tr>
+  <th>Covariance Type:</th>      <td>nonrobust</td>    <th>                     </th>              <td> </td>    
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+      <td></td>        <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P&gt;|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
+</tr>
+<tr>
+  <th>Mileage</th>  <td>-1272.3412</td> <td>  804.623</td> <td>   -1.581</td> <td> 0.114</td> <td>-2851.759</td> <td>  307.077</td>
+</tr>
+<tr>
+  <th>Cylinder</th> <td> 5587.4472</td> <td>  804.509</td> <td>    6.945</td> <td> 0.000</td> <td> 4008.252</td> <td> 7166.642</td>
+</tr>
+<tr>
+  <th>Doors</th>    <td>-1404.5513</td> <td>  804.275</td> <td>   -1.746</td> <td> 0.081</td> <td>-2983.288</td> <td>  174.185</td>
+</tr>
+</table>
+<table class="simpletable">
+<tr>
+  <th>Omnibus:</th>       <td>157.913</td> <th>  Durbin-Watson:     </th> <td>   0.008</td>
+</tr>
+<tr>
+  <th>Prob(Omnibus):</th> <td> 0.000</td>  <th>  Jarque-Bera (JB):  </th> <td> 257.529</td>
+</tr>
+<tr>
+  <th>Skew:</th>          <td> 1.278</td>  <th>  Prob(JB):          </th> <td>1.20e-56</td>
+</tr>
+<tr>
+  <th>Kurtosis:</th>      <td> 4.074</td>  <th>  Cond. No.          </th> <td>    1.03</td>
+</tr>
+</table>
+<p><br /><br />Warnings:<br />[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">y</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">Doors</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Doors
+2    23807.135520
+4    20580.670749
+Name: Price, dtype: float64
+</code></pre></div></div>
+
+<p>Surprisingly more doors doesn’t mean higher price.</p>
+
+<p>So it’s pretty useless as a predictor here.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">scaled</span> <span class="o">=</span> <span class="n">scale</span><span class="o">.</span><span class="n">transform</span><span class="p">([[</span><span class="mi">45000</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="n">predicted</span> <span class="o">=</span> <span class="n">est</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">scaled</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">scaled</span><span class="p">,</span> <span class="n">predicted</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(array([[3.07256589, 1.96971667, 0.55627894]]), array([6315.01330583]))
+</code></pre></div></div>
+
+<h3 id="multi-level-models">Multi-Level Models</h3>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2021/1_Statics_Probability/">
+        Statistic and Probability
+      </a>
+    </h1>
+
+    <time datetime="2021-05-16T16:10:35+01:00" class="post-date">16 May 2021</time>
+
+    <h2 id="data-types">Data types</h2>
+
+<p>Discrete Data:
+    - integer based, often counts of some event.
+    - How many purchases did a customer make in a yera?
+    - How many times did I flif heads?
+ Continous Data
+     - Has an infinite number of possible values
+     - How much time did it take for a user to check out?
+     -  How much rain fell on a givern day?</p>
+
+<p>Categorical Data:
+    Qualitative data
+    - Gender, Yes/ no, race, etc.</p>
+
+<p>Ordinal:
+    A miture of numerical and categorical
+    - Categorical data that has mathematical meaning: 1 means worse movie than a 2</p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p>Mode: the most common number in a data set</p>
+
+<h3 id="variance">Variance:</h3>
+<p>Measeures how “pread-out” the data is.
+Variance is the average of the squared differences from the mean
+EXAMPLE:
+Variance of set (1, 4, 5, 4, 8)
+    - First find the mean (1+4+5+4+8)/5 = 4.4
+    = Now find the differences from the mean: (1 - 4.4, 4- 4.4, 5 - 4.4, etc)
+    - (-3.4, -0.4, 0.6, -0.4, 3.6)
+    - find the squared differences: (11.56, 0.16, 0.36, 0.16, 12.96)
+    - find the average of the squared differences:
+    a~2 = (11.56 + 0.16 + 0.36 + 0.16 + 12.96) / 5 = 5.04</p>
+
+<h3 id="standard-deviation">Standard deviation:</h3>
+<p>Square room of the variance</p>
+
+<p>Is usually used as a way to identify outliers (wartości odstajace). Data points that lie more than one standard deviation from the mean can be considered unusual.</p>
+
+<p>You can talk about how extreme a data point is by talking about “how many sigmas” away from the mean iti is.
+<img src="attachment:image.png" alt="image.png" /></p>
+
+<p>So, the standard variation of (1, 4, 5, 4, 8) is 2.24.</p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">income</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mf">20.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">income</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_8_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">income</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>20.052036933618258
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">income</span><span class="o">.</span><span class="n">var</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>402.0841851871907
+</code></pre></div></div>
+
+<h3 id="normal-distribution">Normal distribution:</h3>
+<p>Gives you the probability of a data point falling within some given range of a given value</p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<h3 id="probability-mass-function">Probability Mass Function:</h3>
+<p>The way we viualise the probbility of discreet data occurring</p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<h2 id="examples-of-data-distributions">Examples of Data Distributions</h2>
+
+<h3 id="uniform-distribution">Uniform Distribution</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mf">10.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_15_0.png" alt="png" /></p>
+
+<h3 id="normal--gaussian">Normal / Gaussian</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">norm</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="c1"># pdf probability density function
+</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_17_0.png" alt="png" /></p>
+
+<p>Generate some random numbers with a normal distribution. “mu” is the desired mean, “sigma” is the standard deviation.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mu</span> <span class="o">=</span> <span class="mf">5.1</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mf">2.0</span>
+<span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_19_0.png" alt="png" /></p>
+
+<h3 id="exponential-pdf--power-law">Exponential PDF / “Power Law”</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">expon</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">expon</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_21_0.png" alt="png" /></p>
+
+<h2 id="binomial-probability-mass-function">Binomial Probability Mass Function</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">binom</span>
+
+<span class="n">n</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.5</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">binom</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_23_0.png" alt="png" /></p>
+
+<h2 id="poisson-probability-mass-funtion">Poisson Probability Mass Funtion</h2>
+
+<p>My website gets on average 500 visits per day, what’s the odds of getting 550?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">poisson</span>
+
+<span class="n">mu</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">poisson</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">mu</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_26_0.png" alt="png" /></p>
+
+<h3 id="moments">Moments</h3>
+
+<p>Quantitative measures of the shape of a probability density function</p>
+
+<p>Mathematically they are hard to wrap up:</p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<ul>
+  <li>The first moment is the mean.</li>
+  <li>The second moment is the variance.</li>
+  <li>Third moment is “skew”
+    <ul>
+      <li>How loopsided is the distribution?</li>
+      <li>A distribution with a longer tail on the left will be skewed left, and have a negative skew.</li>
+    </ul>
+
+    <p><img src="attachment:image.png" alt="image.png" /></p>
+  </li>
+  <li>The fourth moment is “kurtosis”
+    <ul>
+      <li>How thick is the tail, and how sharp is the peak, compared to a normal distribution?</li>
+      <li>F. e.: higher peaks have highter kurtosis</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">vals</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_31_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># FIRST MOMENT: MEAN - data should be close to 0
+</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.0008176312786928964
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># SECOND MOMENT: VARIANCE
+</span><span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.25131555488252116
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># THIRD MOMENT: SKEW - data is nicely centered around 0, it should be almost 0
+</span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="n">sp</span>
+<span class="n">sp</span><span class="o">.</span><span class="n">skew</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-0.03052643631658173
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># FOURTH MOMENT: KURTOSIS - describes the shape of the tail. For a normal distribution, this is 0
+</span><span class="n">sp</span><span class="o">.</span><span class="n">kurtosis</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.0302581860757547
+</code></pre></div></div>
+
+<h3 id="covariance">Covariance</h3>
+
+<p>Measures how two variables vary in tandem from their means.</p>
+<ul>
+  <li>think of the data sets for the two variables as high-dimensional vetors</li>
+  <li>convert these to vectors of variances from the mean</li>
+  <li>take the dot product (cosine of the angle between them) of the two vectors</li>
+  <li>divide by the sample size</li>
+</ul>
+
+<h3 id="correlation">Correlation</h3>
+
+<p>Just divide the covariance by the stanard deviations of both variables, and that normalizes things</p>
+<ul>
+  <li>so a correlation of -1 means a perfect inverse correlation</li>
+  <li>correlation of 0: no correlation</li>
+  <li>correlation 1: perfect correlation</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">de_mean</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">xmean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">xi</span> <span class="o">-</span> <span class="n">xmean</span> <span class="k">for</span> <span class="n">xi</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">covariance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">de_mean</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">de_mean</span><span class="p">(</span><span class="n">y</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pageSpeed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">purchaseAmount</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">50.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_41_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">covariance</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.015213838310440675
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">purchaseAmount</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">50.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> <span class="o">/</span> <span class="n">pageSpeed</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_43_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">covariance</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-9.760127236964708
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">correlation</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="p">):</span>
+    <span class="n">stddevx</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+    <span class="n">stddevy</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">covariance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="n">stddevx</span> <span class="o">/</span> <span class="n">stddevy</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">correlation</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-0.5682282401242628
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[ 1.        , -0.56766001],
+       [-0.56766001,  1.        ]])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">purchaseAmount</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">-</span> <span class="n">pageSpeed</span> <span class="o">*</span> <span class="mi">3</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="output_48_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">correlation</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-1.001001001001001
+</code></pre></div></div>
+
+<h3 id="conditional-probability">Conditional Probability</h3>
+
+<ul>
+  <li>If I have two events that depend on each other, what’s the probability that both will occur?</li>
+  <li>Notation: P(A, B) is the probability of A and B both occuring</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>P(B</td>
+          <td>A): Probability of B given that A has occurred</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p>EXAMPLE:
+    I give my student two tests.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>60% of my students passed bth tests, but the first test was easier - 80% passed that one.
+
+What percentage of students who passed the first test also passed the second?
+</code></pre></div></div>
+
+<p>A = passing the firt test, B = passing the second test</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>So we are asking for P(B</td>
+      <td>A) - the probability of B given A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>P(B</td>
+      <td>A) = P(A, B) / P(A) = 0.6 / 0.8 = 0.75</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>ANSWER:</strong> 75% of students who passed the first test passed the second</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">totals</span> <span class="o">=</span> <span class="p">{</span><span class="mi">20</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">70</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
+<span class="n">purchases</span> <span class="o">=</span> <span class="p">{</span><span class="mi">20</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">70</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
+<span class="n">totalPurchases</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span>
+    <span class="n">ageDecade</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">])</span>
+    <span class="n">purchaseProbability</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">ageDecade</span><span class="p">)</span> <span class="o">/</span> <span class="mf">100.0</span>
+    <span class="n">totals</span><span class="p">[</span><span class="n">ageDecade</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">purchaseProbability</span><span class="p">:</span>
+        <span class="n">totalPurchases</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">purchases</span><span class="p">[</span><span class="n">ageDecade</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">totals</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{20: 16593, 30: 16697, 40: 16526, 50: 16659, 60: 16808, 70: 16717}
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">purchases</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{20: 3372, 30: 4987, 40: 6652, 50: 8284, 60: 10125, 70: 11699}
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">totalPurchases</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>45119
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>First let’s compute P(E</td>
+      <td>F)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>E = purchase</p>
+
+<p>F = “you’re in your 30’s”</p>
+
+<p>The probability of someone in their 30’s buying something is just the percentage of how many 30 y.o. bought something</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">PEF</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">purchases</span><span class="p">[</span><span class="mi">30</span><span class="p">]</span> <span class="o">/</span> <span class="n">totals</span><span class="p">[</span><span class="mi">30</span><span class="p">])</span>
+<span class="n">PEF</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.29867640893573694
+</code></pre></div></div>
+
+<p>P(F) is a probability of being 30 in this dataset:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">PF</span> <span class="o">=</span> <span class="n">totals</span><span class="p">[</span><span class="mi">30</span><span class="p">]</span> <span class="o">/</span> <span class="mi">100_000</span>
+<span class="n">PF</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.16697
+</code></pre></div></div>
+
+<p>PE is the overall probability of buing something</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">PE</span> <span class="o">=</span> <span class="n">totalPurchases</span> <span class="o">/</span> <span class="mi">100_000</span>
+<span class="n">PE</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.45119
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>If E and F were independent, then we would expect P(E</td>
+      <td>F) to be about the same as P(E).</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>But they are not.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>P(E, F) is different from P(E</td>
+      <td>F).</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>P(E, F) would be the probability of both being in your 30’s and buing something out of the total population - not just the people in their 30s</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">PEF2</span> <span class="o">=</span> <span class="n">purchases</span><span class="p">[</span><span class="mi">30</span><span class="p">]</span> <span class="o">/</span> <span class="mi">100_000</span>
+<span class="n">PEF2</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.04987
+</code></pre></div></div>
+
+<p>Product of P(E) and P(F), P(E)P(F)</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">PF</span> <span class="o">*</span> <span class="n">PE</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.0753351943
+</code></pre></div></div>
+
+<p>Sometimg you may learn in statics is that P(E, F) = P(E)P(F)</p>
+
+<p>But this assumes E and F are independent.</p>
+
+<p>We’ve found that P(E, F) is about 0.5 while P(E)P(F) is about 0.75.</p>
+
+<p>So when E and F are dependent and we hava a conditional probability going on, we can;t just say that P(E, F) = P(E)P(F)</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>We can also check that P(E</td>
+      <td>F) = P(E, F) / P(F)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="n">purchases</span><span class="p">[</span><span class="mi">30</span><span class="p">]</span> <span class="o">/</span> <span class="mi">100_000</span><span class="p">)</span> <span class="o">/</span> <span class="n">PF</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.29867640893573694
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">totals</span> <span class="o">=</span> <span class="p">{</span><span class="mi">20</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">70</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
+<span class="n">purchases</span> <span class="o">=</span> <span class="p">{</span><span class="mi">20</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">70</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>
+<span class="n">totalPurchases</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100000</span><span class="p">):</span>
+    <span class="n">ageDecade</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">([</span><span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">])</span>
+    <span class="n">purchaseProbability</span> <span class="o">=</span> <span class="mf">0.4</span>
+    <span class="n">totals</span><span class="p">[</span><span class="n">ageDecade</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">purchaseProbability</span><span class="p">:</span>
+        <span class="n">totalPurchases</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">purchases</span><span class="p">[</span><span class="n">ageDecade</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">purchases</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span> <span class="o">/</span> <span class="n">totalPurchases</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.16670408341440296
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">purchases</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span> <span class="o">/</span> <span class="n">totals</span><span class="p">[</span><span class="mi">70</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.4003234695100036
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">purchases</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">/</span> <span class="n">totalPurchases</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.16717802888572925
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">purchases</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">/</span> <span class="n">totals</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.4009332376166547
+</code></pre></div></div>
+
+<h3 id="bayes-theorem">Bayes’ Theorem</h3>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p>The probability of A given B, is the probability of A times the probability of B given A ver the probability of B.</p>
+
+<p>Prawdopodobieństwo A danego B jest prawdopodobieństwem A razy prawdopodobieństwo B przy danym A w stosunku do prawdopodobieństwa B.</p>
+
+<p>The key insight is that the probability of something that depends on B depends very much on the base probability of A and B.</p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2019/trash-mobile/">
+        Mobile Trash Classifier
+      </a>
+    </h1>
+
+    <time datetime="2019-09-22T00:00:00+01:00" class="post-date">22 Sep 2019</time>
 
     
 
@@ -54,12 +1126,12 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2018/south-north/">
-        Oslo and Rome Neighbourhoods Clustering
+      <a href="/2019/cars-price/">
+        Cars' Prices Comparison
       </a>
     </h1>
 
-    <time datetime="2018-09-22T00:00:00+01:00" class="post-date">22 Sep 2018</time>
+    <time datetime="2019-09-20T00:00:00+01:00" class="post-date">20 Sep 2019</time>
 
     
 
@@ -67,38 +1139,12 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2018/match/">
-        Finding Match Highlights
+      <a href="/2019/depression-tweets/">
+        Depression Tweets Analysis
       </a>
     </h1>
 
-    <time datetime="2018-09-22T00:00:00+01:00" class="post-date">22 Sep 2018</time>
-
-    
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2017/movie/">
-        Movie Recommender
-      </a>
-    </h1>
-
-    <time datetime="2017-10-22T00:00:00+01:00" class="post-date">22 Oct 2017</time>
-
-    
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2017/matura/">
-        Algorithms
-      </a>
-    </h1>
-
-    <time datetime="2017-09-27T00:00:00+01:00" class="post-date">27 Sep 2017</time>
+    <time datetime="2019-09-19T00:00:00+01:00" class="post-date">19 Sep 2019</time>
 
     
 
@@ -132,7 +1178,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-02T18:55:01+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-03T22:20:34+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">
