@@ -41,12 +41,311 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2018/ai-rock-paper-scissors/">
-        AI Rock-Paper-Scissors
+      <a href="/2021/9_Experimental_Design_ML/">
+        Experimental Design
       </a>
     </h1>
 
-    <time datetime="2018-10-21T00:00:00+01:00" class="post-date">21 Oct 2018</time>
+    <time datetime="2021-02-21T15:10:35+00:00" class="post-date">21 Feb 2021</time>
+
+    <h3 id="ab-testing">A/B Testing</h3>
+
+<ul>
+  <li>A controlled experiment, usually in the context of a website</li>
+  <li>You test the performance of some change to your website (the variant) and measure conversion relative to your unchanged site (the control).</li>
+</ul>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p>Ideally choose what you are trying to influence:</p>
+<ul>
+  <li>oder amount</li>
+  <li>profit</li>
+  <li>ad clicks</li>
+  <li>order quantity</li>
+</ul>
+
+<p>But attributing actions downstream from your change can be hard</p>
+<ul>
+  <li>Especially if you;re running more than one experiment</li>
+</ul>
+
+<p><strong>VARIANCE IS THE ENEMY</strong>
+Common mistake:</p>
+<ul>
+  <li>Run a test for some small period of time that results in a few purchases to analyze</li>
+  <li>You take the mean order amount from a and B, and declare victory or defeat</li>
+  <li>But there’s so much random variation in order amounts to begin with, tha your results was just based on chance</li>
+  <li>You then fool yourself into thinking some change to your website, which could actually be harmful, has made tons of money</li>
+  <li>Sometimes you need to also look at conversion metrics with less variance</li>
+  <li>Order quantities vs order dollar amounts, for example</li>
+</ul>
+
+<h3 id="t-tests-and-p-values">T-Tests and P-Values</h3>
+
+<p>So, how do we know if a result is likely to be “real” as opposed to just random variation?</p>
+
+<p>T-Test and P-Values!</p>
+
+<h4 id="the-t-statistic">The T-Statistic</h4>
+
+<ul>
+  <li>A measure of the difference between the two sets expressed in units of standard error</li>
+  <li>The size of the difference relative to the variance in the data</li>
+  <li>A high T value means there’s probably a real difference between the two sets</li>
+  <li>Assumes a normal distribution of behavior
+    <ul>
+      <li>This is a good assumption of you’re measuring revenue as conversion</li>
+      <li>Fisher’s exact test (clickthrough rates), E-test (for transactions per user), and chi-squared test (for product quantities purchased)</li>
+    </ul>
+  </li>
+  <li>miara różnicy między dwoma zestawami wyrażona w jednostkach błędu standardowego</li>
+  <li>wielkość różnicy w stosunku do wariancji danych</li>
+  <li>Wysoka wartość T oznacza, że prawdopodobnie istnieje prawdziwa różnica między dwoma zestawami</li>
+  <li>Zakłada normalny rozkład zachowania
+    <ul>
+      <li>To dobre założenie, że mierzysz przychody jako konwersje</li>
+      <li>Dokładny test Fishera (współczynniki klikalności), E-test (dla transakcji na użytkownika) i test chi-kwadrat (dla ilości zakupionych produktów)</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="the-p-value">The P-Value</h4>
+<ul>
+  <li>Think of it as the probability of A and B satisfying the “null hypothesis” (that there is no real difference between the control and treatment’s behaviour)</li>
+  <li><strong>So, a low P-Value implies significance.</strong></li>
+  <li>
+    <p>It is the probability of an observer lying at an extreme t-value assuming the null hypothesis.</p>
+  </li>
+  <li>Potraktuj to jako prawdopodobieństwo spełnienia przez A i B „hipotezy zerowej”</li>
+  <li>Tak więc niska wartość P oznacza znaczenie.</li>
+  <li>Jest to prawdopodobieństwo, że obserwator leży na skrajnej wartości t przy założeniu hipotezy zerowej.</li>
+</ul>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">26.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=-14.20191652286491, pvalue=1.4847065535663492e-45)
+</code></pre></div></div>
+
+<p>The t-statistic is a measure of the difference between the two sets expressed in units of standard error. Put differently, it’s the size of the difference relative to the variance in the data. A high t value means there’s probably a real difference between the two sets; you have “significance”. The P-value is a measure of the probability of an observation lying at extreme t-values; so a low p-value also implies “significance.” If you’re looking for a “statistically significant” result, you want to see a very low p-value and a high t-statistic (well, a high absolute value of the t-statistic more precisely). In the real world, statisticians seem to put more weight on the p-value result.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=-0.07828796143840591, pvalue=0.9375997767163184)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
+
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=0.5752102121870725, pvalue=0.5651497840962222)
+</code></pre></div></div>
+
+<p>Our p-value actually got a little lower, and the t-test a little larger, but still not enough to declare a real difference. So, you could have reached the right decision with just 10,000 samples instead of 100,000. Even a million samples doesn’t help, so if we were to keep running this A/B test for years, you’d never acheive the result you’re hoping for:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">)</span>
+
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=0.16312002647674892, pvalue=0.8704239486112085)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=0.0, pvalue=1.0)
+</code></pre></div></div>
+
+<h4 id="how-do-i-know-when-im-done-with-ab-test">How do I know when I’m done with A/B test?</h4>
+<ul>
+  <li>You have achieved significance (positive or negative)</li>
+  <li>You no longer observe meaningful trends in your p-value
+    <ul>
+      <li>That is, you don’t see any indication that your experiment will “converge” on a result over time</li>
+    </ul>
+  </li>
+  <li>You reach some pre-established upper bound on time</li>
+</ul>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2021/6_Reinforcement_Learning/">
+        Reinforcement
+      </a>
+    </h1>
+
+    <time datetime="2021-02-16T15:10:35+00:00" class="post-date">16 Feb 2021</time>
+
+    <h3 id="reinforcement-learning">Reinforcement Learning</h3>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">gym</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">streets</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s">"Taxi-v3"</span><span class="p">)</span><span class="o">.</span><span class="n">env</span>
+<span class="n">streets</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+---------+
+|[34;1mR[0m: | : :G|
+| : | : : |
+| : : : : |
+| | : | : |
+|[35mY[0m| : |B:[43m [0m|
++---------+
+</code></pre></div></div>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">initial_state</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">streets</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">initial_state</span>
+
+<span class="n">streets</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+---------+
+|[35mR[0m: | : :G|
+| : | : : |
+| : : :[43m [0m: |
+| | : | : |
+|[34;1mY[0m| : |B: |
++---------+
+</code></pre></div></div>
+
+<p>Reward table for initial state</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">streets</span><span class="o">.</span><span class="n">P</span><span class="p">[</span><span class="n">initial_state</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{0: [(1.0, 368, -1, False)],
+ 1: [(1.0, 168, -1, False)],
+ 2: [(1.0, 288, -1, False)],
+ 3: [(1.0, 248, -1, False)],
+ 4: [(1.0, 268, -10, False)],
+ 5: [(1.0, 268, -10, False)]}
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">q_table</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="n">streets</span><span class="o">.</span><span class="n">observation_space</span><span class="o">.</span><span class="n">n</span><span class="p">,</span> <span class="n">streets</span><span class="o">.</span><span class="n">action_space</span><span class="o">.</span><span class="n">n</span><span class="p">])</span>
+
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">discount_factor</span> <span class="o">=</span> <span class="mf">0.6</span>
+<span class="n">exploration</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">10000</span>
+
+<span class="k">for</span> <span class="n">taxi_run</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+    <span class="n">done</span> <span class="o">=</span> <span class="bp">False</span>
+    
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">done</span><span class="p">:</span>
+        <span class="n">random_value</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">random_value</span> <span class="o">&lt;</span> <span class="n">exploration</span><span class="p">:</span>
+            <span class="n">action</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">action_space</span><span class="o">.</span><span class="n">sample</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">action</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+        <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        
+        <span class="n">prev_q</span> <span class="o">=</span> <span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span>
+        <span class="n">next_max_q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="nb">max</span><span class="p">(</span><span class="n">q_table</span><span class="p">[</span><span class="n">next_state</span><span class="p">])</span>
+        <span class="n">new_q</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">learning_rate</span><span class="p">)</span> <span class="o">*</span> <span class="n">prev_q</span> <span class="o">+</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="p">(</span><span class="n">reward</span> <span class="o">+</span> <span class="n">discount_factor</span> <span class="o">*</span> <span class="n">next_max_q</span><span class="p">)</span>
+        <span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_q</span>
+        
+        <span class="n">state</span> <span class="o">=</span> <span class="n">next_state</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">q_table</span><span class="p">[</span><span class="n">initial_state</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([-2.42183261, -2.41198054, -2.40077085, -2.3639511 , -7.73977613,
+       -8.61763809])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+
+<span class="k">for</span> <span class="n">tripnum</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+    
+    <span class="n">done</span> <span class="o">=</span> <span class="bp">False</span>
+    
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">done</span><span class="p">:</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+        <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Trip number - {}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">tripnum</span><span class="p">)))</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">streets</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s">"ansi"</span><span class="p">))</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mf">.5</span><span class="p">)</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">next_state</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Trip number - 2
++---------+
+|[35mR[0m: | : :[34;1mG[0m|
+| : | : : |
+| : : : : |
+| |[43m [0m: | : |
+|Y| : |B: |
++---------+
+  (West)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2019/trash-mobile/">
+        Mobile Trash Classifier
+      </a>
+    </h1>
+
+    <time datetime="2019-09-22T00:00:00+01:00" class="post-date">22 Sep 2019</time>
 
     
 
@@ -54,12 +353,12 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2018/COVID-dash/">
-        COVID Tracking Dashboard
+      <a href="/2019/cars-price/">
+        Cars' Prices Comparison
       </a>
     </h1>
 
-    <time datetime="2018-10-19T00:00:00+01:00" class="post-date">19 Oct 2018</time>
+    <time datetime="2019-09-20T00:00:00+01:00" class="post-date">20 Sep 2019</time>
 
     
 
@@ -67,38 +366,12 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2018/south-north/">
-        Oslo and Rome Neighbourhoods Clustering
+      <a href="/2019/depression-tweets/">
+        Depression Tweets Analysis
       </a>
     </h1>
 
-    <time datetime="2018-09-22T00:00:00+01:00" class="post-date">22 Sep 2018</time>
-
-    
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2018/match/">
-        Finding Match Highlights
-      </a>
-    </h1>
-
-    <time datetime="2018-09-22T00:00:00+01:00" class="post-date">22 Sep 2018</time>
-
-    
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2017/movie/">
-        Movie Recommender
-      </a>
-    </h1>
-
-    <time datetime="2017-10-22T00:00:00+01:00" class="post-date">22 Oct 2017</time>
+    <time datetime="2019-09-19T00:00:00+01:00" class="post-date">19 Sep 2019</time>
 
     
 
@@ -132,7 +405,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-03T22:20:34+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-08T01:13:25+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Experimental Design &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <article class="page">
+    <header>
+        <h1 class="landing-title">
+            Experimental Design...
+            <span style="color: #e6e6e6;">
+            Experimental Design
+            </span>
+        </h1>
+    </header>
+
+  <h3 id="ab-testing">A/B Testing</h3>
+
+<ul>
+  <li>A controlled experiment, usually in the context of a website</li>
+  <li>You test the performance of some change to your website (the variant) and measure conversion relative to your unchanged site (the control).</li>
+</ul>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p>Ideally choose what you are trying to influence:</p>
+<ul>
+  <li>oder amount</li>
+  <li>profit</li>
+  <li>ad clicks</li>
+  <li>order quantity</li>
+</ul>
+
+<p>But attributing actions downstream from your change can be hard</p>
+<ul>
+  <li>Especially if you;re running more than one experiment</li>
+</ul>
+
+<p><strong>VARIANCE IS THE ENEMY</strong>
+Common mistake:</p>
+<ul>
+  <li>Run a test for some small period of time that results in a few purchases to analyze</li>
+  <li>You take the mean order amount from a and B, and declare victory or defeat</li>
+  <li>But there’s so much random variation in order amounts to begin with, tha your results was just based on chance</li>
+  <li>You then fool yourself into thinking some change to your website, which could actually be harmful, has made tons of money</li>
+  <li>Sometimes you need to also look at conversion metrics with less variance</li>
+  <li>Order quantities vs order dollar amounts, for example</li>
+</ul>
+
+<h3 id="t-tests-and-p-values">T-Tests and P-Values</h3>
+
+<p>So, how do we know if a result is likely to be “real” as opposed to just random variation?</p>
+
+<p>T-Test and P-Values!</p>
+
+<h4 id="the-t-statistic">The T-Statistic</h4>
+
+<ul>
+  <li>A measure of the difference between the two sets expressed in units of standard error</li>
+  <li>The size of the difference relative to the variance in the data</li>
+  <li>A high T value means there’s probably a real difference between the two sets</li>
+  <li>Assumes a normal distribution of behavior
+    <ul>
+      <li>This is a good assumption of you’re measuring revenue as conversion</li>
+      <li>Fisher’s exact test (clickthrough rates), E-test (for transactions per user), and chi-squared test (for product quantities purchased)</li>
+    </ul>
+  </li>
+  <li>miara różnicy między dwoma zestawami wyrażona w jednostkach błędu standardowego</li>
+  <li>wielkość różnicy w stosunku do wariancji danych</li>
+  <li>Wysoka wartość T oznacza, że prawdopodobnie istnieje prawdziwa różnica między dwoma zestawami</li>
+  <li>Zakłada normalny rozkład zachowania
+    <ul>
+      <li>To dobre założenie, że mierzysz przychody jako konwersje</li>
+      <li>Dokładny test Fishera (współczynniki klikalności), E-test (dla transakcji na użytkownika) i test chi-kwadrat (dla ilości zakupionych produktów)</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="the-p-value">The P-Value</h4>
+<ul>
+  <li>Think of it as the probability of A and B satisfying the “null hypothesis” (that there is no real difference between the control and treatment’s behaviour)</li>
+  <li><strong>So, a low P-Value implies significance.</strong></li>
+  <li>
+    <p>It is the probability of an observer lying at an extreme t-value assuming the null hypothesis.</p>
+  </li>
+  <li>Potraktuj to jako prawdopodobieństwo spełnienia przez A i B „hipotezy zerowej”</li>
+  <li>Tak więc niska wartość P oznacza znaczenie.</li>
+  <li>Jest to prawdopodobieństwo, że obserwator leży na skrajnej wartości t przy założeniu hipotezy zerowej.</li>
+</ul>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">26.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=-14.20191652286491, pvalue=1.4847065535663492e-45)
+</code></pre></div></div>
+
+<p>The t-statistic is a measure of the difference between the two sets expressed in units of standard error. Put differently, it’s the size of the difference relative to the variance in the data. A high t value means there’s probably a real difference between the two sets; you have “significance”. The P-value is a measure of the probability of an observation lying at extreme t-values; so a low p-value also implies “significance.” If you’re looking for a “statistically significant” result, you want to see a very low p-value and a high t-statistic (well, a high absolute value of the t-statistic more precisely). In the real world, statisticians seem to put more weight on the p-value result.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=-0.07828796143840591, pvalue=0.9375997767163184)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
+
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=0.5752102121870725, pvalue=0.5651497840962222)
+</code></pre></div></div>
+
+<p>Our p-value actually got a little lower, and the t-test a little larger, but still not enough to declare a real difference. So, you could have reached the right decision with just 10,000 samples instead of 100,000. Even a million samples doesn’t help, so if we were to keep running this A/B test for years, you’d never acheive the result you’re hoping for:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">)</span>
+
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=0.16312002647674892, pvalue=0.8704239486112085)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=0.0, pvalue=1.0)
+</code></pre></div></div>
+
+<h4 id="how-do-i-know-when-im-done-with-ab-test">How do I know when I’m done with A/B test?</h4>
+<ul>
+  <li>You have achieved significance (positive or negative)</li>
+  <li>You no longer observe meaningful trends in your p-value
+    <ul>
+      <li>That is, you don’t see any indication that your experiment will “converge” on a result over time</li>
+    </ul>
+  </li>
+  <li>You reach some pre-established upper bound on time</li>
+</ul>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<p><img src="attachment:image.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-08T01:13:25+01:00">2021</time> Weronika Żak</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a href="https://github.com/tableClothed"><i class="fa fa-github-alt"></i></a>
+          <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

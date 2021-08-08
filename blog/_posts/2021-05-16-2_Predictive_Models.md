@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Predictive Models"
+title:  "Predictive Models - Regression"
 date:   2021-05-16 16:10:35 +0100
 categories: "machine learning"
-description: "TO WRITE."
-image: 'images/blog/beginner.jpg'
+description: "Least squares minimizes the sum of squared errors. This is the same as maximizing the likelihood of observed data if you start thinking of the problem in terms of probabilities and probability distribution functions."
+image: 'images/blog/predictive.png'
 
 ---
 ### Linear Regression

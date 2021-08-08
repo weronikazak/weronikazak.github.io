@@ -7,12 +7,18 @@ layout: default
   </header>
   
   <div class="text-center">
+    <p>
+      The notes I've been taking thorought my studies on different subjects.
+   </p>
+    <br/>
     <div>
+      <button type="button" class="btn btn-category text-uppercase rounded-pill">ALL</button>
       <button type="button" class="btn btn-category text-uppercase rounded-pill">CRYPTOCURRENCIES</button>
       <button type="button" class="btn btn-category text-uppercase rounded-pill" >MACHINE LEARNING</button>
       <button type="button" class="btn btn-category text-uppercase rounded-pill">Economy</button>
     </div>
   </div>
+  <br/>
 
   <div class="listing">
     {% for post in site.categories.blog %}
@@ -30,7 +36,13 @@ layout: default
             <h2></span> <a href="{{ post.url }}">{{ post.title }}</a></h2>
             <p class="post-date">{{ post.date | date_to_string }}</p>
             {{ post.description }}
+            <br>
+            <br>
+            {% for cat in post.categories %}
+            <li class="item">{{ cat }}</li>
+            {% endfor %}
           </div>
+
         </div>
       </div>
     </div>
