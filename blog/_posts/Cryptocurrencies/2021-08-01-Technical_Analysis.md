@@ -2,7 +2,8 @@
 layout: post
 title:  "Technical Analysis"
 date:   2021-08-01 16:10:35 +0100
-categories: cryptocurrency
+categories: 
+- cryptocurrency
 description: "If you're a hardcore cryptocurrency hodler you've probably seen many price pumps and dumps come and go. At some point you've probably looked yourself in the mirror and asked why you didn't sell the top and buy the dip."
 image: 'images/blog/token.jpg'
 

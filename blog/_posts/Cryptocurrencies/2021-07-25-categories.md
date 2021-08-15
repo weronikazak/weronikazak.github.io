@@ -2,7 +2,8 @@
 layout: post
 title:  "Crypto Categories"
 date:   2021-07-25 16:10:35 +0100
-categories: cryptocurrency
+categories: 
+- cryptocurrency
 description: "What gives cryptocurrencies their value? It depends on which crypto coin or token you're talking about. There are over 7000 cryptocurrencies and each of them has its own purpose or use case that's meant to give it value."
 image: 'images/blog/categories.jpeg'
 

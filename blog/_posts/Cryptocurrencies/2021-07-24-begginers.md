@@ -2,7 +2,8 @@
 layout: post
 title:  "Introduction to Cryptocurrencies"
 date:   2021-07-24 16:10:35 +0100
-categories: cryptocurrency
+categories: 
+- cryptocurrency
 description: "Cryptocurrencies are like regular currecncies except they are entirely digital. Each idividual cryptocurrency coin is fundamentally just a collection of numbers and letters."
 image: 'images/blog/beginner.jpg'
 

@@ -2,7 +2,8 @@
 layout: post
 title:  "Statistic and Probability"
 date:   2021-05-16 16:10:35 +0100
-categories: "machine learning"
+categories: 
+- machine learning
 description: "Discrete Data: integer based, often counts of some event. How many purchases did a customer make in a year? How many times did I flif heads? Continous Data: Has an infinite number of possible values. How much time did it take for a user to check out? How much rain fell on a givern day?."
 image: 'images/blog/stats.png'
 

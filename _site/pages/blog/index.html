@@ -38,6 +38,119 @@
     <div class="container content">
       <main>
         <div class="page">
+
+  <script type="text/javascript">
+    function filterUsingCategory(selectedCategory) {
+      var id = 0;
+      
+        var tags = ["blog","cryptocurrency","economy"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","cryptocurrency","token"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","cryptocurrency"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","cryptocurrency","token"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","cryptocurrency","token"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","cryptocurrency","token"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","cryptocurrency"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","cryptocurrency"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","machine learning"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","machine learning"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","machine learning"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","machine learning"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","machine learning"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+    }
+  </script>
+
+
   <header>
     <h1 class="landing-title">My <span style="color: #e6e6e6;"> notes</span></h1>
   </header>
@@ -48,17 +161,88 @@
    </p>
     <br/>
     <div>
-      <button type="button" class="btn btn-category text-uppercase rounded-pill">ALL</button>
-      <button type="button" class="btn btn-category text-uppercase rounded-pill">CRYPTOCURRENCIES</button>
-      <button type="button" class="btn btn-category text-uppercase rounded-pill" >MACHINE LEARNING</button>
-      <button type="button" class="btn btn-category text-uppercase rounded-pill">Economy</button>
+      <button type="button" 
+        id="all"
+        class="btn btn-category text-uppercase rounded-pill"
+        onclick="filterUsingCategory('All')">
+          ALL
+      </button>
+
+      
+      
+
+      
+
+      
+        <button id="blog" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn btn-category text-uppercase rounded-pill">
+          blog
+      </button>
+      
+        <button id="cryptocurrency" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn btn-category text-uppercase rounded-pill">
+          cryptocurrency
+      </button>
+      
+        <button id="economy" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn btn-category text-uppercase rounded-pill">
+          economy
+      </button>
+      
+        <button id="token" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn btn-category text-uppercase rounded-pill">
+          token
+      </button>
+      
+        <button id="machine learning" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn btn-category text-uppercase rounded-pill">
+          machine learning
+      </button>
+      
     </div>
   </div>
   <br/>
 
   <div class="listing">
     
-    <div class="col-12">
+    
+    
+    <div class="col-12" id="post-1">
+      <div class="row">
+        <div class="col-3">
+          <img src="/images/blog/inflation.jpeg" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a href="/2021/Inflation/">Inflation and Cryptocurrencies</a></h2>
+            <p class="post-date">08 Aug 2021</p>
+            The risk of inflation in March of last year was worrying. The excess monetary stimulus, that was being thrown at the markets, and the impact that this would have, once the lockdowns eased was concerning. Some said that inflation concerns were misguided, that deflation was the more likely scenario.
+            <br>
+            <br>
+            
+            <li class="item">blog</li>
+            
+            <li class="item">cryptocurrency</li>
+            
+            <li class="item">economy</li>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="col-12" id="post-2">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/chiliz.png" 
@@ -79,13 +263,16 @@
             
             <li class="item">cryptocurrency</li>
             
+            <li class="item">token</li>
+            
           </div>
 
         </div>
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-3">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/token.jpg" 
@@ -112,7 +299,8 @@
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-4">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/xrp.png" 
@@ -133,13 +321,16 @@
             
             <li class="item">cryptocurrency</li>
             
+            <li class="item">token</li>
+            
           </div>
 
         </div>
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-5">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/tokenomics.jpeg" 
@@ -160,13 +351,16 @@
             
             <li class="item">cryptocurrency</li>
             
+            <li class="item">token</li>
+            
           </div>
 
         </div>
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-6">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/shibainu.png" 
@@ -185,7 +379,9 @@
             
             <li class="item">blog</li>
             
-            <li class="item">cryptocurrencies</li>
+            <li class="item">cryptocurrency</li>
+            
+            <li class="item">token</li>
             
           </div>
 
@@ -193,7 +389,8 @@
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-7">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/categories.jpeg" 
@@ -220,7 +417,8 @@
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-8">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/beginner.jpg" 
@@ -247,7 +445,8 @@
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-9">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/predictive.png" 
@@ -266,9 +465,7 @@
             
             <li class="item">blog</li>
             
-            <li class="item">machine</li>
-            
-            <li class="item">learning</li>
+            <li class="item">machine learning</li>
             
           </div>
 
@@ -276,7 +473,8 @@
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-10">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/stats.png" 
@@ -295,9 +493,7 @@
             
             <li class="item">blog</li>
             
-            <li class="item">machine</li>
-            
-            <li class="item">learning</li>
+            <li class="item">machine learning</li>
             
           </div>
 
@@ -305,7 +501,8 @@
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-11">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/ml.png" 
@@ -318,15 +515,13 @@
           <div class="post other link">
             <h2></span> <a href="/2021/Notes/">Machine Learning General Questions</a></h2>
             <p class="post-date">21 Mar 2021</p>
-            Machine Learning Questions - general
+            Machine Learning Questions - general questions usually asked on interviews.
             <br>
             <br>
             
             <li class="item">blog</li>
             
-            <li class="item">machine</li>
-            
-            <li class="item">learning</li>
+            <li class="item">machine learning</li>
             
           </div>
 
@@ -334,7 +529,8 @@
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-12">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/abtest.png" 
@@ -353,9 +549,7 @@
             
             <li class="item">blog</li>
             
-            <li class="item">machine</li>
-            
-            <li class="item">learning</li>
+            <li class="item">machine learning</li>
             
           </div>
 
@@ -363,7 +557,8 @@
       </div>
     </div>
     
-    <div class="col-12">
+    
+    <div class="col-12" id="post-13">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/reinf.png" 
@@ -382,9 +577,7 @@
             
             <li class="item">blog</li>
             
-            <li class="item">machine</li>
-            
-            <li class="item">learning</li>
+            <li class="item">machine learning</li>
             
           </div>
 
@@ -397,7 +590,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-08T01:13:25+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-15T18:11:59+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

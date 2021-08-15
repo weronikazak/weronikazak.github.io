@@ -2,7 +2,8 @@
 layout: post
 title:  "Reinforcement"
 date:   2021-02-16 16:10:35 +0100
-categories: "machine learning"
+categories: 
+- machine learning
 description: "Reinforcement Learning"
 image: 'images/blog/reinf.png'
 

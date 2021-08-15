@@ -2,7 +2,9 @@
 layout: post
 title:  "Inflation and Cryptocurrencies"
 date:   2021-08-08 16:10:35 +0100
-categories: machine learning
+categories: 
+- cryptocurrency
+- economy
 description: "The risk of inflation in March of last year was worrying. The excess monetary stimulus, that was being thrown at the markets, and the impact that this would have, once the lockdowns eased was concerning. Some said that inflation concerns were misguided, that deflation was the more likely scenario."
 image: 'images/blog/inflation.jpeg'
 

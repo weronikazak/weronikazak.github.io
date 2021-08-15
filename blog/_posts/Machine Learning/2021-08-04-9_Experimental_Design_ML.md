@@ -2,7 +2,8 @@
 layout: post
 title:  "Experimental Design"
 date:   2021-02-21 16:10:35 +0100
-categories: "machine learning"
+categories: 
+- machine learning
 description: "A/B Testing. A controlled experiment, usually in the context of a website. You test the performance of some change to your website (the variant) and measure conversion relative to your unchanged site (the control)."
 image: 'images/blog/abtest.png'
 
