@@ -43,6 +43,22 @@
     function filterUsingCategory(selectedCategory) {
       var id = 0;
       
+        var tags = ["blog","cryptocurrency","token"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","cryptocurrency","token"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
         var tags = ["blog","cryptocurrency","economy"]
   
         var postDiv = document.getElementById("post-" + (++id));
@@ -147,6 +163,30 @@
             ? 'unset' 
             : 'none';
       
+        var tags = ["blog","machine learning"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","machine learning"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
+        var tags = ["blog","machine learning"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'unset' 
+            : 'none';
+      
     }
   </script>
 
@@ -186,16 +226,16 @@
           cryptocurrency
       </button>
       
-        <button id="economy" 
-        onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
-          economy
-      </button>
-      
         <button id="token" 
         onclick="filterUsingCategory(this.id)"
         class="btn btn-category text-uppercase rounded-pill">
           token
+      </button>
+      
+        <button id="economy" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn btn-category text-uppercase rounded-pill">
+          economy
       </button>
       
         <button id="machine learning" 
@@ -213,6 +253,66 @@
     
     
     <div class="col-12" id="post-1">
+      <div class="row">
+        <div class="col-3">
+          <img src="/images/blog/stable.png" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a href="/2021/USDT,-USDC,-BUSD/">USDT, USDC, BUSD - Stablecoins</a></h2>
+            <p class="post-date">14 Aug 2021</p>
+            Stablecoins have been in the spotlight over the last few weeks, and for all the wrong reasons. Regulators are starting to get nervous about the impact stablecoins could have not just on the crypto market, but on the financial markets as a whole.
+            <br>
+            <br>
+            
+            <li class="item">blog</li>
+            
+            <li class="item">cryptocurrency</li>
+            
+            <li class="item">token</li>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="col-12" id="post-2">
+      <div class="row">
+        <div class="col-3">
+          <img src="/images/blog/litecoin.png" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a href="/2021/Litecoin/">LTC - Litecoin</a></h2>
+            <p class="post-date">12 Aug 2021</p>
+            There are over 7000 cryptocurrencies and each has its own use case and tokenomics. In theory, these two factors are meant to be the selling points for that coin or token. In practice however, whether a crypto does well often boils down to recognizability and branding. One of the cryptos that has both is Litecoin.
+            <br>
+            <br>
+            
+            <li class="item">blog</li>
+            
+            <li class="item">cryptocurrency</li>
+            
+            <li class="item">token</li>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="col-12" id="post-3">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/inflation.jpeg" 
@@ -242,7 +342,7 @@
     </div>
     
     
-    <div class="col-12" id="post-2">
+    <div class="col-12" id="post-4">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/chiliz.png" 
@@ -272,7 +372,7 @@
     </div>
     
     
-    <div class="col-12" id="post-3">
+    <div class="col-12" id="post-5">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/token.jpg" 
@@ -285,7 +385,7 @@
           <div class="post other link">
             <h2></span> <a href="/2021/Technical_Analysis/">Technical Analysis</a></h2>
             <p class="post-date">01 Aug 2021</p>
-            If you're a hardcore cryptocurrency hodler you've probably seen many price pumps and dumps come and go. At some point you've probably looked yourself in the mirror and asked why you didn't sell the top and buy the dip.
+            As it turns out, technical analysis actually has some solid science behind it, and has existed for hundreds of years. The candlestick chart, that comes to mind, when you think of trading, is said to have been invented by a japanese rice merchant named Honma Monehisa almost 300 years ago.
             <br>
             <br>
             
@@ -300,7 +400,7 @@
     </div>
     
     
-    <div class="col-12" id="post-4">
+    <div class="col-12" id="post-6">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/xrp.png" 
@@ -330,7 +430,7 @@
     </div>
     
     
-    <div class="col-12" id="post-5">
+    <div class="col-12" id="post-7">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/tokenomics.jpeg" 
@@ -360,7 +460,7 @@
     </div>
     
     
-    <div class="col-12" id="post-6">
+    <div class="col-12" id="post-8">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/shibainu.png" 
@@ -390,7 +490,7 @@
     </div>
     
     
-    <div class="col-12" id="post-7">
+    <div class="col-12" id="post-9">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/categories.jpeg" 
@@ -418,7 +518,7 @@
     </div>
     
     
-    <div class="col-12" id="post-8">
+    <div class="col-12" id="post-10">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/beginner.jpg" 
@@ -446,7 +546,7 @@
     </div>
     
     
-    <div class="col-12" id="post-9">
+    <div class="col-12" id="post-11">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/predictive.png" 
@@ -474,7 +574,7 @@
     </div>
     
     
-    <div class="col-12" id="post-10">
+    <div class="col-12" id="post-12">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/stats.png" 
@@ -502,7 +602,91 @@
     </div>
     
     
-    <div class="col-12" id="post-11">
+    <div class="col-12" id="post-13">
+      <div class="row">
+        <div class="col-3">
+          <img src="/images/posts/datamining/1.png" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a href="/2021/3-5_Data_Mining/">Data Mining</a></h2>
+            <p class="post-date">23 Apr 2021</p>
+            Data Mining in Python with focus on machine learning algorithms and techniques. K-Nearest Neighbors (KNN), Principal Component Analysis (PCA).
+            <br>
+            <br>
+            
+            <li class="item">blog</li>
+            
+            <li class="item">machine learning</li>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="col-12" id="post-14">
+      <div class="row">
+        <div class="col-3">
+          <img src="/images/posts/mlpython2/8.png" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a href="/2021/3_Machine_Learning_w_Python2/">Machine Learning with Python, Part 2</a></h2>
+            <p class="post-date">22 Apr 2021</p>
+            Coding in Python with focus on machine learning algorithms and techniques. Decision Trees, Random Forest, Ensemble Learning, CGBoost, Support Vector Machines.
+            <br>
+            <br>
+            
+            <li class="item">blog</li>
+            
+            <li class="item">machine learning</li>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="col-12" id="post-15">
+      <div class="row">
+        <div class="col-3">
+          <img src="/images/posts/mlpython/kmeans.png" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a href="/2021/3_Machine_Learning_w_Python/">Machine Learning with Python, Part 1</a></h2>
+            <p class="post-date">21 Apr 2021</p>
+            Coding in Python with focus on machine learning algorithms and techniques. Train / test split, Bayesian Methods, Naive Bayes, K-Means Clustering, Entropy.
+            <br>
+            <br>
+            
+            <li class="item">blog</li>
+            
+            <li class="item">machine learning</li>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="col-12" id="post-16">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/ml.png" 
@@ -530,7 +714,7 @@
     </div>
     
     
-    <div class="col-12" id="post-12">
+    <div class="col-12" id="post-17">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/abtest.png" 
@@ -558,7 +742,7 @@
     </div>
     
     
-    <div class="col-12" id="post-13">
+    <div class="col-12" id="post-18">
       <div class="row">
         <div class="col-3">
           <img src="/images/blog/reinf.png" 
@@ -590,7 +774,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-15T18:11:59+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-16T22:43:21+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

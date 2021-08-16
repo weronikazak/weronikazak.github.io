@@ -47,7 +47,11 @@
         </h1>
     </header>
 
-  <h2 id="data-types">Data types</h2>
+  <center>
+<img src="/images/blog/stats.png" style="max-width: 600px" />
+</center>
+
+<h2 id="data-types">Data types</h2>
 
 <p>Discrete Data:
     - integer based, often counts of some event.
@@ -66,7 +70,9 @@
     A miture of numerical and categorical
     - Categorical data that has mathematical meaning: 1 means worse movie than a 2</p>
 
-<p><img src="attachment:image.png" alt="image.png" /></p>
+<center>
+<img src="/images/posts/stat_prob/1.png" />
+</center>
 
 <p>Mode: the most common number in a data set</p>
 
@@ -87,12 +93,16 @@ Variance of set (1, 4, 5, 4, 8)
 
 <p>Is usually used as a way to identify outliers (wartości odstajace). Data points that lie more than one standard deviation from the mean can be considered unusual.</p>
 
-<p>You can talk about how extreme a data point is by talking about “how many sigmas” away from the mean iti is.
-<img src="attachment:image.png" alt="image.png" /></p>
+<p>You can talk about how extreme a data point is by talking about “how many sigmas” away from the mean iti is.</p>
+<center>
+<img src="/images/posts/stat_prob/2.png" />
+</center>
 
 <p>So, the standard variation of (1, 4, 5, 4, 8) is 2.24.</p>
 
-<p><img src="attachment:image.png" alt="image.png" /></p>
+<center>
+<img src="/images/posts/stat_prob/3.png" />
+</center>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
@@ -103,7 +113,7 @@ Variance of set (1, 4, 5, 4, 8)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_8_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_8_0.png" alt="png" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">income</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
 </code></pre></div></div>
@@ -120,12 +130,16 @@ Variance of set (1, 4, 5, 4, 8)
 <h3 id="normal-distribution">Normal distribution:</h3>
 <p>Gives you the probability of a data point falling within some given range of a given value</p>
 
-<p><img src="attachment:image.png" alt="image.png" /></p>
+<center>
+<img src="/images/posts/stat_prob/4.png" />
+</center>
 
 <h3 id="probability-mass-function">Probability Mass Function:</h3>
 <p>The way we viualise the probbility of discreet data occurring</p>
 
-<p><img src="attachment:image.png" alt="image.png" /></p>
+<center>
+<img src="/images/posts/stat_prob/5.png" />
+</center>
 
 <h2 id="examples-of-data-distributions">Examples of Data Distributions</h2>
 
@@ -136,7 +150,7 @@ Variance of set (1, 4, 5, 4, 8)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_15_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_15_0.png" alt="png" /></p>
 
 <h3 id="normal--gaussian">Normal / Gaussian</h3>
 
@@ -147,7 +161,7 @@ Variance of set (1, 4, 5, 4, 8)
 </span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_17_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_17_0.png" alt="png" /></p>
 
 <p>Generate some random numbers with a normal distribution. “mu” is the desired mean, “sigma” is the standard deviation.</p>
 
@@ -158,7 +172,7 @@ Variance of set (1, 4, 5, 4, 8)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_19_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_19_0.png" alt="png" /></p>
 
 <h3 id="exponential-pdf--power-law">Exponential PDF / “Power Law”</h3>
 
@@ -169,7 +183,7 @@ Variance of set (1, 4, 5, 4, 8)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_21_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_21_0.png" alt="png" /></p>
 
 <h2 id="binomial-probability-mass-function">Binomial Probability Mass Function</h2>
 
@@ -181,7 +195,7 @@ Variance of set (1, 4, 5, 4, 8)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_23_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_23_0.png" alt="png" /></p>
 
 <h2 id="poisson-probability-mass-funtion">Poisson Probability Mass Funtion</h2>
 
@@ -195,7 +209,7 @@ Variance of set (1, 4, 5, 4, 8)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_26_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_26_0.png" alt="png" /></p>
 
 <h3 id="moments">Moments</h3>
 
@@ -203,7 +217,9 @@ Variance of set (1, 4, 5, 4, 8)
 
 <p>Mathematically they are hard to wrap up:</p>
 
-<p><img src="attachment:image.png" alt="image.png" /></p>
+<center>
+<img src="/images/posts/stat_prob/6.png" />
+</center>
 
 <ul>
   <li>The first moment is the mean.</li>
@@ -214,7 +230,9 @@ Variance of set (1, 4, 5, 4, 8)
       <li>A distribution with a longer tail on the left will be skewed left, and have a negative skew.</li>
     </ul>
 
-    <p><img src="attachment:image.png" alt="image.png" /></p>
+    <center>
+  <img src="/images/posts/stat_prob/7.png" />
+  </center>
   </li>
   <li>The fourth moment is “kurtosis”
     <ul>
@@ -224,7 +242,9 @@ Variance of set (1, 4, 5, 4, 8)
   </li>
 </ul>
 
-<p><img src="attachment:image.png" alt="image.png" /></p>
+<center>
+<img src="/images/posts/stat_prob/8.png" />
+</center>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
@@ -235,7 +255,7 @@ Variance of set (1, 4, 5, 4, 8)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_31_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_31_0.png" alt="png" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># FIRST MOMENT: MEAN - data should be close to 0
 </span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">vals</span><span class="p">)</span>
@@ -301,7 +321,7 @@ Variance of set (1, 4, 5, 4, 8)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_41_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_41_0.png" alt="png" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">covariance</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
 </code></pre></div></div>
@@ -315,7 +335,7 @@ Variance of set (1, 4, 5, 4, 8)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_43_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_43_0.png" alt="png" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">covariance</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
 </code></pre></div></div>
@@ -348,7 +368,7 @@ Variance of set (1, 4, 5, 4, 8)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="output_48_0.png" alt="png" /></p>
+<p><img src="/images/posts/stat_prob/output_48_0.png" alt="png" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">correlation</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
 </code></pre></div></div>
@@ -373,7 +393,9 @@ Variance of set (1, 4, 5, 4, 8)
   </li>
 </ul>
 
-<p><img src="attachment:image.png" alt="image.png" /></p>
+<center>
+<img src="/images/posts/stat_prob/9.png" />
+</center>
 
 <p>EXAMPLE:
     I give my student two tests.</p>
@@ -575,7 +597,9 @@ What percentage of students who passed the first test also passed the second?
 
 <h3 id="bayes-theorem">Bayes’ Theorem</h3>
 
-<p><img src="attachment:image.png" alt="image.png" /></p>
+<center>
+<img src="/images/posts/stat_prob/10.png" />
+</center>
 
 <p>The probability of A given B, is the probability of A times the probability of B given A ver the probability of B.</p>
 
@@ -583,12 +607,13 @@ What percentage of students who passed the first test also passed the second?
 
 <p>The key insight is that the probability of something that depends on B depends very much on the base probability of A and B.</p>
 
-<p><img src="attachment:image.png" alt="image.png" /></p>
+<center>
+<img src="/images/posts/stat_prob/11.png" />
+</center>
 
-<p><img src="attachment:image.png" alt="image.png" /></p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div>
+<center>
+<img src="/images/posts/stat_prob/12.png" />
+</center>
 
 </article>
 
@@ -596,7 +621,7 @@ What percentage of students who passed the first test also passed the second?
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-15T18:11:59+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-16T22:43:21+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

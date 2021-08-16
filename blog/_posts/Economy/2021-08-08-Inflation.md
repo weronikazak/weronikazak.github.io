@@ -10,7 +10,12 @@ image: 'images/blog/inflation.jpeg'
 
 ---
 
-##### DEFLATION IN JAPAN
+
+<center>
+<img src="/images/blog/inflation.jpeg" style="max-width: 600px">
+</center>
+
+## DEFLATION IN JAPAN
 
 The risk of inflation in March of last year was worrying.
 
@@ -24,7 +29,7 @@ This was the main narrative, that was coming from the FED.
 
 They were really concerned about a Japanese-style deflationary and stagnating economy, hence the reason that they flooded the system with money.
 
-##### PRINTING MONEY AND PLANS TO KEEP THE INFLATION AT 2%
+## PRINTING MONEY AND PLANS TO KEEP THE INFLATION AT 2%
 
 However, that was a year ago, and things have progressed at a lightning pace.
 
@@ -44,7 +49,9 @@ Prices were starting to surge across the board.
 
 For example, this tweet from Dan Held.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/inflation/dan.png">
+</center>
 
 Back in April those were the price increases, that we were seeing for some of these commodities.
 
@@ -56,7 +63,7 @@ Fuel prices have been on the rise since the beginning of the year, and house pri
 
 So inflation was already beginning to rear its ugly head, and there were many market participants, who were beginning to ring the alarm bells.
 
-##### THE "SURPRISING" OUTCOME - INFLATION
+## THE "SURPRISING" OUTCOME - INFLATION
 
 Then came the April CPI numbers, which were released 2 weeks ago.
 
@@ -68,7 +75,7 @@ It was also the highest CPI print since 2009.
 
 Needless to say, it took the market by surprise, and led to a jump in long-term bond yields, and a fall in stock and crypto prices.
 
-##### PPI - PRODUCER PRICE INFLATION
+## PPI - PRODUCER PRICE INFLATION
 
 Things didn't get that much better, when a day later the US PPI numbers came in.
 
@@ -82,9 +89,11 @@ So irrespective of how you slice or dice it, the inflation numbers were not look
 
 **What did they expect, when they printed 25% of all the money ever in existence in a single year?**
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/inflation/money-supply.png">
+</center>
 
-##### WHY INFLATION IS DEADLY
+## WHY INFLATION IS DEADLY
 
 Anyways, there are a number of reasons, as to why inflation is so deadly, and I'm not even talking about the hyperinflation, that you see.
 
@@ -98,7 +107,7 @@ However, when it is running above expectations, then it can lead to further infl
 
 Persistent and high inflation is also detrimental to savers, as it means that the dollars, that they hold in their bank account are worth less today, than they were a year ago.
 
-##### INFLATION AND INVESTORS
+## INFLATION AND INVESTORS
 
 And it's not just individuals, that suffer the impact of higher inflation.
 
@@ -114,13 +123,13 @@ This is a destruction of shareholder value, and means, that these companies will
 
 In fact, it could be worse for corporate balance sheets than consumers.
 
-##### CPI CONSUMPTION
+## CPI CONSUMPTION
 
 Now, as I mentioned earlier, PPI, which is a production measure, was running hotter than CPI consumption.
 
 The cost of inputs for companies is running higher, which means, that dollars saved on balance sheets, are worth that much less.
 
-##### IMPACT ON THE US DOLLAR
+## IMPACT ON THE US DOLLAR
 
 But that's not even the worst part about inflation.
 
@@ -136,13 +145,13 @@ The more value that the dollar loses each year, the more likely these central ba
 
 Of course, any selling by offshore holders devalues the US dollar relative to other currencies.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/inflation/chart.jpg">
+</center>
 
-Take a look at this chart here.
+This chart here shows the US dollar index over the past month.
 
-It shows the US dollar index over the past month.
-
-As you can see, it's been trending down recently, and is near the lowest levels, that we've seen this year.
+As visible, in May it's been trending down recently, and is near the lowest levels, that we've seen this year.
 
 When the US dollar devalues relative to other currencies, it also makes the cost of imports that much more expensive, which of course adds to the inflation equation.
 
@@ -150,7 +159,9 @@ The point is that inflation is toxic and should be avoided.
 
 It's also one of those things, that are hard to reign back in again.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/inflation/dxy.png">
+</center>
 
 ##### CPI INFLATION - CPI BASKET
 
@@ -186,7 +197,9 @@ In the words of IMF economist Marshall Reinstorf "*Spending patterns changed abr
 
 Apart from this, most shopping went online, where the price fluctuation can be a lot more rapid and volatile.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/inflation/infl.png">
+</center>
 
 ##### INCORRECT DATA
 
@@ -406,7 +419,19 @@ Limited supply, decreasing inflation rate, easy to transport and store in the tu
 
 All praise to Satoshi.
 
+-------------
 
-```python
+##### LINKS:
 
-```
+- <a href="https://www.bloomberg.com/news/articles/2021-03-24/inflation-is-harder-to-measure-after-a-year-of-pandemic-spending"> Paul Jones Investment </a>
+- <a href="https://www.lopp.net/pdf/BVI-Macro-Outlook.pdf"> Dogecoin Explained </a>
+- <a href="https://www.coindesk.com/druckenmillers-inflation-warning-crypto"> Stanley Drukenmiller </a>
+- <a href="https://millervalue.com/bill-miller-4q-2020-market-letter/"> Bill Miller Note </a>
+- <a href="https://www.thebalance.com/inflation-talk-dominates-earnings-season-so-far-5181009"> Inflation Dominates Earnings </a>
+
+
+**THE NOTES WERE BASED ON THE VIDEO BELOW.**
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bw6giyX7DhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>

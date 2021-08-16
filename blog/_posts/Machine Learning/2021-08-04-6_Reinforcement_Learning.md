@@ -11,7 +11,9 @@ image: 'images/blog/reinf.png'
 
 ### Reinforcement Learning
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/reinforcement/1.png">
+</center>
 
 
 ```python
@@ -37,9 +39,13 @@ streets.render()
     
     
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/reinforcement/2.png">
+</center>
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/reinforcement/3.png">
+</center>
 
 
 ```python
@@ -158,8 +164,3 @@ for tripnum in range(1, 11):
       (West)
     
     
-
-
-```python
-
-```

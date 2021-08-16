@@ -9,6 +9,10 @@ image: 'images/blog/stats.png'
 
 ---
 
+<center>
+<img src="/images/blog/stats.png" style="max-width: 600px">
+</center>
+
 ## Data types
 
 Discrete Data:
@@ -28,7 +32,9 @@ Ordinal:
     A miture of numerical and categorical
     - Categorical data that has mathematical meaning: 1 means worse movie than a 2
     
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/stat_prob/1.png">
+</center>
 
 Mode: the most common number in a data set
 
@@ -50,11 +56,15 @@ Square room of the variance
 Is usually used as a way to identify outliers (wartości odstajace). Data points that lie more than one standard deviation from the mean can be considered unusual.
 
 You can talk about how extreme a data point is by talking about "how many sigmas" away from the mean iti is.
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/stat_prob/2.png">
+</center>
 
 So, the standard variation of (1, 4, 5, 4, 8) is 2.24.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/stat_prob/3.png">
+</center>
 
 
 ```python
@@ -68,7 +78,7 @@ plt.show()
 ```
 
 
-![png](output_8_0.png)
+![png](/images/posts/stat_prob/output_8_0.png)
 
 
 
@@ -98,12 +108,16 @@ income.var()
 ### Normal distribution:
 Gives you the probability of a data point falling within some given range of a given value
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/stat_prob/4.png">
+</center>
 
 ### Probability Mass Function:
 The way we viualise the probbility of discreet data occurring
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/stat_prob/5.png">
+</center>
 
 ## Examples of Data Distributions
 
@@ -118,7 +132,7 @@ plt.show()
 ```
 
 
-![png](output_15_0.png)
+![png](/images/posts/stat_prob/output_15_0.png)
 
 
 ### Normal / Gaussian
@@ -133,7 +147,7 @@ plt.show()
 ```
 
 
-![png](output_17_0.png)
+![png](/images/posts/stat_prob/output_17_0.png)
 
 
 Generate some random numbers with a normal distribution. "mu" is the desired mean, "sigma" is the standard deviation.
@@ -148,7 +162,7 @@ plt.show()
 ```
 
 
-![png](output_19_0.png)
+![png](/images/posts/stat_prob/output_19_0.png)
 
 
 ### Exponential PDF / "Power Law"
@@ -163,7 +177,7 @@ plt.show()
 ```
 
 
-![png](output_21_0.png)
+![png](/images/posts/stat_prob/output_21_0.png)
 
 
 ## Binomial Probability Mass Function
@@ -179,7 +193,7 @@ plt.show()
 ```
 
 
-![png](output_23_0.png)
+![png](/images/posts/stat_prob/output_23_0.png)
 
 
 ## Poisson Probability Mass Funtion
@@ -197,7 +211,7 @@ plt.show()
 ```
 
 
-![png](output_26_0.png)
+![png](/images/posts/stat_prob/output_26_0.png)
 
 
 ### Moments
@@ -206,7 +220,9 @@ Quantitative measures of the shape of a probability density function
 
 Mathematically they are hard to wrap up:
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/stat_prob/6.png">
+</center>
 
 - The first moment is the mean.
 - The second moment is the variance.
@@ -214,12 +230,16 @@ Mathematically they are hard to wrap up:
     - How loopsided is the distribution?
     - A distribution with a longer tail on the left will be skewed left, and have a negative skew.
     
-    ![image.png](attachment:image.png)
+    <center>
+	<img src="/images/posts/stat_prob/7.png">
+	</center>
 - The fourth moment is "kurtosis"
     - How thick is the tail, and how sharp is the peak, compared to a normal distribution?
     - F. e.: higher peaks have highter kurtosis
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/stat_prob/8.png">
+</center>
 
 
 ```python
@@ -233,7 +253,7 @@ plt.show()
 ```
 
 
-![png](output_31_0.png)
+![png](/images/posts/stat_prob/output_31_0.png)
 
 
 
@@ -325,7 +345,7 @@ plt.show()
 ```
 
 
-![png](output_41_0.png)
+![png](/images/posts/stat_prob/output_41_0.png)
 
 
 
@@ -349,7 +369,7 @@ plt.show()
 ```
 
 
-![png](output_43_0.png)
+![png](/images/posts/stat_prob/output_43_0.png)
 
 
 
@@ -406,7 +426,7 @@ plt.show()
 ```
 
 
-![png](output_48_0.png)
+![png](/images/posts/stat_prob/output_48_0.png)
 
 
 
@@ -427,7 +447,9 @@ correlation(pageSpeed, purchaseAmount)
 - Notation: P(A, B) is the probability of A and B both occuring
 - P(B|A): Probability of B given that A has occurred
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/stat_prob/9.png">
+</center>
 
 EXAMPLE:
     I give my student two tests.
@@ -668,7 +690,9 @@ purchases[20] / totals[20]
 
 ### Bayes' Theorem
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/stat_prob/10.png">
+</center>
 
 The probability of A given B, is the probability of A times the probability of B given A ver the probability of B.
 
@@ -676,11 +700,10 @@ Prawdopodobieństwo A danego B jest prawdopodobieństwem A razy prawdopodobieńs
 
 The key insight is that the probability of something that depends on B depends very much on the base probability of A and B.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/stat_prob/11.png">
+</center>
 
-![image.png](attachment:image.png)
-
-
-```python
-
-```
+<center>
+<img src="/images/posts/stat_prob/12.png">
+</center>

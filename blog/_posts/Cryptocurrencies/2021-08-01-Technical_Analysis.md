@@ -4,40 +4,20 @@ title:  "Technical Analysis"
 date:   2021-08-01 16:10:35 +0100
 categories: 
 - cryptocurrency
-description: "If you're a hardcore cryptocurrency hodler you've probably seen many price pumps and dumps come and go. At some point you've probably looked yourself in the mirror and asked why you didn't sell the top and buy the dip."
+description: "As it turns out, technical analysis actually has some solid science behind it, and has existed for hundreds of years. The candlestick chart, that comes to mind, when you think of trading, is said to have been invented by a japanese rice merchant named Honma Monehisa almost 300 years ago."
 image: 'images/blog/token.jpg'
 
 ---
 
-##### INTRO
+<center>
+<img src="/images/blog/token.jpg" style="max-width: 600px">
+</center>
 
-If you're a hardcore cryptocurrency hodler you've probably seen many price pumps and dumps come and go.
-
-At some point you've probably looked yourself in the mirror and asked why you didn't sell the top and buy the dip.
-
-After all, the crypto market ebbs and flows, right?
-
-That's what seasoned cryptocurrency traders believe, and capitalizing on these short-term patterns is what has made many of them so successful.
-
-**For the average crypto connoisseur, however, hodling will provide the same profits or more than if they had actively traded.**
-
-This is because cryptocurrency trading is hard, and the technical analysis required to do it effectively takes a lot of time, a lot of practice, and a lot of patience to master.
-
-Technical trading looks incredibly arbitrary.
-
-Just pull up trading view, draw a few lines number go up, and boom, you're Warren Buffett Jr.
-
-Of course, whenever you try doing this, you just get bogged.
-
-Surely, there is more to technical analysis, than drawing a bunch of lines, and hoping for the best.
-
-##### HISTORY OF JAPANESE RICE TRADER
+## HISTORY OF JAPANESE RICE TRADER
 
 As it turns out, technical analysis actually has some solid science behind it, and has existed for hundreds of years.
 
-The candlestick chart, that comes to mind, when you think of trading, is said to have been invented by a japanese rice merchant named Honma Monehisa almost 300 years ago/
-
-So, if you're a weeb, you have no excuses not to learn technical market analysis/
+The candlestick chart, that comes to mind, when you think of trading, is said to have been invented by a japanese rice merchant named Honma Monehisa almost 300 years ago.
 
 Honma wrote what is believed to be the first book on market psychology, which details many of the patterns and terminologies expert traders continue to use to this day.
 
@@ -47,13 +27,13 @@ That's not so hard to believe, considering that he was probably the only person 
 
 But it wasn't just Honma's first mover status, that made his trading so successful. 
 
-##### HUMAN PSYCHOLOGY IS THE CRITICAL FACTOR
+## HUMAN PSYCHOLOGY IS THE CRITICAL FACTOR
 
 It was his understanding, that human psychology is what fundamentally moves any given market.
 
-Emotions like fear and greed follow surprisingly consistent patterns, and with the right analysis, these patterns can not only be easily seen on a candlestick chart, they can also be predicted/
+Emotions like fear and greed follow surprisingly consistent patterns, and with the right analysis, these patterns can not only be easily seen on a candlestick chart, they can also be predicted.
 
-##### OTHER FACTORS WORTH KEEPING IN MIND
+## OTHER FACTORS WORTH KEEPING IN MIND
 
 It is important to keep in mind, that although technical analysis has proven itself to be a powerful trading tool, there are other factors you should keep in mind, when it comes to crafting a trading strategy for cryptocurrency.
 
@@ -61,9 +41,7 @@ This includes things like tokenomics, network activity, use case, the team behin
 
 Evaluating these factors is called **fundamental analysis**, because it focuses on more objective measures of an asset's potential value.
 
-If you're a hodler, these are probably the metrics you're using to decide on which cryptocurrency to invest in, and when to sell it.
-
-##### FUNDAMENTAL ANALYSIS VS TECHNICAL ANALYSIS
+## FUNDAMENTAL ANALYSIS VS TECHNICAL ANALYSIS
 
 In contrast to fundamental analysis, technical analysis focuses almost exclusively on price action.
 
@@ -81,9 +59,7 @@ Most of this will be determined by how long you plan to hold that cryptocurrency
 
 **As a rule of thumb, technical analysis is used for shorter term trading, and fundamental analysis is used for longer term trading and hodling.**
 
-If you really want to be a crypto king or queen, you'll need to learn how to do both.
-
-##### TRADING PAIRS AS AN INDICATPR OF PERFORMANCE
+## TRADING PAIRS AS AN INDICATPR OF PERFORMANCE
 
 You should also remember that although stablecoin trading pairs, like ETH-USDT are the easiest to keep track of an asset, in terms of dollar value, trading pairs with Bitcoin, such as ETH-BTC can often give you a better sense of how well a cryptocurrency is performing relative to others.
 
@@ -206,7 +182,7 @@ When traders draw lines, they're normally looking for three things.
 - **Resistance**
 - **and a Recognizable Price Pattern**
 
-##### SUPPORT
+## SUPPORT
 
 Support refers to the lower limit of where the price of an asset could go.
 
@@ -388,7 +364,7 @@ As long, as you're within the 30 to 70 range, the price is right.
 
 ### BOLLINGER BAND INDICATOR
 
-Finally, we have the Bollinger Band indicator.
+Finally, the Bollinger Band indicator.
 
 Like the MACD, the Bollinger Band indicator is used to measure market volatility.
 
@@ -414,11 +390,11 @@ Just remember that what you see, can, and probably will, change the second you a
 
 ![image.png](attachment:image.png)
 
-### CONCLUSION
+## CONCLUSION
 
-As I said, it's going to take lots of time, lots of practice, and lots of patience to build a solid trading strategy.
+It's going to take lots of time, lots of practice, and lots of patience to build a solid trading strategy.
 
-I think I covered most of what you need to, at least start dabbling in technical analysis.
+So, to sum up:
 
 **Candlestick charts show you much more than basic price action.**
 
@@ -432,17 +408,25 @@ These will help give you a sense of where the price might be heading.
 
 Moving Averages, the MACD, the RSI, and the Bollinger Band will help **add some perspective to your initial calculations, by giving a more accurate picture of price volatility, identify any possible bubbles, or buying opportunities, and warn you of any incoming crashes or moonshots.**
 
-Be sure, to double check the time frames you're working with, and remember, that you'll probably have to use slightly different trading strategies for different cryptocurrencies.
+It's for best to double check the time frames you're working with, and remember, that you'll probably have to use slightly different trading strategies for different cryptocurrencies.
 
 It's also important to remember, that technical indicators are not the be-all and end-all of cryptocurrency trading, and keeping the fundamentals in mind will go a long way, to helping make sure you see more green, than red over the long term.
 
-There's a lot more to cryptocurrency trading that I didn't cover.
-
-Sentiment analysis, whale movements, fibonacci retracements, there is still so much left to cover.
-
-https://youtu.be/lW3eWIj3Q04
+There's a lot more to cryptocurrency trading however - Sentiment analysis, whale movements, fibonacci retracements, etc.
 
 
-```python
+-------------
 
-```
+##### LINKS:
+
+- <a href="https://medium.com/@fncnewz/the-most-successful-price-action-trader-in-history-munehisa-homma-84410008fa0e"> Honma Munehisa, creator of Technical Analysis </a>
+- <a href="https://en.wikipedia.org/wiki/Charles_Dow">  Charles Dow, founder of Western Technical Analysis </a>
+- <a href="https://www.ig.com/en/trading-strategies/16-candlestick-patterns-every-trader-should-know-180615"> Cryptocurrency Decentralized Common Candlestick Patterns </a>
+- <a href="https://www.ig.com/en/trading-strategies/10-trading-indicators-every-trader-should-know-190604"> Top 10 Technical Indicators </a>
+- <a href="https://www.coinbureau.com/education/crypto-technical-analysis/"> Technical Analysis for Cryptocurrency </a>
+
+**THE NOTES WERE BASED ON THE VIDEO BELOW.**
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lW3eWIj3Q04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>

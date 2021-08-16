@@ -41,12 +41,549 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2019/depression-tweets/">
-        Depression Tweets Analysis
+      <a href="/2021/Notes/">
+        Machine Learning General Questions
       </a>
     </h1>
 
-    <time datetime="2019-09-19T00:00:00+01:00" class="post-date">19 Sep 2019</time>
+    <time datetime="2021-03-21T15:10:35+00:00" class="post-date">21 Mar 2021</time>
+
+    <h1 id="machine-learning-questions">MACHINE LEARNING QUESTIONS</h1>
+
+<center>
+<img src="/images/blog/ml.png" style="max-width: 500px" />
+</center>
+
+<h3 id="1-what-are-the-different-types-of-machine-learning">1. What are the different types of Machine Learning?</h3>
+<ol>
+  <li>Supervised Learning
+    <ul>
+      <li>machine lears using labeled data</li>
+      <li>it’s like learning under the guidace of a teacher</li>
+      <li>model is trained on pre-defined dataset before it starts making decision when given new data</li>
+    </ul>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+  <li>Unsupervised Learning
+    <ul>
+      <li>the machine is trained on unlabelled data, without any guidance</li>
+      <li>learning without a teacher</li>
+      <li>models learn through observation and finds structures in data</li>
+      <li>model is given a dataset and then left to automatically find patterns and relationships by creating clusters</li>
+    </ul>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+  <li>Reinforcement Learning
+    <ul>
+      <li>involves an agent that interacts with its environment by producing actions &amp; discovers errors or rewards’- it’s like being stuck in an isolated island where you must explore the environment and learn how to live and adapt to the living conditions on your own</li>
+      <li>model learns through hit and trial method</li>
+      <li>learns on the basis of reward or penalty given for every action it performs</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="2-how-would-you-explain-machine-learning-to-a-school-going-kid">2. How would you explain Machine Learning to a school-going kid?</h3>
+<ul>
+  <li>Suppose your friend invites you to his party where you meet total strangers.
+Since you have no idea about them, you will mentally classify them on the basis of gender, age, group, dressing, etc.</li>
+  <li>in this scenari the strangers represent the unlabelled data and the process od classifying unlabelled data point (unsupervised learning)</li>
+  <li>since you didn’t use any prior knowledge abut people and classified them on-the-go, this becomes an unsupervised learning problem.</li>
+</ul>
+
+<h3 id="3--how-does-deep-learning-differ-from-machine-learning">3.  How does Deep Learning differ from Machine Learning?</h3>
+<ul>
+  <li>
+    <p>DEEP LEARNING - form of ML that is inspired by the structure of the human brain and is particulary effective in feature detection.</p>
+  </li>
+  <li>
+    <p>MACHINE LEARNING - algorithms that parse data, learn from data, and then apply what they’ve learnt to make informed decisions.</p>
+  </li>
+</ul>
+
+<h3 id="4-explain-classification-and-regression">4. Explain Classification and Regression</h3>
+<ol>
+  <li>Classification:
+    <ul>
+      <li>predicting a discrete class label</li>
+      <li>data is labelled into one of two or more class</li>
+      <li>two classes -&gt; binary, more -&gt; multi-class classification</li>
+      <li>examples: classifying email as SPAM or non-SPAM</li>
+    </ul>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+  <li>Regression:
+    <ul>
+      <li>predicting a continous quantity</li>
+      <li>requires the prediction of a quantity</li>
+      <li>if it has multiple input variables it’s called a multivariate regression</li>
+      <li>examples: predicting the price of a stock over a period of time</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="5-what-do-you-understand-by-selection-bias">5. What do you understand by selection bias?</h3>
+<ul>
+  <li>statistical error that causes a bias in the sampling portion of an experiment</li>
+  <li>the error causes one sampling group to be selected more often than other groups included in the experiment</li>
+  <li>
+    <p>selection bias may produce an inaccurate conclusion if the selection bias is not identified</p>
+  </li>
+  <li>błąd statystyczny, który powoduje odchylenie w próbkowaniu części eksperymentu</li>
+  <li>błąd powoduje, że jedna grupa losowania jest wybierana częściej niż inne grupy objęte eksperymentem</li>
+  <li>błąd selekcji może prowadzić do niedokładnych wniosków, jeśli błąd selekcji nie zostanie zidentyfikowany</li>
+</ul>
+
+<h3 id="6-what-do-you-understand-by-precision-and-recall">6. What do you understand by Precision and Recall?</h3>
+<p>Let me explain you this with an analogy:</p>
+
+<p>Imagine that, your girlfriend gave you a birthday surprise every year for the last 10 years. One day, your girlfriend asks you: ‘Sweetie, do you remember all the birthday surprises from me?’
+To stay on good terms with your girlfriend, you need to recall all the 10 events from your memory. Therefore, recall is the ratio of the number of events you can correctly recall, to the total number of events.</p>
+
+<p>If you can recall all 10 events correctly, then, your recall ratio is 1.0 (100%) and if you can recall 7 events correctly, your recall ratio is 0.7 (70%).</p>
+
+<p><br /><br /></p>
+
+<p>However, you might be wrong in some answers.</p>
+
+<p>For example, let’s assume that you took 15 guesses out of which 10 were correct and 5 were wrong. This means that you can recall all events but not so precisely.</p>
+
+<p>Therefore, precision is the ratio of a number of events you can correctly recall, to the total number of events you can recall (mix of correct and wrong recalls).</p>
+
+<p><br /><br /></p>
+
+<p>From the above example (10 real events, 15 answers: 10 correct, 5 wrong), you get 100% recall but your precision is only 66.67% (10 / 15)</p>
+
+<h3 id="7-explain-false-negative-false-positive-true-negative-and-true-positive-with-a-simple-example">7. Explain false negative, false positive, true negative and true positive with a simple example.</h3>
+<p>Scenario of a fire emergency:</p>
+
+<ul>
+  <li><strong>True Positive</strong>: If the alarm goes on in case of a fire.</li>
+</ul>
+
+<p><em>FIRE IS POSITIVE AND PREDICTION MADE BY THE SYSTEM IS TRUE</em></p>
+
+<p><br /></p>
+
+<ul>
+  <li><strong>False Positive</strong>: if the alarm goes on and there is no fire.</li>
+</ul>
+
+<p><em>SYSTEM PREDICTED FIRE TO BE POSITIVE WHICH IS A WRONG PREDICTION HENCE THE PREDICTION IS FALSE</em></p>
+
+<p><br /></p>
+
+<ul>
+  <li><strong>False Negative</strong>: If the alarm does not ring but there was a fire.</li>
+</ul>
+
+<p><em>SYSTEM PREDICTED FIRE TO BE NEGATIVE WHICH WAS FALSE SINCE THERE WAS FIRE.</em></p>
+
+<p><br /></p>
+
+<ul>
+  <li><strong>True Negative</strong>: If the alarm does not ring and there was no fire</li>
+</ul>
+
+<p><em>THE FIRE IS NEGATIVE AND THIS PREDICTION WAS TRUE</em></p>
+
+<h3 id="8-what-is-a-confusion-matrix">8. What is a Confusion Matrix?</h3>
+
+<h3 id="9-what-is-the-difference-between-inductive-and-deductive-learning">9. What is the difference between inductive and deductive learning?</h3>
+
+<ul>
+  <li>
+    <p><strong>Inductive learning</strong> is the process of using observations to draw conclusions</p>
+  </li>
+  <li>
+    <p><strong>Deductive learning</strong> is the process of using conclusions to form observations</p>
+  </li>
+</ul>
+
+<center>
+<img src="/images/posts/mlnotes/1.png" />
+</center>
+
+<h3 id="10-how-is-knn-different-from-k-means-clustering">10. How is KNN different from K-means clustering?</h3>
+<ol>
+  <li><strong>K-Nearest Neighbour</strong>
+    <ul>
+      <li>Supervised Technique</li>
+      <li>Used for Classification or Regression</li>
+      <li>“K” in KNN represents the number of nearest neighbours used to classify or predict in case of continous variable/regression</li>
+    </ul>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<ol>
+  <li><strong>K-Means Clustering</strong>
+    <ul>
+      <li>Unsupervised Technique</li>
+      <li>Used for Clustering</li>
+      <li>“K” in K Means represent the number of clusters the algorithm is trying to identify or learn from the data</li>
+    </ul>
+
+    <center>
+ <img src="/images/posts/mlnotes/2.png" />
+ </center>
+  </li>
+</ol>
+
+<h3 id="11-what-is-roc-curve-and-what-does-it-represent">11. What is ROC curve and what does it represent?</h3>
+<p><strong>Receiver Operating Characteristic</strong> curve is a fundamental tool for diagnostic test evaluation and is a plot of the true positive rate (Sensivity) against the false positive rate (Specifity) for the different possible cut-off points of a diagnostic test.</p>
+
+<p><br /></p>
+
+<center>
+<img src="/images/posts/mlnotes/3.png" />
+</center>
+
+<p><br /></p>
+
+<ul>
+  <li>it shows the trade-off between sensitivity and specifity (any increase in sensitivity will be accompanied by a decrease in specifity)</li>
+  <li>the closer the curve follows the left-hand border and then the top border of the ROC space</li>
+</ul>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2021/9_Experimental_Design_ML/">
+        Experimental Design
+      </a>
+    </h1>
+
+    <time datetime="2021-02-21T15:10:35+00:00" class="post-date">21 Feb 2021</time>
+
+    <h3 id="ab-testing">A/B Testing</h3>
+
+<ul>
+  <li>A controlled experiment, usually in the context of a website</li>
+  <li>You test the performance of some change to your website (the variant) and measure conversion relative to your unchanged site (the control).</li>
+</ul>
+
+<center>
+<img src="/images/posts/ab/1.png" />
+</center>
+
+<p>Ideally choose what you are trying to influence:</p>
+<ul>
+  <li>oder amount</li>
+  <li>profit</li>
+  <li>ad clicks</li>
+  <li>order quantity</li>
+</ul>
+
+<p>But attributing actions downstream from your change can be hard</p>
+<ul>
+  <li>Especially if you;re running more than one experiment</li>
+</ul>
+
+<p><strong>VARIANCE IS THE ENEMY</strong>
+Common mistake:</p>
+<ul>
+  <li>Run a test for some small period of time that results in a few purchases to analyze</li>
+  <li>You take the mean order amount from a and B, and declare victory or defeat</li>
+  <li>But there’s so much random variation in order amounts to begin with, tha your results was just based on chance</li>
+  <li>You then fool yourself into thinking some change to your website, which could actually be harmful, has made tons of money</li>
+  <li>Sometimes you need to also look at conversion metrics with less variance</li>
+  <li>Order quantities vs order dollar amounts, for example</li>
+</ul>
+
+<h3 id="t-tests-and-p-values">T-Tests and P-Values</h3>
+
+<p>So, how do we know if a result is likely to be “real” as opposed to just random variation?</p>
+
+<p>T-Test and P-Values!</p>
+
+<h4 id="the-t-statistic">The T-Statistic</h4>
+
+<ul>
+  <li>A measure of the difference between the two sets expressed in units of standard error</li>
+  <li>The size of the difference relative to the variance in the data</li>
+  <li>A high T value means there’s probably a real difference between the two sets</li>
+  <li>Assumes a normal distribution of behavior
+    <ul>
+      <li>This is a good assumption of you’re measuring revenue as conversion</li>
+      <li>Fisher’s exact test (clickthrough rates), E-test (for transactions per user), and chi-squared test (for product quantities purchased)</li>
+    </ul>
+  </li>
+  <li>miara różnicy między dwoma zestawami wyrażona w jednostkach błędu standardowego</li>
+  <li>wielkość różnicy w stosunku do wariancji danych</li>
+  <li>Wysoka wartość T oznacza, że prawdopodobnie istnieje prawdziwa różnica między dwoma zestawami</li>
+  <li>Zakłada normalny rozkład zachowania
+    <ul>
+      <li>To dobre założenie, że mierzysz przychody jako konwersje</li>
+      <li>Dokładny test Fishera (współczynniki klikalności), E-test (dla transakcji na użytkownika) i test chi-kwadrat (dla ilości zakupionych produktów)</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="the-p-value">The P-Value</h4>
+<ul>
+  <li>Think of it as the probability of A and B satisfying the “null hypothesis” (that there is no real difference between the control and treatment’s behaviour)</li>
+  <li><strong>So, a low P-Value implies significance.</strong></li>
+  <li>
+    <p>It is the probability of an observer lying at an extreme t-value assuming the null hypothesis.</p>
+  </li>
+  <li>Potraktuj to jako prawdopodobieństwo spełnienia przez A i B „hipotezy zerowej”</li>
+  <li>Tak więc niska wartość P oznacza znaczenie.</li>
+  <li>Jest to prawdopodobieństwo, że obserwator leży na skrajnej wartości t przy założeniu hipotezy zerowej.</li>
+</ul>
+
+<center>
+<img src="/images/posts/ab/2.png" />
+</center>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">26.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=-14.20191652286491, pvalue=1.4847065535663492e-45)
+</code></pre></div></div>
+
+<p>The t-statistic is a measure of the difference between the two sets expressed in units of standard error. Put differently, it’s the size of the difference relative to the variance in the data. A high t value means there’s probably a real difference between the two sets; you have “significance”. The P-value is a measure of the probability of an observation lying at extreme t-values; so a low p-value also implies “significance.” If you’re looking for a “statistically significant” result, you want to see a very low p-value and a high t-statistic (well, a high absolute value of the t-statistic more precisely). In the real world, statisticians seem to put more weight on the p-value result.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=-0.07828796143840591, pvalue=0.9375997767163184)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span>
+
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=0.5752102121870725, pvalue=0.5651497840962222)
+</code></pre></div></div>
+
+<p>Our p-value actually got a little lower, and the t-test a little larger, but still not enough to declare a real difference. So, you could have reached the right decision with just 10,000 samples instead of 100,000. Even a million samples doesn’t help, so if we were to keep running this A/B test for years, you’d never acheive the result you’re hoping for:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">)</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">25.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">)</span>
+
+<span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=0.16312002647674892, pvalue=0.8704239486112085)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">stats</span><span class="o">.</span><span class="n">ttest_ind</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ttest_indResult(statistic=0.0, pvalue=1.0)
+</code></pre></div></div>
+
+<h4 id="how-do-i-know-when-im-done-with-ab-test">How do I know when I’m done with A/B test?</h4>
+<ul>
+  <li>You have achieved significance (positive or negative)</li>
+  <li>You no longer observe meaningful trends in your p-value
+    <ul>
+      <li>That is, you don’t see any indication that your experiment will “converge” on a result over time</li>
+    </ul>
+  </li>
+  <li>You reach some pre-established upper bound on time</li>
+</ul>
+
+<center>
+<img src="/images/posts/ab/3.png" />
+</center>
+
+<center>
+<img src="/images/posts/ab/4.png" />
+</center>
+
+<center>
+<img src="/images/posts/ab/5.png" />
+</center>
+
+<center>
+<img src="/images/posts/ab/6.png" />
+</center>
+
+<center>
+<img src="/images/posts/ab/7.png" />
+</center>
+
+<center>
+<img src="/images/posts/ab/8.png" />
+</center>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2021/6_Reinforcement_Learning/">
+        Reinforcement
+      </a>
+    </h1>
+
+    <time datetime="2021-02-16T15:10:35+00:00" class="post-date">16 Feb 2021</time>
+
+    <h3 id="reinforcement-learning">Reinforcement Learning</h3>
+
+<center>
+<img src="/images/posts/reinforcement/1.png" />
+</center>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">gym</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">streets</span> <span class="o">=</span> <span class="n">gym</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s">"Taxi-v3"</span><span class="p">)</span><span class="o">.</span><span class="n">env</span>
+<span class="n">streets</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+---------+
+|[34;1mR[0m: | : :G|
+| : | : : |
+| : : : : |
+| | : | : |
+|[35mY[0m| : |B:[43m [0m|
++---------+
+</code></pre></div></div>
+
+<center>
+<img src="/images/posts/reinforcement/2.png" />
+</center>
+
+<center>
+<img src="/images/posts/reinforcement/3.png" />
+</center>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">initial_state</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">streets</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">initial_state</span>
+
+<span class="n">streets</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+---------+
+|[35mR[0m: | : :G|
+| : | : : |
+| : : :[43m [0m: |
+| | : | : |
+|[34;1mY[0m| : |B: |
++---------+
+</code></pre></div></div>
+
+<p>Reward table for initial state</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">streets</span><span class="o">.</span><span class="n">P</span><span class="p">[</span><span class="n">initial_state</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{0: [(1.0, 368, -1, False)],
+ 1: [(1.0, 168, -1, False)],
+ 2: [(1.0, 288, -1, False)],
+ 3: [(1.0, 248, -1, False)],
+ 4: [(1.0, 268, -10, False)],
+ 5: [(1.0, 268, -10, False)]}
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">q_table</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="n">streets</span><span class="o">.</span><span class="n">observation_space</span><span class="o">.</span><span class="n">n</span><span class="p">,</span> <span class="n">streets</span><span class="o">.</span><span class="n">action_space</span><span class="o">.</span><span class="n">n</span><span class="p">])</span>
+
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">discount_factor</span> <span class="o">=</span> <span class="mf">0.6</span>
+<span class="n">exploration</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">10000</span>
+
+<span class="k">for</span> <span class="n">taxi_run</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+    <span class="n">done</span> <span class="o">=</span> <span class="bp">False</span>
+    
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">done</span><span class="p">:</span>
+        <span class="n">random_value</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">random_value</span> <span class="o">&lt;</span> <span class="n">exploration</span><span class="p">:</span>
+            <span class="n">action</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">action_space</span><span class="o">.</span><span class="n">sample</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">action</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+        <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        
+        <span class="n">prev_q</span> <span class="o">=</span> <span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span>
+        <span class="n">next_max_q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="nb">max</span><span class="p">(</span><span class="n">q_table</span><span class="p">[</span><span class="n">next_state</span><span class="p">])</span>
+        <span class="n">new_q</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">learning_rate</span><span class="p">)</span> <span class="o">*</span> <span class="n">prev_q</span> <span class="o">+</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="p">(</span><span class="n">reward</span> <span class="o">+</span> <span class="n">discount_factor</span> <span class="o">*</span> <span class="n">next_max_q</span><span class="p">)</span>
+        <span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">,</span> <span class="n">action</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_q</span>
+        
+        <span class="n">state</span> <span class="o">=</span> <span class="n">next_state</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">q_table</span><span class="p">[</span><span class="n">initial_state</span><span class="p">]</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([-2.42183261, -2.41198054, -2.40077085, -2.3639511 , -7.73977613,
+       -8.61763809])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+
+<span class="k">for</span> <span class="n">tripnum</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+    
+    <span class="n">done</span> <span class="o">=</span> <span class="bp">False</span>
+    
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">done</span><span class="p">:</span>
+        <span class="n">action</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">q_table</span><span class="p">[</span><span class="n">state</span><span class="p">])</span>
+        <span class="n">next_state</span><span class="p">,</span> <span class="n">reward</span><span class="p">,</span> <span class="n">done</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="n">clear_output</span><span class="p">(</span><span class="n">wait</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Trip number - {}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">tripnum</span><span class="p">)))</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">streets</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s">"ansi"</span><span class="p">))</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mf">.5</span><span class="p">)</span>
+        <span class="n">state</span> <span class="o">=</span> <span class="n">next_state</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Trip number - 2
++---------+
+|[35mR[0m: | : :[34;1mG[0m|
+| : | : : |
+| : : : : |
+| |[43m [0m: | : |
+|Y| : |B: |
++---------+
+  (West)
+</code></pre></div></div>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2019/trash-mobile/">
+        Mobile Trash Classifier
+      </a>
+    </h1>
+
+    <time datetime="2019-09-22T00:00:00+01:00" class="post-date">22 Sep 2019</time>
 
     
 
@@ -54,51 +591,12 @@
   
   <article class="post">
     <h1 class="post-title">
-      <a href="/2018/ai-rock-paper-scissors/">
-        AI Rock-Paper-Scissors
+      <a href="/2019/cars-price/">
+        Cars' Prices Comparison
       </a>
     </h1>
 
-    <time datetime="2018-10-21T00:00:00+01:00" class="post-date">21 Oct 2018</time>
-
-    
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2018/COVID-dash/">
-        COVID Tracking Dashboard
-      </a>
-    </h1>
-
-    <time datetime="2018-10-19T00:00:00+01:00" class="post-date">19 Oct 2018</time>
-
-    
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2018/south-north/">
-        Oslo and Rome Neighbourhoods Clustering
-      </a>
-    </h1>
-
-    <time datetime="2018-09-22T00:00:00+01:00" class="post-date">22 Sep 2018</time>
-
-    
-
-  </article>
-  
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2018/match/">
-        Finding Match Highlights
-      </a>
-    </h1>
-
-    <time datetime="2018-09-22T00:00:00+01:00" class="post-date">22 Sep 2018</time>
+    <time datetime="2019-09-20T00:00:00+01:00" class="post-date">20 Sep 2019</time>
 
     
 
@@ -132,7 +630,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-15T18:11:59+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-16T22:43:21+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

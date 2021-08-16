@@ -10,7 +10,9 @@ image: 'images/blog/predictive.png'
 ---
 ### Linear Regression
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/pred_mod/1.png">
+</center>
 
 Least squares minimizes the sum of squared errors
 
@@ -31,7 +33,7 @@ plt.show()
 ```
 
 
-![png](output_3_0.png)
+![png](/images/posts/pred_mod/output_3_0.png)
 
 
 
@@ -68,15 +70,19 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![png](/images/posts/pred_mod/output_7_0.png)
 
 
 ### Polynomial Regression
 
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/pred_mod/2.png">
+</center>
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/pred_mod/3.png">
+</center>
 
 
 ```python
@@ -90,7 +96,7 @@ plt.show()
 ```
 
 
-![png](output_11_0.png)
+![png](/images/posts/pred_mod/output_11_0.png)
 
 
 
@@ -123,7 +129,7 @@ plt.show()
 ```
 
 
-![png](output_14_0.png)
+![png](/images/posts/pred_mod/output_14_0.png)
 
 
 
@@ -143,9 +149,13 @@ r2
 
 ### Multiple regression
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/pred_mod/4.png">
+</center>
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/pred_mod/5.png">
+</center>
 
 
 ```python
@@ -355,7 +365,7 @@ groups["Price"].plot.line()
 
 
 
-![png](output_22_1.png)
+![png](/images/posts/pred_mod/output_22_1.png)
 
 
 
@@ -602,11 +612,10 @@ scaled, predicted
 
 ### Multi-Level Models
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/pred_mod/6.png">
+</center>
 
-![image.png](attachment:image.png)
-
-
-```python
-
-```
+<center>
+<img src="/images/posts/pred_mod/7.png">
+</center>

@@ -14,7 +14,9 @@ image: 'images/blog/abtest.png'
 - A controlled experiment, usually in the context of a website
 - You test the performance of some change to your website (the variant) and measure conversion relative to your unchanged site (the control).
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/ab/1.png">
+</center>
 
 Ideally choose what you are trying to influence:
 - oder amount
@@ -65,7 +67,9 @@ T-Test and P-Values!
 - Tak więc niska wartość P oznacza znaczenie.
 - Jest to prawdopodobieństwo, że obserwator leży na skrajnej wartości t przy założeniu hipotezy zerowej.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/ab/2.png">
+</center>
 
 
 ```python
@@ -154,19 +158,26 @@ stats.ttest_ind(A, A)
     - That is, you don't see any indication that your experiment will "converge" on a result over time
 - You reach some pre-established upper bound on time
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/ab/3.png">
+</center>
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/ab/4.png">
+</center>
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/ab/5.png">
+</center>
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/ab/6.png">
+</center>
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/ab/7.png">
+</center>
 
-![image.png](attachment:image.png)
-
-
-```python
-
-```
+<center>
+<img src="/images/posts/ab/8.png">
+</center>

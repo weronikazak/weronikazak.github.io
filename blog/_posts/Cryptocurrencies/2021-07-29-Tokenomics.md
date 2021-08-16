@@ -10,6 +10,10 @@ image: 'images/blog/tokenomics.jpeg'
 
 ---
 
+<center>
+<img src="/images/blog/tokenomics.jpeg" style="max-width: 600px">
+</center>
+
 ## TOKENOMICS
 **Tokenomics - Token economics.** Include a whole series of metrics relating to cryptocurrency, coin or token such as supply, allocation, distribution, emission and utility.
 
@@ -169,9 +173,21 @@ Small circulating supplies can also threaten that value in near or distant futur
 
 Usually its worth to value crypto based on their fully diluted market caps. This makes it easy to spot when a cryto is overvaluated or undervaluated regardless of its price tag.
 
-https://youtu.be/ftCaqG7wckg
+
+-------------
+
+##### LINKS:
+
+- <a href="https://www.lookintobitcoin.com/charts/stock-to-flow-model/"> Bitcoin Stock To Flow </a>
+- <a href="https://www.coinbureau.com/review/litecoin-ltc/"> Litecoin Explained </a>
+- <a href="https://www.dapp.com/"> Cryptocurrency Decentralized Applications List </a>
+- <a href="https://www.trustnodes.com/2020/08/14/chainlink-devs-dump"> Chainlink Developers Selling LINK </a>
+- <a href="https://www.coinbureau.com/review/haven-protocol-xhv/"> Haven Protocol Privacy Explained </a>
+- <a href="https://www.coinbureau.com/review/dogecoin-doge/">  Dogecoin History Explained </a>
 
 
-```python
+**THE NOTES WERE BASED ON THE VIDEO BELOW.**
 
-```
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ftCaqG7wckg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>

@@ -8,6 +8,12 @@ description: "What gives cryptocurrencies their value? It depends on which crypt
 image: 'images/blog/categories.jpeg'
 
 ---
+
+<center>
+<img src="/images/blog/categories.jpeg" style="max-width: 600px">
+</center>
+
+
 ## WHAT GIVES CRYPTOCURRENCIES THEIR VALUE?
 It depends on which crypto coin or token you're talking about.
 There are over 7000 cryptocurrencies and each of them has its own purpose or use case that's meant to give it value.
@@ -28,6 +34,10 @@ This is because each crypto category has its own pros and cons.
 They also tend to pump and dump at different points during a bull market.
 
 ### 1. STORE OF VALUE
+<center>
+<img src="/images/posts/categories/value.jpg">
+</center>
+
 The first category of cryptocurrencies is **store of value cryptocurrencies**.
 
 As the name suggests, store of value cryptocurrencies are designed to **hold or even increase their purchasing power over time**.
@@ -106,6 +116,11 @@ This limited functionality is why many people believe Bitcoin will eventually no
 The crypto that will flip Bitcoin will likely come from the second category.
 
 ## 2. SMART CONTRACTS
+
+<center>
+<img src="/images/posts/categories/smart.png">
+</center>
+
 Smart contract cryptos are designed to be programmable with less emphasis on storing value.
 
 Here's why this is valuable.
@@ -195,6 +210,10 @@ Unless you have the money to invest in all of them you really must do your resea
 
 ## 3. ORACLE
 
+<center>
+<img src="/images/posts/categories/oracle.png">
+</center>
+
 **Oracle cryptos make it possible to bring real-world data to smart contract cryptocurrency blockchains.**
 
 Most of the applications you use every day require some sort of real-world data, be it date and time, weather, or the price of something you're buying or selling.
@@ -239,6 +258,10 @@ Examples of these coins - BAND protocol and API 3.
 
 ## 4. PAYMENT CRYPTOS
 
+<center>
+<img src="/images/posts/categories/payment.png">
+</center>
+
 Payment cryptos aim to replace the current payment systems we use today and sometimes use smart contract technology to do this.
 
 ##### EXAMPLES OF CURRENT PAYMENT SYSTEM
@@ -281,6 +304,10 @@ The primary disadvantage of payment cryptocurrencies is that it's extremely unli
 This is in part, because most payment cryptocurrencies don't have a stable price, and also because governments have shown us that they will step in to prevent people from using these cryptos as payment.
 
 ## 5. PRIVACY CRYPTO
+
+<center>
+<img src="/images/posts/categories/privacy.png">
+</center>
 
 Privacy cryptos are designed to preserve your privacy when making transactions or using Dapps.
 
@@ -346,6 +373,10 @@ This is thanks to advanced cryptography.
 
 ## 6. EXCHANGE TOKENS
 
+<center>
+<img src="/images/posts/categories/exchange.png">
+</center>
+
 Exchange tokens are owned and operated by the cryptocurrency exchanges they belong to.
 
 You can think of exchange tokens as being a combination of a membership subscription and company stock.
@@ -377,6 +408,10 @@ As cryptocurrency exchanges become more and more powerful, regulators are slowly
 As we've seen all it takes is a single negative announcement about an exchange to crash its token.
 
 ## 7. MEME COINS
+
+<center>
+<img src="/images/posts/categories/meme.jpg">
+</center>
 
 Now, most meme coins have no specific use case and exist for no other reason besides hype and a false promise of profit.
 
@@ -436,7 +471,20 @@ This is because meme coins are the most manipulated cryptocurrencies on the mark
 
 It makes Bitcoin's price manipulation look like child's play.
 
+-------------
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+##### LINKS:
+
+- <a href="https://www.lookintobitcoin.com/charts/stock-to-flow-model/"> Bitcoin Stock To Flow </a>
+- <a href="https://www.coinbureau.com/review/litecoin-ltc/"> Litecoin Explained </a>
+- <a href="https://www.dapp.com/"> Cryptocurrency Decentralized Applications List </a>
+- <a href="https://www.trustnodes.com/2020/08/14/chainlink-devs-dump"> Chainlink Developers Selling LINK </a>
+- <a href="https://www.coinbureau.com/review/haven-protocol-xhv/"> Haven Protocol Privacy Explained </a>
+- <a href="https://www.coinbureau.com/review/dogecoin-doge/">  Dogecoin History Explained </a>
+
+
+**THE NOTES WERE BASED ON THE VIDEO BELOW.**
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7NYmape2ylA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>

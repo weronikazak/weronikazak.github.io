@@ -8,6 +8,12 @@ description: "Cryptocurrencies are like regular currecncies except they are enti
 image: 'images/blog/beginner.jpg'
 
 ---
+
+<center>
+<img src="/images/blog/beginner.jpg" style="max-width: 600px">
+</center>
+
+
 ## WHAT IS CRYPTOCURRENCY?
 Cryptocurrencies are like regular currecncies except they are entirely digital. Each idividual cryptocurrency coin is fundamentally just a collection of numbers and letters.
 
@@ -275,9 +281,22 @@ The other 90 cryptocurrencies in the top 100 could still see gains of 3 to 5x, b
 I would personally stay away from any crypto that isn't among the top 200 by market cap.
 
 
+-------------
+
+##### LINKS:
+
+- <a href="https://wtfhappenedin1971.com/">Why Cash Is Trash </a>
+- <a href="https://www.coinbureau.com/review/dogecoin-doge/"> Dogecoin Explained </a>
+- <a href="https://www.circle.com/en/usdc">Circle USDC Website </a>
+- <a href="https://www.paxos.com/paxgold/"> Paxos PAX Gold Website </a>
+- <a href="https://www.forbes.com/sites/haileylennon/2021/01/19/the-false-narrative-of-bitcoins-role-in-illicit-activity/"> Bitcoin Use In Crime </a>
+- <a href="https://www.lookintobitcoin.com/charts/stock-to-flow-model/"> Bitcoin Stock To Flow </a>
+- <a href="https://www.coinbureau.com/review/aave-lend/"> Cryptocurrency Lending And Borrowing Explained </a>
+- <a href="https://www.theblockcrypto.com/post/99639/visa-now-settles-payments-in-usdc-stablecoin-ethereum"> Visa USDC On Ethereum </a>
 
 
+**THE NOTES WERE BASED ON THE VIDEO BELOW.**
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VYWc9dFqROI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
