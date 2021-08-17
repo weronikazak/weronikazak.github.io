@@ -41,6 +41,293 @@
   
   <article class="post">
     <h1 class="post-title">
+      <a href="/2021/3_Machine_Learning_w_Python/">
+        Machine Learning with Python, Part 1
+      </a>
+    </h1>
+
+    <time datetime="2021-04-21T16:10:35+01:00" class="post-date">21 Apr 2021</time>
+
+    <h3 id="train--test-split">Train / Test split</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pageSpeed</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">purchaseAmount</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">50.0</span><span class="p">,</span> <span class="mf">30.0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">pageSpeed</span><span class="p">,</span> <span class="n">purchaseAmount</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/Machine Learning/mlpython/output_2_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">trainX</span> <span class="o">=</span> <span class="n">pageSpeed</span><span class="p">[:</span><span class="mi">80</span><span class="p">]</span>
+<span class="n">testX</span> <span class="o">=</span> <span class="n">pageSpeed</span><span class="p">[</span><span class="mi">80</span><span class="p">:]</span>
+
+<span class="n">trainy</span> <span class="o">=</span> <span class="n">purchaseAmount</span><span class="p">[:</span><span class="mi">80</span><span class="p">]</span>
+<span class="n">testy</span> <span class="o">=</span> <span class="n">purchaseAmount</span><span class="p">[</span><span class="mi">80</span><span class="p">:]</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">trainX</span><span class="p">,</span> <span class="n">trainy</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/Machine Learning/mlpython/output_4_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">trainX</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">trainy</span><span class="p">)</span>
+
+<span class="n">p4</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">()</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">])</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span> <span class="n">p4</span><span class="p">(</span><span class="n">xp</span><span class="p">),</span> <span class="n">c</span><span class="o">=</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/Machine Learning/mlpython/output_6_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">testx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">testX</span><span class="p">)</span>
+<span class="n">testy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">testy</span><span class="p">)</span>
+
+<span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">()</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">7</span><span class="p">])</span>
+<span class="n">axes</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">200</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">testx</span><span class="p">,</span> <span class="n">testy</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span> <span class="n">p4</span><span class="p">(</span><span class="n">xp</span><span class="p">),</span> <span class="n">c</span><span class="o">=</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/Machine Learning/mlpython/output_7_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
+
+<span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">testy</span><span class="p">,</span> <span class="n">p4</span><span class="p">(</span><span class="n">testx</span><span class="p">))</span>
+<span class="n">r2</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-0.12120962193840445
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">trainy</span><span class="p">),</span> <span class="n">p4</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">trainX</span><span class="p">)))</span>
+<span class="n">r2</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.055981669130389156
+</code></pre></div></div>
+
+<h3 id="bayesian-methods">Bayesian Methods</h3>
+
+<p><img src="/images/posts/Machine Learning/mlpython/1.png" alt="image.png" /></p>
+
+<p><img src="/images/posts/Machine Learning/mlpython/2.png" alt="image.png" /></p>
+
+<h3 id="naive-bayes">Naive Bayes</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">MultinomialNB</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">readFiles</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">r</span><span class="p">,</span> <span class="n">dirname</span><span class="p">,</span> <span class="n">filenames</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">filenames</span><span class="p">:</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+            
+            <span class="n">inBody</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s">'r'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">"latin1"</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">inBody</span><span class="p">:</span>
+                    <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">line</span> <span class="o">==</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">:</span>
+                    <span class="n">inBody</span> <span class="o">=</span> <span class="bp">True</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">message</span> <span class="o">=</span> <span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+            <span class="k">yield</span> <span class="n">message</span>
+
+<span class="k">def</span> <span class="nf">dfFromDirectory</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">classification</span><span class="p">):</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">readFiles</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+        <span class="n">rows</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s">"message"</span><span class="p">:</span><span class="n">message</span><span class="p">,</span> <span class="s">"class"</span><span class="p">:</span><span class="n">classification</span><span class="p">})</span>
+    
+    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">rows</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s">"message"</span><span class="p">:[],</span> <span class="s">"class"</span><span class="p">:[]})</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dfFromDirectory</span><span class="p">(</span><span class="s">"emails/spam"</span><span class="p">,</span> <span class="s">"spam"</span><span class="p">))</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dfFromDirectory</span><span class="p">(</span><span class="s">"emails/ham"</span><span class="p">,</span> <span class="s">"ham"</span><span class="p">))</span>
+<span class="n">df</span>
+</code></pre></div></div>
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>message</th>
+      <th>class</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Tr...</td>
+      <td>spam</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1) Fight The Risk of Cancer!\n\nhttp://www.adc...</td>
+      <td>spam</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1) Fight The Risk of Cancer!\n\nhttp://www.adc...</td>
+      <td>spam</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>##############################################...</td>
+      <td>spam</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>I thought you might like these:\n\n1) Slim Dow...</td>
+      <td>spam</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2495</th>
+      <td>Man killed 'trying to surf' on Tube train \n\n...</td>
+      <td>ham</td>
+    </tr>
+    <tr>
+      <th>2496</th>
+      <td>Hi Gianni,\n\n\n\nA very good resource for thi...</td>
+      <td>ham</td>
+    </tr>
+    <tr>
+      <th>2497</th>
+      <td>Gianni Ponzi wrote:\n\n&gt; I have a prob when tr...</td>
+      <td>ham</td>
+    </tr>
+    <tr>
+      <th>2498</th>
+      <td>Neale Pickett &lt;neale@woozle.org&gt; writes:\n\n\n...</td>
+      <td>ham</td>
+    </tr>
+    <tr>
+      <th>2499</th>
+      <td>\n\nHi,\n\n\n\nI think you need to give us a l...</td>
+      <td>ham</td>
+    </tr>
+  </tbody>
+</table>
+<p>3000 rows × 2 columns</p>
+</div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">vectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span>
+<span class="n">counts</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">"message"</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">classifier</span> <span class="o">=</span> <span class="n">MultinomialNB</span><span class="p">()</span>
+<span class="n">targets</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">"class"</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span> <span class="n">targets</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">examples</span> <span class="o">=</span> <span class="p">[</span><span class="s">"DISCOUNT ON THE NEWEST GUCCI FASHION"</span><span class="p">,</span> <span class="s">"Hi, wassup, are yu free tomorrow?"</span><span class="p">]</span>
+<span class="n">example_counts</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">examples</span><span class="p">)</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">example_counts</span><span class="p">)</span>
+<span class="n">predictions</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array(['spam', 'ham'], dtype='&lt;U4')
+</code></pre></div></div>
+
+<h3 id="k-means-clustering">K-Means Clustering</h3>
+
+<p><img src="/images/posts/Machine Learning/mlpython/3.png" alt="image.png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">createClusteredData</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+    <span class="n">pointsPerCluster</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="o">/</span><span class="n">k</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+        <span class="n">incomeCentroid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">2000.</span><span class="p">,</span> <span class="mf">200000.</span><span class="p">)</span>
+        <span class="n">ageCentroid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">20.0</span><span class="p">,</span> <span class="mf">70.</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">pointsPerCluster</span><span class="p">)):</span>
+            <span class="n">X</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">incomeCentroid</span><span class="p">,</span> <span class="mf">10000.</span><span class="p">),</span> 
+                      <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">ageCentroid</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">)])</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">X</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">scale</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">createClusteredData</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">scale</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">model</span><span class="o">.</span><span class="n">labels_</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([4, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4, 4, 4, 4, 4, 4, 3, 3,
+       3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2,
+       2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 4, 1, 1, 1,
+       1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">data</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">labels_</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="nb">float</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/Machine Learning/mlpython/output_25_0.png" alt="png" /></p>
+
+<h3 id="entropy">Entropy</h3>
+
+<p><img src="/images/posts/Machine Learning/mlpython/4.png" alt="image.png" /></p>
+
+<p><img src="/images/posts/Machine Learning/mlpython/5.png" alt="image.png" /></p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
       <a href="/2021/Notes/">
         Machine Learning General Questions
       </a>
@@ -51,7 +338,7 @@
     <h1 id="machine-learning-questions">MACHINE LEARNING QUESTIONS</h1>
 
 <center>
-<img src="/images/blog/ml.png" style="max-width: 500px" />
+<img src="/images/posts/Machine Learning/mlnotes/ml.png" style="max-width: 500px" />
 </center>
 
 <h3 id="1-what-are-the-different-types-of-machine-learning">1. What are the different types of Machine Learning?</h3>
@@ -212,7 +499,7 @@ To stay on good terms with your girlfriend, you need to recall all the 10 events
 </ul>
 
 <center>
-<img src="/images/posts/mlnotes/1.png" />
+<img src="/images/posts/Machine Learning/mlnotes/1.PNG" />
 </center>
 
 <h3 id="10-how-is-knn-different-from-k-means-clustering">10. How is KNN different from K-means clustering?</h3>
@@ -237,7 +524,7 @@ To stay on good terms with your girlfriend, you need to recall all the 10 events
     </ul>
 
     <center>
- <img src="/images/posts/mlnotes/2.png" />
+ <img src="/images/posts/Machine Learning/mlnotes/2.PNG" />
  </center>
   </li>
 </ol>
@@ -248,7 +535,7 @@ To stay on good terms with your girlfriend, you need to recall all the 10 events
 <p><br /></p>
 
 <center>
-<img src="/images/posts/mlnotes/3.png" />
+<img src="/images/posts/Machine Learning/mlnotes/3.PNG" />
 </center>
 
 <p><br /></p>
@@ -277,7 +564,7 @@ To stay on good terms with your girlfriend, you need to recall all the 10 events
 </ul>
 
 <center>
-<img src="/images/posts/ab/1.png" />
+<img src="/images/posts/Machine Learning/ab/1.PNG" />
 </center>
 
 <p>Ideally choose what you are trying to influence:</p>
@@ -346,7 +633,7 @@ Common mistake:</p>
 </ul>
 
 <center>
-<img src="/images/posts/ab/2.png" />
+<img src="/images/posts/Machine Learning/ab/2.PNG" />
 </center>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
@@ -410,27 +697,27 @@ Common mistake:</p>
 </ul>
 
 <center>
-<img src="/images/posts/ab/3.png" />
+<img src="/images/posts/Machine Learning/ab/3.PNG" />
 </center>
 
 <center>
-<img src="/images/posts/ab/4.png" />
+<img src="/images/posts/Machine Learning/ab/4.PNG" />
 </center>
 
 <center>
-<img src="/images/posts/ab/5.png" />
+<img src="/images/posts/Machine Learning/ab/5.PNG" />
 </center>
 
 <center>
-<img src="/images/posts/ab/6.png" />
+<img src="/images/posts/Machine Learning/ab/6.PNG" />
 </center>
 
 <center>
-<img src="/images/posts/ab/7.png" />
+<img src="/images/posts/Machine Learning/ab/7.PNG" />
 </center>
 
 <center>
-<img src="/images/posts/ab/8.png" />
+<img src="/images/posts/Machine Learning/ab/8.PNG" />
 </center>
 
   </article>
@@ -447,7 +734,7 @@ Common mistake:</p>
     <h3 id="reinforcement-learning">Reinforcement Learning</h3>
 
 <center>
-<img src="/images/posts/reinforcement/1.png" />
+<img src="/images/posts/Machine Learning/reinforcement/1.PNG" />
 </center>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">gym</span>
@@ -470,11 +757,11 @@ Common mistake:</p>
 </code></pre></div></div>
 
 <center>
-<img src="/images/posts/reinforcement/2.png" />
+<img src="/images/posts/Machine Learning/reinforcement/2.PNG" />
 </center>
 
 <center>
-<img src="/images/posts/reinforcement/3.png" />
+<img src="/images/posts/Machine Learning/reinforcement/3.PNG" />
 </center>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">initial_state</span> <span class="o">=</span> <span class="n">streets</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
@@ -589,19 +876,6 @@ Common mistake:</p>
 
   </article>
   
-  <article class="post">
-    <h1 class="post-title">
-      <a href="/2019/cars-price/">
-        Cars' Prices Comparison
-      </a>
-    </h1>
-
-    <time datetime="2019-09-20T00:00:00+01:00" class="post-date">20 Sep 2019</time>
-
-    
-
-  </article>
-  
 </div> -->
 
 
@@ -630,7 +904,7 @@ Common mistake:</p>
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-16T22:43:21+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-18T18:20:37+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

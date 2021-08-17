@@ -49,9 +49,9 @@
 
   <h3 id="decision-tree">Decision Tree</h3>
 
-<p><img src="/images/posts/mlpython2/1.png" alt="image.png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/1.PNG" alt="image.PNG" /></p>
 
-<p><img src="/images/posts/mlpython2/2.png" alt="image.png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/2.PNG" alt="image.PNG" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">no</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
@@ -316,9 +316,9 @@ Name: Hired, dtype: int64
 
 <p>It just means we use models to try and solve the same roblem, and let them vote on the results.</p>
 
-<p><img src="/images/posts/mlpython2/3.png" alt="image.png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/3.PNG" alt="image.PNG" /></p>
 
-<p><img src="/images/posts/mlpython2/4.png" alt="image.png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/4.PNG" alt="image.PNG" /></p>
 
 <h3 id="cgboost">CGBoost</h3>
 
@@ -331,9 +331,9 @@ Name: Hired, dtype: int64
     - routinely winds Kaggle competitions
     - easy to use and fast</p>
 
-<p><img src="/images/posts/mlpython2/5.png" alt="image.png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/5.PNG" alt="image.PNG" /></p>
 
-<p><img src="/images/posts/mlpython2/6.png" alt="image.png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/6.PNG" alt="image.PNG" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
 
@@ -398,13 +398,13 @@ Name: Hired, dtype: int64
 
 <h3 id="support-vector-machines">Support Vector Machines</h3>
 
-<p><img src="/images/posts/mlpython2/6.png" alt="image.png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/6.PNG" alt="image.PNG" /></p>
 
 <p>The important point is that SVM’s employ some advanced mathematical trickery to cluster data, and it can handle datasets with lots of features.</p>
 
 <p>It’s also fairly expensive - the “kernel trick” is the only thing that makes it possible.</p>
 
-<p><img src="/images/posts/mlpython2/7.png" alt="image.png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/7.PNG" alt="image.PNG" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">createClusteredData</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
     <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
@@ -433,7 +433,7 @@ Name: Hired, dtype: int64
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="/images/posts/mlpython2/output_39_0.png" alt="png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/output_39_0.png" alt="png" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">scaling</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">feature_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">scaling</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
@@ -443,7 +443,7 @@ Name: Hired, dtype: int64
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p><img src="/images/posts/mlpython2/output_40_0.png" alt="png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/output_40_0.png" alt="png" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span><span class="p">,</span> <span class="n">datasets</span>
 
@@ -475,7 +475,7 @@ Name: Hired, dtype: int64
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plotPredictions</span><span class="p">(</span><span class="n">svc</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p><img src="/images/posts/mlpython2/output_43_0.png" alt="png" /></p>
+<p><img src="/images/posts/Machine Learning/mlpython2/output_43_0.png" alt="png" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">svc</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">scaling</span><span class="o">.</span><span class="n">transform</span><span class="p">([[</span><span class="mi">20000</span><span class="p">,</span> <span class="mi">40</span><span class="p">]]))</span>
 </code></pre></div></div>
@@ -496,7 +496,7 @@ Name: Hired, dtype: int64
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-16T22:43:21+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-18T18:20:37+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

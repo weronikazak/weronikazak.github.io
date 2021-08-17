@@ -4,7 +4,7 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-08-16T22:43:21+01:00</updated>
+ <updated>2021-08-18T18:20:37+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
@@ -18,7 +18,7 @@
    <updated>2021-08-14T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/USDT, USDC, BUSD</id>
    <content type="html">&lt;center&gt;
-&lt;img src=&quot;/images/blog/stable.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/stable.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;stablecoins-recently&quot;&gt;STABLECOINS RECENTLY&lt;/h2&gt;
@@ -48,7 +48,7 @@
 &lt;p&gt;This is why stablecoins are so popular, and it’s also why most of the trading volume for any given coin or token comes from stablecoin pairs.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/1.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/1.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;demand-for-stablecoins-and-price-of-the-coin&quot;&gt;DEMAND FOR STABLECOINS AND PRICE OF THE COIN&lt;/h2&gt;
@@ -67,31 +67,31 @@
 &lt;p&gt;This usually happens whenever the crypto market is dropping like a rock, because everyone is rushing to buy stablecoins to protect their portfolios from further losses.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/2.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/2.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Eventually new stablecoins are minted to meet this demand and restore the dollar peg.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/whale1.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/whale1.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Conversely, when people start selling their stablecoins to buy whichever crypto is currently going to the moon &lt;strong&gt;this sometimes manages to push the price of stable coins below a dollar.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/3.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/3.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;When this happens, stablecoins are burned to reduce the supply, thereby raising the token’s price to put it back in line with its dollar peg.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/whale2.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/whale2.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Whereas crypto, backed and algorithmic stablecoins have automatic and incentive-based systems, which mint and burn tokens to meet demand, fiat-backed stablecoins rely on the companies which issued them to do this.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/demand.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/demand.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;burning-and-minting-stablecoins&quot;&gt;BURNING AND MINTING STABLECOINS&lt;/h2&gt;
@@ -154,7 +154,7 @@
 &lt;/ul&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/tether-back.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/tether-back.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;second-big-player---circle-usdc&quot;&gt;SECOND BIG PLAYER - CIRCLE (USDC)&lt;/h2&gt;
@@ -184,7 +184,7 @@
 &lt;p&gt;This is one of the many reasons, why USDC has been growing at a faster rate than USDT as of late.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/circle-back.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/circle-back.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h3 id=&quot;raport&quot;&gt;RAPORT&lt;/h3&gt;
@@ -213,7 +213,7 @@
 &lt;/ul&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/circle-back.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/circle-back.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;third-player---paxos-busd&quot;&gt;THIRD PLAYER - PAXOS (BUSD)&lt;/h2&gt;
@@ -247,7 +247,7 @@
 &lt;p&gt;According to Whitham, 96% of all Paxos stablecoins are currently backed by cash or cash equivalents with 4% being backed by US treasuries.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/paxos-back.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/paxos-back.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;what-is-it-really-backed-by&quot;&gt;WHAT IS IT REALLY BACKED BY?&lt;/h2&gt;
@@ -283,7 +283,7 @@
 &lt;p&gt;And last, but not least, &lt;strong&gt;other investments, including digital currencies&lt;/strong&gt;, which is probably &lt;strong&gt;Bitcoin&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/tether-back2.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/tether-back2.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h3 id=&quot;circles-usdc&quot;&gt;CIRCLE’S USDC&lt;/h3&gt;
@@ -300,7 +300,7 @@
 &lt;/ul&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/circle-back2.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/circle-back2.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h3 id=&quot;paxos-busd&quot;&gt;PAXOS’ BUSD&lt;/h3&gt;
@@ -308,7 +308,7 @@
 &lt;p&gt;Finally, we have Paxos’s reserves, most of which are, again, some form of public or private debt, and probably include a nice chunk of cash.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/paxos-back.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/paxos-back.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;why-they-hold-so-much-interest&quot;&gt;WHY THEY HOLD SO MUCH INTEREST?&lt;/h2&gt;
@@ -364,7 +364,7 @@
 &lt;p&gt;&lt;strong&gt;In other words, Tether doesn’t guarantee redemption of USDT for fiat at all.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stablecoins/tether-right.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/stablecoins/tether-right.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;final-thoughts&quot;&gt;FINAL THOUGHTS&lt;/h2&gt;
@@ -413,7 +413,7 @@
    <updated>2021-08-12T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/Litecoin</id>
    <content type="html">&lt;center&gt;
-&lt;img src=&quot;/images/blog/litecoin.png&quot; style=&quot;max-width: 200px&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/litecoin.png&quot; style=&quot;max-width: 200px&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;recognizability-and-branding&quot;&gt;RECOGNIZABILITY AND BRANDING&lt;/h2&gt;
@@ -453,7 +453,7 @@
 &lt;p&gt;This made Charlie “&lt;em&gt;realize the importance of the freedom of money&lt;/em&gt;” and this inspired him to begin dabbling in Bitcoin and other cryptocurrencies.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/litecoin/charlie.jpg&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/charlie.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;start-of-ltc---fair-launch&quot;&gt;START OF LTC - FAIR LAUNCH&lt;/h2&gt;
@@ -469,7 +469,7 @@
 &lt;p&gt;Before its launch, Charlie mined Litecoin along with everyone else in the crypto community, in much the same way as Satoshi did with Bitcoin in 2009.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/litecoin/safemoon.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/safemoon.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h5 id=&quot;lighter-version-of-btc-used-for-everyday-payments&quot;&gt;LIGHTER VERSION OF BTC USED FOR EVERYDAY PAYMENTS&lt;/h5&gt;
@@ -507,7 +507,7 @@
 &lt;p&gt;SCrypt was meant to make it possible to mine LTC using a regular computer.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/litecoin/scrypt.jpg&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/scrypt.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;This would make the Litecoin blockchain more decentralized, as anyone would be able to participate on the network.&lt;/p&gt;
@@ -519,7 +519,7 @@
 &lt;p&gt;And since that time, the Litecoin blockchain has become gradually more centralized, with 8 mining pools accounting for most of its mining activity.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/litecoin/antminer.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/antminer.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;ltc-merge-mined-with-dogecoin-for-security-reasons&quot;&gt;LTC MERGE MINED WITH DOGECOIN FOR SECURITY REASONS&lt;/h2&gt;
@@ -539,7 +539,7 @@
 &lt;p&gt;This is why part of me suspects that Litecoin miners are partially to blame for Dogecoin’s crazy price action.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/litecoin/doge.jpg&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/doge.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;speed&quot;&gt;SPEED&lt;/h2&gt;
@@ -844,7 +844,7 @@
    <updated>2021-08-08T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/Inflation</id>
    <content type="html">&lt;center&gt;
-&lt;img src=&quot;/images/blog/inflation.jpeg&quot; style=&quot;max-width: 600px&quot; /&gt;
+&lt;img src=&quot;/images/posts/Economy/inflation/inflation.jpeg&quot; style=&quot;max-width: 600px&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;deflation-in-japan&quot;&gt;DEFLATION IN JAPAN&lt;/h2&gt;
@@ -882,7 +882,7 @@
 &lt;p&gt;For example, this tweet from Dan Held.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/inflation/dan.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Economy/inflation/dan.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Back in April those were the price increases, that we were seeing for some of these commodities.&lt;/p&gt;
@@ -922,7 +922,7 @@
 &lt;p&gt;&lt;strong&gt;What did they expect, when they printed 25% of all the money ever in existence in a single year?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/inflation/money-supply.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Economy/inflation/money-supply.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;why-inflation-is-deadly&quot;&gt;WHY INFLATION IS DEADLY&lt;/h2&gt;
@@ -978,7 +978,7 @@
 &lt;p&gt;Of course, any selling by offshore holders devalues the US dollar relative to other currencies.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/inflation/chart.jpg&quot; /&gt;
+&lt;img src=&quot;/images/posts/Economy/inflation/chart.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;This chart here shows the US dollar index over the past month.&lt;/p&gt;
@@ -992,7 +992,7 @@
 &lt;p&gt;It’s also one of those things, that are hard to reign back in again.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/inflation/dxy.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Economy/inflation/dxy.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h5 id=&quot;cpi-inflation---cpi-basket&quot;&gt;CPI INFLATION - CPI BASKET&lt;/h5&gt;
@@ -1030,7 +1030,7 @@
 &lt;p&gt;Apart from this, most shopping went online, where the price fluctuation can be a lot more rapid and volatile.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/inflation/infl.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Economy/inflation/inflat.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h5 id=&quot;incorrect-data&quot;&gt;INCORRECT DATA&lt;/h5&gt;
@@ -1276,7 +1276,11 @@
    <link href="http://localhost:4000/2021/Chillz/"/>
    <updated>2021-08-01T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/Chillz</id>
-   <content type="html">&lt;h5 id=&quot;killer-project-that-could-get-many-people-into-crypto&quot;&gt;KILLER PROJECT THAT COULD GET MANY PEOPLE INTO CRYPTO&lt;/h5&gt;
+   <content type="html">&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/chiliz.png&quot; style=&quot;max-width: 200px&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h5 id=&quot;killer-project-that-could-get-many-people-into-crypto&quot;&gt;KILLER PROJECT THAT COULD GET MANY PEOPLE INTO CRYPTO&lt;/h5&gt;
 &lt;p&gt;Have you been searching for that killer app, that has the potential to open the floodgates, and bring hundreds of millions of people into crypto?&lt;/p&gt;
 
 &lt;p&gt;Needless to say, that elusive unicorn would likely be valued at a pretty penny, which means, if you got into it at the right time, you could post some truly insane gains.&lt;/p&gt;
@@ -1824,7 +1828,7 @@
    <updated>2021-08-01T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/Technical_Analysis</id>
    <content type="html">&lt;center&gt;
-&lt;img src=&quot;/images/blog/token.jpg&quot; style=&quot;max-width: 600px&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/analysis/analysis.jpg&quot; style=&quot;max-width: 600px&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;history-of-japanese-rice-trader&quot;&gt;HISTORY OF JAPANESE RICE TRADER&lt;/h2&gt;
@@ -2257,7 +2261,11 @@
    <link href="http://localhost:4000/2021/ripple-xrp-icu/"/>
    <updated>2021-07-30T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/ripple-xrp-icu</id>
-   <content type="html">&lt;h5 id=&quot;leading-questions&quot;&gt;LEADING QUESTIONS&lt;/h5&gt;
+   <content type="html">&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/xrp.png&quot; style=&quot;max-width: 200px&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h5 id=&quot;leading-questions&quot;&gt;LEADING QUESTIONS&lt;/h5&gt;
 &lt;p&gt;What is Ripple?&lt;/p&gt;
 
 &lt;p&gt;How does it work?&lt;/p&gt;
@@ -2578,7 +2586,7 @@
    <updated>2021-07-29T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/Tokenomics</id>
    <content type="html">&lt;center&gt;
-&lt;img src=&quot;/images/blog/tokenomics.jpeg&quot; style=&quot;max-width: 600px&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/tokenomics/tokenomics.jpeg&quot; style=&quot;max-width: 600px&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;tokenomics&quot;&gt;TOKENOMICS&lt;/h2&gt;
@@ -2772,7 +2780,7 @@
    <updated>2021-07-27T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/Shiba_Inu</id>
    <content type="html">&lt;center&gt;
-&lt;img src=&quot;/images/blog/shibainu.png&quot; style=&quot;max-width: 200px&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/shibainu.png&quot; style=&quot;max-width: 200px&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;history&quot;&gt;HISTORY&lt;/h2&gt;
@@ -2814,7 +2822,7 @@
 &lt;p&gt;Like some other DEXs, Shibaswap’s launch will begin with a two-week liquidity event, which will incentivize liquidity providers to move their LP tokens from Uniswap and Sushiswap to Shibaswap.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/shibaswap.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/shibaswap.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;dexes-and-liquidity-providing&quot;&gt;DEXES AND LIQUIDITY PROVIDING&lt;/h2&gt;
@@ -2835,11 +2843,11 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;This is exactly what the Shiba Inu community is looking to do, and they’re hoping to lure dog-minded LPs to their decks with bones, literally.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/uni11.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/uni11.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/uni1.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/uni1.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;bone-token&quot;&gt;BONE TOKEN&lt;/h2&gt;
@@ -2855,7 +2863,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;BONE can also be staked to earn more BONE and providing liquidity for the BONE-ETH pair, will allow BONE ease LPs to earn 0.1% of all DAI and USDT swap transactions.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/bone1.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/bone1.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;An interesting setup, to say the least.&lt;/p&gt;
@@ -2867,7 +2875,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;It’s worth noting, that it’s extremely aggressive.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/bone2.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/bone2.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;multi-signature-wallets&quot;&gt;MULTI SIGNATURE WALLETS&lt;/h2&gt;
@@ -2881,7 +2889,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;This is one of the few changes between the two Woof Papers with most relating to the BONE rewards earned by stakers and LPs, which deal in not just BONE and SHIB but another token called LEASH.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/grr.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/grr.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;leash&quot;&gt;LEASH&lt;/h2&gt;
@@ -2903,7 +2911,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;In case you didn’t know, while LEASH has no use case per se, it can be staked to earn BONE and those, who provide liquidity for the LEASH-ETH pair will earn 0.1% of all wrapped BTC and USDC swap transactions.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/leash.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/leash.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;shib&quot;&gt;SHIB&lt;/h2&gt;
@@ -2945,7 +2953,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;It’s unlikely that this money could have been cashed out, because of market depth, but that’s neither here nor there.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/vitalik-burn.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/vitalik-burn.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;shib-token&quot;&gt;SHIB TOKEN&lt;/h2&gt;
@@ -2953,7 +2961,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;As with LEASH, SHIB does not have a specific use case, however SHIB can be staked to earn a boat load of BONE in addition to 0.1% of all ETH swap transaction fees on Shibaswap, which is likely to be lucrative.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/shib.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/shib.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;shib-price-prediction&quot;&gt;SHIB PRICE PREDICTION&lt;/h2&gt;
@@ -2964,7 +2972,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 
 &lt;p&gt;The massive crash that came shortly afterwards was caused by a combination of cell pressure from SHIB donation recipients, coupled with the general crash of the crypto market.&lt;/p&gt;
 
-&lt;p&gt;Even though SHIB has fallen from grace, it still somehow has a market cap of over 3.3 billion dollars and this brings me to a very important point.&lt;/p&gt;
+&lt;p&gt;Even though SHIB has fallen from grace, it still somehow has a market cap of over 3.3 billion dollars and this brings a very important point.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Will never reach a cent much less a dollar, and that’s because its supply is so massive.&lt;/strong&gt;&lt;/p&gt;
 
@@ -2973,7 +2981,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;Raching a dollar would give SHIB a market cap of nearly 400 billion dollars, which would make it larger than Ethereum. That’s not going to happen.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/shib-chart.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/shib-chart.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;peak-in-future-bc-of-unexperienced-investors&quot;&gt;PEAK IN FUTURE BC OF UNEXPERIENCED INVESTORS&lt;/h2&gt;
@@ -2982,7 +2990,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 
 &lt;p&gt;Given that it’s moments away from releasing the Shibaswap DEX, which will drive demand, that doesn’t depend on Dogecoin.&lt;/p&gt;
 
-&lt;p&gt;Call me crazy, but I think we could see SHIB retest its previous all-time high, especially if the rest of the crypto market is moving in the same direction.&lt;/p&gt;
+&lt;p&gt;We could potentially see SHIB retest its previous all-time high, especially if the rest of the crypto market is moving in the same direction.&lt;/p&gt;
 
 &lt;p&gt;SHIB’s Coinbase listing will certainly help, as retail traders pile in under the pretense, that they’ll get rich, if it goes to a dollar, which again, isn’t going to happen.&lt;/p&gt;
 
@@ -2996,7 +3004,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 
 &lt;p&gt;It’s an ERC20 token.&lt;/p&gt;
 
-&lt;p&gt;Now, ERC20 tokens are extremely easy to list on an exchange, so this leads me to believe, that there are other reasons for SHIB’s Coinbase listing delay, and one of these might relate to the Shibaswap DEX.&lt;/p&gt;
+&lt;p&gt;Now, ERC20 tokens are extremely easy to list on an exchange, so this may mean, that there are other reasons for SHIB’s Coinbase listing delay, and one of these might relate to the Shibaswap DEX.&lt;/p&gt;
 
 &lt;p&gt;Coinbase tends to list cryptocurrencies that are complete, and Shiba Inu won’t be complete until the Shibaswap DEX launches.&lt;/p&gt;
 
@@ -3014,7 +3022,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 
 &lt;p&gt;They’re literally like NFTs, and this means that other DEXs can’t pull off the sort of Vampire Attack.&lt;/p&gt;
 
-&lt;p&gt;To my understanding, Shibaswap will be released once Certik completes its audit of the code.&lt;/p&gt;
+&lt;p&gt;Shibaswap will be released once Certik completes its audit of the code.&lt;/p&gt;
 
 &lt;p&gt;While there does not appear to be a set date for this, I couldn’t help but notice, that the latest Woof Paper shows BONE’s emission schedule beginning on July the 1st this year.&lt;/p&gt;
 
@@ -3029,7 +3037,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;All we know is that, it will be a &lt;em&gt;very special token&lt;/em&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/treat.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/treat.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Later this year, we will see the formation of the “&lt;em&gt;DOGGY DAO, a decentralized autonomous organization, that will govern the Shiba Inu ecosystem&lt;/em&gt;”.&lt;/p&gt;
@@ -3037,7 +3045,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;No fixed date has yet been provided for the DAO.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/dao.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/dao.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;shibarium---ethereum-token-andstable-coin-she&quot;&gt;SHIBARIUM - ETHEREUM TOKEN ANDSTABLE COIN SHE&lt;/h2&gt;
@@ -3058,7 +3066,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 
 &lt;p&gt;Anyways, the final goal detailed by Ryoshi involves the creation of ShibaCon, an annual crypto conference for Shiba Inu enthusiasts.&lt;/p&gt;
 
-&lt;p&gt;Tentative dates and locations have already been set for the first 3 ShibaCon conferences, and this brings me to today’s last topic.&lt;/p&gt;
+&lt;p&gt;Tentative dates and locations have already been set for the first 3 ShibaCon conferences.&lt;/p&gt;
 
 &lt;h2 id=&quot;whos-ryoshi&quot;&gt;WHO’S RYOSHI?&lt;/h2&gt;
 
@@ -3079,7 +3087,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
 &lt;p&gt;Regardless of who Ryoshi is, it’s clear, that he has close connections to some very important people in crypto, and this means, that he’s not just some anonymous developer who came out of nowhere.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/shiba/vitalik2.jpg&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/shiba/vitalik2.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;ryoshi-role&quot;&gt;RYOSHI ROLE&lt;/h2&gt;
@@ -3169,7 +3177,7 @@ by incentivizing Sniswap and Sushiswap LPs to move their LP tokens to Shibaswap.
    <updated>2021-07-25T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/categories</id>
    <content type="html">&lt;center&gt;
-&lt;img src=&quot;/images/blog/categories.jpeg&quot; style=&quot;max-width: 600px&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/categories/categories.jpeg&quot; style=&quot;max-width: 600px&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;what-gives-cryptocurrencies-their-value&quot;&gt;WHAT GIVES CRYPTOCURRENCIES THEIR VALUE?&lt;/h2&gt;
@@ -3195,7 +3203,7 @@ There are over 7000 cryptocurrencies and each of them has its own purpose or use
 
 &lt;h3 id=&quot;1-store-of-value&quot;&gt;1. STORE OF VALUE&lt;/h3&gt;
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/categories/value.jpg&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/categories/value.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;The first category of cryptocurrencies is &lt;strong&gt;store of value cryptocurrencies&lt;/strong&gt;.&lt;/p&gt;
@@ -3275,7 +3283,7 @@ While this typically translates to a gradual increase in price over time, price 
 &lt;h2 id=&quot;2-smart-contracts&quot;&gt;2. SMART CONTRACTS&lt;/h2&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/categories/smart.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/categories/smart.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Smart contract cryptos are designed to be programmable with less emphasis on storing value.&lt;/p&gt;
@@ -3368,7 +3376,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 &lt;h2 id=&quot;3-oracle&quot;&gt;3. ORACLE&lt;/h2&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/categories/oracle.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/categories/oracle.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;strong&gt;Oracle cryptos make it possible to bring real-world data to smart contract cryptocurrency blockchains.&lt;/strong&gt;&lt;/p&gt;
@@ -3414,7 +3422,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 &lt;h2 id=&quot;4-payment-cryptos&quot;&gt;4. PAYMENT CRYPTOS&lt;/h2&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/categories/payment.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/categories/payment.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Payment cryptos aim to replace the current payment systems we use today and sometimes use smart contract technology to do this.&lt;/p&gt;
@@ -3460,7 +3468,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 &lt;h2 id=&quot;5-privacy-crypto&quot;&gt;5. PRIVACY CRYPTO&lt;/h2&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/categories/privacy.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/categories/privacy.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Privacy cryptos are designed to preserve your privacy when making transactions or using Dapps.&lt;/p&gt;
@@ -3528,7 +3536,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 &lt;h2 id=&quot;6-exchange-tokens&quot;&gt;6. EXCHANGE TOKENS&lt;/h2&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/categories/exchange.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/categories/exchange.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Exchange tokens are owned and operated by the cryptocurrency exchanges they belong to.&lt;/p&gt;
@@ -3564,7 +3572,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 &lt;h2 id=&quot;7-meme-coins&quot;&gt;7. MEME COINS&lt;/h2&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/categories/meme.jpg&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/categories/meme.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Now, most meme coins have no specific use case and exist for no other reason besides hype and a false promise of profit.&lt;/p&gt;
@@ -3652,7 +3660,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
    <updated>2021-07-24T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/begginers</id>
    <content type="html">&lt;center&gt;
-&lt;img src=&quot;/images/blog/beginner.jpg&quot; style=&quot;max-width: 600px&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/beginner.jpg&quot; style=&quot;max-width: 600px&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;what-is-cryptocurrency&quot;&gt;WHAT IS CRYPTOCURRENCY?&lt;/h2&gt;
@@ -3953,7 +3961,7 @@ Obviously this value changes depending on which cryptocurrency we’re talking a
    <content type="html">&lt;h3 id=&quot;linear-regression&quot;&gt;Linear Regression&lt;/h3&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/pred_mod/1.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/1.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Least squares minimizes the sum of squared errors&lt;/p&gt;
@@ -3972,7 +3980,7 @@ Obviously this value changes depending on which cryptocurrency we’re talking a
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/pred_mod/output_3_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/output_3_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;
 
@@ -3997,16 +4005,16 @@ Obviously this value changes depending on which cryptocurrency we’re talking a
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/pred_mod/output_7_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/output_7_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;polynomial-regression&quot;&gt;Polynomial Regression&lt;/h3&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/pred_mod/2.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/2.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/pred_mod/3.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/3.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2020&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -4018,7 +4026,7 @@ Obviously this value changes depending on which cryptocurrency we’re talking a
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/pred_mod/output_11_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/output_11_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pageSpeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;purchaseAmount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -4039,7 +4047,7 @@ Obviously this value changes depending on which cryptocurrency we’re talking a
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/pred_mod/output_14_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/output_14_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.metrics&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r2_score&lt;/span&gt;
 
@@ -4053,11 +4061,11 @@ Obviously this value changes depending on which cryptocurrency we’re talking a
 &lt;h3 id=&quot;multiple-regression&quot;&gt;Multiple regression&lt;/h3&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/pred_mod/4.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/4.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/pred_mod/5.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/5.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
@@ -4245,7 +4253,7 @@ Obviously this value changes depending on which cryptocurrency we’re talking a
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;matplotlib.axes._subplots.AxesSubplot at 0x292b9325488&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/pred_mod/output_22_1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/output_22_1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;statsmodels.api&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sm&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.preprocessing&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StandardScaler&lt;/span&gt;
@@ -4461,11 +4469,11 @@ Name: Price, dtype: float64
 &lt;h3 id=&quot;multi-level-models&quot;&gt;Multi-Level Models&lt;/h3&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/pred_mod/6.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/6.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/pred_mod/7.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/pred_mod/7.PNG&quot; /&gt;
 &lt;/center&gt;
 </content>
  </entry>
@@ -4476,7 +4484,7 @@ Name: Price, dtype: float64
    <updated>2021-05-16T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/1_Statics_Probability</id>
    <content type="html">&lt;center&gt;
-&lt;img src=&quot;/images/blog/stats.png&quot; style=&quot;max-width: 600px&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/stats.png&quot; style=&quot;max-width: 600px&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;data-types&quot;&gt;Data types&lt;/h2&gt;
@@ -4499,7 +4507,7 @@ Name: Price, dtype: float64
     - Categorical data that has mathematical meaning: 1 means worse movie than a 2&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/1.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/1.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Mode: the most common number in a data set&lt;/p&gt;
@@ -4523,13 +4531,13 @@ Variance of set (1, 4, 5, 4, 8)
 
 &lt;p&gt;You can talk about how extreme a data point is by talking about “how many sigmas” away from the mean iti is.&lt;/p&gt;
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/2.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/2.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;So, the standard variation of (1, 4, 5, 4, 8) is 2.24.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/3.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/3.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
@@ -4541,7 +4549,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_8_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_8_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;income&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -4559,14 +4567,14 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;p&gt;Gives you the probability of a data point falling within some given range of a given value&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/4.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/4.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h3 id=&quot;probability-mass-function&quot;&gt;Probability Mass Function:&lt;/h3&gt;
 &lt;p&gt;The way we viualise the probbility of discreet data occurring&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/5.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/5.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;examples-of-data-distributions&quot;&gt;Examples of Data Distributions&lt;/h2&gt;
@@ -4578,7 +4586,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_15_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_15_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;normal--gaussian&quot;&gt;Normal / Gaussian&lt;/h3&gt;
 
@@ -4589,7 +4597,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_17_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_17_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Generate some random numbers with a normal distribution. “mu” is the desired mean, “sigma” is the standard deviation.&lt;/p&gt;
 
@@ -4600,7 +4608,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_19_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_19_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;exponential-pdf--power-law&quot;&gt;Exponential PDF / “Power Law”&lt;/h3&gt;
 
@@ -4611,7 +4619,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_21_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_21_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;binomial-probability-mass-function&quot;&gt;Binomial Probability Mass Function&lt;/h2&gt;
 
@@ -4623,7 +4631,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_23_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_23_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;poisson-probability-mass-funtion&quot;&gt;Poisson Probability Mass Funtion&lt;/h2&gt;
 
@@ -4637,7 +4645,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_26_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_26_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;moments&quot;&gt;Moments&lt;/h3&gt;
 
@@ -4646,7 +4654,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;p&gt;Mathematically they are hard to wrap up:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/6.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/6.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;ul&gt;
@@ -4659,7 +4667,7 @@ Variance of set (1, 4, 5, 4, 8)
     &lt;/ul&gt;
 
     &lt;center&gt;
-  &lt;img src=&quot;/images/posts/stat_prob/7.png&quot; /&gt;
+  &lt;img src=&quot;/images/posts/Machine Learning/stat_prob/7.PNG&quot; /&gt;
   &lt;/center&gt;
   &lt;/li&gt;
   &lt;li&gt;The fourth moment is “kurtosis”
@@ -4671,7 +4679,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;/ul&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/8.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/8.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
@@ -4683,7 +4691,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_31_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_31_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# FIRST MOMENT: MEAN - data should be close to 0
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vals&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -4749,7 +4757,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_41_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_41_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;covariance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pageSpeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;purchaseAmount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -4763,7 +4771,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_43_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_43_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;covariance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pageSpeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;purchaseAmount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -4796,7 +4804,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/stat_prob/output_48_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/output_48_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;correlation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pageSpeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;purchaseAmount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -4822,7 +4830,7 @@ Variance of set (1, 4, 5, 4, 8)
 &lt;/ul&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/9.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/9.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;EXAMPLE:
@@ -5026,7 +5034,7 @@ What percentage of students who passed the first test also passed the second?
 &lt;h3 id=&quot;bayes-theorem&quot;&gt;Bayes’ Theorem&lt;/h3&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/10.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/10.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;The probability of A given B, is the probability of A times the probability of B given A ver the probability of B.&lt;/p&gt;
@@ -5036,11 +5044,11 @@ What percentage of students who passed the first test also passed the second?
 &lt;p&gt;The key insight is that the probability of something that depends on B depends very much on the base probability of A and B.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/11.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/11.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/stat_prob/12.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/stat_prob/12.PNG&quot; /&gt;
 &lt;/center&gt;
 </content>
  </entry>
@@ -5059,11 +5067,11 @@ What percentage of students who passed the first test also passed the second?
 &lt;p&gt;Let them all vote on the classification&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/datamining/1.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/datamining/1.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/datamining/2.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/datamining/2.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
@@ -5408,7 +5416,226 @@ Aladdin and the King of Thieves (1996) 2.8461538461538463
 &lt;span class=&quot;n&quot;&gt;pl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;images/posts/datamining/output_23_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/datamining/output_23_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Real World Data</title>
+   <link href="http://localhost:4000/2021/7_Real_World_Data/"/>
+   <updated>2021-04-22T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2021/7_Real_World_Data</id>
+   <content type="html">&lt;h3 id=&quot;confusion-matrix&quot;&gt;Confusion Matrix&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/1.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;measuring-classifiers&quot;&gt;Measuring Classifiers&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/2.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/3.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/4.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/5.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/6.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/7.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/9.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;bias-and-variance&quot;&gt;Bias and Variance&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;BIAS&lt;/strong&gt; is how far removed the mean of your predicted values is from the “real” answer.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;VARIANCE&lt;/strong&gt; is how scattered your predicted values are from the “real” answer.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/10.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/11.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;low variance relative to these observations and high bias&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;high variance, low bias&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/12.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Increasing K in &lt;strong&gt;K-Nearest-Neighbors&lt;/strong&gt; decreases variance and increases bias (by averaging together more neighbors)&lt;/p&gt;
+
+&lt;p&gt;A single &lt;strong&gt;decision tree&lt;/strong&gt; is prone to overfitting - high variance&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;but a random forest decreases that variance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;k-fold-cross-validation&quot;&gt;K-Fold Cross Validation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;split your data into K randomly-assigned segments&lt;/li&gt;
+  &lt;li&gt;reserve one segment as your test data&lt;/li&gt;
+  &lt;li&gt;train on the combined remaining K-1 segments and measure performance against the test set&lt;/li&gt;
+  &lt;li&gt;repeat for each segment&lt;/li&gt;
+  &lt;li&gt;take the average of the K-squared scores&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.model_selection&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cross_val_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datasets&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;svm&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;iris&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datasets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load_iris&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iris&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iris&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;test_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;svm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SVC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kernel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;linear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0.9666666666666667
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cross_val_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iris&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;iris&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;array([0.96666667, 1.        , 0.96666667, 0.96666667, 1.        ])
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0.9800000000000001
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;svm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SVC&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kernel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;poly&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0.9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;dealing-with-outliers&quot;&gt;Dealing with Outliers&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;incomes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;27000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;incomes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;incomes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000000000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;incomes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/realdata/output_25_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;incomes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;126959.41748252927
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;reject_outliers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;median&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;filtered&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filtered&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;filtered&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reject_outliers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;incomes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filtered&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/realdata/output_28_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filtered&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;26972.11342427752
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/12.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;data&quot;&gt;Data&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/13.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h4 id=&quot;oversampling&quot;&gt;OVERSAMPLING&lt;/h4&gt;
+&lt;p&gt;Duplicate samples from the minrity class&lt;/p&gt;
+
+&lt;p&gt;Can be done at random&lt;/p&gt;
+
+&lt;h4 id=&quot;undersampling&quot;&gt;UNDERSAMPLING&lt;/h4&gt;
+&lt;p&gt;Instead of creating more positive samples, remove negative ones&lt;/p&gt;
+
+&lt;p&gt;Throwing data away is usually not the best approach&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/14.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/15.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;binning&quot;&gt;Binning&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/16.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;transforming&quot;&gt;Transforming&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/17.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;encoding&quot;&gt;Encoding&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/18.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;scaling--normalization&quot;&gt;Scaling / Normalization&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/realdata/19.PNG&quot; /&gt;
+&lt;/center&gt;
 </content>
  </entry>
  
@@ -5419,9 +5646,9 @@ Aladdin and the King of Thieves (1996) 2.8461538461538463
    <id>http://localhost:4000/2021/3_Machine_Learning_w_Python2</id>
    <content type="html">&lt;h3 id=&quot;decision-tree&quot;&gt;Decision Tree&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/1.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/1.PNG&quot; alt=&quot;image.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/2.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/2.PNG&quot; alt=&quot;image.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
@@ -5686,9 +5913,9 @@ Name: Hired, dtype: int64
 
 &lt;p&gt;It just means we use models to try and solve the same roblem, and let them vote on the results.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/3.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/3.PNG&quot; alt=&quot;image.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/4.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/4.PNG&quot; alt=&quot;image.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;cgboost&quot;&gt;CGBoost&lt;/h3&gt;
 
@@ -5701,9 +5928,9 @@ Name: Hired, dtype: int64
     - routinely winds Kaggle competitions
     - easy to use and fast&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/5.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/5.PNG&quot; alt=&quot;image.PNG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/6.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/6.PNG&quot; alt=&quot;image.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.datasets&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;load_iris&lt;/span&gt;
 
@@ -5768,13 +5995,13 @@ Name: Hired, dtype: int64
 
 &lt;h3 id=&quot;support-vector-machines&quot;&gt;Support Vector Machines&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/6.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/6.PNG&quot; alt=&quot;image.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The important point is that SVM’s employ some advanced mathematical trickery to cluster data, and it can handle datasets with lots of features.&lt;/p&gt;
 
 &lt;p&gt;It’s also fairly expensive - the “kernel trick” is the only thing that makes it possible.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/7.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/7.PNG&quot; alt=&quot;image.PNG&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;createClusteredData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2020&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -5803,7 +6030,7 @@ Name: Hired, dtype: int64
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/output_39_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/output_39_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scaling&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MinMaxScaler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature_range&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scaling&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -5813,7 +6040,7 @@ Name: Hired, dtype: int64
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/output_40_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/output_40_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;svm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datasets&lt;/span&gt;
 
@@ -5845,7 +6072,7 @@ Name: Hired, dtype: int64
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plotPredictions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;svc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython2/output_43_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython2/output_43_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;svc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scaling&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -5882,7 +6109,7 @@ Name: Hired, dtype: int64
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython/output_2_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython/output_2_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;trainX&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pageSpeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;testX&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pageSpeed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt;
@@ -5895,7 +6122,7 @@ Name: Hired, dtype: int64
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython/output_4_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython/output_4_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trainX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;trainy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -5912,7 +6139,7 @@ Name: Hired, dtype: int64
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython/output_6_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython/output_6_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;testx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;testX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;testy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;testy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -5925,7 +6152,7 @@ Name: Hired, dtype: int64
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython/output_7_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython/output_7_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.metrics&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r2_score&lt;/span&gt;
 
@@ -5945,9 +6172,9 @@ Name: Hired, dtype: int64
 
 &lt;h3 id=&quot;bayesian-methods&quot;&gt;Bayesian Methods&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython/1.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython/1.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython/2.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython/2.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;naive-bayes&quot;&gt;Naive Bayes&lt;/h3&gt;
 
@@ -6095,7 +6322,7 @@ Name: Hired, dtype: int64
 
 &lt;h3 id=&quot;k-means-clustering&quot;&gt;K-Means Clustering&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython/3.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython/3.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;createClusteredData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2020&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -6135,13 +6362,13 @@ Name: Hired, dtype: int64
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython/output_25_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython/output_25_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;entropy&quot;&gt;Entropy&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython/4.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython/4.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/mlpython/5.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/posts/Machine Learning/mlpython/5.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -6153,7 +6380,7 @@ Name: Hired, dtype: int64
    <content type="html">&lt;h1 id=&quot;machine-learning-questions&quot;&gt;MACHINE LEARNING QUESTIONS&lt;/h1&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/blog/ml.png&quot; style=&quot;max-width: 500px&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/mlnotes/ml.png&quot; style=&quot;max-width: 500px&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h3 id=&quot;1-what-are-the-different-types-of-machine-learning&quot;&gt;1. What are the different types of Machine Learning?&lt;/h3&gt;
@@ -6314,7 +6541,7 @@ To stay on good terms with your girlfriend, you need to recall all the 10 events
 &lt;/ul&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/mlnotes/1.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/mlnotes/1.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h3 id=&quot;10-how-is-knn-different-from-k-means-clustering&quot;&gt;10. How is KNN different from K-means clustering?&lt;/h3&gt;
@@ -6339,7 +6566,7 @@ To stay on good terms with your girlfriend, you need to recall all the 10 events
     &lt;/ul&gt;
 
     &lt;center&gt;
- &lt;img src=&quot;/images/posts/mlnotes/2.png&quot; /&gt;
+ &lt;img src=&quot;/images/posts/Machine Learning/mlnotes/2.PNG&quot; /&gt;
  &lt;/center&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
@@ -6350,7 +6577,7 @@ To stay on good terms with your girlfriend, you need to recall all the 10 events
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/mlnotes/3.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/mlnotes/3.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -6375,7 +6602,7 @@ To stay on good terms with your girlfriend, you need to recall all the 10 events
 &lt;/ul&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/ab/1.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ab/1.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Ideally choose what you are trying to influence:&lt;/p&gt;
@@ -6444,7 +6671,7 @@ Common mistake:&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/ab/2.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ab/2.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
@@ -6508,27 +6735,27 @@ Common mistake:&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/ab/3.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ab/3.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/ab/4.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ab/4.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/ab/5.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ab/5.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/ab/6.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ab/6.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/ab/7.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ab/7.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/ab/8.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ab/8.PNG&quot; /&gt;
 &lt;/center&gt;
 </content>
  </entry>
@@ -6541,7 +6768,7 @@ Common mistake:&lt;/p&gt;
    <content type="html">&lt;h3 id=&quot;reinforcement-learning&quot;&gt;Reinforcement Learning&lt;/h3&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/reinforcement/1.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/reinforcement/1.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;gym&lt;/span&gt;
@@ -6564,11 +6791,11 @@ Common mistake:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/reinforcement/2.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/reinforcement/2.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/reinforcement/3.png&quot; /&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/reinforcement/3.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;streets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;

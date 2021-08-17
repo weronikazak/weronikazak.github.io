@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Real World Data &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <article class="page">
+    <header>
+        <h1 class="landing-title">
+            Real World...
+            <span style="color: #e6e6e6;">
+            Real World Data
+            </span>
+        </h1>
+    </header>
+
+  <h3 id="confusion-matrix">Confusion Matrix</h3>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/1.PNG" />
+</center>
+
+<h3 id="measuring-classifiers">Measuring Classifiers</h3>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/2.PNG" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/3.PNG" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/4.PNG" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/5.PNG" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/6.PNG" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/7.PNG" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/9.PNG" />
+</center>
+
+<h3 id="bias-and-variance">Bias and Variance</h3>
+
+<p><strong>BIAS</strong> is how far removed the mean of your predicted values is from the “real” answer.</p>
+
+<p><strong>VARIANCE</strong> is how scattered your predicted values are from the “real” answer.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/10.PNG" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/11.PNG" />
+</center>
+
+<ol>
+  <li>
+    <p>low variance relative to these observations and high bias</p>
+  </li>
+  <li>
+    <p>high variance, low bias</p>
+  </li>
+</ol>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/12.PNG" />
+</center>
+
+<p>Increasing K in <strong>K-Nearest-Neighbors</strong> decreases variance and increases bias (by averaging together more neighbors)</p>
+
+<p>A single <strong>decision tree</strong> is prone to overfitting - high variance</p>
+<ul>
+  <li>but a random forest decreases that variance</li>
+</ul>
+
+<h3 id="k-fold-cross-validation">K-Fold Cross Validation</h3>
+
+<ul>
+  <li>split your data into K randomly-assigned segments</li>
+  <li>reserve one segment as your test data</li>
+  <li>train on the combined remaining K-1 segments and measure performance against the test set</li>
+  <li>repeat for each segment</li>
+  <li>take the average of the K-squared scores</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span><span class="p">,</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span>
+
+<span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">,</span> <span class="n">Y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> 
+
+<span class="n">clf</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">"linear"</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">)</span>
+
+<span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">Y_test</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.9666666666666667
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="n">scores</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([0.96666667, 1.        , 0.96666667, 0.96666667, 1.        ])
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.9800000000000001
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">clf</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">"poly"</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">Y_train</span><span class="p">)</span>
+
+<span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">Y_test</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.9
+</code></pre></div></div>
+
+<h3 id="dealing-with-outliers">Dealing with Outliers</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">incomes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">27000</span><span class="p">,</span> <span class="mi">15000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="n">incomes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">incomes</span><span class="p">,</span> <span class="p">[</span><span class="mi">1000000000</span><span class="p">])</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">incomes</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/Machine Learning/realdata/output_25_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">incomes</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>126959.41748252927
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">reject_outliers</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">filtered</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">data</span> <span class="k">if</span> <span class="p">(</span><span class="n">u</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">s</span> <span class="o">&lt;</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">u</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">s</span><span class="p">)]</span>
+    <span class="k">return</span> <span class="n">filtered</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">filtered</span> <span class="o">=</span> <span class="n">reject_outliers</span><span class="p">(</span><span class="n">incomes</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">filtered</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="/images/posts/Machine Learning/realdata/output_28_0.png" alt="png" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">filtered</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>26972.11342427752
+</code></pre></div></div>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/12.PNG" />
+</center>
+
+<h3 id="data">Data</h3>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/13.PNG" />
+</center>
+
+<h4 id="oversampling">OVERSAMPLING</h4>
+<p>Duplicate samples from the minrity class</p>
+
+<p>Can be done at random</p>
+
+<h4 id="undersampling">UNDERSAMPLING</h4>
+<p>Instead of creating more positive samples, remove negative ones</p>
+
+<p>Throwing data away is usually not the best approach</p>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/14.PNG" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/15.PNG" />
+</center>
+
+<h3 id="binning">Binning</h3>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/16.PNG" />
+</center>
+
+<h3 id="transforming">Transforming</h3>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/17.PNG" />
+</center>
+
+<h3 id="encoding">Encoding</h3>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/18.PNG" />
+</center>
+
+<h3 id="scaling--normalization">Scaling / Normalization</h3>
+
+<center>
+<img src="/images/posts/Machine Learning/realdata/19.PNG" />
+</center>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-18T18:20:37+01:00">2021</time> Weronika Żak</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a href="https://github.com/tableClothed"><i class="fa fa-github-alt"></i></a>
+          <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

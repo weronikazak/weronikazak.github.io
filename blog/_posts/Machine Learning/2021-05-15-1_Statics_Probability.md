@@ -5,12 +5,12 @@ date:   2021-05-16 16:10:35 +0100
 categories: 
 - machine learning
 description: "Discrete Data: integer based, often counts of some event. How many purchases did a customer make in a year? How many times did I flif heads? Continous Data: Has an infinite number of possible values. How much time did it take for a user to check out? How much rain fell on a givern day?."
-image: 'images/blog/stats.png'
+image: 'images/posts/Machine Learning/stat_prob/stats.png'
 
 ---
 
 <center>
-<img src="/images/blog/stats.png" style="max-width: 600px">
+<img src="/images/posts/Machine Learning/stat_prob/stats.png" style="max-width: 600px">
 </center>
 
 ## Data types
@@ -33,7 +33,7 @@ Ordinal:
     - Categorical data that has mathematical meaning: 1 means worse movie than a 2
     
 <center>
-<img src="/images/posts/stat_prob/1.png">
+<img src="/images/posts/Machine Learning/stat_prob/1.PNG">
 </center>
 
 Mode: the most common number in a data set
@@ -57,13 +57,13 @@ Is usually used as a way to identify outliers (wartości odstajace). Data points
 
 You can talk about how extreme a data point is by talking about "how many sigmas" away from the mean iti is.
 <center>
-<img src="/images/posts/stat_prob/2.png">
+<img src="/images/posts/Machine Learning/stat_prob/2.PNG">
 </center>
 
 So, the standard variation of (1, 4, 5, 4, 8) is 2.24.
 
 <center>
-<img src="/images/posts/stat_prob/3.png">
+<img src="/images/posts/Machine Learning/stat_prob/3.PNG">
 </center>
 
 
@@ -78,7 +78,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_8_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_8_0.png)
 
 
 
@@ -109,14 +109,14 @@ income.var()
 Gives you the probability of a data point falling within some given range of a given value
 
 <center>
-<img src="/images/posts/stat_prob/4.png">
+<img src="/images/posts/Machine Learning/stat_prob/4.PNG">
 </center>
 
 ### Probability Mass Function:
 The way we viualise the probbility of discreet data occurring
 
 <center>
-<img src="/images/posts/stat_prob/5.png">
+<img src="/images/posts/Machine Learning/stat_prob/5.PNG">
 </center>
 
 ## Examples of Data Distributions
@@ -132,7 +132,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_15_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_15_0.png)
 
 
 ### Normal / Gaussian
@@ -147,7 +147,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_17_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_17_0.png)
 
 
 Generate some random numbers with a normal distribution. "mu" is the desired mean, "sigma" is the standard deviation.
@@ -162,7 +162,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_19_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_19_0.png)
 
 
 ### Exponential PDF / "Power Law"
@@ -177,7 +177,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_21_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_21_0.png)
 
 
 ## Binomial Probability Mass Function
@@ -193,7 +193,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_23_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_23_0.png)
 
 
 ## Poisson Probability Mass Funtion
@@ -211,7 +211,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_26_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_26_0.png)
 
 
 ### Moments
@@ -221,7 +221,7 @@ Quantitative measures of the shape of a probability density function
 Mathematically they are hard to wrap up:
 
 <center>
-<img src="/images/posts/stat_prob/6.png">
+<img src="/images/posts/Machine Learning/stat_prob/6.PNG">
 </center>
 
 - The first moment is the mean.
@@ -231,14 +231,14 @@ Mathematically they are hard to wrap up:
     - A distribution with a longer tail on the left will be skewed left, and have a negative skew.
     
     <center>
-	<img src="/images/posts/stat_prob/7.png">
+	<img src="/images/posts/Machine Learning/stat_prob/7.PNG">
 	</center>
 - The fourth moment is "kurtosis"
     - How thick is the tail, and how sharp is the peak, compared to a normal distribution?
     - F. e.: higher peaks have highter kurtosis
 
 <center>
-<img src="/images/posts/stat_prob/8.png">
+<img src="/images/posts/Machine Learning/stat_prob/8.PNG">
 </center>
 
 
@@ -253,7 +253,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_31_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_31_0.png)
 
 
 
@@ -345,7 +345,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_41_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_41_0.png)
 
 
 
@@ -369,7 +369,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_43_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_43_0.png)
 
 
 
@@ -426,7 +426,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/stat_prob/output_48_0.png)
+![png](/images/posts/Machine Learning/stat_prob/output_48_0.png)
 
 
 
@@ -448,7 +448,7 @@ correlation(pageSpeed, purchaseAmount)
 - P(B|A): Probability of B given that A has occurred
 
 <center>
-<img src="/images/posts/stat_prob/9.png">
+<img src="/images/posts/Machine Learning/stat_prob/9.PNG">
 </center>
 
 EXAMPLE:
@@ -691,7 +691,7 @@ purchases[20] / totals[20]
 ### Bayes' Theorem
 
 <center>
-<img src="/images/posts/stat_prob/10.png">
+<img src="/images/posts/Machine Learning/stat_prob/10.PNG">
 </center>
 
 The probability of A given B, is the probability of A times the probability of B given A ver the probability of B.
@@ -701,9 +701,9 @@ Prawdopodobieństwo A danego B jest prawdopodobieństwem A razy prawdopodobieńs
 The key insight is that the probability of something that depends on B depends very much on the base probability of A and B.
 
 <center>
-<img src="/images/posts/stat_prob/11.png">
+<img src="/images/posts/Machine Learning/stat_prob/11.PNG">
 </center>
 
 <center>
-<img src="/images/posts/stat_prob/12.png">
+<img src="/images/posts/Machine Learning/stat_prob/12.PNG">
 </center>

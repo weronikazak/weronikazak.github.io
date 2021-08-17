@@ -5,15 +5,15 @@ date:   2021-04-22 16:10:35 +0100
 categories: 
 - machine learning
 description: "Coding in Python with focus on machine learning algorithms and techniques. Decision Trees, Random Forest, Ensemble Learning, CGBoost, Support Vector Machines."
-image: 'images/posts/mlpython2/8.png'
+image: 'images/posts/Machine Learning/mlpython2/8.PNG'
 
 ---
 
 ### Decision Tree
 
-![image.png](/images/posts/mlpython2/1.png)
+![image.PNG](/images/posts/Machine Learning/mlpython2/1.PNG)
 
-![image.png](/images/posts/mlpython2/2.png)
+![image.PNG](/images/posts/Machine Learning/mlpython2/2.PNG)
 
 
 ```python
@@ -330,9 +330,9 @@ Random Forests was an example of ensemble learning.
 
 It just means we use models to try and solve the same roblem, and let them vote on the results.
 
-![image.png](/images/posts/mlpython2/3.png)
+![image.PNG](/images/posts/Machine Learning/mlpython2/3.PNG)
 
-![image.png](/images/posts/mlpython2/4.png)
+![image.PNG](/images/posts/Machine Learning/mlpython2/4.PNG)
 
 ### CGBoost
 
@@ -345,9 +345,9 @@ More facts:
     - routinely winds Kaggle competitions
     - easy to use and fast
 
-![image.png](/images/posts/mlpython2/5.png)
+![image.PNG](/images/posts/Machine Learning/mlpython2/5.PNG)
 
-![image.png](/images/posts/mlpython2/6.png)
+![image.PNG](/images/posts/Machine Learning/mlpython2/6.PNG)
 
 
 ```python
@@ -446,13 +446,13 @@ accuracy_score(Y_test, predictions)
 
 ### Support Vector Machines
 
-![image.png](/images/posts/mlpython2/6.png)
+![image.PNG](/images/posts/Machine Learning/mlpython2/6.PNG)
 
 The important point is that SVM's employ some advanced mathematical trickery to cluster data, and it can handle datasets with lots of features.
 
 It's also fairly expensive - the "kernel trick" is the only thing that makes it possible.
 
-![image.png](/images/posts/mlpython2/7.png)
+![image.PNG](/images/posts/Machine Learning/mlpython2/7.PNG)
 
 
 ```python
@@ -488,7 +488,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/mlpython2/output_39_0.png)
+![png](/images/posts/Machine Learning/mlpython2/output_39_0.png)
 
 
 
@@ -502,7 +502,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/mlpython2/output_40_0.png)
+![png](/images/posts/Machine Learning/mlpython2/output_40_0.png)
 
 
 
@@ -542,7 +542,7 @@ plotPredictions(svc)
 ```
 
 
-![png](/images/posts/mlpython2/output_43_0.png)
+![png](/images/posts/Machine Learning/mlpython2/output_43_0.png)
 
 
 

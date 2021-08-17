@@ -5,7 +5,7 @@ date:   2021-04-21 16:10:35 +0100
 categories: 
 - machine learning
 description: "Coding in Python with focus on machine learning algorithms and techniques. Train / test split, Bayesian Methods, Naive Bayes, K-Means Clustering, Entropy."
-image: 'images/posts/mlpython/kmeans.png'
+image: 'images/posts/Machine Learning/mlpython/kmeans.png'
 
 ---
 
@@ -29,7 +29,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/mlpython/output_2_0.png)
+![png](/images/posts/Machine Learning/mlpython/output_2_0.png)
 
 
 
@@ -48,7 +48,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/mlpython/output_4_0.png)
+![png](/images/posts/Machine Learning/mlpython/output_4_0.png)
 
 
 
@@ -71,7 +71,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/mlpython/output_6_0.png)
+![png](/images/posts/Machine Learning/mlpython/output_6_0.png)
 
 
 
@@ -88,7 +88,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/mlpython/output_7_0.png)
+![png](/images/posts/Machine Learning/mlpython/output_7_0.png)
 
 
 
@@ -121,9 +121,9 @@ r2
 
 ### Bayesian Methods
 
-![image.png](/images/posts/mlpython/1.png)
+![image.png](/images/posts/Machine Learning/mlpython/1.png)
 
-![image.png](/images/posts/mlpython/2.png)
+![image.png](/images/posts/Machine Learning/mlpython/2.png)
 
 ### Naive Bayes
 
@@ -296,7 +296,7 @@ predictions
 
 ### K-Means Clustering
 
-![image.png](/images/posts/mlpython/3.png)
+![image.png](/images/posts/Machine Learning/mlpython/3.png)
 
 
 ```python
@@ -349,11 +349,11 @@ plt.show()
 ```
 
 
-![png](/images/posts/mlpython/output_25_0.png)
+![png](/images/posts/Machine Learning/mlpython/output_25_0.png)
 
 
 ### Entropy
 
-![image.png](/images/posts/mlpython/4.png)
+![image.png](/images/posts/Machine Learning/mlpython/4.png)
 
-![image.png](/images/posts/mlpython/5.png)
+![image.png](/images/posts/Machine Learning/mlpython/5.png)

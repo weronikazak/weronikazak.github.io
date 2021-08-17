@@ -6,13 +6,13 @@ categories:
 - cryptocurrency
 - economy
 description: "The risk of inflation in March of last year was worrying. The excess monetary stimulus, that was being thrown at the markets, and the impact that this would have, once the lockdowns eased was concerning. Some said that inflation concerns were misguided, that deflation was the more likely scenario."
-image: 'images/blog/inflation.jpeg'
+image: 'images/posts/Economy/inflation/inflation.jpeg'
 
 ---
 
 
 <center>
-<img src="/images/blog/inflation.jpeg" style="max-width: 600px">
+<img src="/images/posts/Economy/inflation/inflation.jpeg" style="max-width: 600px">
 </center>
 
 ## DEFLATION IN JAPAN
@@ -50,7 +50,7 @@ Prices were starting to surge across the board.
 For example, this tweet from Dan Held.
 
 <center>
-<img src="/images/posts/inflation/dan.png">
+<img src="/images/posts/Economy/inflation/dan.PNG">
 </center>
 
 Back in April those were the price increases, that we were seeing for some of these commodities.
@@ -90,7 +90,7 @@ So irrespective of how you slice or dice it, the inflation numbers were not look
 **What did they expect, when they printed 25% of all the money ever in existence in a single year?**
 
 <center>
-<img src="/images/posts/inflation/money-supply.png">
+<img src="/images/posts/Economy/inflation/money-supply.png">
 </center>
 
 ## WHY INFLATION IS DEADLY
@@ -146,7 +146,7 @@ The more value that the dollar loses each year, the more likely these central ba
 Of course, any selling by offshore holders devalues the US dollar relative to other currencies.
 
 <center>
-<img src="/images/posts/inflation/chart.jpg">
+<img src="/images/posts/Economy/inflation/chart.jpg">
 </center>
 
 This chart here shows the US dollar index over the past month.
@@ -160,7 +160,7 @@ The point is that inflation is toxic and should be avoided.
 It's also one of those things, that are hard to reign back in again.
 
 <center>
-<img src="/images/posts/inflation/dxy.png">
+<img src="/images/posts/Economy/inflation/dxy.PNG">
 </center>
 
 ##### CPI INFLATION - CPI BASKET
@@ -198,7 +198,7 @@ In the words of IMF economist Marshall Reinstorf "*Spending patterns changed abr
 Apart from this, most shopping went online, where the price fluctuation can be a lot more rapid and volatile.
 
 <center>
-<img src="/images/posts/inflation/infl.png">
+<img src="/images/posts/Economy/inflation/inflat.png">
 </center>
 
 ##### INCORRECT DATA

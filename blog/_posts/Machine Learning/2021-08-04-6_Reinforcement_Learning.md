@@ -5,14 +5,14 @@ date:   2021-02-16 16:10:35 +0100
 categories: 
 - machine learning
 description: "Reinforcement Learning"
-image: 'images/blog/reinf.png'
+image: 'images/posts/Machine Learning/reinforcement/reinf.png'
 
 ---
 
 ### Reinforcement Learning
 
 <center>
-<img src="/images/posts/reinforcement/1.png">
+<img src="/images/posts/Machine Learning/reinforcement/1.PNG">
 </center>
 
 
@@ -40,11 +40,11 @@ streets.render()
     
 
 <center>
-<img src="/images/posts/reinforcement/2.png">
+<img src="/images/posts/Machine Learning/reinforcement/2.PNG">
 </center>
 
 <center>
-<img src="/images/posts/reinforcement/3.png">
+<img src="/images/posts/Machine Learning/reinforcement/3.PNG">
 </center>
 
 

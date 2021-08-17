@@ -5,7 +5,7 @@ date:   2021-02-21 16:10:35 +0100
 categories: 
 - machine learning
 description: "A/B Testing. A controlled experiment, usually in the context of a website. You test the performance of some change to your website (the variant) and measure conversion relative to your unchanged site (the control)."
-image: 'images/blog/abtest.png'
+image: 'images/posts/Machine Learning/ab/abtest.png'
 
 ---
 
@@ -15,7 +15,7 @@ image: 'images/blog/abtest.png'
 - You test the performance of some change to your website (the variant) and measure conversion relative to your unchanged site (the control).
 
 <center>
-<img src="/images/posts/ab/1.png">
+<img src="/images/posts/Machine Learning/ab/1.PNG">
 </center>
 
 Ideally choose what you are trying to influence:
@@ -68,7 +68,7 @@ T-Test and P-Values!
 - Jest to prawdopodobieństwo, że obserwator leży na skrajnej wartości t przy założeniu hipotezy zerowej.
 
 <center>
-<img src="/images/posts/ab/2.png">
+<img src="/images/posts/Machine Learning/ab/2.PNG">
 </center>
 
 
@@ -159,25 +159,25 @@ stats.ttest_ind(A, A)
 - You reach some pre-established upper bound on time
 
 <center>
-<img src="/images/posts/ab/3.png">
+<img src="/images/posts/Machine Learning/ab/3.PNG">
 </center>
 
 <center>
-<img src="/images/posts/ab/4.png">
+<img src="/images/posts/Machine Learning/ab/4.PNG">
 </center>
 
 <center>
-<img src="/images/posts/ab/5.png">
+<img src="/images/posts/Machine Learning/ab/5.PNG">
 </center>
 
 <center>
-<img src="/images/posts/ab/6.png">
+<img src="/images/posts/Machine Learning/ab/6.PNG">
 </center>
 
 <center>
-<img src="/images/posts/ab/7.png">
+<img src="/images/posts/Machine Learning/ab/7.PNG">
 </center>
 
 <center>
-<img src="/images/posts/ab/8.png">
+<img src="/images/posts/Machine Learning/ab/8.PNG">
 </center>

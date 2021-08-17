@@ -6,9 +6,15 @@ categories:
 - cryptocurrency
 - token
 description: "What is Ripple? How does it work? Is XRP, Ripple’s cryptocurrency, a good investment? And what does this all have to do  with the banking system?"
-image: 'images/blog/xrp.png'
+image: 'images/posts/Tokens/ripple/xrp.png'
 
 ---
+
+<center>
+<img src='/images/posts/Tokens/ripple/xrp.png' style="max-width: 200px">
+</center>
+
+
 ##### LEADING QUESTIONS
 What is Ripple?
 

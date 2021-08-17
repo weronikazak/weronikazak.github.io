@@ -6,12 +6,12 @@ categories:
 - cryptocurrency
 - token
 description: "Stablecoins have been in the spotlight over the last few weeks, and for all the wrong reasons. Regulators are starting to get nervous about the impact stablecoins could have not just on the crypto market, but on the financial markets as a whole."
-image: 'images/blog/stable.png'
+image: 'images/posts/Tokens/stablecoins/stable.png'
 
 ---
 
 <center>
-<img src="/images/blog/stable.png">
+<img src="/images/posts/Tokens/stablecoins/stable.png">
 </center>
 
 ## STABLECOINS RECENTLY
@@ -41,7 +41,7 @@ Interfered trading against a stablecoin also makes it much easier to calculate y
 This is why stablecoins are so popular, and it's also why most of the trading volume for any given coin or token comes from stablecoin pairs.
 
 <center>
-<img src="/images/posts/stablecoins/1.png">
+<img src="/images/posts/Tokens/stablecoins/1.PNG">
 </center>
 
 ## DEMAND FOR STABLECOINS AND PRICE OF THE COIN
@@ -58,31 +58,31 @@ All of them ultimately maintain their dollar pegs by adjusting their supply base
 This usually happens whenever the crypto market is dropping like a rock, because everyone is rushing to buy stablecoins to protect their portfolios from further losses.
 
 <center>
-<img src="/images/posts/stablecoins/2.png">
+<img src="/images/posts/Tokens/stablecoins/2.PNG">
 </center>
 
 Eventually new stablecoins are minted to meet this demand and restore the dollar peg.
 
 <center>
-<img src="/images/posts/stablecoins/whale1.png">
+<img src="/images/posts/Tokens/stablecoins/whale1.PNG">
 </center>
 
 Conversely, when people start selling their stablecoins to buy whichever crypto is currently going to the moon **this sometimes manages to push the price of stable coins below a dollar.**
 
 <center>
-<img src="/images/posts/stablecoins/3.png">
+<img src="/images/posts/Tokens/stablecoins/3.PNG">
 </center>
 
 When this happens, stablecoins are burned to reduce the supply, thereby raising the token's price to put it back in line with its dollar peg.
 
 <center>
-<img src="/images/posts/stablecoins/whale2.png">
+<img src="/images/posts/Tokens/stablecoins/whale2.PNG">
 </center>
 
 Whereas crypto, backed and algorithmic stablecoins have automatic and incentive-based systems, which mint and burn tokens to meet demand, fiat-backed stablecoins rely on the companies which issued them to do this.
 
 <center>
-<img src="/images/posts/stablecoins/demand.png">
+<img src="/images/posts/Tokens/stablecoins/demand.PNG">
 </center>
 
 ## BURNING AND MINTING STABLECOINS
@@ -144,7 +144,7 @@ According to Tether, the USDT in circulation is backed by the following assets:
 - 1.5% other assets, including digital tokens, aka *cryptocurrency*.
 
 <center>
-<img src="/images/posts/stablecoins/tether-back.png">
+<img src="/images/posts/Tokens/stablecoins/tether-back.PNG">
 </center>
 
 ## SECOND BIG PLAYER - CIRCLE (USDC)
@@ -174,7 +174,7 @@ Circle has 0 fees for bank transfers, and also no fees for exchanging US dollars
 This is one of the many reasons, why USDC has been growing at a faster rate than USDT as of late.
 
 <center>
-<img src="/images/posts/stablecoins/circle-back.png">
+<img src="/images/posts/Tokens/stablecoins/circle-back.PNG">
 </center>
 
 ### RAPORT
@@ -201,7 +201,7 @@ According to Grant Thornton, the USDC in circulation is backed by the following 
 - less than 1% in Municipal Bonds.
 
 <center>
-<img src="/images/posts/stablecoins/circle-back.png">
+<img src="/images/posts/Tokens/stablecoins/circle-back.PNG">
 </center>
 
 ## THIRD PLAYER - PAXOS (BUSD)
@@ -235,7 +235,7 @@ Paxos's asset attestations have likewise been very vague until last week, when P
 According to Whitham, 96% of all Paxos stablecoins are currently backed by cash or cash equivalents with 4% being backed by US treasuries.
 
 <center>
-<img src="/images/posts/stablecoins/paxos-back.png">
+<img src="/images/posts/Tokens/stablecoins/paxos-back.png">
 </center>
 
 ## WHAT IS IT REALLY BACKED BY?
@@ -264,7 +264,7 @@ In the bigger pie chart, **secured loans** are of course **debt**.
 And last, but not least, **other investments, including digital currencies**, which is probably **Bitcoin**.
 
 <center>
-<img src="/images/posts/stablecoins/tether-back2.png">
+<img src="/images/posts/Tokens/stablecoins/tether-back2.PNG">
 </center>
 
 
@@ -280,7 +280,7 @@ It's a similar story with Circle's own collateral.
 - **Municipal Bonds** are local government **debt**.
 
 <center>
-<img src="/images/posts/stablecoins/circle-back2.png">
+<img src="/images/posts/Tokens/stablecoins/circle-back2.PNG">
 </center>
 
 ### PAXOS' BUSD
@@ -288,7 +288,7 @@ It's a similar story with Circle's own collateral.
 Finally, we have Paxos's reserves, most of which are, again, some form of public or private debt, and probably include a nice chunk of cash.
 
 <center>
-<img src="/images/posts/stablecoins/paxos-back.png">
+<img src="/images/posts/Tokens/stablecoins/paxos-back.png">
 </center>
 
 ## WHY THEY HOLD SO MUCH INTEREST?
@@ -344,7 +344,7 @@ And that "*Tether reserves the right to redeem Tether tokens by in-kind redempti
 **In other words, Tether doesn't guarantee redemption of USDT for fiat at all.**
 
 <center>
-<img src="/images/posts/stablecoins/tether-right.png">
+<img src="/images/posts/Tokens/stablecoins/tether-right.PNG">
 </center>
 
 ## FINAL THOUGHTS

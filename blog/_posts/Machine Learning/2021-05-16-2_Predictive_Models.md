@@ -5,13 +5,13 @@ date:   2021-05-16 16:10:35 +0100
 categories: 
 - machine learning
 description: "Least squares minimizes the sum of squared errors. This is the same as maximizing the likelihood of observed data if you start thinking of the problem in terms of probabilities and probability distribution functions."
-image: 'images/blog/predictive.png'
+image: 'images/posts/Machine Learning/pred_mod/predictive.png'
 
 ---
 ### Linear Regression
 
 <center>
-<img src="/images/posts/pred_mod/1.png">
+<img src="/images/posts/Machine Learning/pred_mod/1.PNG">
 </center>
 
 Least squares minimizes the sum of squared errors
@@ -33,7 +33,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/pred_mod/output_3_0.png)
+![png](/images/posts/Machine Learning/pred_mod/output_3_0.png)
 
 
 
@@ -70,18 +70,18 @@ plt.show()
 ```
 
 
-![png](/images/posts/pred_mod/output_7_0.png)
+![png](/images/posts/Machine Learning/pred_mod/output_7_0.png)
 
 
 ### Polynomial Regression
 
 
 <center>
-<img src="/images/posts/pred_mod/2.png">
+<img src="/images/posts/Machine Learning/pred_mod/2.PNG">
 </center>
 
 <center>
-<img src="/images/posts/pred_mod/3.png">
+<img src="/images/posts/Machine Learning/pred_mod/3.PNG">
 </center>
 
 
@@ -96,7 +96,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/pred_mod/output_11_0.png)
+![png](/images/posts/Machine Learning/pred_mod/output_11_0.png)
 
 
 
@@ -129,7 +129,7 @@ plt.show()
 ```
 
 
-![png](/images/posts/pred_mod/output_14_0.png)
+![png](/images/posts/Machine Learning/pred_mod/output_14_0.png)
 
 
 
@@ -150,11 +150,11 @@ r2
 ### Multiple regression
 
 <center>
-<img src="/images/posts/pred_mod/4.png">
+<img src="/images/posts/Machine Learning/pred_mod/4.PNG">
 </center>
 
 <center>
-<img src="/images/posts/pred_mod/5.png">
+<img src="/images/posts/Machine Learning/pred_mod/5.PNG">
 </center>
 
 
@@ -365,7 +365,7 @@ groups["Price"].plot.line()
 
 
 
-![png](/images/posts/pred_mod/output_22_1.png)
+![png](/images/posts/Machine Learning/pred_mod/output_22_1.png)
 
 
 
@@ -613,9 +613,9 @@ scaled, predicted
 ### Multi-Level Models
 
 <center>
-<img src="/images/posts/pred_mod/6.png">
+<img src="/images/posts/Machine Learning/pred_mod/6.PNG">
 </center>
 
 <center>
-<img src="/images/posts/pred_mod/7.png">
+<img src="/images/posts/Machine Learning/pred_mod/7.PNG">
 </center>
