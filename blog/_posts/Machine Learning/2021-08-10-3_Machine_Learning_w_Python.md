@@ -296,7 +296,7 @@ predictions
 
 ### K-Means Clustering
 
-![image.png](/images/posts/Machine Learning/mlpython/3.png)
+![image.png](/images/posts/Machine Learning/mlpython/3.PNG)
 
 
 ```python
@@ -354,6 +354,6 @@ plt.show()
 
 ### Entropy
 
-![image.png](/images/posts/Machine Learning/mlpython/4.png)
+![image.png](/images/posts/Machine Learning/mlpython/4.PNG)
 
-![image.png](/images/posts/Machine Learning/mlpython/5.png)
+![image.png](/images/posts/Machine Learning/mlpython/5.PNG)
