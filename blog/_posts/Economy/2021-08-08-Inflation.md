@@ -17,13 +17,11 @@ image: 'images/posts/Economy/inflation/inflation.jpeg'
 
 ## DEFLATION IN JAPAN
 
-The risk of inflation in March of last year was worrying.
+The risk of inflation in March 2020 was worrying.
 
 The excess monetary stimulus, that was being thrown at the markets, and the impact that this would have, once the lockdowns eased was concerning.
 
-Some said that inflation concerns were misguided, that deflation was the more likely scenario.
-
-That's not something to blame.
+Some said, that inflation concerns were misguided, that deflation was the more likely scenario.
 
 This was the main narrative, that was coming from the FED.
 
@@ -31,7 +29,7 @@ They were really concerned about a Japanese-style deflationary and stagnating ec
 
 ## PRINTING MONEY AND PLANS TO KEEP THE INFLATION AT 2%
 
-However, that was a year ago, and things have progressed at a lightning pace.
+However, that was in 2020, and things have progressed at a lightning pace.
 
 Money printing continued through the rest of the year, as countries tried to stave off incoming second and third waves.
 
@@ -47,8 +45,6 @@ This was despite some of the warning signs. that were coming through the data co
 
 Prices were starting to surge across the board.
 
-For example, this tweet from Dan Held.
-
 <center>
 <img src="/images/posts/Economy/inflation/dan.PNG">
 </center>
@@ -61,11 +57,11 @@ It was inevitable, that we would start to see these price increases work their w
 
 Fuel prices have been on the rise since the beginning of the year, and house prices have been skyrocketing a combination of demand and lumber shortages.
 
-So inflation was already beginning to rear its ugly head, and there were many market participants, who were beginning to ring the alarm bells.
+So inflation was already beginning to rear its head, and there were many market participants, who were beginning to ring the alarm bells.
 
 ## THE "SURPRISING" OUTCOME - INFLATION
 
-Then came the April CPI numbers, which were released 2 weeks ago.
+Then came the April CPI numbers.
 
 They showed, that consumer prices had increased by 4.2% in the 12 months from April 2020.
 
@@ -85,9 +81,7 @@ These were up over 6.2% in April, and it was the largest increase in the PPI mea
 
 There was also a 0.6% increase in the PPI in just one month from March.
 
-So irrespective of how you slice or dice it, the inflation numbers were not looking good, and I'm sure, that the folks over at the FED were also starting to feel the heat.
-
-**What did they expect, when they printed 25% of all the money ever in existence in a single year?**
+**What did the FED expect, when they printed 25% of all the money ever in existence in a single year?**
 
 <center>
 <img src="/images/posts/Economy/inflation/money-supply.png">
@@ -95,7 +89,7 @@ So irrespective of how you slice or dice it, the inflation numbers were not look
 
 ## WHY INFLATION IS DEADLY
 
-Anyways, there are a number of reasons, as to why inflation is so deadly, and I'm not even talking about the hyperinflation, that you see.
+There are a number of reasons, as to why inflation is so deadly.
 
 **In failed states inflation is the general increase in the price of goods and services.**
 
@@ -125,21 +119,19 @@ In fact, it could be worse for corporate balance sheets than consumers.
 
 ## CPI CONSUMPTION
 
-Now, as I mentioned earlier, PPI, which is a production measure, was running hotter than CPI consumption.
+PPI, which is a production measure, was running hotter than CPI consumption.
 
 The cost of inputs for companies is running higher, which means, that dollars saved on balance sheets, are worth that much less.
 
 ## IMPACT ON THE US DOLLAR
 
-But that's not even the worst part about inflation.
-
-You have to consider the impact, that it has on the US dollar.
+But that's not even the worst part about inflation. You have to consider the impact, that it has on the US dollar.
 
 More broadly, the US dollar is the world's reserve currency, which means, that a great deal of it is held offshore.
 
-Fun fact, it's estimated, that between 40-70% of all US dollar bank notes in circulation, are held outside of US borders.
+It's estimated, that between 40-70% of all US dollar bank notes in circulation, are held outside of US borders.
 
-Then of course, you have all those foreign central banks, that don't only hold US dollars, but also dollar denominated debt.
+Then you have all those foreign central banks, that don't only hold US dollars, but also dollar denominated debt.
 
 The more value that the dollar loses each year, the more likely these central banks and foreign holders are to diversify their currency risk.
 
@@ -163,9 +155,9 @@ It's also one of those things, that are hard to reign back in again.
 <img src="/images/posts/Economy/inflation/dxy.PNG">
 </center>
 
-##### CPI INFLATION - CPI BASKET
+## CPI INFLATION - CPI BASKET
 
-Once the genie is out of the bottle, and there is a strong case to be made, that the CPI inflation itself is vastly underestimating the true inflation.
+The CPI inflation itself is vastly underestimating the true inflation.
 
 **The main point of contention here comes down to the basket of goods and services used to measure the CPI.**
 
@@ -177,19 +169,17 @@ It assumes that consumers adjust behavior, and hence it means, that the composit
 
 The main point to take away from this is that, they are not really comparing apples with apples, and it's not only that you should consider.
 
-##### WHAT DID THEY NOT INCLUDE IN THEIR REPORTS - PANDEMIC OUTCOME
+## WHAT DID THEY NOT INCLUDE IN THEIR REPORTS - PANDEMIC OUTCOME
 
 **The fact that the basket used to determine this CPI does not include assets such as investment assets.**
 
 **It does not include housing prices, even though these play a large part in the cost of living conundrum.**
 
-I, of course, don't need to tell you about how quickly the cost of housing has been going up recently.
+There's no need to tell about how quickly the cost of housing has been going up recently.
 
-Then you have to consider, how much consumption patterns have changed in the wake of the pandemic.
+Then one has to consider, how much consumption patterns have changed in the wake of the pandemic and think about what was purchased, and what was not.
 
-Think about what was purchased, and what was not.
-
-In the wake of the lockdowns travel and leisure completely collapsed.
+In the wake of the lockdowns, travel and leisure completely collapsed.
 
 The only items, that people spent more on, were groceries and booze, both of which make sense.
 
@@ -201,23 +191,23 @@ Apart from this, most shopping went online, where the price fluctuation can be a
 <img src="/images/posts/Economy/inflation/inflat.png">
 </center>
 
-##### INCORRECT DATA
+## INCORRECT DATA
 
 Not only that, but because of this, shift data collection of the prices of goods services in the basket was hard to do.
 
 Researchers could not visit physical stores in order to gather that price data.
 
-So this means that the cost of living over the past year has been much higher, than we're being led to believe based on the CPI data.
+This means, that the cost of living over the past year has been much higher, than we're being led to believe based on the CPI data.
 
-One more interesting chart, that you can look at, is this one by economist Alberto Cavall, which shows a different covert basket, which is running considerably hotter than the actual CPI basket.
+One more interesting chart, that you can look at, is this one by economist *Alberto Cavall*, which shows a different covert basket, which is running considerably hotter than the actual CPI basket.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Economy/inflation/6.PNG">
+</center>
 
-Of course, I don't think we need a CPI measure to tell us, how much prices have gone up over the past year, and what's even more disconcerting about all of this is the fact, that most employers determine salary increases based on these official figures.
+We don't need a CPI measure to tell, how much prices have gone up over the past year, and what's even more disconcerting about all of this is the fact, that most employers determine salary increases based on these official figures.
 
-##### HOW TO PROTECT OURSELVES FROM INFLATION? - INVEST IN THINGS OF LIMITED SUPPLY
-
-So, it's quite clear, that inflation is a massive problem, and one that we could be under counting this then begs a very important question.
+## HOW TO PROTECT OURSELVES FROM INFLATION? - INVEST IN THINGS OF LIMITED SUPPLY
 
 How do you protect yourself from this upcoming inflation?
 
@@ -227,19 +217,21 @@ Those, that cannot easily be devalued by increasing the amount of supply in circ
 
 Traditionally, these have been hard assets, like gold, which are perceived to have a limited supply, as well as fundamental use cases, as in jewellery, etc.
 
-##### GOLD SHOULD BE THE SALTVATION. BUT THERE WAS NO HEDGE..?
+## GOLD SHOULD BE THE SALTVATION. BUT THERE WAS NO HEDGE..?
 
 However, if we take a look at the performance of gold over the past year, it's been relatively meager.
 
-Now, you would have thought, that the world's premier reserve asset would have been breaking new all-time highs this year.
+You would have thought, that the world's premier reserve asset would have been breaking new all-time highs this year.
 
-This has not been the case, but there is another inflation hedge, that has been doing just that, and that is of course Bitcoin.
+This has not been the case, but there is another inflation hedge, that has been doing just that, and that is of course **Bitcoin**.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Economy/inflation/7.PNG">
+</center>
 
-##### BITCOIN - LIMITED SUPPLY
+## BITCOIN - LIMITED SUPPLY
 
-The reason that Bitcoin is seen as such an effective inflation hedge, is because of the fact, that it has a hard defined limit of 21 million.
+The reason that Bitcoin is seen as such an effective inflation hedge, is because it has a hard defined limit of 21 million.
 
 There will only ever be 21 million Bitcoin mined.
 
@@ -247,27 +239,27 @@ Fun fact, there are currently 51 million dollar millionaires in the world, so if
 
 This is not even counting the fact, that at least 20% of Bitcoin has been lost forever.
 
-##### DECREASING EMISSION SCHEDULE
+## DECREASING EMISSION SCHEDULE
 
 Another supply factor, that you have to consider is the fact, that Bitcoin has a decreasing emission schedule.
 
 Its inflation rate keeps on falling and approaches 0 over time.
 
-Now, of course there are many more qualities, that make Bitcoin more favorable to gold as an asset to store wealth.
-
-And it's not just me, that is saying this.
+Now, there are many more qualities, that make Bitcoin more favorable to gold as an asset to store wealth.
 
 The Bitcoin inflation hedge trade has been taken on by numerous institutional investors.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Economy/inflation/8.PNG">
+</center>
 
 ##### INVESTORS THAT CONVERTED TO BITCOIN CULT
 
-For example, one of the most prolific global macro investors is Paul Tudor Jones, and last year he wrote this paper on the great monetary inflation quite simply.
+For example, one of the most prolific global macro investors is *Paul Tudor Jones*, and last year he wrote this paper on the great monetary inflation quite simply.
 
 It talked about the impact, that money printing would have on asset markets, and why he was investing in Bitcoin.
 
-You also have the likes of Stanley Druckenmiller, one of the most well-known Forex traders in the world.
+There are also likes of Stanley Druckenmiller, one of the most well-known Forex traders in the world.
 
 He was also raising the alarm bells around this incoming USD inflation, and the implications, this could have on the Bitcoin markets.
 
@@ -279,9 +271,9 @@ He basically pointed out in a Q4 market update, that if inflation were to pick u
 
 "*Trickle would turn into a torrent, and that trickle has already started*".
 
-##### COMPANIES THAT INVESTED IN BTC
+## COMPANIES THAT INVESTED IN BTC
 
-We know of a number of companies, that have been allocating a portion of their treasury positions towards Bitcoin.
+There is a number of companies, that have been allocating a portion of their treasury positions towards Bitcoin.
 
 These of course include the likes of Microstrategy, Square, Tesla, MeToo and Acre, to name but a few.
 
@@ -289,29 +281,25 @@ Now, these companies all allocated to Bitcoin, as they were worried about the im
 
 That is because of the sheer number of companies, that are concerned about the impact of inflation.
 
-Take a look at this chart.
+<center>
+<img src="/images/posts/Economy/inflation/9.PNG">
+</center>
 
-![image.png](attachment:image.png)
-
-It shows, the percentage increase in the average mentions of the word "*inflation*" by 26 S&P 500 companies in their earnings calls.
+The chart above shows, the percentage increase in the average mentions of the word "*inflation*" by 26 S&P 500 companies in their earnings calls.
 
 Clearly, the concern is on their mind, and this was even before we had those high CPI and PPI prints 2 weeks ago.
 
 You can bet your bottom dollar, that these will be up yet again in the next round of earnings calls.
 
-#### WHY BITCOIN FELL?
+## WHY BITCOIN FELL?
 
-We know, that Bitcoin is seen as a premier inflation hedge.
-
-This then begs a very important question.
-
-Why did it fall the day of that CPI print?
+Bitcoin is seen as a premier inflation hedge, so why did it fall the day of that CPI print?
 
 Surely, it should have rallied.
 
 There is a lot more going on here.
 
-##### FED COMES IN AND INCREASES INTEREST RATES
+## FED COMES IN AND INCREASES INTEREST RATES
 
 When the CPI prints came in 2 weeks ago and took the markets by surprise, the main concern was not really the actual inflation itself, but what it meant for interest rates.
 
@@ -327,9 +315,9 @@ It will need to increase interest rates in order to rein back in that money and 
 
 Of course, higher interest rates have large implications.
 
-For nearly every asset class out there, including Bitcoin, we actually saw this more recently, when the secretary of the treasury caused an interest rate scare with her comments about monetary tightening.
+For nearly every asset class out there, including Bitcoin, we saw this more recently, when the secretary of the treasury caused an interest rate scare with her comments about monetary tightening.
 
-##### CORRELATION BETWEEN FUND RATE AND BTC
+## CORRELATION BETWEEN FUND RATE AND BTC
 
 Why does a higher FED's fund rate impact on Bitcoin?
 
@@ -339,13 +327,15 @@ These are assets, that are generally riskier, and which investors are happy to a
 
 These of course yield much more when rates go up.
 
-I should also point out, that when rates go up, the discount rate used to calculate future cash flows goes up, which means a lower present stock value.
+When rates go up, the discount rate used to calculate future cash flows goes up, which means a lower present stock value.
 
 But that is neither here nor there.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Economy/inflation/10.png">
+</center>
 
-##### BECAUSE ITS A RISKY ASSET - INVESTORS STICK TO SMTH SAFER
+## BECAUSE ITS A RISKY ASSET - INVESTORS STICK TO SMTH SAFER
 
 The point is that, in an environment with rising rates, risk on assets tend to underperform.
 
@@ -353,31 +343,37 @@ Given that Bitcoin is seen as one of the riskiest assets in the risky bucket, it
 
 There is statistical evidence.
 
-Here you only need to take a look at the correlation between the price of equities and crypto.
+You only need to take a look at the correlation between the price of equities and crypto.
 
-Last year in 2020 we had the highest correlation between the two factors since data has been tracked.
+In 2020, there was the highest correlation between the two factors since data has been tracked.
 
-Take a look at this report by the chaps over at Van Eck.
+Given the report by the people at Van Eck:
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Economy/inflation/13.PNG">
+</center>
 
-As you can see from this analysis, there was almost no correlation between them in the years prior, whereas last year it was statistically significant.
+Given this analysis, there was almost no correlation between them in the years prior, whereas last year it was statistically significant.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Economy/inflation/14.PNG">
+</center>
 
-Here you can see another chart, that shows the correlation as a graph.
+Here's another chart, that shows the correlation as a graph.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Economy/inflation/15.PNG">
+</center>
 
 Over time it's a clear uptrend from mildly negative in 2017, to moderately positive this year.
 
-##### NOT HEDGE FOR STOCK MARKET VOLATILITY
+## NOT HEDGE FOR STOCK MARKET VOLATILITY
 
 From all the available evidence, it appears that Bitcoin is not really a hedge for stock market volatility. 
 
 It is placed in the same bucket, and will hence rise and fall.
 
-##### CORRELATED WITH STOCKS - HENCE SENSITIVE TO INTEREST RATE
+## CORRELATED WITH STOCKS - HENCE SENSITIVE TO INTEREST RATE
 
 Bitcoin is correlated with stocks, and is hence sensitive to interest rate hikes.
 
@@ -389,15 +385,15 @@ It's an asset, that has completely different characteristics and use cases.
 
 Its correlation to stocks is more of a short-term phenomenon, as these institutional investors adjust their portfolios.
 
-It's unlikely to be a long-term trend, and as such, I happen to think, that Bitcoin will become less responsive to rate hike fears, just the way it was intended.
+It's unlikely to be a long-term trend, and as such, it's likely to think, that Bitcoin will become less responsive to rate hike fears, just the way it was intended.
 
-#### CONCLUSION
+## CONCLUSION
 
-Last year in response to the pandemic governments seem to have thrown the baby out with the bath water, and that water is now flooding the streets leaving them awash with cash.
+In 2020 in response to the pandemic, governments seem to have thrown the baby out with the bath water, and that water is now flooding the streets leaving them awash with cash.
 
-It's even more worrying now, than it was last year, and if the recent cpi prints and stock route is anything to go by the fear has become real.
+It's even more worrying now, than it was last year, and if the recent CPI prints and stock route is anything to go by the fear has become real.
 
-No, it's not Venezuela or Zimbabwe levels of inflation, but it's alarming for many of the reasons that were highlighted earlier.
+It's not Venezuela or Zimbabwe levels of inflation, but it's alarming for many of the reasons that were highlighted earlier.
 
 These inflationary concerns are having two contradictory effects on the markets in the short term.
 
