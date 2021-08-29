@@ -4,7 +4,7 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-08-28T17:28:15+01:00</updated>
+ <updated>2021-08-29T16:23:40+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
@@ -472,7 +472,7 @@
 &lt;img src=&quot;/images/posts/Tokens/litecoin/safemoon.PNG&quot; /&gt;
 &lt;/center&gt;
 
-&lt;h5 id=&quot;lighter-version-of-btc-used-for-everyday-payments&quot;&gt;LIGHTER VERSION OF BTC USED FOR EVERYDAY PAYMENTS&lt;/h5&gt;
+&lt;h2 id=&quot;lighter-version-of-btc-used-for-everyday-payments&quot;&gt;LIGHTER VERSION OF BTC USED FOR EVERYDAY PAYMENTS&lt;/h2&gt;
 
 &lt;p&gt;As the name suggests, Litecoin was designed to be a lighter version of Bitcoin.&lt;/p&gt;
 
@@ -516,10 +516,14 @@
 
 &lt;p&gt;Unfortunately, it didn’t take long for those clever crypto mining manufacturers to create a Scrypt ASICS2.&lt;/p&gt;
 
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/antminer.PNG&quot; /&gt;
+&lt;/center&gt;
+
 &lt;p&gt;And since that time, the Litecoin blockchain has become gradually more centralized, with 8 mining pools accounting for most of its mining activity.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/Tokens/litecoin/antminer.PNG&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/5.PNG&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;ltc-merge-mined-with-dogecoin-for-security-reasons&quot;&gt;LTC MERGE MINED WITH DOGECOIN FOR SECURITY REASONS&lt;/h2&gt;
@@ -536,15 +540,19 @@
 
 &lt;p&gt;In other words, Dogecoin’s survival depends on Litecoin.&lt;/p&gt;
 
-&lt;p&gt;This is why part of me suspects that Litecoin miners are partially to blame for Dogecoin’s crazy price action.&lt;/p&gt;
+&lt;p&gt;This is probably why Litecoin miners are partially to blame for Dogecoin’s crazy price action.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/Tokens/litecoin/doge.jpg&quot; /&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/doge.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;speed&quot;&gt;SPEED&lt;/h2&gt;
 
 &lt;p&gt;Besides mining, Litecoin also differs from Bitcoin when it comes to speed cost and tokenomics.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/2.jpg&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;The average LTC transaction usually costs no more than a few cents, and takes about 2 minutes to complete.&lt;/p&gt;
 
@@ -558,11 +566,19 @@
 
 &lt;p&gt;Like Bitcoin, Litecoin has a 4 year halving cycle, meaning, the amount of LTC, miners get from each block, is cut in half.&lt;/p&gt;
 
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/3.PNG&quot; /&gt;
+&lt;/center&gt;
+
 &lt;p&gt;When the first Litecoin block was mined, the reward was 50 LTC.&lt;/p&gt;
 
 &lt;p&gt;The first halving occurred in August 2015, cutting the block reward to 25 LTC.&lt;/p&gt;
 
 &lt;p&gt;The second Litecoin halving happened in August 2019, which was cut in half again to 12.5 LTC.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/4.png&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;The next Litecoin halving is scheduled to take place in August 2023, and though some websites suggest this reduction in supply is the driver behind LTC’s price action, LTC remains highly correlated to BTC.&lt;/p&gt;
 
@@ -575,22 +591,38 @@
 &lt;p&gt;These upgrades include:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;SEGWIT, which reduces the amount of data in each block and allows the blockchain to process more transactions per second.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The Lightning Network, which makes it possible to create a payment channel, where multiple transactions can be sent between 2 parties for a fraction of the cost.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Atomic Swaps, cross smart contracts, that make it possible to trade different cryptocurrencies directly peer-to-peer.&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;SEGWIT, which reduces the amount of data in each block and allows the blockchain to process more transactions per second.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/segwit.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Lightning Network, which makes it possible to create a payment channel, where multiple transactions can be sent between 2 parties for a fraction of the cost.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/lightnet.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Atomic Swaps, cross smart contracts, that make it possible to trade different cryptocurrencies directly peer-to-peer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/atomswap.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;h2 id=&quot;mimblewimble&quot;&gt;MIMBLEWIMBLE&lt;/h2&gt;
 
-&lt;p&gt;The next tech to be added to the Litecoin blockchain is a privacy protocol called MimbleWimble.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/mimble.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;any harry potter fans watching will know that mimblewimble is the tongue-tying curse that scrambles a person’s speech&lt;/p&gt;
+&lt;p&gt;The next tech to be added to the Litecoin blockchain is a privacy protocol called &lt;strong&gt;MimbleWimble&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Any harry potter fans watching will know that MimbleWimble is the tongue-tying curse that scrambles a person’s speech&lt;/p&gt;
 
 &lt;p&gt;The MimbleWimble privacy protocol was proposed by an anonymous developer in 2018, and it’s the same protocol used by the GRIN privacy coin.&lt;/p&gt;
 
@@ -598,7 +630,7 @@
 
 &lt;p&gt;&lt;strong&gt;Only the total amount transacted between them can be seen.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;The Litecoin Foundation commissioned a grin developer to code MimbleWimble for Litecoin.&lt;/p&gt;
+&lt;p&gt;The Litecoin Foundation commissioned a GRIN developer to code MimbleWimble for Litecoin.&lt;/p&gt;
 
 &lt;p&gt;This code was completed in March and is currently being audited in preparation for implementation.&lt;/p&gt;
 
@@ -620,9 +652,13 @@
 
 &lt;p&gt;Moreover, exchanges are not obligated to support the MimbleWimble chain, meaning there shouldn’t be any risks of LTC getting delisted, the same way other privacy coins have been in recent months.&lt;/p&gt;
 
-&lt;h2 id=&quot;why-ltc-goes-up---recent-events&quot;&gt;WHY LTC GOES UP? - RECENT EVENTS&lt;/h2&gt;
+&lt;h2 id=&quot;why-ltc-goes-up-recent-events&quot;&gt;WHY LTC GOES UP? RECENT EVENTS&lt;/h2&gt;
 
-&lt;p&gt;Now, speaking of LTC, it recently surpassed its previous all-time high of $/355 and is showing no signs of slowing down.&lt;/p&gt;
+&lt;p&gt;Now, speaking of LTC, it recently surpassed its previous all-time high of $310 and is showing no signs of slowing down.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/5.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;This is for many reasons.&lt;/p&gt;
 
@@ -631,6 +667,10 @@
 &lt;p&gt;More recently, Paypal announced that it will be allowing US customers to pay for goods and services using crypto, which includes LTC.&lt;/p&gt;
 
 &lt;p&gt;LTC can already be used to pay for goods and services in the United States via the Litecoin Visa debit card, introduced by the Litecoin foundation last summer.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/6.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;Oddly enough, Flair Network also recently announced that it would be air dropping its SPARK token to LTC holders.&lt;/p&gt;
 
@@ -652,7 +692,7 @@
 
 &lt;p&gt;In April, Litecoin ETPs started trading on stock exchanges in Germany and Switzerland, both of which are physically backed.&lt;/p&gt;
 
-&lt;p&gt;I.e, the issuer of the ETP has to buy an equivalent amount of LTC to top it all off.&lt;/p&gt;
+&lt;p&gt;I.e., the issuer of the ETP has to buy an equivalent amount of LTC to top it all off.&lt;/p&gt;
 
 &lt;p&gt;Many expert investors believe that retail traders were converting their Dogecoin profits into Litecoin on Robinhood.&lt;/p&gt;
 
@@ -660,7 +700,7 @@
 
 &lt;h2 id=&quot;how-high-can-ltc-go&quot;&gt;HOW HIGH CAN LTC GO?&lt;/h2&gt;
 
-&lt;p&gt;If you’re wondering, how high LTC could go, this really depends on BTC.&lt;/p&gt;
+&lt;p&gt;How high LTC could go? Well, this really depends on BTC.&lt;/p&gt;
 
 &lt;p&gt;If BTC pulls a 2 or 3x, we would eventually see a similar move for most large cap alts, including LTC.&lt;/p&gt;
 
@@ -672,13 +712,19 @@
 
 &lt;p&gt;Unfortunately, there’s no way of knowing for sure, because Charlie has not made his wallet address public like Ethereum’s Vitalik Buterin has.&lt;/p&gt;
 
-&lt;p&gt;Vitalik is a billionaire now, by the way.&lt;/p&gt;
-
-&lt;h2 id=&quot;will-not-be-a-payment-top-due-to-it-competition&quot;&gt;WILL NOT BE A PAYMENT TOP DUE TO IT COMPETITION&lt;/h2&gt;
+&lt;h2 id=&quot;will-not-be-a-payment-top-due-to-its-competition&quot;&gt;WILL NOT BE A PAYMENT TOP DUE TO ITS COMPETITION&lt;/h2&gt;
 
 &lt;p&gt;In contrast to other top cryptos, Litecoin has a pretty limited use case, and is nowhere near close to being a top performer in its payments niche.&lt;/p&gt;
 
-&lt;p&gt;For now, LTC is the 11th largest cryptocurrency by market cap, and it could have moving any further up the ranks.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/7.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;For now, LTC is the 15th largest cryptocurrency by market cap, and it could have moving any further up the ranks.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/8.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;This is because there are dozens of seriously legit smart contract cryptocurrencies, that are building out massive ecosystems, and those that haven’t already surpassed LTC, probably will in due course.&lt;/p&gt;
 
@@ -692,6 +738,10 @@
 
 &lt;p&gt;The problem here is that, regulators are not a fan of total privacy, and this is why many exchanges have delisted Monero, ZCash and other privacy-preserving cryptos.&lt;/p&gt;
 
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/9.PNG&quot; /&gt;
+&lt;/center&gt;
+
 &lt;p&gt;While Litecoin’s implementation of MimbleWimble might make it immune to the same scrutiny, as a standard privacy coin, it could draw the attention of regulators for other reasons.&lt;/p&gt;
 
 &lt;p&gt;LTC is one of the most popular cryptocurrencies on the dark web already.&lt;/p&gt;
@@ -701,6 +751,10 @@
 &lt;p&gt;Not only that, but LTC is one of the easiest cryptocurrencies to get hold of, in addition to being on Paypal, Robinhood, and the Revolut banking app.&lt;/p&gt;
 
 &lt;p&gt;There are over 15 000 LTC ATMs around the world.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/10.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;To put things into context, that’s about the same, or possibly even more than the amount of Bitcoin ATMs out there.&lt;/p&gt;
 
@@ -736,7 +790,7 @@
 
 &lt;h2 id=&quot;ltc-github-reddit-twitter-and-overall-whats-going-on-with-it&quot;&gt;LTC GITHUB, REDDIT, TWITTER AND OVERALL WHATS GOING ON WITH IT&lt;/h2&gt;
 
-&lt;p&gt;Anyways, besides MimbleWimble, Litecoin doesn’t seem to have much else on the horizon, and an actual date for implementation has not yet been set.&lt;/p&gt;
+&lt;p&gt;Besides MimbleWimble, Litecoin doesn’t seem to have much else on the horizon, and an actual date for implementation has not yet been set.&lt;/p&gt;
 
 &lt;p&gt;Like Bitcoin and Ethereum, Litecoin is open source, and anyone can submit a Litecoin Improvement Proposal or LIP.&lt;/p&gt;
 
@@ -747,6 +801,10 @@
 &lt;p&gt;However, this seems to be because most of the activity is taking place on the Litecoin Talk Forum, which has been incredibly active as of late.&lt;/p&gt;
 
 &lt;p&gt;A core developers also seem to be quite active on Reddit, and one of them recently noted, that they’re in the process of putting together a concrete roadmap.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/litecoin/11.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;Flair Network is also scheduled to airdrop its SPARK token to light coiners in June, and this could turn Litecoin into a hotbed of new decentralized applications.&lt;/p&gt;
 
@@ -825,7 +883,7 @@
   &lt;li&gt;&lt;a href=&quot;https://www.coinbureau.com/review/litecoin-ltc/&quot;&gt; Litecoin Explained In Detail &lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.poker-king.com/dictionary/black-friday/&quot;&gt;2011 Online Poker Crackdown &lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.coinbureau.com/review/dogecoin-doge/&quot;&gt; Litecoin Dogecoin Merge Mining &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://litecoin-foundation.org/the-battle-for-sound-money/&quot;&gt; Litecoin Mimblewimble Privacy Explained &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://litecoin-foundation.org/the-battle-for-sound-money/&quot;&gt; Litecoin MimbleWimble Privacy Explained &lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://litecoin-card.com/&quot;&gt;  Litecoin Visa Debit Card &lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://decrypt.co/53642/flare-networks-to-airdrop-litecoin-hodlers-free-crypto&quot;&gt; Litecoin Flare Network Support &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -2373,318 +2431,392 @@
 &lt;img src=&quot;/images/posts/Tokens/ripple/xrp.png&quot; style=&quot;max-width: 200px&quot; /&gt;
 &lt;/center&gt;
 
-&lt;h5 id=&quot;leading-questions&quot;&gt;LEADING QUESTIONS&lt;/h5&gt;
-&lt;p&gt;What is Ripple?&lt;/p&gt;
+&lt;h2 id=&quot;international-transactions&quot;&gt;INTERNATIONAL TRANSACTIONS&lt;/h2&gt;
 
-&lt;p&gt;How does it work?&lt;/p&gt;
+&lt;p&gt;Ripple and XRP are one of the leading cryptocurrencies around.&lt;/p&gt;
 
-&lt;p&gt;Is XRP, Ripple’s cryptocurrency, a good investment?&lt;/p&gt;
+&lt;p&gt;Have you ever had occasion where you needed to wire money to someone only to be told it might take several days for that money to appear in their account?&lt;/p&gt;
 
-&lt;p&gt;And what does this all have to do  with the banking system?&lt;/p&gt;
+&lt;p&gt;That’s because most major banks are still using systems that were built 40 years ago for this task.&lt;/p&gt;
 
-&lt;h5 id=&quot;international-transactions&quot;&gt;INTERNATIONAL TRANSACTIONS&lt;/h5&gt;
-&lt;p&gt;Today’s topic is Ripple and XRP, one of the leading cryptocurrencies around.&lt;/p&gt;
+&lt;p&gt;Swift, MoneyGram and Western Union are just some examples of slow, expensive  and relatively limited systems that financial services use  to transfer money.&lt;/p&gt;
 
-&lt;p&gt;Have you ever had occasion where you  needed to wire money to someone only to be told it might take several days for that money to appear  in their account?&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/0.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;That’s because most major banks are still using systems that were built  40 years ago for this task.&lt;/p&gt;
+&lt;h2 id=&quot;transaction-going-through-intermediary-banks&quot;&gt;TRANSACTION GOING THROUGH INTERMEDIARY BANKS&lt;/h2&gt;
 
-&lt;p&gt;Swift, MoneyGram and Western Union  are just some examples of slow, expensive  and relatively limited systems that financial services use  to transfer money.&lt;/p&gt;
-
-&lt;h5 id=&quot;transaction-going-through-intermediary-banks&quot;&gt;TRANSACTION GOING THROUGH INTERMEDIARY BANKS&lt;/h5&gt;
 &lt;p&gt;On top of that, not all of the banks are connected  via the same network.&lt;/p&gt;
 
-&lt;p&gt;So, in many cases, you don’t even have a direct line  between two banks when they need to transfer money  from one account to the other.&lt;/p&gt;
+&lt;p&gt;So, in many cases, you don’t even have a direct line between two banks when they need to transfer money from one account to the other.&lt;/p&gt;
 
-&lt;p&gt;In order for bank A  to send money to bank B that it doesn’t have  any direct relationship with, more often than not it will have to go through  several intermediary banks, searching for common network connections  between each other in order to clear a path for the money.&lt;/p&gt;
+&lt;p&gt;In order for bank A to send money to bank B that it doesn’t have any direct relationship with, more often than not it will have to go through several intermediary banks, searching for common network connections between each other in order to clear a path for the money.&lt;/p&gt;
 
-&lt;p&gt;That’s why international wire transfers  are so slow and costly;&lt;/p&gt;
+&lt;p&gt;That’s why international wire transfers are so slow and costly.&lt;/p&gt;
 
-&lt;h5 id=&quot;money-conversations&quot;&gt;MONEY CONVERSATIONS&lt;/h5&gt;
-&lt;p&gt;Each bank along the way  takes time to process the transaction and a fee for servicing the process.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/1.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;In some cases, bank transfers must involve  currency conversions, which make things  even more problematic and expensive.&lt;/p&gt;
+&lt;h2 id=&quot;money-conversations&quot;&gt;MONEY CONVERSATIONS&lt;/h2&gt;
+&lt;p&gt;Each bank along the way takes time to process the transaction and a fee for servicing the process.&lt;/p&gt;
 
-&lt;p&gt;For example, directly transferring currency  from Japan to Nicaragua, means turning Yens into Cordobas, which is generally not feasible.&lt;/p&gt;
+&lt;p&gt;In some cases, bank transfers must involve currency conversions, which make things  even more problematic and expensive.&lt;/p&gt;
 
-&lt;p&gt;The reason is that Japanese banks don’t usually hold accounts  denominated in Cordobas because there’s not  a lot of demand for them.&lt;/p&gt;
+&lt;p&gt;For example, directly transferring currency from Japan to Nicaragua, means turning Yens into Cordobas, which is generally not feasible.&lt;/p&gt;
 
-&lt;p&gt;However, both Japanese  and Nicaraguan banks hold accounts in dollars.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/2.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;So instead, an individual or bank  will usually trade Yens for Dollars and then Dollars to Cordobas.&lt;/p&gt;
+&lt;p&gt;The reason is that Japanese banks don’t usually hold accounts denominated in Cordobas because there’s not a lot of demand for them.&lt;/p&gt;
 
-&lt;p&gt;As you can imagine, this process can be costly  due to the multiple conversions.&lt;/p&gt;
+&lt;p&gt;However, both Japanese and Nicaraguan banks hold accounts in dollars.&lt;/p&gt;
 
-&lt;h5 id=&quot;ripple-for-banks-to-transfer-ash-around-the-world&quot;&gt;RIPPLE FOR BANKS TO TRANSFER ASH AROUND THE WORLD&lt;/h5&gt;
+&lt;p&gt;So instead, an individual or bank will usually trade Yens for Dollars and then Dollars to Cordobas.&lt;/p&gt;
+
+&lt;p&gt;As one can imagine, this process can be costly due to the multiple conversions.&lt;/p&gt;
+
+&lt;h2 id=&quot;ripple-for-banks-to-transfer-cash-around-the-world&quot;&gt;RIPPLE FOR BANKS TO TRANSFER CASH AROUND THE WORLD&lt;/h2&gt;
+
 &lt;p&gt;In short, the banking system today doesn’t have a main connecting network  with a uniform set of rules.&lt;/p&gt;
 
-&lt;p&gt;Each time you want to exchange  or send money through the banking system, you need to find a path  to transfer that money, depending on the circumstances.&lt;/p&gt;
+&lt;p&gt;Each time you want to exchange  or send money through the banking system, you need to find a path to transfer that money, depending on the circumstances.&lt;/p&gt;
 
-&lt;p&gt;That’s exactly what Ripple  is here to change.&lt;/p&gt;
+&lt;p&gt;That’s exactly what Ripple is here to change.&lt;/p&gt;
 
-&lt;p&gt;Just like the Internet has its own rules,  or protocol, to transfer information known as http. RippleNet uses a protocol,  known as RTXP, for moving value around the world.&lt;/p&gt;
+&lt;p&gt;Just like the Internet has its own rules, or protocol, to transfer information known as HTTP, RippleNet uses a protocol known as &lt;strong&gt;RTXP&lt;/strong&gt;, for moving value around the world.&lt;/p&gt;
 
-&lt;h5 id=&quot;ripple-nets&quot;&gt;RIPPLE NETS&lt;/h5&gt;
-&lt;p&gt;Ripple Labs, the creators of RippleNet, aim to create the “Internet of Value” - a way for money to move  as quickly as information does.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/3.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;Through the use of RippleNet, there is no reason to pay a fortune  and wait days when transferring money globally.&lt;/p&gt;
+&lt;h2 id=&quot;ripplenet&quot;&gt;RIPPLENET&lt;/h2&gt;
 
-&lt;p&gt;The idea for Ripple  was actually first conceived way back in 2004 by Ryan Fugger and was called RipplePay, but in 2012 was passed to  Jed McCaleb and Chris Larsen who founded OpenCoin  later to be called Ripple Labs.&lt;/p&gt;
+&lt;p&gt;Ripple Labs, the creators of RippleNet, aim to create the “Internet of Value” - a way for money to move as quickly as information does.&lt;/p&gt;
 
-&lt;p&gt;Unlike most cryptocurrencies  who focus on the individual, Ripple Labs aims to serve banks  and payment providers, allowing them to lower transaction costs  and expedite settlements.&lt;/p&gt;
+&lt;p&gt;Through the use of RippleNet, there is no reason to pay a fortune and wait days when transferring money globally.&lt;/p&gt;
 
-&lt;h5 id=&quot;how-does-it-work-validators-gateways&quot;&gt;HOW DOES IT WORK? VALIDATORS, GATEWAYS&lt;/h5&gt;
-&lt;p&gt;But how does it all work?&lt;/p&gt;
+&lt;p&gt;The idea for Ripple was actually first conceived way back in 2004 by Ryan Fugger and was called RipplePay, but in 2012 was passed to Jed McCaleb and Chris Larsen who founded OpenCoin later to be called Ripple Labs.&lt;/p&gt;
 
-&lt;p&gt;RippleNet is a network based on  a set of rules known as the Ripple Transaction Protocol  or RTXP for short.&lt;/p&gt;
+&lt;p&gt;Unlike most cryptocurrencie,s who focus on the individual, &lt;strong&gt;Ripple Labs aims to serve banks and payment providers, allowing them to lower transaction costs  and expedite settlements.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;The network consists of computers,  known as validators, that are spread around the world and maintain a shared ledger of  who owns what.&lt;/p&gt;
+&lt;h2 id=&quot;how-does-it-work-validators-gateways&quot;&gt;HOW DOES IT WORK? VALIDATORS, GATEWAYS&lt;/h2&gt;
 
-&lt;p&gt;Validators make sure every transaction  sent through the network follows the RTXP rules.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;RippleNet is a network based on a set of rules known as the Ripple Transaction Protocol or RTXP for short.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Anyone can run a validator  and help maintain the Ripple network just like anyone can run a Bitcoin node  to maintain the Bitcoin network.&lt;/p&gt;
+&lt;p&gt;The network consists of computers, known as validators, that are spread around the world and maintain a shared ledger of who owns what.&lt;/p&gt;
 
-&lt;p&gt;Companies who want to access  the Ripple network can use gateways.&lt;/p&gt;
+&lt;p&gt;Validators make sure every transaction sent through the network follows the RTXP rules.&lt;/p&gt;
 
-&lt;p&gt;Gateways,  which are usually run by banks, act as entry points to Ripple  for people outside the network.&lt;/p&gt;
+&lt;p&gt;Anyone can run a validator and help maintain the Ripple network just like anyone can run a Bitcoin node to maintain the Bitcoin network.&lt;/p&gt;
 
-&lt;p&gt;It’s the same idea as going to a bank  or a credit company to gain access to the banking system.&lt;/p&gt;
+&lt;p&gt;Companies who want to access the Ripple network can use gateways.&lt;/p&gt;
 
-&lt;p&gt;So Ripple basically offers businesses  an alternative to the banking system in the form of an Internet of value  called RippleNet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Gateways, which are usually run by banks, act as entry points to Ripple for people outside the network.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h5 id=&quot;our-money-can-be-on-xrp-and-we-might-not-know&quot;&gt;OUR MONEY CAN BE ON XRP AND WE MIGHT NOT KNOW&lt;/h5&gt;
-&lt;p&gt;Ripple products like xRapid,  xVia and xCurrent are offered to companies  in order to optimize their current solutions for transfering money  around the world.&lt;/p&gt;
+&lt;p&gt;It’s the same idea as going to a bank or a credit company to gain access to the banking system.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So Ripple basically offers businesses an alternative to the banking system in the form of an Internet of value called RippleNet.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/4.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;our-money-can-be-on-xrp-and-we-might-not-know&quot;&gt;OUR MONEY CAN BE ON XRP AND WE MIGHT NOT KNOW&lt;/h2&gt;
+
+&lt;p&gt;Ripple products like &lt;strong&gt;xRapid&lt;/strong&gt;, &lt;strong&gt;xVia&lt;/strong&gt; and &lt;strong&gt;xCurrent&lt;/strong&gt; are offered to companies in order to optimize their current solutions for transfering money around the world.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/5.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;It’s worth mentioning that for you, as a customer of a financial service  using Ripple, this solution is transparent.&lt;/p&gt;
 
 &lt;p&gt;If the bank switches to this technology, your bank account balance  could be residing on the XRP ledger tomorrow and you would never know it.&lt;/p&gt;
 
-&lt;h5 id=&quot;two-types-of-currency&quot;&gt;TWO TYPES OF CURRENCY&lt;/h5&gt;
+&lt;h2 id=&quot;two-types-of-currency&quot;&gt;TWO TYPES OF CURRENCY&lt;/h2&gt;
+
 &lt;p&gt;This all sounds great, but what type of currency  can actually be sent through the Ripple Network?&lt;/p&gt;
 
-&lt;p&gt;Well, unlike other cryptocurrency protocols  which support only their own asset, Ripple offers  two different types of “currencies”: IOUs and XRP.&lt;/p&gt;
+&lt;p&gt;Unlike other cryptocurrency protocols, which support only their own asset, Ripple offers two different types of currencies: IOUs and XRP.&lt;/p&gt;
 
-&lt;h5 id=&quot;iou&quot;&gt;IOU&lt;/h5&gt;
+&lt;h2 id=&quot;iou&quot;&gt;IOU&lt;/h2&gt;
+
 &lt;p&gt;IOUs are tokens on the Ripple network  that can be stored on any Ripple wallet.&lt;/p&gt;
 
-&lt;p&gt;Just like we can store  a variety of Ethereum tokens on an Ethereum wallet, we can have plenty of tokens  coexisting on the same Ripple wallet.&lt;/p&gt;
+&lt;p&gt;Just like we can store a variety of Ethereum tokens on an Ethereum wallet, we can have plenty of tokens coexisting on the same Ripple wallet.&lt;/p&gt;
 
-&lt;p&gt;But we really should  stop the comparison here, since this is as far as the similarities go.&lt;/p&gt;
+&lt;p&gt;But we really should stop the comparison here, since this is as far as the similarities go.&lt;/p&gt;
 
-&lt;p&gt;Any participant on the Ripple network  can issue an IOU, however an IOU doesn’t represent  something you OWN.&lt;/p&gt;
+&lt;p&gt;Any participant on the Ripple network can issue an IOU, however an IOU doesn’t represent something you OWN.&lt;/p&gt;
 
 &lt;p&gt;It represents something you OWE.&lt;/p&gt;
 
-&lt;p&gt;It’s a debt, an obligation to pay back  something you got in real life.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/7.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;It’s a debt, an obligation to pay back something you got in real life.&lt;/p&gt;
 
 &lt;p&gt;When I issue an IOU to someone, it means I owe them something.&lt;/p&gt;
 
-&lt;p&gt;When I hold an IOU  issued by someone else, it means someone owes me something.&lt;/p&gt;
+&lt;p&gt;When I hold an IOU issued by someone else, it means someone owes me something.&lt;/p&gt;
 
-&lt;p&gt;Each IOU has a name  that is comprised out of who issued it and what it represents.&lt;/p&gt;
+&lt;p&gt;Each IOU has a name that is comprised out of who issued it and what it represents.&lt;/p&gt;
 
-&lt;p&gt;For example, USD.Bitstamp is an IOU  issued by Bitstamp promising to pay back USD dollars.&lt;/p&gt;
+&lt;p&gt;For example, USD.Bitstamp is an IOU issued by Bitstamp promising to pay back USD dollars.&lt;/p&gt;
 
-&lt;p&gt;An IOU can be issued for  any type of real world asset.&lt;/p&gt;
+&lt;p&gt;An IOU can be issued for any type of real world asset.&lt;/p&gt;
 
-&lt;p&gt;For example you can have an IOU for dollars, EUROs,  gold, oil, airline miles and even cows.&lt;/p&gt;
+&lt;p&gt;For example you can have an IOU for dollars, EUROs, gold, oil, airline miles and even cows.&lt;/p&gt;
 
-&lt;p&gt;For each asset we borrow,  we will issue a new IOU.&lt;/p&gt;
+&lt;p&gt;For each asset we borrow, we will issue a new IOU.&lt;/p&gt;
 
-&lt;p&gt;Unlike other forms of debt  that can be traded, IOUs for the same asset type  are not interchangeable if they were issued by two different people.&lt;/p&gt;
+&lt;p&gt;Unlike other forms of debt that can be traded, IOUs for the same asset type  are not interchangeable if they were issued by two different people.&lt;/p&gt;
 
-&lt;p&gt;For example, if I borrow money from you  and issue you a 20 USD.Nate IOU, that IOU can’t be added to  a 20 USD.Bitstamp IOU.&lt;/p&gt;
+&lt;p&gt;For example, if I borrow money from you and issue you a 20 USD.Nate IOU, that IOU can’t be added to a 20 USD.Bitstamp IOU.&lt;/p&gt;
 
-&lt;h5 id=&quot;depends-on-trust&quot;&gt;DEPENDS ON TRUST&lt;/h5&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/8.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;Since each IOU has a different credit line  or trust line you can only redeem  the USD.Nate IOU from me.&lt;/p&gt;
+&lt;h2 id=&quot;depends-on-trust&quot;&gt;DEPENDS ON TRUST&lt;/h2&gt;
+
+&lt;p&gt;Since each IOU has a different credit line or trust line, you can only redeem  the USD.Nate IOU from me.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;It’s important to note that  the IOU itself is not the asset, it’s just a promise by the issuer  to give you the asset back in the future.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;This promise won’t do you any good  if the issuer isn’t good for his word.&lt;/p&gt;
+&lt;p&gt;This promise won’t do you any good, if the issuer isn’t good for his word.&lt;/p&gt;
 
-&lt;p&gt;That’s why trust plays  an important issue with IOUs.&lt;/p&gt;
+&lt;p&gt;That’s why trust plays an important issue with IOUs.&lt;/p&gt;
 
-&lt;p&gt;In order for you to accept  an IOU from someone you have to trust that  they will be able to pay you back.&lt;/p&gt;
+&lt;p&gt;In order for you to accept an IOU from someone, you have to trust that they will be able to pay you back.&lt;/p&gt;
 
-&lt;p&gt;In RippleNet this is known as a trust line.&lt;/p&gt;
+&lt;p&gt;In RippleNet this is known as a &lt;strong&gt;trust line&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;A trust line is somewhat similar to  a line of credit with the bank.&lt;/p&gt;
+&lt;p&gt;A trust line is somewhat similar to a line of credit with the bank.&lt;/p&gt;
 
-&lt;p&gt;It’s an agreement to trust someone  up to a limited amount of money.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It’s an agreement to trust someone up to a limited amount of money.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h5 id=&quot;xrp&quot;&gt;XRP&lt;/h5&gt;
-&lt;p&gt;Aside from IOUs there is another currency  the Ripple protocol supports - XRP.&lt;/p&gt;
+&lt;h2 id=&quot;xrp&quot;&gt;XRP&lt;/h2&gt;
 
-&lt;p&gt;XRP is a currency issued by Ripple Labs to help transfer payments  through the Ripple Network.&lt;/p&gt;
+&lt;p&gt;Aside from IOUs there is another currency the Ripple protocol supports - XRP.&lt;/p&gt;
 
-&lt;p&gt;For example, if a bank wants to move  large amounts of money, instead of needing to use  multiple intermediary banks to transfer the money, it can just convert the money to XRP  and send that XRP to the recipient bank.&lt;/p&gt;
+&lt;p&gt;XRP is a currency issued by Ripple Labs to help transfer payments through the Ripple Network.&lt;/p&gt;
 
-&lt;p&gt;It’s important to note that two banks don’t have to use XRP  to transfer assets between them.&lt;/p&gt;
+&lt;p&gt;For example, if a bank wants to move large amounts of money, instead of needing to use  multiple intermediary banks to transfer the money, it can just convert the money to XRP and send that XRP to the recipient bank.&lt;/p&gt;
+
+&lt;p&gt;It’s important to note that two banks don’t have to use XRP to transfer assets between them.&lt;/p&gt;
 
 &lt;p&gt;Instead, they can choose to keep  an ‘open tab’ using IOUs only, without ever closing it.&lt;/p&gt;
 
-&lt;h5 id=&quot;tradable-asset-and-no-trust-needed&quot;&gt;TRADABLE ASSET AND NO TRUST NEEDED&lt;/h5&gt;
-&lt;p&gt;Still, XRP is a form of payment  that unlike an IOU is final and is considered a tradable asset  by anyone on the network.&lt;/p&gt;
+&lt;h2 id=&quot;tradable-asset-and-no-trust-needed&quot;&gt;TRADABLE ASSET AND NO TRUST NEEDED&lt;/h2&gt;
 
-&lt;p&gt;Unlike IOUs,  XRP is the actual asset so there is no counterparty risk.&lt;/p&gt;
+&lt;p&gt;Still, XRP is a form of payment that unlike an IOU is final and is considered a tradable asset by anyone on the network.&lt;/p&gt;
 
-&lt;p&gt;In other words,  once you’ve received payment in XRP, the transaction is made and there’s no fear that the other party  will not meet its obligations for payment.&lt;/p&gt;
+&lt;p&gt;Unlike IOUs, XRP is the actual asset so there is no counterparty risk.&lt;/p&gt;
 
-&lt;h5 id=&quot;if-xrp-is-so-cool-why-iou&quot;&gt;IF XRP IS SO COOL, WHY IOU?&lt;/h5&gt;
-&lt;p&gt;So, if no trust is needed  and no trust line needs to be opened when sending XRP  to other network participants, why do we even need IOU?&lt;/p&gt;
+&lt;p&gt;In other words, once you’ve received payment in XRP, the transaction is made and there’s no fear that the other party will not meet its obligations for payment.&lt;/p&gt;
 
-&lt;p&gt;The simple answer is that XRP,  being a cryptocurrency asset by itself, is relatively volatile  and also not respected worldwide.&lt;/p&gt;
+&lt;h2 id=&quot;if-xrp-is-so-cool-why-iou&quot;&gt;IF XRP IS SO COOL, WHY IOU?&lt;/h2&gt;
 
-&lt;p&gt;IOUs, on the other hand, are treated and valued  as the assets each represent.&lt;/p&gt;
+&lt;p&gt;So, if no trust is needed and no trust line needs to be opened when sending XRP to other network participants, why do we even need IOU?&lt;/p&gt;
 
-&lt;h5 id=&quot;more-pros-of-xrp&quot;&gt;MORE PROS OF XRP&lt;/h5&gt;
+&lt;p&gt;The simple answer is that &lt;strong&gt;XRP, being a cryptocurrency asset by itself, is relatively volatile and also not respected worldwide.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;IOUs, on the other hand, are treated and valued as the assets each represent.&lt;/p&gt;
+
+&lt;h2 id=&quot;more-pros-of-xrp&quot;&gt;MORE PROS OF XRP&lt;/h2&gt;
+
 &lt;p&gt;XRP has additional advantages as well.&lt;/p&gt;
 
 &lt;p&gt;It’s fast and scalable.&lt;/p&gt;
 
-&lt;p&gt;Sending an XRP transaction  through the network takes 4 seconds as opposed to Bitcoin’s  10 minute average.&lt;/p&gt;
+&lt;p&gt;Sending an XRP transaction through the network takes 4 seconds as opposed to Bitcoin’s 10 minute average.&lt;/p&gt;
 
-&lt;p&gt;Also, XRP can handle  1,500 transactions per second while Bitcoin can handle only 7.&lt;/p&gt;
+&lt;p&gt;Also, XRP can handle 1,500 transactions per second, while Bitcoin can handle only 7.&lt;/p&gt;
 
-&lt;p&gt;So the upside of using XRP  as a form of payment is pretty obvious.&lt;/p&gt;
+&lt;p&gt;So the upside of using XRP as a form of payment is pretty obvious.&lt;/p&gt;
 
-&lt;h5 id=&quot;can-xrp-be-mined&quot;&gt;CAN XRP BE MINED?&lt;/h5&gt;
-&lt;p&gt;One question people ask us a lot is “if XRP is a cryptocurrency,  can it be mined?”&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/9.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;The answer is - no, it can’t.&lt;/p&gt;
+&lt;h2 id=&quot;can-xrp-be-mined&quot;&gt;CAN XRP BE MINED?&lt;/h2&gt;
 
-&lt;p&gt;Mining in Bitcoin is done  in order to confirm and determine the order of transactions  on the blockchain.&lt;/p&gt;
+&lt;p&gt;So, if XRP is a cryptocurrency, can it be mined?&lt;/p&gt;
 
-&lt;p&gt;In Ripple transactions are handled  through a different process.&lt;/p&gt;
+&lt;p&gt;The answer is - &lt;strong&gt;no, it can’t.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Let me explain:&lt;/p&gt;
+&lt;p&gt;Mining in Bitcoin is done in order to confirm and determine the order of transactions on the blockchain.&lt;/p&gt;
 
-&lt;h5 id=&quot;validators-rules-the-blockchain&quot;&gt;VALIDATORS RULES THE BLOCKCHAIN&lt;/h5&gt;
-&lt;p&gt;When an XRP transaction is broadcast  through the network, the validators that maintain the network  decide if it’s valid or not through voting.&lt;/p&gt;
+&lt;p&gt;In Ripple transactions are handled through a different process.&lt;/p&gt;
 
-&lt;p&gt;When a validator receives the transaction, it consults with other trusted validators and they vote on whether  the transaction is valid.&lt;/p&gt;
+&lt;h2 id=&quot;validators-rules-the-blockchain&quot;&gt;VALIDATORS RULES THE BLOCKCHAIN&lt;/h2&gt;
 
-&lt;p&gt;If 80% or more vote it “valid” - the transaction is updated  in the Ripple ledger.&lt;/p&gt;
+&lt;p&gt;When an XRP transaction is broadcast through the network, the validators that maintain the network decide if it’s valid or not through &lt;strong&gt;voting&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;This list of trusted validators  that a validator consults with is known as a Unique Node List  or UNL for short.&lt;/p&gt;
+&lt;p&gt;When a validator receives the transaction, it consults with other trusted validators and they vote on whether the transaction is valid.&lt;/p&gt;
+
+&lt;p&gt;If &lt;strong&gt;80% or more vote it “valid”&lt;/strong&gt; - the transaction is updated in the Ripple ledger.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/10.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;This list of trusted validators  that a validator consults with is known as a Unique Node List or UNL for short.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Each validator has its own UNL.&lt;/p&gt;
 
-&lt;p&gt;Deciding who will be included  in the validaor’s UNL is completely up to the person  who runs the validator.&lt;/p&gt;
+&lt;p&gt;Deciding who will be included in the validaor’s UNL is completely up to the person  who runs the validator.&lt;/p&gt;
 
-&lt;p&gt;However, Ripple offers  a default list of trusted validators.&lt;/p&gt;
+&lt;p&gt;However, Ripple offers a default list of trusted validators.&lt;/p&gt;
 
-&lt;p&gt;Validators don’t get compensated  for their work like Bitcoin miners do with new coins.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Validators don’t get compensated for their work like Bitcoin miners do with new coins.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h5 id=&quot;xrp-is-pre-mined&quot;&gt;XRP IS PRE-MINED&lt;/h5&gt;
-&lt;p&gt;When Ripple Labs started out they actually issued, or “pre-mined”,  a total of 100 billion XRP and according to the Ripple protocol, no more XRP can ever be created.&lt;/p&gt;
+&lt;h2 id=&quot;xrp-is-pre-mined&quot;&gt;XRP IS PRE-MINED&lt;/h2&gt;
 
-&lt;p&gt;You might be wondering, who owns all of these pre-mined coins?&lt;/p&gt;
+&lt;p&gt;When Ripple Labs started out they actually issued, or “pre-mined”, a total of 100 billion XRP and according to the Ripple protocol, no more XRP can ever be created.&lt;/p&gt;
 
-&lt;p&gt;20 Billion XRP  were given to Ripple founders - Jed Macaleb, Chris Larsen  and Arthur Britto.&lt;/p&gt;
+&lt;p&gt;Who owns all of these pre-mined coins?&lt;/p&gt;
 
-&lt;p&gt;Ripple Labs holds around 7 billion XRP.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;20 Billion XRP were given to Ripple founders - Jed Macaleb, Chris Larsen and Arthur Britto.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ripple Labs holds around 7 billion XRP.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;40 billion XRP have been sold  to companies and individuals.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The remaining supply is sealed in a smart contract that releases 1 billion XRP into Ripple Labs’ hands each month.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;40 billion XRP have been sold  to companies and individuals.&lt;/p&gt;
+&lt;p&gt;Until all of the 100 billion XRP cap  will be reached, that is.&lt;/p&gt;
 
-&lt;p&gt;The remaining supply  is sealed in a smart contract that releases 1 billion XRP  into Ripple Labs’ hands each month until all of the 100 billion XRP cap  will be reached.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/11.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;some-extra-info&quot;&gt;SOME EXTRA INFO&lt;/h5&gt;
-&lt;p&gt;XRP can be divided into 6 decimal points with the smallest unit  being known as a drop.&lt;/p&gt;
+&lt;h2 id=&quot;xrp-extra-facts&quot;&gt;XRP EXTRA FACTS&lt;/h2&gt;
 
-&lt;p&gt;If you want to hold XRP you will need a wallet  that supports the currency and a minimum deposit of 20 XRP  in your account.&lt;/p&gt;
+&lt;p&gt;XRP can be divided into 6 decimal points with the smallest unit being known as a &lt;strong&gt;drop&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;This is done in order to prevent people  from spamming the Ripple Network by opening a large number of accounts.&lt;/p&gt;
+&lt;p&gt;If you want to hold XRP you will need a wallet that supports the currency and a &lt;strong&gt;minimum deposit of 20 XRP&lt;/strong&gt; in your account.&lt;/p&gt;
 
-&lt;h5 id=&quot;deflactional&quot;&gt;DEFLACTIONAL&lt;/h5&gt;
-&lt;p&gt;One last thing to know about XRP is that  the XRP supply decreases over time making it, in theory,  more valuable as time passes.&lt;/p&gt;
+&lt;p&gt;This is done in order to prevent people from spamming the Ripple Network by opening a large number of accounts.&lt;/p&gt;
 
-&lt;p&gt;This is done through destroying  the transaction fees attached to each XRP transaction.&lt;/p&gt;
+&lt;p&gt;One last thing to know about XRP is that the &lt;strong&gt;XRP supply decreases over time making it, in theory, more valuable as time passes.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;For example, at the time of shooting this video we’re down to about 99.99% of  the original 100 Billion XRP.&lt;/p&gt;
+&lt;p&gt;This is done through destroying the transaction fees attached to each XRP transaction.&lt;/p&gt;
 
-&lt;p&gt;The “missing” XRP are transaction fees  that have been destroyed and can never be used again.&lt;/p&gt;
+&lt;p&gt;For example, at the beginning of 2021 we were down to about 99.99% of the original 100 Billion XRP.&lt;/p&gt;
 
-&lt;h5 id=&quot;is-it-a-good-investition&quot;&gt;IS IT A GOOD INVESTITION?&lt;/h5&gt;
-&lt;p&gt;So, is it a good idea to invest in XRP?&lt;/p&gt;
+&lt;p&gt;The “missing” XRP are transaction fees that have been destroyed and can never be used again.&lt;/p&gt;
 
-&lt;p&gt;When people invest in XRP they are basically betting that in the future banks and institutions  will use XRP to move value and will therefore buy XRP  and drive up its price.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/12.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;Of course,  banks could always use IOUs instead and that will keep XRP’s price  rather stagnant.&lt;/p&gt;
+&lt;h2 id=&quot;is-it-a-good-investition&quot;&gt;IS IT A GOOD INVESTITION?&lt;/h2&gt;
 
-&lt;p&gt;Therefore, the question of  “will XRP rise in value?”, is mainly a question of whether  a majority of banks and payment providers choose to utilize it instead of their current infrastructure.&lt;/p&gt;
+&lt;p&gt;When people invest in XRP they are basically betting that in the future banks and institutions will use XRP to move value and will therefore buy XRP and drive up its price.&lt;/p&gt;
 
-&lt;h5 id=&quot;is-it-decentralized-then&quot;&gt;IS IT DECENTRALIZED THEN?&lt;/h5&gt;
-&lt;p&gt;Before we end this video I want to touch upon one more subject and that’s the criticism about Ripple  being a centralized platform.&lt;/p&gt;
+&lt;p&gt;Of course, banks could always use IOUs instead and that will keep XRP’s price  rather stagnant.&lt;/p&gt;
 
-&lt;p&gt;There are many arguments for both sides, and while I clearly have my opinion&lt;/p&gt;
+&lt;p&gt;Therefore, the question of  “will XRP rise in value?”, is mainly a question of whether a majority of banks and payment providers choose to utilize it instead of their current infrastructure.&lt;/p&gt;
 
-&lt;p&gt;I will try to display  some of the main points of debate.&lt;/p&gt;
+&lt;h2 id=&quot;is-it-decentralized&quot;&gt;IS IT DECENTRALIZED?&lt;/h2&gt;
 
-&lt;h3 id=&quot;key-points&quot;&gt;KEY POINTS&lt;/h3&gt;
+&lt;p&gt;Let’s see at the criticism about Ripple being a centralized platform.&lt;/p&gt;
 
-&lt;h5 id=&quot;no-cnotrol-over-the-protocol&quot;&gt;(+)NO CNOTROL OVER THE PROTOCOL&lt;/h5&gt;
-&lt;p&gt;Just like Bitcoin, once Ripple’s protocol is published, Ripple Labs has no control over it.&lt;/p&gt;
+&lt;p&gt;There are many arguments for both sides, but I will try to display some of the main points of debate.&lt;/p&gt;
+
+&lt;h2 id=&quot;key-points&quot;&gt;KEY POINTS&lt;/h2&gt;
+
+&lt;h4 id=&quot;-no-cnotrol-over-the-protocol&quot;&gt;(+) NO CNOTROL OVER THE PROTOCOL&lt;/h4&gt;
+
+&lt;p&gt;Just like Bitcoin, &lt;strong&gt;once Ripple’s protocol is published, Ripple Labs has no control over it&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Validators run the code themselves.&lt;/p&gt;
 
-&lt;p&gt;This is pretty similar to  Bitcoin’s core development team maintaining the Bitcoin protocol but having no real control  over the nodes that run it.&lt;/p&gt;
+&lt;p&gt;This is pretty similar to Bitcoin’s core development team maintaining the Bitcoin protocol but having no real control over the nodes that run it.&lt;/p&gt;
 
-&lt;h5 id=&quot;--but-still-has-something-to-say&quot;&gt;(-)… BUT STILL HAS SOMETHING TO SAY&lt;/h5&gt;
-&lt;p&gt;But while Ripple Labs  doesn’t control the protocol, it does have a lot of influence  since it is the organization maintaining it.&lt;/p&gt;
+&lt;h4 id=&quot;---but-still-has-something-to-say&quot;&gt;(-) … BUT STILL HAS SOMETHING TO SAY&lt;/h4&gt;
+&lt;p&gt;But &lt;strong&gt;while Ripple Labs doesn’t control the protocol, it does have a lot of influence&lt;/strong&gt; since it is the organization maintaining it.&lt;/p&gt;
 
-&lt;p&gt;So, if for some good reason  it  determined  to create more coins, it might succeed.&lt;/p&gt;
+&lt;p&gt;So, if for some good reason it determined to create more coins, it might succeed.&lt;/p&gt;
 
-&lt;p&gt;Ripple Labs is sort of  a central bank for RippleNet.&lt;/p&gt;
+&lt;p&gt;Ripple Labs is sort of a central bank for RippleNet.&lt;/p&gt;
 
-&lt;h5 id=&quot;validators-above-ripple-labs&quot;&gt;(+)VALIDATORS ABOVE RIPPLE LABS&lt;/h5&gt;
+&lt;h4 id=&quot;-validators-above-ripple-labs&quot;&gt;(+) VALIDATORS ABOVE RIPPLE LABS&lt;/h4&gt;
 
-&lt;p&gt;The Ripple protocol itself is open source, meaning that if Ripple Labs  ceases to exist, the validators can still run  the network themselves.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Ripple protocol itself is open source&lt;/strong&gt;, meaning that if Ripple Labs ceases to exist, the validators can still run the network themselves.&lt;/p&gt;
 
-&lt;h5 id=&quot;-products-arent-open-source-though&quot;&gt;(-)PRODUCTS AREN’T OPEN SOURCE THOUGH&lt;/h5&gt;
+&lt;h4 id=&quot;--products-arent-open-source-though&quot;&gt;(-) PRODUCTS AREN’T OPEN SOURCE THOUGH&lt;/h4&gt;
 
-&lt;p&gt;On the other hand, products the company offers  to banks and institutions aren’t open source  and are run solely by Ripple Labs.&lt;/p&gt;
+&lt;p&gt;On the other hand, &lt;strong&gt;products the company offers to banks and institutions aren’t open source and are run solely by Ripple Labs&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h5 id=&quot;-only-few-validators&quot;&gt;(-)ONLY FEW VALIDATORS&lt;/h5&gt;
+&lt;h4 id=&quot;--only-few-validators&quot;&gt;(-) ONLY FEW VALIDATORS&lt;/h4&gt;
 
-&lt;p&gt;The number of Ripple validators today  is relatively small, and is a fraction of the number of Bitcoin nodes  that maintain the Bitcoin network.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The number of Ripple validators today is relatively small&lt;/strong&gt;, and is a fraction of the number of Bitcoin nodes that maintain the Bitcoin network.&lt;/p&gt;
 
-&lt;p&gt;Since these relatively few validators are ultimately responsible for maintaining  the integrity of the network, this raises the question: how can we know the validators  aren’t colluding in order to defraud Ripple’s users?&lt;/p&gt;
+&lt;p&gt;Since these relatively few validators are ultimately responsible for maintaining the integrity of the network, this raises the question: how can we know the validators aren’t colluding in order to defraud Ripple’s users?&lt;/p&gt;
 
-&lt;h5 id=&quot;-iou-tokens-demanding-trust&quot;&gt;(-)IOU TOKENS DEMANDING TRUST&lt;/h5&gt;
+&lt;h5 id=&quot;-i-ou-tokens-demanding-trust&quot;&gt;(-)I OU TOKENS DEMANDING TRUST&lt;/h5&gt;
 
-&lt;p&gt;Another attribute in Ripple  that raises concern is that you ultimately have to depend on trust  in order to use the IOU tokens.&lt;/p&gt;
+&lt;p&gt;Another attribute in Ripple that raises concern is that &lt;strong&gt;you ultimately have to depend on trust in order to use the IOU tokens&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;In contrast, Bitcoin’s entire system is designed to work  in a trustless environment.&lt;/p&gt;
+&lt;p&gt;In contrast, Bitcoin’s entire system is designed to work in a trustless environment.&lt;/p&gt;
 
-&lt;h5 id=&quot;--ripple-monitors-and-reports-suspicious-activity-to-authorities&quot;&gt;(-) RIPPLE MONITORS AND REPORTS SUSPICIOUS ACTIVITY TO AUTHORITIES&lt;/h5&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/13.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;Additionally, while Bitcoin is free for all  and censorship resistant, Ripple is committed to  monitoring and reporting any Anti-Money Laundering flags  across the network, as well as reporting suspicious activity  to relevant authorities.&lt;/p&gt;
+&lt;h4 id=&quot;--ripple-monitors-and-reports-suspicious-activity-to-authorities&quot;&gt;(-) RIPPLE MONITORS AND REPORTS SUSPICIOUS ACTIVITY TO AUTHORITIES&lt;/h4&gt;
 
-&lt;h5 id=&quot;more-energy-efficient-since-theres-no-mining&quot;&gt;(+)MORE ENERGY EFFICIENT SINCE THERE’S NO MINING&lt;/h5&gt;
+&lt;p&gt;Additionally, while Bitcoin is free for all and censorship resistant, &lt;strong&gt;Ripple is committed to monitoring and reporting any Anti-Money Laundering flags  across the network, as well as reporting suspicious activity to relevant authorities&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;On the upside, since there’s no such thing  as Ripple mining, the network itself  is much more energy efficient compared to Bitcoin’s  extreme energy consumption.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/14.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;final-thoughts&quot;&gt;FINAL THOUGHTS&lt;/h5&gt;
+&lt;h4 id=&quot;-more-energy-efficient-since-theres-no-mining&quot;&gt;(+) MORE ENERGY EFFICIENT SINCE THERE’S NO MINING&lt;/h4&gt;
+
+&lt;p&gt;On the upside, since there’s no such thing as Ripple mining, &lt;strong&gt;the network itself is much more energy efficient&lt;/strong&gt; compared to Bitcoin’s extreme energy consumption.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-thoughts&quot;&gt;FINAL THOUGHTS&lt;/h2&gt;
+
 &lt;p&gt;In the end, there’s no clear answer to  whether Ripple is decentralized or not.&lt;/p&gt;
 
-&lt;p&gt;Personally I think the real  question of centralization arises when there’s one key figure  or company that has implicit power  over what the community thinks.&lt;/p&gt;
+&lt;p&gt;The real question of centralization arises when there’s one key figure or company that has implicit power  over what the community thinks.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;And in this case, Ripple Labs undoubtedly  has the most influence on the entire Ripple community, making it much more  centralized in nature than Bitcoin.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;And in this case, Ripple Labs undoubtedly has the most influence on the entire Ripple community, making it much more centralized in nature than Bitcoin.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;It’s up to you to decide  if you think Ripple is centralized or not, or whether that even matters.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/ripple/15.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;Ripple isn’t built  on the same ideals as Bitcoin.&lt;/p&gt;
+&lt;p&gt;It’s up to you to decide if you think Ripple is centralized or not, or whether that even matters.&lt;/p&gt;
 
-&lt;p&gt;It’s a ‘for profit’ company,  serving the banking system.&lt;/p&gt;
+&lt;p&gt;Ripple isn’t built on the same ideals as Bitcoin. It’s a ‘for profit’ company, serving the banking system.&lt;/p&gt;
 
-&lt;p&gt;Perhaps this centralized solution is a more efficient means  of international transaction, but is it the right one?&lt;/p&gt;
+&lt;p&gt;Perhaps this centralized solution is a more efficient means of international transaction, but is it the right one?&lt;/p&gt;
 
-&lt;p&gt;Hopefully by now you understand  what Ripple is and how it works -&lt;/p&gt;
+&lt;p&gt;Summing up: &lt;strong&gt;Ripple is a network designed to move value around the world, mainly aimed at banks and payment providers.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;A network designed to move value  around the world, mainly aimed at banks  and payment providers.&lt;/p&gt;
+&lt;hr /&gt;
 
+&lt;p&gt;&lt;strong&gt;THE NOTES WERE BASED ON THE VIDEO BELOW.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/UmaWDpg4fMU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
 </content>
  </entry>
  
@@ -3336,7 +3468,7 @@ There are over 7000 cryptocurrencies and each of them has its own purpose or use
 
 &lt;p&gt;They also tend to pump and dump at different points during a bull market.&lt;/p&gt;
 
-&lt;h3 id=&quot;1-store-of-value&quot;&gt;1. STORE OF VALUE&lt;/h3&gt;
+&lt;h2 id=&quot;1-store-of-value&quot;&gt;1. STORE OF VALUE&lt;/h2&gt;
 &lt;center&gt;
 &lt;img src=&quot;/images/posts/Cryptocurrency/categories/value.jpg&quot; /&gt;
 &lt;/center&gt;
@@ -3346,26 +3478,26 @@ There are over 7000 cryptocurrencies and each of them has its own purpose or use
 &lt;p&gt;As the name suggests, store of value cryptocurrencies are designed to &lt;strong&gt;hold or even increase their purchasing power over time&lt;/strong&gt;.
 While this typically translates to a gradual increase in price over time, price and purchasing power are two very different things.&lt;/p&gt;
 
-&lt;h5 id=&quot;price-and-purchasing-power&quot;&gt;PRICE AND PURCHASING POWER&lt;/h5&gt;
+&lt;h3 id=&quot;price-and-purchasing-power&quot;&gt;PRICE AND PURCHASING POWER&lt;/h3&gt;
 &lt;p&gt;Every year regular currencies lose between 2-3% of their purchasing power.&lt;/p&gt;
 
 &lt;p&gt;This is because governments around the world are constantly printing money to stimulate economic growth.&lt;/p&gt;
 
 &lt;p&gt;This means that if you bought a stock that went up 2-3% last year, the purchasing power of that stock didn’t actually change, even though its dollar value has increased.&lt;/p&gt;
 
-&lt;h5 id=&quot;goverments-fucking-purchasing-power&quot;&gt;GOVERMENTS’ FUCKING PURCHASING POWER&lt;/h5&gt;
+&lt;h3 id=&quot;goverments--purchasing-power&quot;&gt;GOVERMENTS &amp;amp; PURCHASING POWER&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;The more money the government prints, the more it loses its purchasing power&lt;/strong&gt;, and this is a big part of why cryptocurrencies were invented in the first place.&lt;/p&gt;
 
 &lt;p&gt;Bitcoin was created in 2009 as a response to the 2008 financial crisis.&lt;/p&gt;
 
 &lt;p&gt;Specifically the money printing by governments that followed in its wake.&lt;/p&gt;
 
-&lt;h5 id=&quot;btc-supply&quot;&gt;BTC SUPPLY&lt;/h5&gt;
+&lt;h3 id=&quot;btc-supply&quot;&gt;BTC SUPPLY&lt;/h3&gt;
 &lt;p&gt;Unlike regular currencies, that have an &lt;strong&gt;infinite supply and lose purchasing power every year due to printing&lt;/strong&gt;, Bitcoin has a maximum supply of just &lt;strong&gt;21 million BTC&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;This 21 million BTC is created gradually over time by miners, who solve complex equations to process transactions on the Bitcoin blockchain and earn BTC as a reward.&lt;/p&gt;
 
-&lt;h5 id=&quot;btc-decentralized&quot;&gt;BTC DECENTRALIZED&lt;/h5&gt;
+&lt;h3 id=&quot;btc-decentralized&quot;&gt;BTC DECENTRALIZED&lt;/h3&gt;
 
 &lt;p&gt;Because anyone can mine Bitcoin and earn BTC for processing transactions, this has created a decentralized payment network consisting of millions of computers, that are spread around the world.&lt;/p&gt;
 
@@ -3373,14 +3505,14 @@ While this typically translates to a gradual increase in price over time, price 
 
 &lt;p&gt;There is no single place you could go to shut it down.&lt;/p&gt;
 
-&lt;h5 id=&quot;digital-gold---cash&quot;&gt;DIGITAL GOLD - CASH&lt;/h5&gt;
+&lt;h3 id=&quot;digital-gold---cash&quot;&gt;DIGITAL GOLD - CASH&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Now, while Bitcoin was originally designed to be digital cash, its economics combined with its relatively slow transaction speed has made it more like digital gold than digital cash.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h5 id=&quot;ltc-as-a-store-of-value&quot;&gt;LTC AS A STORE OF VALUE?&lt;/h5&gt;
+&lt;h3 id=&quot;ltc-as-a-store-of-value&quot;&gt;LTC AS A STORE OF VALUE?&lt;/h3&gt;
 &lt;p&gt;While Bitcoin is the only cryptocurrency that falls into the store of value category, some would argue that other cryptocurrencies like Litecoin fall under this umbrella as well.&lt;/p&gt;
 
-&lt;h5 id=&quot;btc-on-market&quot;&gt;BTC ON MARKET&lt;/h5&gt;
+&lt;h3 id=&quot;btc-on-market&quot;&gt;BTC ON MARKET&lt;/h3&gt;
 &lt;p&gt;In the context of the crypto market, Bitcoin is the largest cryptocurrency by market cap, and almost every other cryptocurrency’s price is dependent on Bitcoin’s price.&lt;/p&gt;
 
 &lt;p&gt;If Bitcoin is crashing, everything else crashes.&lt;/p&gt;
@@ -3389,10 +3521,10 @@ While this typically translates to a gradual increase in price over time, price 
 
 &lt;p&gt;If bitcoin pumps a lot, it leaves everything else in the dust and you can see this ebb and flow in real time by watching the Bitcoin dominance chart.&lt;/p&gt;
 
-&lt;h4 id=&quot;advantages&quot;&gt;ADVANTAGES&lt;/h4&gt;
+&lt;h3 id=&quot;advantages&quot;&gt;ADVANTAGES&lt;/h3&gt;
 &lt;p&gt;The primary advantage of store of value cryptocurrencies is that they are usually much safer investments compared to other cryptos, and they are likely to go up in dollar value over time.&lt;/p&gt;
 
-&lt;h5 id=&quot;fair-launch&quot;&gt;FAIR LAUNCH&lt;/h5&gt;
+&lt;h3 id=&quot;fair-launch&quot;&gt;FAIR LAUNCH&lt;/h3&gt;
 
 &lt;p&gt;Now, this all depends on whether the store of value crypto in question had something called a fair launch.&lt;/p&gt;
 
@@ -3404,7 +3536,7 @@ While this typically translates to a gradual increase in price over time, price 
 
 &lt;p&gt;In the case of Bitcoin and Litecoin both cryptocurrencies have quite equitable distributions.&lt;/p&gt;
 
-&lt;h4 id=&quot;disadvantage&quot;&gt;DISADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;disadvantage&quot;&gt;DISADVANTAGE&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;The primary disadvantage of store of value cryptocurrencies is that, they often have very limited functionality.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;This is why some people refer to bitcoin as a pet rock.&lt;/p&gt;
@@ -3425,7 +3557,7 @@ While this typically translates to a gradual increase in price over time, price 
 
 &lt;p&gt;Here’s why this is valuable.&lt;/p&gt;
 
-&lt;h4 id=&quot;centralized-apps&quot;&gt;CENTRALIZED APPS&lt;/h4&gt;
+&lt;h3 id=&quot;centralized-apps&quot;&gt;CENTRALIZED APPS&lt;/h3&gt;
 
 &lt;p&gt;If you’re watching this video on your computer or your phone you’re using an application of some kind to do it, be it a browser or a mobile app.
 The thing about the applications you use every day is that they’re &lt;strong&gt;centralized&lt;/strong&gt;.&lt;/p&gt;
@@ -3438,13 +3570,13 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Those tech giants are always watching you too.&lt;/p&gt;
 
-&lt;h5 id=&quot;banks&quot;&gt;BANKS&lt;/h5&gt;
+&lt;h3 id=&quot;banks&quot;&gt;BANKS&lt;/h3&gt;
 
 &lt;p&gt;The same goes for the financial services you use.&lt;/p&gt;
 
 &lt;p&gt;Whether you’re saving, spending, borrowing or trading, you always have to do it through a centralized platform or service like a bank or broker.&lt;/p&gt;
 
-&lt;h5 id=&quot;web3&quot;&gt;WEB3&lt;/h5&gt;
+&lt;h3 id=&quot;web3&quot;&gt;WEB3&lt;/h3&gt;
 
 &lt;p&gt;Smart contract cryptocurrencies offer a radical alternative to the digital and financial infrastructure we use today.&lt;/p&gt;
 
@@ -3454,17 +3586,17 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;So for example, if you drop me a comment, I’ll give you a like.&lt;/p&gt;
 
-&lt;h5 id=&quot;fungible-and-non-fungible-tokens&quot;&gt;FUNGIBLE AND NON FUNGIBLE TOKENS&lt;/h5&gt;
+&lt;h3 id=&quot;fungible-and-non-fungible-tokens&quot;&gt;FUNGIBLE AND NON FUNGIBLE TOKENS&lt;/h3&gt;
 
 &lt;p&gt;The coolest part about smart contracts is that, they can be used to create different types of cryptocurrency tokens, that are fungible, like a regular currency, or non-fungible, like a rare baseball card.&lt;/p&gt;
 
-&lt;h5 id=&quot;difference-between-smart-con-and-regular-programs&quot;&gt;DIFFERENCE BETWEEN SMART CON AND REGULAR PROGRAMS&lt;/h5&gt;
+&lt;h3 id=&quot;difference-between-smart-con-and-regular-programs&quot;&gt;DIFFERENCE BETWEEN SMART CON AND REGULAR PROGRAMS&lt;/h3&gt;
 
 &lt;p&gt;The difference between smart contracts and regular programs is that, smart contracts are immutable and decentralized.&lt;/p&gt;
 
 &lt;p&gt;In other words, you cannot modify the smart contract once it’s been created, and it’s impossible to shut it down, because it exists on a massive network of computers spread around the world.&lt;/p&gt;
 
-&lt;h5 id=&quot;dapps&quot;&gt;DAPPS&lt;/h5&gt;
+&lt;h3 id=&quot;dapps&quot;&gt;DAPPS&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;When you combine multiple smart contracts together, you get a decentralized application or Dapp.&lt;/strong&gt;&lt;/p&gt;
 
@@ -3478,7 +3610,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;All the transactions in Dapps happen directly from person to person and your activity is essentially private.&lt;/p&gt;
 
-&lt;h5 id=&quot;value&quot;&gt;VALUE&lt;/h5&gt;
+&lt;h3 id=&quot;value&quot;&gt;VALUE&lt;/h3&gt;
 
 &lt;p&gt;Later on in the video there are over 5000 apps with millions of users on about two dozen smart contract cryptocurrency blockchains, mainly Ethereum and the Binance Smart Chain.&lt;/p&gt;
 
@@ -3486,14 +3618,14 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;For Ethereum these fees are paid in ETH, for the Binance Smart Chain these fees are paid in BNB and so on.&lt;/p&gt;
 
-&lt;h5 id=&quot;supply&quot;&gt;SUPPLY&lt;/h5&gt;
+&lt;h3 id=&quot;supply&quot;&gt;SUPPLY&lt;/h3&gt;
 &lt;p&gt;To make sure there is always enough cryptocurrency on the market to pay for transaction fees, most smart contract cryptocurrencies do not have a maximum supply.&lt;/p&gt;
 
 &lt;p&gt;Instead they have annual inflation schedules that can go well into the double digits depending on certain network conditions.&lt;/p&gt;
 
 &lt;p&gt;This printing of coins normally isn’t a problem, if there are enough Dapp users buying up the coin to pay the fees required to use them.&lt;/p&gt;
 
-&lt;h4 id=&quot;advantage&quot;&gt;ADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;advantage&quot;&gt;ADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;And this brings me to the primary advantage of smart contract cryptocurrencies and that’s that &lt;strong&gt;their value is tied to the size and adoption of the Dapp and token ecosystems built on their blockchains&lt;/strong&gt;.&lt;/p&gt;
 
@@ -3501,7 +3633,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;If the adoption of smart contract cryptocurrencies continues at the rate it has, many of their associated coins could have market caps in the trillions of dollars by the end of the decade.&lt;/p&gt;
 
-&lt;h4 id=&quot;disadvantage-1&quot;&gt;DISADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;disadvantage-1&quot;&gt;DISADVANTAGE&lt;/h3&gt;
 &lt;p&gt;The only problem there is that, &lt;strong&gt;you don’t know which smart contract cryptocurrency will be the winner&lt;/strong&gt; and that’s the primary disadvantage of smart contract cryptos.&lt;/p&gt;
 
 &lt;p&gt;There is a lot of competition in the smart contract crypto category and new projects make it to the market almost every other month.&lt;/p&gt;
@@ -3518,13 +3650,13 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Most of the applications you use every day require some sort of real-world data, be it date and time, weather, or the price of something you’re buying or selling.&lt;/p&gt;
 
-&lt;h5 id=&quot;centralized-example&quot;&gt;CENTRALIZED EXAMPLE&lt;/h5&gt;
+&lt;h3 id=&quot;centralized-example&quot;&gt;CENTRALIZED EXAMPLE&lt;/h3&gt;
 
 &lt;p&gt;Centralized applications will use centralized data fees called APIs that are provided to them by another centralized entity.&lt;/p&gt;
 
 &lt;p&gt;For example, maybe the weather network will provide the API data required for Facebook to tell you what the weather is like in your area.&lt;/p&gt;
 
-&lt;h5 id=&quot;real-data-but-how&quot;&gt;REAL DATA BUT HOW&lt;/h5&gt;
+&lt;h3 id=&quot;real-data-but-how&quot;&gt;REAL DATA BUT HOW?&lt;/h3&gt;
 
 &lt;p&gt;Similarly smart contract cryptocurrency blockchains need real-world data for their Dapps to have real-world use cases.&lt;/p&gt;
 
@@ -3536,17 +3668,17 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Like smart contract cryptocurrency coins, Oracle crypto tokens are required to pay for the fees associated with fetching this data.&lt;/p&gt;
 
-&lt;h4 id=&quot;advantage-1&quot;&gt;ADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;advantage-1&quot;&gt;ADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;The primary advantage of Oracle cryptos is that the demand for their tokens is likely to grow in tandem with the amount of smart contract cryptocurrency Dapps and users.&lt;/p&gt;
 
-&lt;h4 id=&quot;disadvantage-2&quot;&gt;DISADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;disadvantage-2&quot;&gt;DISADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;The primary disadvantage of Oracle cryptos is that, almost all of them have allocated enormous amounts of their pre-mined token supplies to their teams and private investors.&lt;/p&gt;
 
 &lt;p&gt;What this means is that, when their prices rise there is a huge incentive for those teams and private investors to sell, which suppresses the price from going higher than it otherwise would.&lt;/p&gt;
 
-&lt;h5 id=&quot;id-rather-not&quot;&gt;I’D RATHER NOT&lt;/h5&gt;
+&lt;h3 id=&quot;id-rather-not&quot;&gt;I’D RATHER NOT&lt;/h3&gt;
 
 &lt;p&gt;Moreover most smart contract cryptos use multiple Oracles for their Dapp data, and some like Cardano have opted to build their own decentralized data Oracles.&lt;/p&gt;
 
@@ -3562,7 +3694,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Payment cryptos aim to replace the current payment systems we use today and sometimes use smart contract technology to do this.&lt;/p&gt;
 
-&lt;h5 id=&quot;examples-of-current-payment-system&quot;&gt;EXAMPLES OF CURRENT PAYMENT SYSTEM&lt;/h5&gt;
+&lt;h3 id=&quot;examples-of-current-payment-system&quot;&gt;EXAMPLES OF CURRENT PAYMENT SYSTEM&lt;/h3&gt;
 
 &lt;p&gt;If you’ve ever sent money overseas, you know how expensive and slow it can be.&lt;/p&gt;
 
@@ -3574,7 +3706,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;No matter the context, if it involves moving money, there is a middleman somewhere taking a cut, slowing things down, and adding complication to processes that would otherwise be simple.&lt;/p&gt;
 
-&lt;h5 id=&quot;better-payment&quot;&gt;BETTER PAYMENT&lt;/h5&gt;
+&lt;h3 id=&quot;better-payment&quot;&gt;BETTER PAYMENT&lt;/h3&gt;
 
 &lt;p&gt;Instead of using an outdated payment network that takes days to settle, payment cryptocurrencies make it possible to finalize transactions within seconds at a fraction of the cost.&lt;/p&gt;
 
@@ -3582,19 +3714,19 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;You don’t have to rely on a bank to store your funds, and you don’t have to worry about anyone messing with your bank account or blocking incoming or outgoing payments.&lt;/p&gt;
 
-&lt;h5 id=&quot;popular-choices&quot;&gt;POPULAR CHOICES&lt;/h5&gt;
+&lt;h3 id=&quot;popular-choices&quot;&gt;POPULAR CHOICES&lt;/h3&gt;
 
 &lt;p&gt;Popular payment cryptocurrencies include Bitcoin Cash, Dash, Terra and Telcoin.&lt;/p&gt;
 
 &lt;p&gt;Some of these payment cryptos feature elaborate smart contracts and Dapp ecosystems focused on payments.&lt;/p&gt;
 
-&lt;h4 id=&quot;advantage-2&quot;&gt;ADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;advantage-2&quot;&gt;ADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;Now, the primary advantage of payment cryptocurrencies is that they have the highest chances of achieving mainstream adoption, and the market they’re shooting for, is the most lucrative (dochodowy) on the planet.&lt;/p&gt;
 
 &lt;p&gt;Dash is already widely used for payments in Argentina and Telcoin has seen serious traction with its low-cost remittance services in recent months.&lt;/p&gt;
 
-&lt;h4 id=&quot;disadvantage-3&quot;&gt;DISADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;disadvantage-3&quot;&gt;DISADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;The primary disadvantage of payment cryptocurrencies is that it’s extremely unlikely, that any payment crypto coin or token will be replacing the regular money we use anytime soon.&lt;/p&gt;
 
@@ -3608,7 +3740,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Privacy cryptos are designed to preserve your privacy when making transactions or using Dapps.&lt;/p&gt;
 
-&lt;h5 id=&quot;private&quot;&gt;PRIVATE?&lt;/h5&gt;
+&lt;h3 id=&quot;private&quot;&gt;PRIVATE?&lt;/h3&gt;
 
 &lt;p&gt;Now, you might be thinking “but i thought cryptocurrency transactions were private”.&lt;/p&gt;
 
@@ -3620,7 +3752,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Your real world identity can easily be linked to the wallets you transact with.&lt;/p&gt;
 
-&lt;h5 id=&quot;for-who&quot;&gt;FOR WHO&lt;/h5&gt;
+&lt;h3 id=&quot;for-who&quot;&gt;FOR WHO&lt;/h3&gt;
 
 &lt;p&gt;It’s possible that you’re completely okay with this, and think that all transactions should be fully transparent and verifiable by anyone.&lt;/p&gt;
 
@@ -3630,7 +3762,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Also, I’m sure that you, as a user, would want most of your data to be kept private, when interacting with certain cryptocurrency Dapps.&lt;/p&gt;
 
-&lt;h5 id=&quot;examples&quot;&gt;EXAMPLES&lt;/h5&gt;
+&lt;h3 id=&quot;examples&quot;&gt;EXAMPLES&lt;/h3&gt;
 
 &lt;p&gt;These are the issues that privacy cryptocurrencies seek to address and they come in all sorts of textures and flavors.&lt;/p&gt;
 
@@ -3642,7 +3774,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;There’s even a privacy cryptocurrency called Haven Protocol that makes it possible to mint synthetic fiat currencies, cryptocurrencies and precious metals to create an untraceable digital offshore bank account.&lt;/p&gt;
 
-&lt;h4 id=&quot;advantage-3&quot;&gt;ADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;advantage-3&quot;&gt;ADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;The primary advantage of privacy cryptocurrencies is that most of them are extremely well designed and built to last.&lt;/p&gt;
 
@@ -3656,7 +3788,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Because anyone can mine XMR, this increases Monero’s decentralization.&lt;/p&gt;
 
-&lt;h4 id=&quot;disadvantage-4&quot;&gt;DISADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;disadvantage-4&quot;&gt;DISADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;The primary disadvantage of privacy cryptos is that, they’re frequently targeted by regulators, because of their use in illicit activities or at least that’s the main justification they use.&lt;/p&gt;
 
@@ -3680,7 +3812,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Exchange tokens are like a membership subscription because they can give you a whole bunch of perks, such as trading, fee discounts, and VIP access to early coin and token sales.&lt;/p&gt;
 
-&lt;h5 id=&quot;stocks-etc&quot;&gt;STOCKS ETC&lt;/h5&gt;
+&lt;h3 id=&quot;stocks-etc&quot;&gt;STOCKS ETC&lt;/h3&gt;
 
 &lt;p&gt;Exchange tokens are like company stock, because the performance of an exchange token depends on the popularity of the exchange in question.&lt;/p&gt;
 
@@ -3692,11 +3824,11 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Adds another dimension of demand for those exchange tokens.&lt;/p&gt;
 
-&lt;h4 id=&quot;advantage-4&quot;&gt;ADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;advantage-4&quot;&gt;ADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;Now, obviously the primary advantage of exchange tokens is that they are highly likely to go up in price.&lt;/p&gt;
 
-&lt;h4 id=&quot;disadvantage-5&quot;&gt;DISADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;disadvantage-5&quot;&gt;DISADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;The primary disadvantage of exchange tokens is that their gains do not come nearly as quickly as other cryptocurrencies nor are these gains completely guaranteed.&lt;/p&gt;
 
@@ -3716,11 +3848,11 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Funnily enough, when the exact same idea is presented in the form of a cryptocurrency, this impossibility somehow magically becomes possible.&lt;/p&gt;
 
-&lt;h5 id=&quot;why-hype&quot;&gt;WHY HYPE?&lt;/h5&gt;
+&lt;h3 id=&quot;why-hype&quot;&gt;WHY HYPE?&lt;/h3&gt;
 
 &lt;p&gt;As far as I can tell, this is because new and inexperienced cryptocurrency investors don’t understand the relationship between a meme coin’s market cap supply and dollar value.&lt;/p&gt;
 
-&lt;h5 id=&quot;shiba-inu&quot;&gt;SHIBA INU&lt;/h5&gt;
+&lt;h3 id=&quot;shiba-inu&quot;&gt;SHIBA INU&lt;/h3&gt;
 
 &lt;p&gt;For example, one Shiba Inu token costs around a thousandth of a cent.&lt;/p&gt;
 
@@ -3734,7 +3866,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;Now what this means is that for Shiba to reach that one dollar price tag, people would need to invest more than four times the amount of money that exists on the planet into this coin.&lt;/p&gt;
 
-&lt;h5 id=&quot;hate&quot;&gt;HATE&lt;/h5&gt;
+&lt;h3 id=&quot;hate&quot;&gt;HATE&lt;/h3&gt;
 
 &lt;p&gt;Now, many of the meme coins you’ve seen pop up over the last few months have similarly massive supplies, which means they won’t be reaching one dollar any time soon either.&lt;/p&gt;
 
@@ -3746,7 +3878,7 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;You can try your luck riding that wave, but the risk is not worth the reward in my personal opinion.&lt;/p&gt;
 
-&lt;h5 id=&quot;doge&quot;&gt;DOGE&lt;/h5&gt;
+&lt;h3 id=&quot;doge&quot;&gt;DOGE&lt;/h3&gt;
 
 &lt;p&gt;In all fairness though, Dogecoin is different.&lt;/p&gt;
 
@@ -3756,11 +3888,11 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;If they start to dump, it’s game over, no matter how much elon musk tweets.&lt;/p&gt;
 
-&lt;h4 id=&quot;advantage-5&quot;&gt;ADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;advantage-5&quot;&gt;ADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;As far as primary advantages go, meme coins do in fact offer an easy way to make a quick buck.&lt;/p&gt;
 
-&lt;h4 id=&quot;disadvantage-6&quot;&gt;DISADVANTAGE&lt;/h4&gt;
+&lt;h3 id=&quot;disadvantage-6&quot;&gt;DISADVANTAGE&lt;/h3&gt;
 
 &lt;p&gt;The primary disadvantage is that, you never know when the pump will come or when it will end, and the likelihood that you’ll come out in profit when the dust settles, is slim to none.&lt;/p&gt;
 
@@ -3799,20 +3931,34 @@ The thing about the applications you use every day is that they’re &lt;strong&
 &lt;/center&gt;
 
 &lt;h2 id=&quot;what-is-cryptocurrency&quot;&gt;WHAT IS CRYPTOCURRENCY?&lt;/h2&gt;
-&lt;p&gt;Cryptocurrencies are like regular currecncies except they are entirely digital. Each idividual cryptocurrency coin is fundamentally just a collection of numbers and letters.&lt;/p&gt;
+&lt;p&gt;Cryptocurrencies are like regular currencies, except they are entirely digital. Each idividual cryptocurrency coin is fundamentally just a collection of numbers and letters.&lt;/p&gt;
 
-&lt;h5 id=&quot;real-banks-and-physical-money&quot;&gt;REAL BANKS AND PHYSICAL MONEY&lt;/h5&gt;
-&lt;p&gt;Almost every physical money bill on the planet has a unique serial number. This serial number corresponds to info like when the bill was printed, where it was printed and so on.&lt;/p&gt;
+&lt;h2 id=&quot;real-banks-and-physical-money&quot;&gt;REAL BANKS AND PHYSICAL MONEY&lt;/h2&gt;
+
+&lt;p&gt;Almost every physical money bill on the planet has a unique serial number. 
+This serial number corresponds to info like when the bill was printed, where it was printed and so on.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/1.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;In theory, a record of all money bills that have ever been printed and where they are, is kept by a cental bank, which shares this info with smaller banks and the government.&lt;/p&gt;
 
-&lt;p&gt;If you have a debit card or credit card you’ll know that you have an account number on there as well.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/2.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;If you have a debit card or credit card you have an account number on there as well.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/3.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;You also have a password or PIN number that you use to access the money in that account.&lt;/p&gt;
 
-&lt;p&gt;Your bank branch knows your account number and your name because you had to provide your personal information to open an account. This info is also shared with the central bank and government.&lt;/p&gt;
+&lt;p&gt;Your bank branch knows your account number and your name, because you had to provide your personal information to open an account. This info is also shared with the central bank and government.&lt;/p&gt;
 
-&lt;h5 id=&quot;example-of-bank-control&quot;&gt;EXAMPLE OF BANK CONTROL&lt;/h5&gt;
+&lt;h2 id=&quot;bank-control&quot;&gt;BANK CONTROL&lt;/h2&gt;
 
 &lt;p&gt;Now let’s say you have a 20 bill with the serial number ABC and your bank account number is 123.&lt;/p&gt;
 
@@ -3820,37 +3966,57 @@ The thing about the applications you use every day is that they’re &lt;strong&
 
 &lt;p&gt;This is almost exactly how cryptocurrencies work. Each individual cryptocurrency coin is like the serial number you see on a physical bill just without the physical bill.&lt;/p&gt;
 
-&lt;h5 id=&quot;satoshis-in-btc-like-cents-in-usd&quot;&gt;SATOSHIS IN BTC LIKE CENTS IN USD&lt;/h5&gt;
+&lt;h2 id=&quot;satoshis-in-btc&quot;&gt;SATOSHIS IN BTC&lt;/h2&gt;
 
-&lt;p&gt;Just like regular bills almost every cryptocurrency can be divided into smaller pieces. 
-In the case of Bitcoin each BTC can be divided into 100 million pieces called Satoshi’s, which are like cents to a dollar.&lt;/p&gt;
+&lt;p&gt;Just like regular bills, almost every cryptocurrency can be divided into smaller pieces.&lt;/p&gt;
+
+&lt;p&gt;In the case of Bitcoin, each BTC can be divided into 100 million pieces called &lt;strong&gt;Satoshis&lt;/strong&gt;, which are like cents to a dollar.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/4.jpg&quot; /&gt;
+&lt;/center&gt;
 
 &lt;h2 id=&quot;crypto-wallets&quot;&gt;CRYPTO WALLETS&lt;/h2&gt;
 
-&lt;p&gt;A cryptocurrency wallet address is like a bank account, except that there’s no physical card that goes along with it.
-It’s just an account number, because you don’t need to provide any personal information to create a cryptocurrency wallet.&lt;/p&gt;
+&lt;p&gt;A cryptocurrency wallet address is like a bank account, except that there’s no physical card that goes along with it.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/5.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;It’s just an account number, because you don’t need to provide any personal information to create a cryptocurrency wallet.&lt;/p&gt;
 
 &lt;p&gt;This means that your identity is not attached to your crypto wallet like a bank account is.&lt;/p&gt;
 
-&lt;p&gt;Most importantly any cryptocurrency held in your personal wallet is held directly by you, not custodied by a bank like regular money in a bank account.&lt;/p&gt;
+&lt;p&gt;Most importantly, any cryptocurrency held in your personal wallet is held directly by you, not custodied by a bank like regular money in a bank account.&lt;/p&gt;
 
-&lt;p&gt;This means that nobody can shut down your cryptocurrency wallet or block your transactions, because you have total control over that account at all times.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This means that nobody can shut down your cryptocurrency wallet or block your transactions, because you have total control over that account at all times.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h5 id=&quot;you-can-lose-your-access&quot;&gt;YOU CAN LOSE YOUR ACCESS&lt;/h5&gt;
+&lt;h2 id=&quot;you-can-lose-your-access&quot;&gt;YOU CAN LOSE YOUR ACCESS&lt;/h2&gt;
 
-&lt;p&gt;Now the trade-off here is that if you lose access to your cryptocurrency wallet or forget to write down the recovery phrase you get when you make one, you’ll lose your cryptocurrency forever.&lt;/p&gt;
+&lt;p&gt;The trade-off here is that, if you lose access to your cryptocurrency wallet or forget to write down the recovery phrase, you get when you make one, you’ll lose your cryptocurrency forever.&lt;/p&gt;
 
-&lt;h4 id=&quot;cryptocurrency-network---blockchain-explorer&quot;&gt;CRYPTOCURRENCY NETWORK - BLOCKCHAIN EXPLORER&lt;/h4&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/6.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;cryptocurrency-network---blockchain-explorer&quot;&gt;CRYPTOCURRENCY NETWORK - BLOCKCHAIN EXPLORER&lt;/h2&gt;
+
 &lt;p&gt;Instead of banks and the government keeping track of everyone’s bills and bank account balances, these records are stored across all the computers connected to a cryptocurrency network.&lt;/p&gt;
 
 &lt;p&gt;These transactions and account balances are public and can be viewed by anyone using something called a blockchain explorer.&lt;/p&gt;
 
-&lt;h5 id=&quot;secure-decentralization-processing-transactions&quot;&gt;SECURE DECENTRALIZATION, PROCESSING TRANSACTIONS&lt;/h5&gt;
+&lt;h2 id=&quot;secure-decentralization-processing-transactions&quot;&gt;SECURE DECENTRALIZATION, PROCESSING TRANSACTIONS&lt;/h2&gt;
+
 &lt;p&gt;&lt;strong&gt;Because computers can earn cryptocurrency for processing transactions on a cryptocurrency network, this incentivizes more computers to join the network to process transactions and earn cryptocurrency.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;This makes cryptocurrency networks secure, because there is no single point of failure.&lt;/p&gt;
 
-&lt;p&gt;This is called decentralization and it’s the polar opposite of the centralized setups of governments and banks.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/7.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This is called &lt;strong&gt;decentralization&lt;/strong&gt; and it’s the polar opposite of the centralized setups of governments and banks.&lt;/p&gt;
 
 &lt;p&gt;That means the digital currencies banks around the world are creating are not cryptocurrencies. They’re creating a seriously dystopian payment network.&lt;/p&gt;
 
@@ -3866,204 +4032,330 @@ It’s just an account number, because you don’t need to provide any personal 
   &lt;li&gt;tokens&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id=&quot;coins-in-a-nutshell&quot;&gt;COINS IN A NUTSHELL&lt;/h5&gt;
-&lt;p&gt;Now cryptocurrency coins belong to cryptocurrency networks that were built from the ground up and buy from the ground up.&lt;/p&gt;
+&lt;h2 id=&quot;coins&quot;&gt;COINS&lt;/h2&gt;
+&lt;p&gt;Cryptocurrency coins belong to cryptocurrency networks, that were built from the ground up and bought from the ground up.&lt;/p&gt;
 
-&lt;p&gt;I mean that someone spent a lot of time and a lot of money putting together the code required to create a safe and reliable cryptocurrency network.&lt;/p&gt;
+&lt;p&gt;This means that someone spent a lot of time and a lot of money putting together the code required to create a safe and reliable cryptocurrency network.&lt;/p&gt;
 
 &lt;p&gt;Cryptocurrency coins are the cryptocurrencies given to computers when they process transactions for a cryptocurrency network.&lt;/p&gt;
 
 &lt;p&gt;For example, BTC is a cryptocurrency coin, because the Bitcoin network was built from the ground up and BTC is given to the computers that process transactions for the Bitcoin network.&lt;/p&gt;
 
-&lt;p&gt;Because cryptocurrency networks are so hard to make from scratch, only a few dozen cryptocurrencies are actually coins. The rest are cryptocurrency tokens.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Because cryptocurrency networks are so hard to make from scratch, only a few dozen cryptocurrencies are actually coins. The rest are cryptocurrency tokens.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h5 id=&quot;tokens&quot;&gt;TOKENS&lt;/h5&gt;
+&lt;h2 id=&quot;tokens&quot;&gt;TOKENS&lt;/h2&gt;
 
 &lt;p&gt;In contrast to cryptocurrency coins crypto tokens are easy to make and can often be created in a matter of minutes with little to no effort.&lt;/p&gt;
 
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/8.PNG&quot; /&gt;
+&lt;/center&gt;
+
 &lt;p&gt;This is why there are tens of thousands of tokens.&lt;/p&gt;
 
-&lt;h3 id=&quot;ntfs&quot;&gt;NTFs&lt;/h3&gt;
+&lt;h2 id=&quot;ntfs&quot;&gt;NTFs&lt;/h2&gt;
+
 &lt;p&gt;The NFTs you keep hearing about are actually cryptocurrency tokens, that are like digital certificates of ownership for physical or digital art pieces.&lt;/p&gt;
 
-&lt;p&gt;NTFs are just the tip of the iceberg of what you can do with tokens as well.&lt;/p&gt;
+&lt;p&gt;NTFs are just the tip of the iceberg of what you can do with tokens.&lt;/p&gt;
 
-&lt;h5 id=&quot;circle---usdc&quot;&gt;CIRCLE - USDC&lt;/h5&gt;
-&lt;p&gt;For example there’s a company called CIRCLE that issues a cryptocurrency token called USDC.&lt;/p&gt;
+&lt;h2 id=&quot;circle---usdc&quot;&gt;CIRCLE - USDC&lt;/h2&gt;
+&lt;p&gt;There’s a company called Circle, that issues a cryptocurrency token called USDC.&lt;/p&gt;
 
 &lt;p&gt;USDC is fully backed by real US dollars, which means that for every one USDC in circulation, circle has one US dollar in the bank.&lt;/p&gt;
 
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/9.PNG&quot; /&gt;
+&lt;/center&gt;
+
 &lt;p&gt;You can create USDC by giving them your dollars and redeem your dollars with USDC.&lt;/p&gt;
 
-&lt;h5 id=&quot;paxos&quot;&gt;PAXOS&lt;/h5&gt;
-&lt;p&gt;Another company called PAXOS issues a cryptocurrency token called PAXG.&lt;/p&gt;
+&lt;h2 id=&quot;paxos&quot;&gt;PAXOS&lt;/h2&gt;
+&lt;p&gt;Another company called Paxos issues a cryptocurrency token called PAXG.&lt;/p&gt;
 
-&lt;p&gt;Each PAXG token is backed by one troy ounce of gold kept in a vault here in london and you can redeem PAXG tokens for real physical gold or US dollars.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/10.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;The best part is that both CIRCLE and PAXOS are fully regulated in the united states and regularly audited to make sure they have the appropriate number of reserves on hand backing their tokens.&lt;/p&gt;
+&lt;p&gt;Each PAXG token is backed by one troy ounce of gold kept in a vault in London and you can redeem PAXG tokens for real physical gold or US dollars.&lt;/p&gt;
 
-&lt;p&gt;How’s that for security.&lt;/p&gt;
+&lt;p&gt;The best part is that both Circle and Paxos are fully regulated in the USA and regularly audited to make sure they have the appropriate number of reserves on hand backing their tokens.&lt;/p&gt;
 
 &lt;h2 id=&quot;security&quot;&gt;SECURITY&lt;/h2&gt;
 
-&lt;p&gt;Whether a cryptocurrency is safe or not ultimately depends on the context.&lt;/p&gt;
+&lt;p&gt;Whether a cryptocurrency is safe or not, ultimately depends on the context.&lt;/p&gt;
 
 &lt;p&gt;Not all cryptocurrencies are created equal.&lt;/p&gt;
 
 &lt;p&gt;Some cryptocurrencies are built to prioritize speed over security and usually the consequences of that play out quite quickly.&lt;/p&gt;
 
-&lt;h5 id=&quot;hackers&quot;&gt;HACKERS&lt;/h5&gt;
-&lt;p&gt;Luckily for us there are always hackers somewhere looking to crack cryptocurrency networks, so they can trick them into creating new coins or tokens out of thin air to sell for a fancy profit.&lt;/p&gt;
+&lt;h2 id=&quot;hackers&quot;&gt;HACKERS&lt;/h2&gt;
 
-&lt;p&gt;Now this might sound scary but it’s no different to what happens to banks and corporations on a daily basis&lt;/p&gt;
+&lt;p&gt;Luckily, there are always hackers somewhere looking to crack cryptocurrency networks, so they can trick them into creating new coins or tokens out of thin air to sell for a fancy profit.&lt;/p&gt;
+
+&lt;p&gt;This might sound scary, but it’s no different to what happens to banks and corporations on a daily basis&lt;/p&gt;
 
 &lt;p&gt;When hackers succeed the affected company usually beefs up its cyber security.&lt;/p&gt;
 
 &lt;p&gt;The same goes for cryptocurrencies. This means that most cryptos that have been around for years, are robustly battle tested as a consequence of always being under attack by bad actors.&lt;/p&gt;
 
-&lt;h5 id=&quot;computers-spread-around-the-world-that-check-histories-and-balances&quot;&gt;COMPUTERS SPREAD AROUND THE WORLD THAT CHECK HISTORIES AND BALANCES&lt;/h5&gt;
-&lt;p&gt;If you’re not convinced, well, consider this.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/11.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;As i mentioned earlier, some cryptocurrency networks are made up of computers spread out around the world, that are constantly double checking transaction histories and account balances.&lt;/p&gt;
+&lt;h2 id=&quot;computers-spread-around-the-world-that-check-histories-and-balances&quot;&gt;COMPUTERS SPREAD AROUND THE WORLD THAT CHECK HISTORIES AND BALANCES&lt;/h2&gt;
+
+&lt;p&gt;Some cryptocurrency networks are made up of computers spread out around the world, that are constantly double checking transaction histories and account balances.&lt;/p&gt;
 
 &lt;p&gt;If you wanted to corrupt a cryptocurrency network, you would have to hack more than half of all the computers connected to the network at the same time in order to do it.&lt;/p&gt;
 
-&lt;h5 id=&quot;depends-on-the-currency-though&quot;&gt;DEPENDS ON THE CURRENCY THOUGH&lt;/h5&gt;
+&lt;h2 id=&quot;depends-on-the-currency-though&quot;&gt;DEPENDS ON THE CURRENCY THOUGH&lt;/h2&gt;
 
 &lt;p&gt;This is impossible to do if you have a cryptocurrency network like Bitcoin, that has millions of computers spread around the world.&lt;/p&gt;
 
-&lt;p&gt;That said some cryptocurrency networks have fewer computers processing transactions and are therefore more vulnerable to attack.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/7.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;cryptocurrency-exchanges&quot;&gt;CRYPTOCURRENCY EXCHANGES&lt;/h5&gt;
-&lt;p&gt;The same rule applies to centralized cryptocurrency services like cryptocurrency exchanges, which is where most crypto hacks have happened.
-These are much easier and more lucrative to exploit than an individual cryptocurrency wallet, which is insanely secure.&lt;/p&gt;
+&lt;p&gt;That said, some cryptocurrency networks have fewer computers processing transactions and are therefore more vulnerable to attack.&lt;/p&gt;
+
+&lt;h2 id=&quot;cryptocurrency-exchanges&quot;&gt;CRYPTOCURRENCY EXCHANGES&lt;/h2&gt;
+
+&lt;p&gt;The same rule applies to centralized cryptocurrency services like cryptocurrency exchanges, which is where most crypto hacks have happened.&lt;/p&gt;
+
+&lt;p&gt;These are much easier and more lucrative to exploit than an individual cryptocurrency wallet, which is insanely secure.&lt;/p&gt;
 
 &lt;p&gt;That’s why you should always keep your crypto on your own personal wallet wherever possible and only keep it on an exchange when you’re trading or cashing out.&lt;/p&gt;
 
-&lt;h5 id=&quot;criminal-activities--monero&quot;&gt;CRIMINAL ACTIVITIES &amp;amp; MONERO&lt;/h5&gt;
+&lt;h2 id=&quot;criminal-activities--monero&quot;&gt;CRIMINAL ACTIVITIES &amp;amp; MONERO&lt;/h2&gt;
+
 &lt;p&gt;When it comes to criminal activities, it is true that ransom demands made by hackers often involve some kind of cryptocurrency, while the cryptocurrency these hackers demand is often Bitcoin.&lt;/p&gt;
 
 &lt;p&gt;They almost always exchange that Bitcoin for a privacy oriented cryptocurrency, like Monero, as soon as they can.&lt;/p&gt;
 
-&lt;p&gt;This is because Bitcoin and most other cryptos have publicly viewable transactions and wallet balances. 
-This makes Bitcoin transactions very easy to trace by authorities, even more than regular currencies. 
-So it makes no sense for criminals to actively use and hold a currency that’s so easily tracked.&lt;/p&gt;
+&lt;p&gt;This is because Bitcoin and most other cryptos have publicly viewable transactions and wallet balances.&lt;/p&gt;
+
+&lt;p&gt;This makes Bitcoin transactions very easy to trace by authorities, even more than regular currencies.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/12.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;So it makes no sense for criminals to actively use and hold a currency that’s so easily tracked.&lt;/p&gt;
 
 &lt;p&gt;Cryptocurrencies like Monero are completely private and even the US government can’t crack its encryption, which is seriously impressive.&lt;/p&gt;
 
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/13.PNG&quot; /&gt;
+&lt;/center&gt;
+
 &lt;p&gt;If you think about it in sum, then the overwhelming majority of cryptocurrencies are not used for criminal purposes.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/14.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;There are just a handful of cryptos that are actively used by criminals.&lt;/p&gt;
 
-&lt;h5 id=&quot;the-real-risk&quot;&gt;THE REAL RISK&lt;/h5&gt;
-&lt;p&gt;The real risk when it comes to crypto relates to investing.
-Cryptocurrencies are extremely volatile, meaning their prices can go up or down by up to 50% in a day.&lt;/p&gt;
+&lt;h2 id=&quot;the-real-risk&quot;&gt;THE REAL RISK&lt;/h2&gt;
 
-&lt;h5 id=&quot;attention-leverage-trading&quot;&gt;ATTENTION, LEVERAGE TRADING&lt;/h5&gt;
-&lt;p&gt;Investing too much in crypto can be extremely dangerous, especially when you push your luck with something called leverage trading which basically uses borrowed money.&lt;/p&gt;
+&lt;p&gt;The real risk when it comes to crypto relates to investing.&lt;/p&gt;
+
+&lt;p&gt;Cryptocurrencies are extremely volatile, meaning their prices can go up or down by up to 50% in a day.&lt;/p&gt;
+
+&lt;h2 id=&quot;attention---leverage-trading&quot;&gt;ATTENTION - LEVERAGE TRADING!&lt;/h2&gt;
+
+&lt;p&gt;Investing too much in crypto can be extremely dangerous, especially when you push your luck with something called &lt;strong&gt;leverage trading&lt;/strong&gt;, which basically uses borrowed money.&lt;/p&gt;
 
 &lt;p&gt;That’s why you should only invest what you’re willing to lose and not a penny more.&lt;/p&gt;
 
 &lt;h2 id=&quot;volatility&quot;&gt;VOLATILITY&lt;/h2&gt;
+
 &lt;p&gt;Why are cryptocurrencies so volatile? What gives them any value to begin with?&lt;/p&gt;
 
-&lt;h5 id=&quot;some-time-ago-it-was-backed-by-gold-but-it-changed&quot;&gt;SOME TIME AGO IT WAS BACKED BY GOLD, BUT IT CHANGED&lt;/h5&gt;
-&lt;p&gt;What gives the money in your wallet or in your bank any value?&lt;/p&gt;
+&lt;p&gt;First of all, what gives the money in your wallet or in your bank any value?&lt;/p&gt;
 
-&lt;p&gt;Now once upon a time, it was backed by gold, but that changed, and since then all state issued currencies around the world have been losing value.&lt;/p&gt;
+&lt;p&gt;Once upon a time, it was backed by gold, but that changed, and since then all state issued currencies around the world have been losing value.&lt;/p&gt;
 
-&lt;h5 id=&quot;not-its-only-trust&quot;&gt;NOT IT’S ONLY TRUST&lt;/h5&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/15.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;its-only-trust&quot;&gt;IT’S ONLY TRUST&lt;/h2&gt;
 
 &lt;p&gt;This is because the only thing that backs dollars and euros is ultimately the trust we have in the governments that issue those currencies, and that trust has been eroding for decades.&lt;/p&gt;
 
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/16.PNG&quot; /&gt;
+&lt;/center&gt;
+
 &lt;p&gt;Not only that, but governments have been actively printing and manipulating their currencies to benefit themselves and the corporations that fund them at the expense of the average person.&lt;/p&gt;
 
-&lt;p&gt;This has caused record levels of inflation that incentivizes spending over saving, which leads to over consumption, and causes the sort of environmental catastrophes they claim to want to stop.&lt;/p&gt;
+&lt;p&gt;This has caused record levels of inflation that incentivizes spending over saving, which leads to over consumption, and causes the sort of environmental catastrophes, they claim to want to stop.&lt;/p&gt;
 
-&lt;h4 id=&quot;back-to-crypto-tho&quot;&gt;BACK TO CRYPTO THO&lt;/h4&gt;
-&lt;p&gt;Cryptocurrencies are valuable because of what they do.
-Obviously this value changes depending on which cryptocurrency we’re talking about.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/17.jpg&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h3 id=&quot;btc-value&quot;&gt;BTC VALUE&lt;/h3&gt;
-&lt;p&gt;Bitcoin has value, because its BTC coin has an economic profile similar to gold.&lt;/p&gt;
+&lt;h2 id=&quot;back-to-crypto&quot;&gt;BACK TO CRYPTO&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Cryptocurrencies are valuable because of what they do.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Obviously this value changes depending on which cryptocurrency we’re talking about.&lt;/p&gt;
+
+&lt;h2 id=&quot;btc-value&quot;&gt;BTC VALUE&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Bitcoin has value, because its BTC coin has an economic profile similar to gold.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;It has a &lt;strong&gt;maximum supply&lt;/strong&gt; and &lt;strong&gt;only a small amount of BTC is created each day&lt;/strong&gt; and that amount is cut in half every 4 years.&lt;/p&gt;
 
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/26.jpg&quot; /&gt;
+&lt;/center&gt;
+
 &lt;p&gt;Assuming demand for Bitcoin stays the same over time, this would lead to a doubling of Bitcoin’s price every 4 years.&lt;/p&gt;
 
-&lt;p&gt;However demand for Bitcoin has increased over time, as we realize how weak regular currencies can be, and this awareness has been enhanced by the current pandemic .&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/19.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;However, demand for Bitcoin has increased over time, as we realize how weak regular currencies can be, and this awareness has been enhanced by the current pandemic.&lt;/p&gt;
 
 &lt;p&gt;As basic economics dictate, when something has a limited supply, but the demand for it continues to increase prices inevitably rise.&lt;/p&gt;
 
-&lt;p&gt;Many investors also see Bitcoin as a safe place to park your capital outside of the current financial system, including me .&lt;/p&gt;
+&lt;p&gt;Many investors also see Bitcoin as a safe place to park your capital outside of the current financial system.&lt;/p&gt;
 
 &lt;p&gt;One important thing to note, is that most other cryptocurrencies are highly correlated to Bitcoin, meaning their prices are reliant on what BTC does.&lt;/p&gt;
 
-&lt;h3 id=&quot;eth-value&quot;&gt;ETH VALUE&lt;/h3&gt;
-&lt;p&gt;Even though that’s the case, some cryptos, such as Ethereum, have insane value due to the utility they provide.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/20.png&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;The ethereum network can be used to create those cryptocurrency tokens I was talking about earlier and you can even create decentralized applications and websites that can’t be censored or shut down.&lt;/p&gt;
-&lt;h5 id=&quot;gas-fees&quot;&gt;GAS FEES&lt;/h5&gt;
+&lt;h2 id=&quot;eth-value&quot;&gt;ETH VALUE&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Some cryptos, such as Ethereum, have insane value due to the utility they provide.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The ethereum network can be used to create those cryptocurrency tokens mentioned earlier, and you can even create decentralized applications and websites that &lt;strong&gt;can’t be censored or shut down&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/21.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;gas-fees&quot;&gt;GAS FEES&lt;/h2&gt;
+
 &lt;p&gt;All transactions related to creating and moving tokens and interacting with these applications require Ether to pay for &lt;strong&gt;gas fees&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;This means the demand for ETH rises as the Ethereum network gains adoption and Ethereum has seen some serious adoption.&lt;/p&gt;
 
-&lt;p&gt;Visa is testing payments on the Ethereum network using that USDC token I mentioned earlier and the European Central Bank even issued a bond on the Ethereum blockchain.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/21.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h4 id=&quot;why-it-fluctuates-so-much---no-one-knows-what-the-tech-is-worth&quot;&gt;WHY IT FLUCTUATES SO MUCH - NO ONE KNOWS WHAT THE TECH IS WORTH&lt;/h4&gt;
+&lt;p&gt;Visa is testing payments on the Ethereum network using that USDC token mentioned earlier, and the European Central Bank even issued a bond on the Ethereum blockchain.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/22.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;why-it-fluctuates-so-much-no-one-knows-what-the-tech-is-worth&quot;&gt;WHY IT FLUCTUATES SO MUCH? NO ONE KNOWS WHAT THE TECH IS WORTH&lt;/h2&gt;
+
 &lt;p&gt;Now, the reason why the value of BTC, ETH and every other cryptocurrency fluctuates so much each day, is because basically &lt;strong&gt;nobody knows what these technologies are actually worth&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;The prices of stocks and gold, and even regular currencies, fluctuate every day for the same reason, but &lt;strong&gt;cryptocurrencies are much more volatile because what they do is revolutionary&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;h5 id=&quot;everything-together-against-giants-and-politics&quot;&gt;EVERYTHING TOGETHER AGAINST GIANTS AND POLITICS&lt;/h5&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/23.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;everything-together-against-giants-and-politics&quot;&gt;EVERYTHING TOGETHER AGAINST GIANTS AND POLITICS&lt;/h2&gt;
+
 &lt;p&gt;Cryptocurrency networks make it possible to lend, save and borrow without an identity credit score or bank.&lt;/p&gt;
 
 &lt;p&gt;They make it possible to do business directly with other people, without a middleman taking a cut, meaning service giants like Uber and tech giants like Facebook could become obsolete.&lt;/p&gt;
 
 &lt;p&gt;They make it possible for communities to pool their funds together and vote on how they should be spent, which could eventually cut out the needs for governments and their crooked politicians.&lt;/p&gt;
 
-&lt;h5 id=&quot;makes-investors-emotional&quot;&gt;MAKES INVESTORS EMOTIONAL&lt;/h5&gt;
+&lt;h2 id=&quot;makes-investors-emotional&quot;&gt;MAKES INVESTORS EMOTIONAL&lt;/h2&gt;
 
 &lt;p&gt;Now, this potential makes the average crypto investor very emotional.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/24.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;The slightest possibility of a clampdown on crypto results in a market crash, and the most outlandish rumor can lead to a massive market pump in the longer term.&lt;/p&gt;
 
 &lt;p&gt;However, you can see that crypto is growing and that growth is unlikely to stop anytime soon.&lt;/p&gt;
 
-&lt;h1 id=&quot;what-crypto-should-i-buy&quot;&gt;WHAT CRYPTO SHOULD I BUY?&lt;/h1&gt;
-&lt;p&gt;Fun fact, buying and holding cryptocurrency will give you about the same amount of profit as actively trading crypto, which I don’t recommend you do, unless you plan on making it your full-time job.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/25.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;important-metrics-to-look-at&quot;&gt;IMPORTANT METRICS TO LOOK AT&lt;/h5&gt;
+&lt;p&gt;Fun fact; buying and holding cryptocurrency will give you about the same amount of profit as actively trading crypto, which I don’t recommend you do, unless you plan on making it your full-time job.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-crypto-should-i-buy-important-metrics-to-look-at&quot;&gt;WHAT CRYPTO SHOULD I BUY? IMPORTANT METRICS TO LOOK AT&lt;/h2&gt;
+
 &lt;p&gt;When it comes to risk tolerance, it might sound a bit funny, considering cryptocurrencies are risky investments, but there are varying degrees of risk, even within the crypto market.&lt;/p&gt;
 
 &lt;p&gt;Logically, the more risk you’re willing to take, the greater reward you stand to gain.&lt;/p&gt;
 
 &lt;p&gt;Now, the easiest way to measure risk and reward is to look at a cryptocurrency’s market cap.&lt;/p&gt;
 
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/27.PNG&quot; /&gt;
+&lt;/center&gt;
+
 &lt;p&gt;This is an extremely important metric to check, because the dollar value of cryptocurrencies can be misleading.&lt;/p&gt;
 
-&lt;h4 id=&quot;market-cap&quot;&gt;MARKET CAP&lt;/h4&gt;
+&lt;h2 id=&quot;market-cap&quot;&gt;MARKET CAP&lt;/h2&gt;
+
 &lt;p&gt;&lt;strong&gt;A cryptocurrency’s market cap is calculated by the current value of that coin or token times its circulating supply.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;The reason why Dogecoin is ranked so high is because it has a circulating supply of 130 billion, and when you multiply that by Dogecoin’s 30 cent price, you get a 40 plus billion dollar market cap.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/28.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;Now, you might think that Dogecoin presents you with an easy opportunity to get rich quick, but getting to just 1 dollar would require an additional 80 billion dollars of active investment, and that isn’t all that likely to happen.&lt;/p&gt;
+&lt;p&gt;The reason why Dogecoin is ranked so high, is because it has a circulating supply of 130 billion, and when you multiply that by Dogecoin’s 30 cent price, you get a 40 plus billion dollar market cap.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/29.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;You might think that Dogecoin presents you with an easy opportunity to get rich quick, but getting to just 1 dollar would require an additional 80 billion dollars of active investment, and that isn’t all that likely to happen.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;As a rule of thumb, the smaller the market cap, the more potential that cryptocurrency has to grow, regardless of its dollar value.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s because it takes less money to increase its value.&lt;/p&gt;
 
-&lt;h4 id=&quot;examples---yarn&quot;&gt;EXAMPLES - YARN&lt;/h4&gt;
-&lt;p&gt;Now, to use an extreme example, Yearn Finance’s WIFI token is worth more than Bitcoin, but its market cap is 20 times smaller than Dogecoin’s, meaning it would take less capital to push up the price of WIFI.&lt;/p&gt;
+&lt;h2 id=&quot;yarnfinance&quot;&gt;YARN.FINANCE&lt;/h2&gt;
 
-&lt;h4 id=&quot;look-only-at-the-top-100-coins&quot;&gt;LOOK ONLY AT THE TOP 100 COINS&lt;/h4&gt;
+&lt;p&gt;To use an extreme example, Yearn Finance’s YFI token is worth more than Bitcoin, but its market cap is 20 times smaller than Dogecoin’s, meaning, it would take less capital to push up the price of YFI.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/30.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;look-only-at-the-top-100-coins&quot;&gt;LOOK ONLY AT THE TOP 100 COINS&lt;/h2&gt;
+
 &lt;p&gt;With the exception of Dogecoin and a couple of others, most of the cryptocurrencies in the top 10 by market cap, could be considered low risk investments.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/31.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;Cryptocurrencies like Bitcoin, Ethereum and Cardano are likely to be around for many years, and they will likely double, if not triple, in price before this bull market is over.&lt;/p&gt;
 
 &lt;p&gt;The other 90 cryptocurrencies in the top 100 could still see gains of 3 to 5x, but the further you move down the list, the riskier the investment becomes, because it also takes less capital to crash their price.&lt;/p&gt;
 
-&lt;p&gt;I would personally stay away from any crypto that isn’t among the top 200 by market cap.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/32.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;I would personally stay away from any crypto, that isn’t among the top 200 by market cap.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/beginner/33.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;hr /&gt;
 

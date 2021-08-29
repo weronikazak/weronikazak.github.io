@@ -33,7 +33,7 @@ This is because each crypto category has its own pros and cons.
 
 They also tend to pump and dump at different points during a bull market.
 
-### 1. STORE OF VALUE
+## 1. STORE OF VALUE
 <center>
 <img src="/images/posts/Cryptocurrency/categories/value.jpg">
 </center>
@@ -43,26 +43,26 @@ The first category of cryptocurrencies is **store of value cryptocurrencies**.
 As the name suggests, store of value cryptocurrencies are designed to **hold or even increase their purchasing power over time**.
 While this typically translates to a gradual increase in price over time, price and purchasing power are two very different things.
 
-##### PRICE AND PURCHASING POWER
+### PRICE AND PURCHASING POWER
 Every year regular currencies lose between 2-3% of their purchasing power.
 
 This is because governments around the world are constantly printing money to stimulate economic growth.
 
 This means that if you bought a stock that went up 2-3% last year, the purchasing power of that stock didn't actually change, even though its dollar value has increased.
 
-##### GOVERMENTS' FUCKING PURCHASING POWER
+### GOVERMENTS & PURCHASING POWER
 **The more money the government prints, the more it loses its purchasing power**, and this is a big part of why cryptocurrencies were invented in the first place.
 
 Bitcoin was created in 2009 as a response to the 2008 financial crisis.
 
 Specifically the money printing by governments that followed in its wake.
 
-##### BTC SUPPLY
+### BTC SUPPLY
 Unlike regular currencies, that have an **infinite supply and lose purchasing power every year due to printing**, Bitcoin has a maximum supply of just **21 million BTC**.
 
 This 21 million BTC is created gradually over time by miners, who solve complex equations to process transactions on the Bitcoin blockchain and earn BTC as a reward.
 
-##### BTC DECENTRALIZED
+### BTC DECENTRALIZED
 
 Because anyone can mine Bitcoin and earn BTC for processing transactions, this has created a decentralized payment network consisting of millions of computers, that are spread around the world.
 
@@ -70,17 +70,17 @@ Bitcoin is technically the most secure payment network on the planet because of 
 
 There is no single place you could go to shut it down.
 
-##### DIGITAL GOLD - CASH
+### DIGITAL GOLD - CASH
 
 **Now, while Bitcoin was originally designed to be digital cash, its economics combined with its relatively slow transaction speed has made it more like digital gold than digital cash.**
 
 
 
-##### LTC AS A STORE OF VALUE?
+### LTC AS A STORE OF VALUE?
 While Bitcoin is the only cryptocurrency that falls into the store of value category, some would argue that other cryptocurrencies like Litecoin fall under this umbrella as well.
 
 
-##### BTC ON MARKET
+### BTC ON MARKET
 In the context of the crypto market, Bitcoin is the largest cryptocurrency by market cap, and almost every other cryptocurrency's price is dependent on Bitcoin's price.
 
 If Bitcoin is crashing, everything else crashes.
@@ -89,10 +89,10 @@ If Bitcoin's price is staying more or less the same or moving up gradually, then
 
 If bitcoin pumps a lot, it leaves everything else in the dust and you can see this ebb and flow in real time by watching the Bitcoin dominance chart.
 
-#### ADVANTAGES
+### ADVANTAGES
 The primary advantage of store of value cryptocurrencies is that they are usually much safer investments compared to other cryptos, and they are likely to go up in dollar value over time.
 
-##### FAIR LAUNCH
+### FAIR LAUNCH
 
 Now, this all depends on whether the store of value crypto in question had something called a fair launch. 
 
@@ -104,7 +104,7 @@ An easy way to check if a store of value crypto is the real deal or not, is to s
 
 In the case of Bitcoin and Litecoin both cryptocurrencies have quite equitable distributions.
 
-#### DISADVANTAGE
+### DISADVANTAGE
 **The primary disadvantage of store of value cryptocurrencies is that, they often have very limited functionality.**
 
 This is why some people refer to bitcoin as a pet rock.
@@ -125,7 +125,7 @@ Smart contract cryptos are designed to be programmable with less emphasis on sto
 
 Here's why this is valuable.
 
-#### CENTRALIZED APPS
+### CENTRALIZED APPS
 
 If you're watching this video on your computer or your phone you're using an application of some kind to do it, be it a browser or a mobile app.
 The thing about the applications you use every day is that they're **centralized**.
@@ -138,13 +138,13 @@ Someone could hack or modify the application in some way to steal your data, mon
 
 Those tech giants are always watching you too.
 
-##### BANKS
+### BANKS
 
 The same goes for the financial services you use.
 
 Whether you're saving, spending, borrowing or trading, you always have to do it through a centralized platform or service like a bank or broker.
 
-##### WEB3
+### WEB3
 
 Smart contract cryptocurrencies offer a radical alternative to the digital and financial infrastructure we use today.
 
@@ -154,17 +154,17 @@ Without getting too technical, smart contracts are basically programs that do so
 
 So for example, if you drop me a comment, I'll give you a like.
 
-##### FUNGIBLE AND NON FUNGIBLE TOKENS
+### FUNGIBLE AND NON FUNGIBLE TOKENS
 
 The coolest part about smart contracts is that, they can be used to create different types of cryptocurrency tokens, that are fungible, like a regular currency, or non-fungible, like a rare baseball card.
 
-##### DIFFERENCE BETWEEN SMART CON AND REGULAR PROGRAMS
+### DIFFERENCE BETWEEN SMART CON AND REGULAR PROGRAMS
 
 The difference between smart contracts and regular programs is that, smart contracts are immutable and decentralized.
 
 In other words, you cannot modify the smart contract once it's been created, and it's impossible to shut it down, because it exists on a massive network of computers spread around the world.
 
-##### DAPPS
+### DAPPS
 
 **When you combine multiple smart contracts together, you get a decentralized application or Dapp.**
 
@@ -178,7 +178,7 @@ The best part about Dapps is that there's no middleman taking a cut or stealing 
 
 All the transactions in Dapps happen directly from person to person and your activity is essentially private.
 
-##### VALUE
+### VALUE
 
 Later on in the video there are over 5000 apps with millions of users on about two dozen smart contract cryptocurrency blockchains, mainly Ethereum and the Binance Smart Chain.
 
@@ -186,14 +186,14 @@ In contrast to store of value cryptocurrencies, smart contract cryptos get their
 
 For Ethereum these fees are paid in ETH, for the Binance Smart Chain these fees are paid in BNB and so on.
 
-##### SUPPLY
+### SUPPLY
 To make sure there is always enough cryptocurrency on the market to pay for transaction fees, most smart contract cryptocurrencies do not have a maximum supply.
 
 Instead they have annual inflation schedules that can go well into the double digits depending on certain network conditions.
 
 This printing of coins normally isn't a problem, if there are enough Dapp users buying up the coin to pay the fees required to use them.
 
-#### ADVANTAGE
+### ADVANTAGE
 
 And this brings me to the primary advantage of smart contract cryptocurrencies and that's that **their value is tied to the size and adoption of the Dapp and token ecosystems built on their blockchains**. 
 
@@ -201,7 +201,7 @@ ETH and BNB had market caps in the hundreds of billions with only a couple of mi
 
 If the adoption of smart contract cryptocurrencies continues at the rate it has, many of their associated coins could have market caps in the trillions of dollars by the end of the decade.
 
-#### DISADVANTAGE
+### DISADVANTAGE
 The only problem there is that, **you don't know which smart contract cryptocurrency will be the winner** and that's the primary disadvantage of smart contract cryptos.
 
 There is a lot of competition in the smart contract crypto category and new projects make it to the market almost every other month.
@@ -218,13 +218,13 @@ Unless you have the money to invest in all of them you really must do your resea
 
 Most of the applications you use every day require some sort of real-world data, be it date and time, weather, or the price of something you're buying or selling.
 
-##### CENTRALIZED EXAMPLE
+### CENTRALIZED EXAMPLE
 
 Centralized applications will use centralized data fees called APIs that are provided to them by another centralized entity.
 
 For example, maybe the weather network will provide the API data required for Facebook to tell you what the weather is like in your area.
 
-##### REAL DATA BUT HOW
+### REAL DATA BUT HOW?
 
 Similarly smart contract cryptocurrency blockchains need real-world data for their Dapps to have real-world use cases.
 
@@ -237,18 +237,18 @@ How the way this normally works is that, dozens of individuals or institutions w
 Like smart contract cryptocurrency coins, Oracle crypto tokens are required to pay for the fees associated with fetching this data.
 
 
-#### ADVANTAGE
+### ADVANTAGE
 
 The primary advantage of Oracle cryptos is that the demand for their tokens is likely to grow in tandem with the amount of smart contract cryptocurrency Dapps and users.
 
 
-#### DISADVANTAGE
+### DISADVANTAGE
 
 The primary disadvantage of Oracle cryptos is that, almost all of them have allocated enormous amounts of their pre-mined token supplies to their teams and private investors.
 
 What this means is that, when their prices rise there is a huge incentive for those teams and private investors to sell, which suppresses the price from going higher than it otherwise would.
 
-##### I'D RATHER NOT
+### I'D RATHER NOT
 
 Moreover most smart contract cryptos use multiple Oracles for their Dapp data, and some like Cardano have opted to build their own decentralized data Oracles.
 
@@ -264,7 +264,7 @@ Examples of these coins - BAND protocol and API 3.
 
 Payment cryptos aim to replace the current payment systems we use today and sometimes use smart contract technology to do this.
 
-##### EXAMPLES OF CURRENT PAYMENT SYSTEM
+### EXAMPLES OF CURRENT PAYMENT SYSTEM
 
 If you've ever sent money overseas, you know how expensive and slow it can be.
 
@@ -276,7 +276,7 @@ Heck, most of us even pay monthly fees just to have a bank account or credit car
 
 No matter the context, if it involves moving money, there is a middleman somewhere taking a cut, slowing things down, and adding complication to processes that would otherwise be simple.
 
-##### BETTER PAYMENT
+### BETTER PAYMENT
 
 Instead of using an outdated payment network that takes days to settle, payment cryptocurrencies make it possible to finalize transactions within seconds at a fraction of the cost.
 
@@ -284,20 +284,20 @@ Not only that, but as with other crypto currencies, any payment focus coins or t
 
 You don't have to rely on a bank to store your funds, and you don't have to worry about anyone messing with your bank account or blocking incoming or outgoing payments.
 
-##### POPULAR CHOICES
+### POPULAR CHOICES
 
 Popular payment cryptocurrencies include Bitcoin Cash, Dash, Terra and Telcoin.
 
 Some of these payment cryptos feature elaborate smart contracts and Dapp ecosystems focused on payments.
 
-#### ADVANTAGE
+### ADVANTAGE
 
 Now, the primary advantage of payment cryptocurrencies is that they have the highest chances of achieving mainstream adoption, and the market they're shooting for, is the most lucrative (dochodowy) on the planet.
 
 Dash is already widely used for payments in Argentina and Telcoin has seen serious traction with its low-cost remittance services in recent months.
 
 
-#### DISADVANTAGE
+### DISADVANTAGE
 
 The primary disadvantage of payment cryptocurrencies is that it's extremely unlikely, that any payment crypto coin or token will be replacing the regular money we use anytime soon.
 
@@ -311,7 +311,7 @@ This is in part, because most payment cryptocurrencies don't have a stable price
 
 Privacy cryptos are designed to preserve your privacy when making transactions or using Dapps.
 
-##### PRIVATE?
+### PRIVATE?
 
 Now, you might be thinking "but i thought cryptocurrency transactions were private".
 
@@ -323,7 +323,7 @@ This is especially true, if you used an application or exchange that required yo
 
 Your real world identity can easily be linked to the wallets you transact with.
 
-##### FOR WHO
+### FOR WHO
 
 It's possible that you're completely okay with this, and think that all transactions should be fully transparent and verifiable by anyone.
 
@@ -333,7 +333,7 @@ The last thing they want, is for people to see how much money they're packing in
 
 Also, I'm sure that you, as a user, would want most of your data to be kept private, when interacting with certain cryptocurrency Dapps.
 
-##### EXAMPLES
+### EXAMPLES
 
 These are the issues that privacy cryptocurrencies seek to address and they come in all sorts of textures and flavors.
 
@@ -345,7 +345,7 @@ Popular privacy cryptocurrencies like Monero and ZCash focus on private payments
 
 There's even a privacy cryptocurrency called Haven Protocol that makes it possible to mint synthetic fiat currencies, cryptocurrencies and precious metals to create an untraceable digital offshore bank account.
 
-#### ADVANTAGE
+### ADVANTAGE
 
 The primary advantage of privacy cryptocurrencies is that most of them are extremely well designed and built to last.
 
@@ -359,7 +359,7 @@ Monero also uses a special mining algorithm called Random X, which makes it impo
 
 Because anyone can mine XMR, this increases Monero's decentralization.
 
-#### DISADVANTAGE
+### DISADVANTAGE
 
 The primary disadvantage of privacy cryptos is that, they're frequently targeted by regulators, because of their use in illicit activities or at least that's the main justification they use.
 
@@ -383,7 +383,7 @@ You can think of exchange tokens as being a combination of a membership subscrip
 
 Exchange tokens are like a membership subscription because they can give you a whole bunch of perks, such as trading, fee discounts, and VIP access to early coin and token sales.
 
-##### STOCKS ETC
+### STOCKS ETC
 
 Exchange tokens are like company stock, because the performance of an exchange token depends on the popularity of the exchange in question.
 
@@ -395,11 +395,11 @@ Some exchanges, such as Binance, have also built smart contract cryptocurrency n
 
 Adds another dimension of demand for those exchange tokens.
 
-#### ADVANTAGE
+### ADVANTAGE
 
 Now, obviously the primary advantage of exchange tokens is that they are highly likely to go up in price.
 
-#### DISADVANTAGE
+### DISADVANTAGE
 
 The primary disadvantage of exchange tokens is that their gains do not come nearly as quickly as other cryptocurrencies nor are these gains completely guaranteed.
 
@@ -419,11 +419,11 @@ In the real world, if someone approached you and said that you'd become a millio
 
 Funnily enough, when the exact same idea is presented in the form of a cryptocurrency, this impossibility somehow magically becomes possible.
 
-##### WHY HYPE?
+### WHY HYPE?
 
 As far as I can tell, this is because new and inexperienced cryptocurrency investors don't understand the relationship between a meme coin's market cap supply and dollar value.
 
-##### SHIBA INU
+### SHIBA INU
 
 For example, one Shiba Inu token costs around a thousandth of a cent.
 
@@ -437,7 +437,7 @@ Before that it was one quadrillion.
 
 Now what this means is that for Shiba to reach that one dollar price tag, people would need to invest more than four times the amount of money that exists on the planet into this coin.
 
-##### HATE
+### HATE
 
 Now, many of the meme coins you've seen pop up over the last few months have similarly massive supplies, which means they won't be reaching one dollar any time soon either.
 
@@ -449,7 +449,7 @@ Most meme coins exist for one purpose and that is to enrich their creators.
 
 You can try your luck riding that wave, but the risk is not worth the reward in my personal opinion.
 
-##### DOGE
+### DOGE
 
 In all fairness though, Dogecoin is different.
 
@@ -459,11 +459,11 @@ The danger with Dogecoin is that, there is a Dogecoin whale that holds nearly 30
 
 If they start to dump, it's game over, no matter how much elon musk tweets.
 
-#### ADVANTAGE
+### ADVANTAGE
 
 As far as primary advantages go, meme coins do in fact offer an easy way to make a quick buck.
 
-#### DISADVANTAGE
+### DISADVANTAGE
 
 The primary disadvantage is that, you never know when the pump will come or when it will end, and the likelihood that you'll come out in profit when the dust settles, is slim to none.
 
