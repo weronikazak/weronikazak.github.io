@@ -41,11 +41,37 @@
 
   <script type="text/javascript">
     function filterUsingCategory(selectedCategory) {
+
+      let btns = document.getElementsByTagName('button');
+        
+      for (let i = 0; i < btns.length; i++) {
+        let btn = btns[i];
+        if (btn.id == selectedCategory) {
+          btn.classList.add("btn-category");
+          btn.classList.remove("white-btn");
+        } else {
+          btn.classList.remove("btn-category");
+          btn.classList.add("white-btn");
+        }
+      }
+      
       var id = 0;
+      
+        var tags = ["flutter","maps"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+        
+
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'flex' 
+            : 'none';
       
         var tags = ["CNN","android","computer vision"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -54,6 +80,8 @@
         var tags = ["CNN","sklearn","web scrapping"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -62,6 +90,8 @@
         var tags = ["CNN","sklearn","web scrapping"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -70,6 +100,8 @@
         var tags = ["CNN","computer vision","pygame"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -78,6 +110,8 @@
         var tags = ["NLP","web","web scrapping"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -86,6 +120,8 @@
         var tags = ["web scrapping","documentation","sklearn"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -94,6 +130,8 @@
         var tags = ["CNN","audio","computer vision"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -102,6 +140,8 @@
         var tags = ["CNN","NLP","web"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -110,6 +150,8 @@
         var tags = ["python","C++","documentation"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -118,6 +160,8 @@
         var tags = ["computer vision","android"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -126,6 +170,8 @@
         var tags = ["web","computer vision"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -134,6 +180,8 @@
         var tags = ["CNN","pygame","computer vision"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -142,6 +190,8 @@
         var tags = ["NLP","documentation","web scrapping"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -150,6 +200,8 @@
         var tags = ["web","computer vision"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -158,6 +210,8 @@
         var tags = ["C#","Angular","web"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -166,6 +220,8 @@
         var tags = ["web","pygame","computer vision"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -174,6 +230,8 @@
         var tags = ["C#","Angular","web"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -182,6 +240,8 @@
         var tags = ["CNN","web scrapping","computer vision"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -190,6 +250,8 @@
         var tags = ["C#","Unity","game"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -198,6 +260,8 @@
         var tags = ["Java","android","maps"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -206,6 +270,8 @@
         var tags = ["C#","Unity","game"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -214,6 +280,8 @@
         var tags = ["GameMaker","game"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -222,6 +290,8 @@
         var tags = ["game","android","Java"]
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -242,7 +312,7 @@
   <br/>
     <div>
       <button type="button" 
-        id="all"
+        id="All"
         class="btn btn-category text-uppercase rounded-pill"
         onclick="filterUsingCategory('All')">
           ALL
@@ -254,117 +324,123 @@
       
 
       
+        <button id="flutter" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn white-btn text-uppercase rounded-pill">
+          flutter
+      </button>
+      
+        <button id="maps" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn white-btn text-uppercase rounded-pill">
+          maps
+      </button>
+      
         <button id="CNN" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           CNN
       </button>
       
         <button id="android" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           android
       </button>
       
         <button id="computer vision" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           computer vision
       </button>
       
         <button id="sklearn" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           sklearn
       </button>
       
         <button id="web scrapping" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           web scrapping
       </button>
       
         <button id="pygame" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           pygame
       </button>
       
         <button id="NLP" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           NLP
       </button>
       
         <button id="web" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           web
       </button>
       
         <button id="documentation" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           documentation
       </button>
       
         <button id="audio" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           audio
       </button>
       
         <button id="python" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           python
       </button>
       
         <button id="C++" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           C++
       </button>
       
         <button id="C#" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           C#
       </button>
       
         <button id="Angular" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           Angular
       </button>
       
         <button id="Unity" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           Unity
       </button>
       
         <button id="game" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           game
       </button>
       
         <button id="Java" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           Java
-      </button>
-      
-        <button id="maps" 
-        onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
-          maps
       </button>
       
         <button id="GameMaker" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           GameMaker
       </button>
       
@@ -376,6 +452,45 @@
     
     
      <div class="card col-4" id="post-1" style="display:flex;">
+        <img class="card-img-top" src="/images/gsc.jpg" alt="Card">
+        <div class="card-block">
+          <h5 class="card-title text-center text-uppercase">How Are You?</h5>
+          <p class="card-text text-center">Google Solution Challenge project. Flutter app to connect homeless people with shelters.</p>
+
+          <div class="list-group list-group-horizontal">
+          <ul>
+          
+          <li class="item">flutter</li>
+          
+          <li class="item">maps</li>
+          
+          </ul>
+        </div>
+        </div>
+       
+        <div class="card-body">
+          <!-- <div class="link_button">
+                <a href="https://github.com/weronikazak/GSC_Project" target="_blank">
+                  <center>
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
+                  </center>
+                </a>
+              </div> -->
+
+              <div class="link_button">
+                <a href="https://github.com/weronikazak/GSC_Project" target="_blank">
+                  <center>
+                    <button type="button" class="btn btn-certificate text-uppercase rounded-pill mr-2">
+                      GitHub
+                    </button>
+                  </center>
+                </a>
+              </div>
+      </div>
+    </div>
+    
+    
+     <div class="card col-4" id="post-2" style="display:flex;">
         <img class="card-img-top" src="/images/trash.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Mobile Trash Classifier</h5>
@@ -416,7 +531,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-2" style="display:flex;">
+     <div class="card col-4" id="post-3" style="display:flex;">
         <img class="card-img-top" src="/images/cars.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Cars' Prices Comparison</h5>
@@ -457,7 +572,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-3" style="display:flex;">
+     <div class="card col-4" id="post-4" style="display:flex;">
         <img class="card-img-top" src="/images/twitter.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Depression Tweets Analysis</h5>
@@ -498,7 +613,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-4" style="display:flex;">
+     <div class="card col-4" id="post-5" style="display:flex;">
         <img class="card-img-top" src="/images/rps.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">AI Rock-Paper-Scissors</h5>
@@ -539,7 +654,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-5" style="display:flex;">
+     <div class="card col-4" id="post-6" style="display:flex;">
         <img class="card-img-top" src="/images/dash.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID Tracking Dashboard</h5>
@@ -580,7 +695,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-6" style="display:flex;">
+     <div class="card col-4" id="post-7" style="display:flex;">
         <img class="card-img-top" src="/images/italy.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Oslo and Rome Neighbourhoods Clustering</h5>
@@ -621,7 +736,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-7" style="display:flex;">
+     <div class="card col-4" id="post-8" style="display:flex;">
         <img class="card-img-top" src="/images/soccer.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Finding Match Highlights</h5>
@@ -662,7 +777,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-8" style="display:flex;">
+     <div class="card col-4" id="post-9" style="display:flex;">
         <img class="card-img-top" src="/images/movie.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Movie Recommender</h5>
@@ -703,7 +818,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-9" style="display:flex;">
+     <div class="card col-4" id="post-10" style="display:flex;">
         <img class="card-img-top" src="/images/algo.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Algorithms</h5>
@@ -744,7 +859,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-10" style="display:flex;">
+     <div class="card col-4" id="post-11" style="display:flex;">
         <img class="card-img-top" src="/images/mask.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID mask</h5>
@@ -783,7 +898,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-11" style="display:flex;">
+     <div class="card col-4" id="post-12" style="display:flex;">
         <img class="card-img-top" src="/images/face.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Facial Filters</h5>
@@ -822,7 +937,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-12" style="display:flex;">
+     <div class="card col-4" id="post-13" style="display:flex;">
         <img class="card-img-top" src="/images/digit.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Digit Recognizer</h5>
@@ -863,7 +978,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-13" style="display:flex;">
+     <div class="card col-4" id="post-14" style="display:flex;">
         <img class="card-img-top" src="/images/cluster.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID Literature Clustering</h5>
@@ -904,7 +1019,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-14" style="display:flex;">
+     <div class="card col-4" id="post-15" style="display:flex;">
         <img class="card-img-top" src="/images/distance.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID Social Distancing</h5>
@@ -943,7 +1058,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-15" style="display:flex;">
+     <div class="card col-4" id="post-16" style="display:flex;">
         <img class="card-img-top" src="/images/time.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Angular Timesheet</h5>
@@ -984,7 +1099,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-16" style="display:flex;">
+     <div class="card col-4" id="post-17" style="display:flex;">
         <img class="card-img-top" src="/images/penguin.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Penguin Diner Bot</h5>
@@ -1025,7 +1140,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-17" style="display:flex;">
+     <div class="card col-4" id="post-18" style="display:flex;">
         <img class="card-img-top" src="/images/date.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Dating App</h5>
@@ -1066,7 +1181,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-18" style="display:flex;">
+     <div class="card col-4" id="post-19" style="display:flex;">
         <img class="card-img-top" src="/images/pizza.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Food Multiclassification</h5>
@@ -1107,7 +1222,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-19" style="display:flex;">
+     <div class="card col-4" id="post-20" style="display:flex;">
         <img class="card-img-top" src="/images/bubble.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Bubble Shooter</h5>
@@ -1148,7 +1263,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-20" style="display:flex;">
+     <div class="card col-4" id="post-21" style="display:flex;">
         <img class="card-img-top" src="/images/uber.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Uber Clone</h5>
@@ -1189,7 +1304,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-21" style="display:flex;">
+     <div class="card col-4" id="post-22" style="display:flex;">
         <img class="card-img-top" src="/images/platform.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Platform Game</h5>
@@ -1230,7 +1345,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-22" style="display:flex;">
+     <div class="card col-4" id="post-23" style="display:flex;">
         <img class="card-img-top" src="/images/gamemaker.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Platform Shooter</h5>
@@ -1269,7 +1384,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-23" style="display:flex;">
+     <div class="card col-4" id="post-24" style="display:flex;">
         <img class="card-img-top" src="/images/flappy.jpg" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Flappy Bird Clone</h5>
@@ -1318,7 +1433,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-29T16:23:40+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-09-01T18:11:11+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

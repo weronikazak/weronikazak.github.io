@@ -3,20 +3,36 @@ layout: default
 ---
 <div class="page">
 
-  <script type="text/javascript">
-    function filterUsingCategory(selectedCategory) {
-      var id = 0;
-      {% for post in site.categories.blog %}
-        var tags = {{ post.categories | jsonify }}
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      {% endfor %}
+<script type="text/javascript">
+  function filterUsingCategory(selectedCategory) {
+
+    let btns = document.getElementsByTagName('button');
+      
+    for (let i = 0; i < btns.length; i++) {
+      let btn = btns[i];
+      if (btn.id == selectedCategory) {
+        btn.classList.add("btn-category");
+        btn.classList.remove("white-btn");
+      } else {
+        btn.classList.remove("btn-category");
+        btn.classList.add("white-btn");
+      }
     }
-  </script>
+    
+    var id = 0;
+    {% for post in site.categories.blog %}
+      var tags = {{ post.categories | jsonify }}
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    {% endfor %}
+  }
+</script>
 
 
   <header>
@@ -30,7 +46,7 @@ layout: default
     <br/>
     <div>
       <button type="button" 
-        id="all"
+        id="All"
         class="btn btn-category text-uppercase rounded-pill"
         onclick="filterUsingCategory('All')">
           ALL
@@ -40,7 +56,9 @@ layout: default
       {% for post in site.categories.blog %}
       {% assign tags = post.categories | uniq %}
         {% for tag in tags %}
-          {% assign tagArray = tagArray | push: tag %}
+          {% if tag != "blog" %}
+            {% assign tagArray = tagArray | push: tag %}
+          {% endif %}
         {% endfor %}
       {% endfor %}
 
@@ -49,9 +67,9 @@ layout: default
       {% for tag in uniqTags %}
         <button id="{{ tag }}" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           {{ tag }}
-      </button>
+        </button>
       {% endfor %}
     </div>
   </div>
@@ -111,7 +129,9 @@ layout: default
             <br>
             <br>
             {% for cat in post.categories %}
+            {% if tag != "blog" %}
             <li class="item">{{ cat }}</li>
+            {% endif %}
             {% endfor %}
           </div>
         </div>

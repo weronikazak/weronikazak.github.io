@@ -133,9 +133,16 @@ section div li::before {
 }
 
 .white-btn {
-    background-color: #1E1E1E;
+    background-color: #212121;
     color: #e1e1e1;
     border-color: #e1e1e1;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.white-btn:hover {
+    color: #e1e1e1;
+    background-color: #1E1E1E;
 }
 
 body {

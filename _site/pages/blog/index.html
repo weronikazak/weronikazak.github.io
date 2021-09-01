@@ -39,164 +39,216 @@
       <main>
         <div class="page">
 
-  <script type="text/javascript">
-    function filterUsingCategory(selectedCategory) {
-      var id = 0;
+<script type="text/javascript">
+  function filterUsingCategory(selectedCategory) {
+
+    let btns = document.getElementsByTagName('button');
       
-        var tags = ["blog","cryptocurrency","token"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","cryptocurrency","token"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","cryptocurrency","economy"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","cryptocurrency","token"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","cryptocurrency"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","cryptocurrency","token"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","cryptocurrency","token"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","cryptocurrency","token"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","cryptocurrency"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","cryptocurrency"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","cryptocurrency","token"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","machine learning"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","machine learning"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","machine learning"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","machine learning"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","machine learning"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","machine learning"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","machine learning"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
-        var tags = ["blog","machine learning"]
-  
-        var postDiv = document.getElementById("post-" + (++id));
-        postDiv.style.display =
-          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
-            ? 'unset' 
-            : 'none';
-      
+    for (let i = 0; i < btns.length; i++) {
+      let btn = btns[i];
+      if (btn.id == selectedCategory) {
+        btn.classList.add("btn-category");
+        btn.classList.remove("white-btn");
+      } else {
+        btn.classList.remove("btn-category");
+        btn.classList.add("white-btn");
+      }
     }
-  </script>
+    
+    var id = 0;
+    
+      var tags = ["blog","cryptocurrency","token"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","cryptocurrency","token"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","cryptocurrency","economy"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","cryptocurrency","token"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","cryptocurrency"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","cryptocurrency","token"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","cryptocurrency","token"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","cryptocurrency","token"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","cryptocurrency"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","cryptocurrency"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","cryptocurrency","token"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","machine learning"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","machine learning"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","machine learning"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","machine learning"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","machine learning"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","machine learning"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","machine learning"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+      var tags = ["blog","machine learning"]
+      console.log(tags);
+
+      var postDiv = document.getElementById("post-" + (++id));
+
+      postDiv.style.display =
+        (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+          ? 'unset' 
+          : 'none';
+    
+  }
+</script>
 
 
   <header>
@@ -210,7 +262,7 @@
     <br/>
     <div>
       <button type="button" 
-        id="all"
+        id="All"
         class="btn btn-category text-uppercase rounded-pill"
         onclick="filterUsingCategory('All')">
           ALL
@@ -222,35 +274,29 @@
       
 
       
-        <button id="blog" 
-        onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
-          blog
-      </button>
-      
         <button id="cryptocurrency" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           cryptocurrency
-      </button>
+        </button>
       
         <button id="token" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           token
-      </button>
+        </button>
       
         <button id="economy" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           economy
-      </button>
+        </button>
       
         <button id="machine learning" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           machine learning
-      </button>
+        </button>
       
     </div>
   </div>
@@ -314,11 +360,17 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
+            
+            
             
             <li class="item">cryptocurrency</li>
             
+            
+            
             <li class="item">token</li>
+            
             
           </div>
         </div>
@@ -381,11 +433,17 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
+            
+            
             
             <li class="item">cryptocurrency</li>
             
+            
+            
             <li class="item">token</li>
+            
             
           </div>
         </div>
@@ -448,11 +506,17 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
+            
+            
             
             <li class="item">cryptocurrency</li>
             
+            
+            
             <li class="item">economy</li>
+            
             
           </div>
         </div>
@@ -515,11 +579,17 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
+            
+            
             
             <li class="item">cryptocurrency</li>
             
+            
+            
             <li class="item">token</li>
+            
             
           </div>
         </div>
@@ -580,9 +650,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">cryptocurrency</li>
+            
             
           </div>
         </div>
@@ -645,11 +719,17 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
+            
+            
             
             <li class="item">cryptocurrency</li>
             
+            
+            
             <li class="item">token</li>
+            
             
           </div>
         </div>
@@ -712,11 +792,17 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
+            
+            
             
             <li class="item">cryptocurrency</li>
             
+            
+            
             <li class="item">token</li>
+            
             
           </div>
         </div>
@@ -779,11 +865,17 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
+            
+            
             
             <li class="item">cryptocurrency</li>
             
+            
+            
             <li class="item">token</li>
+            
             
           </div>
         </div>
@@ -844,9 +936,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">cryptocurrency</li>
+            
             
           </div>
         </div>
@@ -907,9 +1003,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">cryptocurrency</li>
+            
             
           </div>
         </div>
@@ -972,11 +1072,17 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
+            
+            
             
             <li class="item">cryptocurrency</li>
             
+            
+            
             <li class="item">token</li>
+            
             
           </div>
         </div>
@@ -1037,9 +1143,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">machine learning</li>
+            
             
           </div>
         </div>
@@ -1100,9 +1210,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">machine learning</li>
+            
             
           </div>
         </div>
@@ -1163,9 +1277,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">machine learning</li>
+            
             
           </div>
         </div>
@@ -1226,9 +1344,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">machine learning</li>
+            
             
           </div>
         </div>
@@ -1289,9 +1411,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">machine learning</li>
+            
             
           </div>
         </div>
@@ -1352,9 +1478,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">machine learning</li>
+            
             
           </div>
         </div>
@@ -1415,9 +1545,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">machine learning</li>
+            
             
           </div>
         </div>
@@ -1478,9 +1612,13 @@
             <br>
             <br>
             
+            
             <li class="item">blog</li>
             
+            
+            
             <li class="item">machine learning</li>
+            
             
           </div>
         </div>
@@ -1493,7 +1631,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-08-29T16:23:40+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-09-01T18:11:11+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

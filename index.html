@@ -6,11 +6,27 @@ title: Home
 
   <script type="text/javascript">
     function filterUsingCategory(selectedCategory) {
+
+      let btns = document.getElementsByTagName('button');
+        
+      for (let i = 0; i < btns.length; i++) {
+        let btn = btns[i];
+        if (btn.id == selectedCategory) {
+          btn.classList.add("btn-category");
+          btn.classList.remove("white-btn");
+        } else {
+          btn.classList.remove("btn-category");
+          btn.classList.add("white-btn");
+        }
+      }
+      
       var id = 0;
       {% for post in site.categories.code %}
         var tags = {{ post.tags | jsonify }}
   
         var postDiv = document.getElementById("post-" + (++id));
+        
+
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
             ? 'flex' 
@@ -31,7 +47,7 @@ title: Home
   <br/>
     <div>
       <button type="button" 
-        id="all"
+        id="All"
         class="btn btn-category text-uppercase rounded-pill"
         onclick="filterUsingCategory('All')">
           ALL
@@ -50,7 +66,7 @@ title: Home
       {% for tag in uniqTags %}
         <button id="{{ tag }}" 
         onclick="filterUsingCategory(this.id)"
-        class="btn btn-category text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill">
           {{ tag }}
       </button>
       {% endfor %}

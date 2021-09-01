@@ -5,9 +5,15 @@ layout: default
 <article class="page">
     <header>
         <h1 class="landing-title">
-            {{ page.title | truncatewords: 2 }}
+            {% assign len_stop = page.title | number_of_words %}
+            {% assign len_start = len_stop | divided_by: 2 %}
+            {% assign title = page.title | split: " " %}
+
+
+                
+                {{ title | slice: 0, len_start | join: " " }}
             <span style="color: #e6e6e6;">
-            {{ page.title }}
+                {{ title | slice: len_start, len_stop | join: " " }}
             </span>
         </h1>
     </header>

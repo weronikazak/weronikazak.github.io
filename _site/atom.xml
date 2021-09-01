@@ -4,13 +4,22 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-08-29T16:23:40+01:00</updated>
+ <updated>2021-09-01T18:11:11+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>How Are You?</title>
+   <link href="http://localhost:4000/2021/GSC/"/>
+   <updated>2021-09-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2021/GSC</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>USDT, USDC, BUSD - Stablecoins</title>
@@ -1334,65 +1343,53 @@
 &lt;img src=&quot;/images/posts/Tokens/chiliz/chiliz.png&quot; style=&quot;max-width: 200px&quot; /&gt;
 &lt;/center&gt;
 
-&lt;h5 id=&quot;killer-project-that-could-get-many-people-into-crypto&quot;&gt;KILLER PROJECT THAT COULD GET MANY PEOPLE INTO CRYPTO&lt;/h5&gt;
-&lt;p&gt;Have you been searching for that killer app, that has the potential to open the floodgates, and bring hundreds of millions of people into crypto?&lt;/p&gt;
+&lt;h2 id=&quot;tokenizing-sport&quot;&gt;TOKENIZING SPORT&lt;/h2&gt;
 
-&lt;p&gt;Needless to say, that elusive unicorn would likely be valued at a pretty penny, which means, if you got into it at the right time, you could post some truly insane gains.&lt;/p&gt;
+&lt;p&gt;The team at Chiliz is all about tokenizing the sports and entertainment sectors by creating a fan engagement platform.&lt;/p&gt;
 
-&lt;p&gt;But what if that project combined NTFs, sports and crypto?&lt;/p&gt;
+&lt;p&gt;Yes, that does sound great, but why on Earth would anyone want to do that, in the first place?&lt;/p&gt;
 
-&lt;p&gt;That’s the type of rocket fuel, that could send it to the stratosphere, right?&lt;/p&gt;
+&lt;p&gt;It’s pretty sure that everyone has at least a passing interest in sports. But the deal is:&lt;/p&gt;
 
-&lt;p&gt;Well, if you’re nodding your head, then I think I found the project for you, and that would be Chiliz.&lt;/p&gt;
+&lt;h2 id=&quot;a-mere-fan-cant-make-a-decision-on-his-team-unless&quot;&gt;A MERE FAN CAN’T MAKE A DECISION ON HIS TEAM… UNLESS?&lt;/h2&gt;
 
-&lt;h5 id=&quot;tokenizing-the-sport-for-a-gray-mass&quot;&gt;TOKENIZING THE SPORT FOR A GRAY MASS&lt;/h5&gt;
-&lt;p&gt;Chiliz chaps are all about tokenizing the sports and entertainment sectors by creating a fan engagement platform.&lt;/p&gt;
+&lt;p&gt;Sports fans can only really watch their team, buy the merch, and buy overpriced match day treats.&lt;/p&gt;
 
-&lt;p&gt;Sounds great, but why on Earth would you want to do that, in the first place?&lt;/p&gt;
+&lt;p&gt;In essence, we’re all passive sports content consumers, and have no active influence over what happens with the team.&lt;/p&gt;
 
-&lt;p&gt;Well, I’m sure everyone has at least a passing interest in sports. But here’s the deal:&lt;/p&gt;
-
-&lt;h5 id=&quot;mere-fan-cant-make-a-decision-on-his-team-unless&quot;&gt;MERE FAN CANT MAKE A DECISION ON HIS TEAM… UNLESS?&lt;/h5&gt;
-
-&lt;p&gt;Sports fans can only really watch their team, buy that merch, and buy overpriced match day pies.&lt;/p&gt;
-
-&lt;p&gt;So in essence, we’re all passive sports content consumers, and have no active influence over what happens with the team.&lt;/p&gt;
-
-&lt;p&gt;Maybe that’s a bit of a stretch.&lt;/p&gt;
-
-&lt;p&gt;Most &lt;em&gt;normal&lt;/em&gt; people like are passive sports content consumers.&lt;/p&gt;
+&lt;p&gt;Actually, maybe most &lt;em&gt;normal&lt;/em&gt; people like are passive sports content consumers.&lt;/p&gt;
 
 &lt;p&gt;It is true, that if you’re a billionaire, like Sheikh Mansour, you might decide to buy a football team like Manchester City.&lt;/p&gt;
 
-&lt;p&gt;Do that, and then you can certainly influence the team.&lt;/p&gt;
-
-&lt;p&gt;But for mere future billionaires, there are almost no systems, in place to influence their team’s decisions, which is kind of annoying for fans, when their manager or coach makes some super silly decision.&lt;/p&gt;
+&lt;p&gt;But for other people, there are almost no systems in place to influence their team’s decisions, which is annoying for fans, when their manager or coach makes some silly decision.&lt;/p&gt;
 
 &lt;p&gt;Chiliz basically aims to solve that problem by giving fans a say in their team’s management, as well, as a new way to engage with their team.&lt;/p&gt;
 
-&lt;h5 id=&quot;why-would-players-and-teams-agree-to-this---money&quot;&gt;WHY WOULD PLAYERS AND TEAMS AGREE TO THIS? - MONEY&lt;/h5&gt;
+&lt;h2 id=&quot;why-would-players-and-teams-agree-to-this&quot;&gt;WHY WOULD PLAYERS AND TEAMS AGREE TO THIS?&lt;/h2&gt;
 
-&lt;p&gt;It’s pretty cool, but why on Earth would a sports team want to give fans a say?&lt;/p&gt;
+&lt;p&gt;It’s pretty cool, but why would a sports team want to give fans a say?&lt;/p&gt;
 
 &lt;p&gt;Surely there are a ton of highly paid bigwigs, that would be out of a job.&lt;/p&gt;
 
-&lt;p&gt;Well, the teams dictate the decisions that fans can influence, so some teams might not want to crowdsource that team sheet every day, and I can kind of understand that.&lt;/p&gt;
+&lt;p&gt;Well, the teams dictate the decisions that fans can influence, so some teams might not want to crowdsource that team sheet every day, which is understandable.&lt;/p&gt;
 
-&lt;p&gt;Now, like it or not, most sports teams out there are businesses, and that means they need to make money.&lt;/p&gt;
+&lt;p&gt;Most sports teams out there are businesses, and that means they need to make money.&lt;/p&gt;
 
 &lt;p&gt;Those star players don’t tend to play for free after all.&lt;/p&gt;
 
 &lt;p&gt;Those key income streams would be TV rights deals, merchandise sales, and gate receipts.&lt;/p&gt;
 
-&lt;p&gt;Yes, it is true, that gate receipts have been a bit of a pickle for most sports teams over the last year.&lt;/p&gt;
+&lt;p&gt;And the truth is that gate receipts have been harsh on most sports teams over the last year.&lt;/p&gt;
 
 &lt;p&gt;However, a key way to further grow that team income, would be through opening up new ways to monetize those fans, and that’s the value proposition that Chiliz offers these sports teams, by allowing them to sell fans the right to vote on specific team decisions.&lt;/p&gt;
 
-&lt;p&gt;A form of radical fan engagement if you will.&lt;/p&gt;
+&lt;p&gt;A form of radical fan engagement, if you will.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/1.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;win-win-for-fans-and-teams&quot;&gt;WIN-WIN FOR FANS AND TEAMS&lt;/h5&gt;
+&lt;h2 id=&quot;win-win-for-fans-and-teams&quot;&gt;WIN-WIN FOR FANS AND TEAMS&lt;/h2&gt;
 
 &lt;p&gt;Put simply, Chiliz offers the solution for teams to gamify team management, turn it into an entertainment proposition in its own right, and monetize the demand for these voting rights.&lt;/p&gt;
 
@@ -1400,8 +1397,7 @@
 
 &lt;p&gt;So that’s a win for the team, and for the fans, who like the idea of that opportunity.&lt;/p&gt;
 
-&lt;h3 id=&quot;chiliz-ecosystem&quot;&gt;CHILIZ ECOSYSTEM&lt;/h3&gt;
-&lt;h5 id=&quot;socioscom-app-and-fan-tokens&quot;&gt;SOCIOS.COM APP AND FAN TOKENS&lt;/h5&gt;
+&lt;h2 id=&quot;chiliz-ecosystem&quot;&gt;CHILIZ ECOSYSTEM&lt;/h2&gt;
 
 &lt;p&gt;There are two key platforms that make up Chiliz.&lt;/p&gt;
 
@@ -1419,9 +1415,11 @@
 
 &lt;p&gt;What’s also important to note, is that, every sports team listed on the app has its own unique Fan Token.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/1.5.png&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h3 id=&quot;socioscom---key-functionalities&quot;&gt;SOCIOS.COM - KEY FUNCTIONALITIES&lt;/h3&gt;
+&lt;h2 id=&quot;socioscom---key-functionalities&quot;&gt;SOCIOS.COM - KEY FUNCTIONALITIES&lt;/h2&gt;
 
 &lt;p&gt;Basically, the &lt;em&gt;socios&lt;/em&gt; app has 7 key features active right now.&lt;/p&gt;
 
@@ -1429,17 +1427,21 @@
 
 &lt;p&gt;The first is that, &lt;strong&gt;it acts as a type of fiat on-ramp into crypto&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;You can buy Chiliz tokens via the app using Mastercard, Visa, Skrill and Rapid.&lt;/p&gt;
+&lt;p&gt;You can buy Chiliz tokens via the app using &lt;em&gt;Mastercard&lt;/em&gt;, &lt;em&gt;Visa&lt;/em&gt;, &lt;em&gt;Skrill&lt;/em&gt; and &lt;em&gt;Rapid&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;You’ll need those Chiliz tokens to get your hands on the Fan Tokens for your favorite team.&lt;/p&gt;
+&lt;p&gt;You’ll need Chiliz tokens to acquire the Fan Tokens for your favorite team.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/3.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;h5 id=&quot;2-buy-sell-fan-coins&quot;&gt;2. BUY-SELL FAN COINS&lt;/h5&gt;
 
 &lt;p&gt;Next, there’s a trading section that allows you to buy and sell those Fan Tokens.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/a.png&quot; style=&quot;max-height: 600px&quot; /&gt;
+&lt;/center&gt;
 
 &lt;h5 id=&quot;3-voting&quot;&gt;3. VOTING&lt;/h5&gt;
 
@@ -1447,21 +1449,27 @@
 
 &lt;p&gt;&lt;strong&gt;This allows you to vote on things like shirt designs, the name for training grounds, and more.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/b.png&quot; style=&quot;max-height: 600px&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;Now, Cypriot first division side Apollon FC kind of took the concept of fan engagement to the next level.&lt;/p&gt;
+&lt;p&gt;Cypriot first division side Apollon FC kind of took the concept of fan engagement to the next level.&lt;/p&gt;
 
 &lt;p&gt;In a friendly match against their rivals, the team sheet and formation were picked by their fans, using &lt;em&gt;socios&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;It turns out, that the fans clearly knew a thing or two with Apollon FC emerging as 6:0 victors in that match.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/5.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;h5 id=&quot;4-rewards-for-holding-crypto---discounts-etc&quot;&gt;4. REWARDS FOR HOLDING CRYPTO - DISCOUNTS, ETC&lt;/h5&gt;
 
 &lt;p&gt;Some of the current benefits you can access through the app, if you hold enough Fan Tokens, are things like a 20% discount on the merchandise from certain teams.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/c.png&quot; style=&quot;max-height: 600px&quot; /&gt;
+&lt;/center&gt;
 
 &lt;h5 id=&quot;5-earning-reward-tokens&quot;&gt;5. EARNING REWARD TOKENS&lt;/h5&gt;
 
@@ -1469,89 +1477,85 @@
 
 &lt;h5 id=&quot;6-pokemon-go&quot;&gt;6. POKEMON GO&lt;/h5&gt;
 
-&lt;p&gt;And more another neat game in the app is socios version of Pokemon Go.&lt;/p&gt;
+&lt;p&gt;And another game in the app is socios version of &lt;em&gt;Pokemon Go&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;In short, you can chase down those fan and Chiliz tokens in the real world via an augmented reality feature in the app.&lt;/p&gt;
+&lt;p&gt;In short, you can chase down those Fan and Chiliz tokens in the real world via an augmented reality feature in the app.&lt;/p&gt;
 
 &lt;p&gt;Find those coins and you can get some of them for free.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/e.png&quot; style=&quot;max-height: 600px&quot; /&gt;
+&lt;/center&gt;
 
 &lt;h5 id=&quot;7-the-locker-room&quot;&gt;7. THE LOCKER ROOM&lt;/h5&gt;
 
 &lt;p&gt;And finally, you can get access to something called the &lt;strong&gt;locker room&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;I’ll cover this in a bit, when I get into the Chiliz tokens.&lt;/p&gt;
+&lt;p&gt;This will be covered in a bit.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/d.png&quot; style=&quot;max-height: 600px&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;supported-sports&quot;&gt;SUPPORTED SPORTS&lt;/h5&gt;
+&lt;h2 id=&quot;supported-sports&quot;&gt;SUPPORTED SPORTS&lt;/h2&gt;
 
 &lt;p&gt;In terms of supported sports on the app, right now the focus is on football.&lt;/p&gt;
 
-&lt;p&gt;However, some esports and basketball teams are involved with MMA coming soon too.&lt;/p&gt;
+&lt;p&gt;However, some esports and basketball teams are involved with, MMA coming soon too.&lt;/p&gt;
 
 &lt;p&gt;What’s interesting is that, this model of gamification can be replicated in almost any other sports vertical.&lt;/p&gt;
 
 &lt;p&gt;So the potential here is truly massive.&lt;/p&gt;
 
-&lt;p&gt;I’m thinking about sports like formula one, cricket, or the nfl. Yep, American football.&lt;/p&gt;
+&lt;h2 id=&quot;chiliz-exchange&quot;&gt;CHILIZ EXCHANGE&lt;/h2&gt;
 
-&lt;h5 id=&quot;second-elefment-of-chiliz-ecosystem---chiliz-exchange&quot;&gt;SECOND ELEFMENT OF CHILIZ ECOSYSTEM - CHILIZ EXCHANGE&lt;/h5&gt;
-
-&lt;p&gt;Now, the second element of the Chiliz ecosystem would be the Chiliz exchange.&lt;/p&gt;
+&lt;p&gt;The second element of the Chiliz ecosystem would be the Chiliz Exchange.&lt;/p&gt;
 
 &lt;p&gt;The main draw here is all the Fan Token trading pairs, which have CHZ trading pairs only.&lt;/p&gt;
 
-&lt;p&gt;Yes, there are a few other regular crypto trading pairs, like CHZ to USDT, or CHZ to BTC, but I’ll level with you, the main focus is on trading those Fan Tokens.&lt;/p&gt;
+&lt;p&gt;There are a few other regular crypto trading pairs, like CHZ-USDT, or CHZ-BTC, but the main focus is on trading those Fan Tokens.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/6.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;Also do note, that if you want to get your hands on some Chiliz or fans tokens, this is going to be the cheapest exchange to buy them.&lt;/p&gt;
+&lt;p&gt;Also do note, that if you want to get your hands on some Chiliz or Fan Tokens, this is going to be the cheapest exchange to buy them.&lt;/p&gt;
 
-&lt;p&gt;Basically, if you’re using the CHZ trading pair to buy on the exchange, you’ll be paying 0% in fees.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Basically, if you’re using the CHZ trading pair to buy on the exchange, you’ll be paying 0% in fees.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Exchange fees to sell on CHZ trading pairs are 0.6%, with other pairs being charged at 0.2% in fees.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/7.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;what-teams-have-partnered-up-with-socios-so-far&quot;&gt;WHAT TEAMS HAVE PARTNERED UP WITH SOCIOS SO FAR?&lt;/h5&gt;
+&lt;h2 id=&quot;what-teams-have-partnered-up-with-socios-so-far&quot;&gt;WHAT TEAMS HAVE PARTNERED UP WITH SOCIOS SO FAR?&lt;/h2&gt;
 
-&lt;p&gt;Now, you’re probably wondering which teams have partnered up with &lt;em&gt;socios&lt;/em&gt; so far.&lt;/p&gt;
+&lt;p&gt;It’s obvious that many crypto veterans will be jaded by partnership announcements, which generally turn out to be nothing special or a pure scam.&lt;/p&gt;
 
-&lt;p&gt;No offense to Apollon FC, but I imagine most of you are not huge fans of Cypriot first division football.&lt;/p&gt;
-
-&lt;p&gt;So let’s take a look at some other teams to have signed up.&lt;/p&gt;
-
-&lt;p&gt;I know that many crypto veterans out there will be jaded by partnership announcements, which generally turn out to be nothing but hot air.&lt;/p&gt;
-
-&lt;p&gt;To be fair, there are still plenty of those happening in the crypto space today, so you could be forgiven for thinking that.&lt;/p&gt;
+&lt;p&gt;To be fair, there are still plenty of those happening in the crypto space today, so it’s pretty reasonable.&lt;/p&gt;
 
 &lt;p&gt;The idea of Chiliz partnering up with the likes of Barcelona, Juventus, Paris Saint-Germain, Atletico, Madrid, and AC Milan is nothing but false promises.&lt;/p&gt;
 
 &lt;p&gt;However, those with a healthy dose of skepticism only need to look at these team’s social accounts, and you can find mentions of both Chiliz and &lt;em&gt;socios&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;These are some of the biggest football clubs in the world, with massive fan bases, and millions of twitter followers.&lt;/p&gt;
+&lt;p&gt;These are some of the biggest football clubs in the world, with massive fan bases, and millions of Twitter followers.&lt;/p&gt;
 
-&lt;p&gt;To be honest, I didn’t quite believe that these partnerships are real, when I first glanced over the project, but yes, everything really does seem to be an order there.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/8.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;chiliz-tokens&quot;&gt;CHILIZ TOKENS&lt;/h2&gt;
 
-&lt;h5 id=&quot;chiliz-tokens&quot;&gt;CHILIZ TOKENS&lt;/h5&gt;
+&lt;p&gt;There are 4 types of Chiliz ecosystem tokens.&lt;/p&gt;
 
-&lt;p&gt;Now, I know I’ve covered quite a lot, but I’ve not really got into the tokens yet.&lt;/p&gt;
+&lt;p&gt;You have those &lt;strong&gt;Fan Tokens&lt;/strong&gt;, which are issued for all sports teams partnering up with Chiliz on &lt;em&gt;socios&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;First, you note that there are 4 types of Chiliz ecosystem tokens.&lt;/p&gt;
-
-&lt;p&gt;You have those Fan Tokens, which are issued for all sports teams partnering up with Chiliz on &lt;em&gt;socios&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;For each team a finite number of Fan Tokens are issued, with concrete voting rights, and the ability to unlock rewards and those perks I spoke about earlier.&lt;/p&gt;
+&lt;p&gt;For each team a finite number of Fan Tokens are issued, with concrete voting rights, and the ability to unlock rewards and perks mentioned earlier.&lt;/p&gt;
 
 &lt;p&gt;Fans get those voting rights by swapping Chiliz tokens for Fan Tokens, to gain decision-making rights for that team.&lt;/p&gt;
 
-&lt;p&gt;So I might own a Juventus Fan Token, and that will only let me vote on Juventus related events.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So I might own a Juventus Fan Token, and that will only let me vote on Juventus related events.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;What’s super interesting here is that, these Fan Tokens have created yet another form of crypto backed fundraising - the &lt;strong&gt;Fan Token Offering (FTO)&lt;/strong&gt;.&lt;/p&gt;
 
@@ -1563,47 +1567,49 @@
 
 &lt;p&gt;A bit like an ICO, IEO or IDO.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/9.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;tbf-tho-whats-the-demand-for-such-token&quot;&gt;TBF THO, WHAT’S THE DEMAND FOR SUCH TOKEN?&lt;/h5&gt;
+&lt;h2 id=&quot;whats-the-demand-for-such-a-token&quot;&gt;WHAT’S THE DEMAND FOR SUCH A TOKEN?&lt;/h2&gt;
 
-&lt;p&gt;Now, there may be some of you that are probably doubting the demand for things like Fan Tokens.&lt;/p&gt;
-
-&lt;p&gt;Well, here’s an interesting fact.&lt;/p&gt;
+&lt;p&gt;Here’s an interesting fact.&lt;/p&gt;
 
 &lt;p&gt;A recent FTO by AC Milan generated more than 6 million dollars in the first 30 minutes of launch.&lt;/p&gt;
 
-&lt;p&gt;So yes, if that’s anything to go by, there is some pretty crazy demand for these tokens.&lt;/p&gt;
+&lt;p&gt;So yes, there is some pretty crazy demand for these tokens.&lt;/p&gt;
 
 &lt;p&gt;However this is not a one-off thing.&lt;/p&gt;
 
 &lt;p&gt;In 2021 Chiliz claims, that Fan Tokens generated over 30 million dollars in revenue for sports teams and partners via FTOs in 2022.&lt;/p&gt;
 
-&lt;p&gt;Pretty handy for teams suffering from those low gate receipts thanks to the pandemic.&lt;/p&gt;
+&lt;p&gt;Pretty handy for teams suffering from those low gate receipts due to the pandemic.&lt;/p&gt;
 
-&lt;h5 id=&quot;token-burningas-incentive&quot;&gt;TOKEN BURNINGAS INCENTIVE&lt;/h5&gt;
+&lt;h2 id=&quot;token-burnings-incentive&quot;&gt;TOKEN BURNINGS INCENTIVE&lt;/h2&gt;
 
-&lt;p&gt;Another important thing to note, is that earlier in the year Chiliz announced Fan Token burn mechanisms.&lt;/p&gt;
+&lt;p&gt;Earlier in the year Chiliz announced Fan Token burn mechanisms.&lt;/p&gt;
 
 &lt;p&gt;Essentially, the better the team performs, and the more Fan Token holders there are, the fewer tokens that will be in circulation.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/10.png&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;An example of that can be seen over here.&lt;/p&gt;
 
 &lt;p&gt;Let’s say, we hold the Barcelona Fan Tokens here.&lt;/p&gt;
 
-&lt;p&gt;20 000 of these Fan Tokens were burned per goal, and 40 000 were burned, if Barcelona won.&lt;/p&gt;
+&lt;p&gt;20,000 of these Fan Tokens were burned per goal, and 40,000 were burned, if Barcelona won.&lt;/p&gt;
 
-&lt;p&gt;Yes, it is true, that football fans are maybe even more tribal, than the crypto community, and the demand for them seems to have been validated.&lt;/p&gt;
+&lt;p&gt;It is true, that football fans are maybe even more tribal, than the crypto community, and the demand for them seems to have been validated.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/11.jpg&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;tokenomics&quot;&gt;TOKENOMICS&lt;/h5&gt;
+&lt;h2 id=&quot;tokenomics&quot;&gt;TOKENOMICS&lt;/h2&gt;
 
-&lt;p&gt;But what about their tokenomics?&lt;/p&gt;
-
-&lt;p&gt;Well, what you need to be aware of is that, usually only a very small percentage of the total supply is circulating.&lt;/p&gt;
+&lt;p&gt;Usually only a very small percentage of the total supply is circulating.&lt;/p&gt;
 
 &lt;p&gt;Take the Paris Saint-Germain Fan Token for example.&lt;/p&gt;
 
@@ -1611,51 +1617,51 @@
 
 &lt;p&gt;The rest of the tokens held by PSG Football Club have a linear vesting schedule of 8 years with 2.5 million being released per year.&lt;/p&gt;
 
-&lt;p&gt;Yes, that’s about double the current circulating supply.&lt;/p&gt;
+&lt;p&gt;That’s about double the current circulating supply.&lt;/p&gt;
 
-&lt;p&gt;That’s certainly something worth knowing, if you’re thinking about dabbling in PSG tokens.&lt;/p&gt;
+&lt;p&gt;There is surely going to be quite a bit of inflation.&lt;/p&gt;
 
-&lt;p&gt;I mean, there is going to be quite a bit of inflation.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/12.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;After all, the same is true of Juventus Fan Tokens with just 1.3 million tokens circulating with a total supply of 20 million.&lt;/p&gt;
 
 &lt;p&gt;The rest of those Fan Tokens have that same monthly linear vesting schedule of 8 years with 2.5 million youth tokens being released every year.&lt;/p&gt;
 
-&lt;p&gt;I think you get the picture here.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/13.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;Now, many sports fans don’t know about the importance of tokenomics.&lt;/p&gt;
 
 &lt;p&gt;They are likely to just buy those tokens because they like a certain team.&lt;/p&gt;
 
-&lt;p&gt;I’m sure you have friends, who are likely to be in that category.&lt;/p&gt;
+&lt;p&gt;We all have friends, who are likely to be in that category.&lt;/p&gt;
 
-&lt;h5 id=&quot;inflation-and-demand&quot;&gt;INFLATION AND DEMAND&lt;/h5&gt;
+&lt;h2 id=&quot;inflation-and-demand&quot;&gt;INFLATION AND DEMAND&lt;/h2&gt;
 
-&lt;p&gt;So, the main question for anyone looking at wading into the Fan Token waters should be &lt;em&gt;“Will demand for fan tokens outstrip their pretty crazy inflation rate?”&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;So, the main question should be &lt;em&gt;“Will demand for fan tokens outstrip their pretty crazy inflation rate?”&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;If that’s the case, then we can expect the token price to increase.&lt;/p&gt;
 
-&lt;p&gt;If you’re interested in checking out all the different Fan Tokens and their perspective market caps, then you might want to check out &lt;em&gt;fantokenrank.com&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If you’re interested in checking out all the different Fan Tokens and their perspective market caps, then you might want to check out &lt;a href=&quot;https://fantokenrank.com/&quot; target=&quot;_blank&quot;&gt;fantokenrank.com&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;It’s basically like a &lt;em&gt;CoinMarketCap&lt;/em&gt; for Fan Tokens only. Secondly you have the Chiliz or CHZ token.&lt;/p&gt;
 
-&lt;p&gt;Yes, that’s the one that went to the proverbial moon recently and grabbed most of the news headlines.&lt;/p&gt;
+&lt;h2 id=&quot;pay-attention-when-buying&quot;&gt;PAY ATTENTION WHEN BUYING!&lt;/h2&gt;
 
-&lt;h5 id=&quot;pay-attention-with-buying&quot;&gt;PAY ATTENTION WITH BUYING!&lt;/h5&gt;
-
-&lt;p&gt;What’s important to note though, is that, it’s both an ERC-20 utility token and a BEP-2 token on the Binance Chain, so be sure not to mix things up, if you’re depositing or withdrawing from an exchange.&lt;/p&gt;
+&lt;p&gt;Both an ERC-20 utility token and a BEP-2 token on the Binance Chain, so be sure not to mix things up, if you’re depositing or withdrawing from an exchange.&lt;/p&gt;
 
 &lt;p&gt;CHZ tokens are basically used as the fuel for the Chiliz ecosystem, and are used by fans to acquire those all-important Fan Tokens for any of the teams partnered with &lt;em&gt;socios.com&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;The way, I think of them, is that they act in a similar way to ETH back in those crazy ICO days of 2017, except they’re for Fan Token Offerings.&lt;/p&gt;
+&lt;p&gt;The way, we can think of them, is that they act in a similar way to ETH back in its crazy ICO days of 2017, except they’re for Fan Token Offerings.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/14.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;potential-future-plans-to-increase-demand&quot;&gt;POTENTIAL FUTURE PLANS TO INCREASE DEMAND&lt;/h5&gt;
+&lt;h2 id=&quot;potential-future-plans-to-increase-demand&quot;&gt;POTENTIAL FUTURE PLANS TO INCREASE DEMAND&lt;/h2&gt;
 
 &lt;p&gt;The next use case of the CHZ token hasn’t gone live yet, however, in the near future MMA fans will be able to buy UFC tickets with Chiliz tokens.&lt;/p&gt;
 
@@ -1663,21 +1669,19 @@
 
 &lt;p&gt;Those sorts of unique experiences could lead to an increase in demand for CHZ tokens.&lt;/p&gt;
 
-&lt;p&gt;Now, if you’d like me to speculate a bit here, I don’t think it would be outlandish to think, that Chiliz will expand similar options to sports teams partnered with the platform.&lt;/p&gt;
+&lt;p&gt;That’s very unlinkely however to think, that Chiliz will expand similar options to sports teams partnered with the platform.&lt;/p&gt;
 
 &lt;p&gt;It’s also true, that CHZ can be used as a store, and transfer of value like every other cryptocurrency and they can be traded on exchanges.&lt;/p&gt;
 
-&lt;p&gt;So now that you know about the core demand drivers for the Chiliz token, what do you need to know about the supply side of the equation?&lt;/p&gt;
+&lt;h2 id=&quot;tokenomics-of-chz&quot;&gt;TOKENOMICS OF CHZ&lt;/h2&gt;
 
-&lt;h5 id=&quot;tokenomics-of-che&quot;&gt;TOKENOMICS OF CHE&lt;/h5&gt;
-
-&lt;p&gt;Well, honestly, I have not been able to find any more recent information on the tokenomics, so we’ll have to use the outline from a year ago.&lt;/p&gt;
+&lt;p&gt;There are not many recent information on the tokenomics, so we’ll have to use the outline from 2019.&lt;/p&gt;
 
 &lt;p&gt;That outlines that 20 of net trading fees on the Chiliz exchange will be burned, so will 10 of the net proceeds from FTOs and 20 of the proceeds from NFTs and collectibles.&lt;/p&gt;
 
 &lt;p&gt;That announcement for version 2.0 of Chiliz token economics states, that those terms for burning CHZ are valid till June 2020, when they’ll be reviewed.&lt;/p&gt;
 
-&lt;p&gt;Sadly, I’ve not been able to find more recent information on that.&lt;/p&gt;
+&lt;p&gt;Sadly, that’s impossible to find more recent information on that.&lt;/p&gt;
 
 &lt;p&gt;However, Chiliz did tweet earlier in 2021 that the first burn of the year was based on that token economics announcement, and that 11 million CHZ tokens had been sent to the incinerator.&lt;/p&gt;
 
@@ -1685,21 +1689,19 @@
 
 &lt;p&gt;Not too large an amount, given that the project commands a market cap of just over 2.5 billion.&lt;/p&gt;
 
-&lt;p&gt;However, what I like about this token burn method is that, it reminds me of Binance’s BNB token burns, those burns being directly linked to platform use.&lt;/p&gt;
-
-&lt;h5 id=&quot;the-locker-room-tokens&quot;&gt;THE LOCKER ROOM TOKENS&lt;/h5&gt;
+&lt;h2 id=&quot;the-locker-room-tokens&quot;&gt;THE LOCKER ROOM TOKENS&lt;/h2&gt;
 
 &lt;p&gt;The third type of Chiliz token would be &lt;strong&gt;Locker Tokens&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;So what are those?&lt;/p&gt;
+&lt;p&gt;What are those?&lt;/p&gt;
 
-&lt;p&gt;Well, in the &lt;em&gt;socios&lt;/em&gt; app there’s a feature, I glossed over earlier called &lt;em&gt;the Socios Locker Room&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In the &lt;em&gt;socios&lt;/em&gt; app there’s a feature, called &lt;em&gt;the Socios Locker Room&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Its purpose is to show potential partner clubs, how much demand there is for their team’s Fan Tokens.&lt;/p&gt;
 
-&lt;p&gt;So yes, it’s basically &lt;em&gt;socios&lt;/em&gt; users saying “*Hey, Mr. Sports Club, we really want you to do a Fan Token with socios”.&lt;/p&gt;
+&lt;p&gt;It’s basically &lt;em&gt;socios&lt;/em&gt; users saying “&lt;em&gt;Hey, Mr. Sports Club, we really want you to do a Fan Token with socios!&lt;/em&gt;”.&lt;/p&gt;
 
-&lt;p&gt;Those chaps at &lt;em&gt;socios&lt;/em&gt; create a locker for each potential partner club.&lt;/p&gt;
+&lt;p&gt;The team at &lt;em&gt;socios&lt;/em&gt; create a locker for each potential partner club.&lt;/p&gt;
 
 &lt;p&gt;These are open for 120 days.&lt;/p&gt;
 
@@ -1707,13 +1709,15 @@
 
 &lt;p&gt;If the partner decides to launch a Fan Token, then these Locker Tokens are swapped for official Fan Tokens at a rate of one to one.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/15.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;whats-the-profit&quot;&gt;WHAT’S THE PROFIT?&lt;/h5&gt;
+&lt;h2 id=&quot;whats-the-profit-from-locker-rooms&quot;&gt;WHAT’S THE PROFIT FROM LOCKER ROOMS?&lt;/h2&gt;
 
 &lt;p&gt;But why bother with this? What’s the incentive?&lt;/p&gt;
 
-&lt;p&gt;Well, if a potential partner doesn’t opt to launch their Fan Token in the specified time period, then you get your CHZ tokens back.&lt;/p&gt;
+&lt;p&gt;If a potential partner doesn’t opt to launch their Fan Token in the specified time period, then you get your CHZ tokens back.&lt;/p&gt;
 
 &lt;p&gt;However, if the club does go ahead with that, you’ve secured your allocation of Fan Tokens, and you get 10% of the money you initially invested in.&lt;/p&gt;
 
@@ -1721,11 +1725,11 @@
 
 &lt;p&gt;The interesting side effect of this Locker Room mechanic is that, it essentially replicates staking by taking CHZ tokens off the open market, and reducing the tradable supply.&lt;/p&gt;
 
-&lt;p&gt;So yes, yet another use case for CHZ.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/16.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h5 id=&quot;erc-1155-token---for-unique-tokens&quot;&gt;ERC 1155 TOKEN - FOR UNIQUE TOKENS&lt;/h5&gt;
+&lt;h2 id=&quot;erc-1155-token---for-unique-tokens&quot;&gt;ERC-1155 TOKEN - FOR UNIQUE TOKENS&lt;/h2&gt;
 
 &lt;p&gt;The final type of token in the Chiliz ecosystem, would be the ERC-1155 NFTs.&lt;/p&gt;
 
@@ -1735,17 +1739,17 @@
 
 &lt;p&gt;So why is that a big deal?&lt;/p&gt;
 
-&lt;p&gt;Well, it allows Chiliz to create dynamic NFTs in response to real world sporting events and mint limited edition NFTs.&lt;/p&gt;
+&lt;p&gt;It allows Chiliz to create dynamic NFTs in response to real world sporting events and mint limited edition NFTs.&lt;/p&gt;
 
 &lt;p&gt;For example, if a player scores their 100th goal then limited edition NFTs might be minted to commemorate it.&lt;/p&gt;
 
-&lt;p&gt;You also have the likes of Paris Saint-Germain tweeting about &lt;em&gt;socios&lt;/em&gt; NFTs too, and here’s AC Milan letting their fans know, that they should get ready for AC Milan NFT collectibles.&lt;/p&gt;
+&lt;p&gt;There are also the likes of Paris Saint-Germain tweeting about &lt;em&gt;socios&lt;/em&gt; NFTs too, and here’s AC Milan letting their fans know, that they should get ready for AC Milan NFT collectibles.&lt;/p&gt;
 
-&lt;h5 id=&quot;chiliz---rewards-tied-with-ntfs&quot;&gt;CHILIZ - REWARDS TIED WITH NTFS&lt;/h5&gt;
+&lt;h2 id=&quot;chiliz---rewards-tied-with-ntfs&quot;&gt;CHILIZ - REWARDS TIED WITH NTFS&lt;/h2&gt;
 
-&lt;p&gt;Honestly, when it comes to NFTs and sport, it all makes a ton of sense to me.&lt;/p&gt;
+&lt;p&gt;When it comes to NFTs and sport, it all makes a ton of sense.&lt;/p&gt;
 
-&lt;p&gt;I mean, think about the crazy money that sports fans are willing to pay for collectibles, like memorabilia and sports cards.&lt;/p&gt;
+&lt;p&gt;Think about the crazy money that sports fans are willing to pay for collectibles, like memorabilia and sports cards.&lt;/p&gt;
 
 &lt;p&gt;But what really sets Chiliz apart from others in the NFT space is that, they understand that NFTs need to have value, if prices are going to be supported long term.&lt;/p&gt;
 
@@ -1753,17 +1757,17 @@
 
 &lt;p&gt;So an example of that would be the ownership of a specific Juventus NFT could lead to being granted exclusive access to a VIP box at the stadium.&lt;/p&gt;
 
-&lt;p&gt;What’s even more exciting is that, I can see how those types of NFTs could really appeal to no coiner sports fans too.&lt;/p&gt;
+&lt;p&gt;What’s even more exciting is that, we can see how those types of NFTs could really appeal to no coiner sports fans too.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/17.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;worth-the-hype&quot;&gt;WORTH THE HYPE?&lt;/h5&gt;
+&lt;h2 id=&quot;worth-the-hype&quot;&gt;WORTH THE HYPE?&lt;/h2&gt;
 
-&lt;p&gt;So what do I think about these tokens?&lt;/p&gt;
+&lt;p&gt;Fan Tokens are really hard to value, and that’s because sports fans can really be quite irrational, when it comes to their teams.&lt;/p&gt;
 
-&lt;p&gt;Well, honestly, I find Fan Tokens really hard to value, and that’s because sports fans can really be quite irrational, when it comes to their teams.&lt;/p&gt;
-
-&lt;p&gt;I know guys, that would spend over a thousand of the queen’s finest pounds and days traveling to away games in far-flung places.&lt;/p&gt;
+&lt;p&gt;There are guys, that would spend over a thousand of dollrs and days traveling to away games in far-flung places.&lt;/p&gt;
 
 &lt;p&gt;This even though their team frankly has little hope of winning.&lt;/p&gt;
 
@@ -1775,51 +1779,59 @@
 
 &lt;p&gt;But I would urge people to be careful, and think about their entry point, if they’re considering getting some CHZ.&lt;/p&gt;
 
-&lt;p&gt;At the time of shooting this video, there was a large pullback, but prices are still well off those, seen before it went parabolic.&lt;/p&gt;
+&lt;p&gt;Locker Tokens do seem like a good way to give yourself a chance of making a better return on the CHZ or you’d be interested in getting exposure to a certain Fan Token, if it was launched.&lt;/p&gt;
 
-&lt;p&gt;Locker Tokens do seem like a good way to give yourself a chance of making a better return on the CHZ, if you have that hanging around, or you’d be interested in getting exposure to a certain Fan Token, if it was launched.&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/2.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
-
-&lt;h5 id=&quot;partnerships-binance-potential-rewards&quot;&gt;PARTNERSHIPS, BINANCE, POTENTIAL REWARDS&lt;/h5&gt;
+&lt;h2 id=&quot;chz-on-binance&quot;&gt;CHZ ON BINANCE&lt;/h2&gt;
 
 &lt;p&gt;Finally, on the Chiliz NFT front.&lt;/p&gt;
 
-&lt;p&gt;Honestly, I think it all depends on the perks, that can be unlocked by holding these NFTs.&lt;/p&gt;
+&lt;p&gt;It all depends on the perks, that can be unlocked by holding these NFTs.&lt;/p&gt;
 
-&lt;p&gt;If they unlock great exclusive rewards, or unique experiences, that fans really want, then I have no doubt, that they’ll command sky high prices.&lt;/p&gt;
+&lt;p&gt;If they unlock great exclusive rewards, or unique experiences, that fans really want, then no doubt, that they’ll command sky high prices.&lt;/p&gt;
 
 &lt;p&gt;Imagine the demand for an NFT amongst football fans, that allowed you to meet up with Lionel Messi once a year.&lt;/p&gt;
 
-&lt;p&gt;I imagine that every fan and football youtuber under the sun would want a piece of that one.&lt;/p&gt;
+&lt;p&gt;Every fan and football youtuber under the sun would want a piece of that one.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/18.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;partneships&quot;&gt;PARTNESHIPS&lt;/h5&gt;
+&lt;h2 id=&quot;partneships&quot;&gt;PARTNESHIPS&lt;/h2&gt;
 
 &lt;p&gt;But what about Chiliz partnerships?&lt;/p&gt;
 
-&lt;p&gt;Well, there is a very important one, that I want to go over quickly.&lt;/p&gt;
+&lt;p&gt;Well, there is a very important one.&lt;/p&gt;
 
 &lt;p&gt;Binance is both a partner and investor in Chiliz.&lt;/p&gt;
 
 &lt;p&gt;That’s why almost every Fan Token and the CHZ token is listed on Binance.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/19.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;p&gt;It also gave access to certain Fan Tokens, like PSG and you’ve on the Binance launch pool.&lt;/p&gt;
+&lt;p&gt;It also gave access to certain Fan Tokens, like PSG and you have on the Binance launch pool.&lt;/p&gt;
 
-&lt;p&gt;If liquidity is something that concerns you, then honestly I would opt to trade them on Binance every day of the week.&lt;/p&gt;
+&lt;p&gt;If liquidity is something that concerns you, then honestly it’s worth considering trading them on Binance every day of the week.&lt;/p&gt;
 
 &lt;p&gt;That trade volume and liquidity is typically way better, than the Chiliz exchange itself.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/20.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;Probably not a surprise to anyone out there, also Binance frankly offers way more trading pairs.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;attachment:image.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/chiliz/21.PNG&quot; /&gt;
+&lt;/center&gt;
 
-&lt;h5 id=&quot;fans-are-good-customers&quot;&gt;FANS ARE GOOD CUSTOMERS&lt;/h5&gt;
+&lt;h2 id=&quot;fans-are-good-customers&quot;&gt;FANS ARE GOOD CUSTOMERS&lt;/h2&gt;
 
 &lt;p&gt;Honestly, I know firsthand, how passionate sports fans can be.&lt;/p&gt;
 
@@ -1829,15 +1841,15 @@
 
 &lt;p&gt;Let’s face it, there are billions of sports fans out there in the world, and almost everyone I know seems to love the idea of being able to influence their team’s decisions and get exclusive perks.&lt;/p&gt;
 
-&lt;p&gt;Overall, I really like Chiliz as a project, the concept, and how they’re seemingly paving the way for unique digital sports memorabilia with NFTs in real time.&lt;/p&gt;
+&lt;p&gt;Overall, Chiliz as a project is really ambitious, the concept, and how they’re seemingly paving the way for unique digital sports memorabilia with NFTs in real time.&lt;/p&gt;
 
-&lt;p&gt;I also really love the idea of attaching tangible team-related perks to NFTs.&lt;/p&gt;
+&lt;p&gt;Also the idea of attaching tangible team-related perks to NFTs is absolutely brilliant.&lt;/p&gt;
 
 &lt;p&gt;That way they have tangible real-world value, and this should drive future demand.&lt;/p&gt;
 
-&lt;p&gt;Now, that I think about it, there are plenty of countries in the world, where gambling on sports is illegal.&lt;/p&gt;
+&lt;p&gt;There are plenty of countries in the world, where gambling on sports is illegal.&lt;/p&gt;
 
-&lt;p&gt;Think of the likes of China, where folks are football crazy.&lt;/p&gt;
+&lt;p&gt;Think of the likes of China, where people are football crazy.&lt;/p&gt;
 
 &lt;p&gt;What Fan Tokens also allow people to do, is to speculate on the success of teams.&lt;/p&gt;
 
@@ -1845,34 +1857,55 @@
 
 &lt;p&gt;In a way, it’s kind of like an indirect way of betting on them too.&lt;/p&gt;
 
-&lt;h5 id=&quot;expanding---how-crazy-would-that-be&quot;&gt;EXPANDING - HOW CRAZY WOULD THAT BE?&lt;/h5&gt;
+&lt;h2 id=&quot;expanding---how-crazy-would-that-be&quot;&gt;EXPANDING - HOW CRAZY WOULD THAT BE?&lt;/h2&gt;
 
 &lt;p&gt;There are billions of sports fans around the world.&lt;/p&gt;
 
-&lt;p&gt;Yes, the majority are probably not Die Hard fans, but I’d wager that hundreds of millions are, and would be open to using a platform like &lt;em&gt;socios&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The majority would probably be open to using a platform like &lt;em&gt;socios&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;That’s a heck of a lot of new people, who could be introduced to the world of crypto, and I guess that’s what makes Chiliz so intriguing as a platform.&lt;/p&gt;
+&lt;p&gt;That’s a a lot of new people, who could be introduced to the world of crypto, and that’s what makes Chiliz so intriguing as a platform.&lt;/p&gt;
 
 &lt;p&gt;Also think about this potential to add more teams and sports.&lt;/p&gt;
 
-&lt;p&gt;I also hear, that Chiliz plans on expanding into the US with a 50 million dollar investment.&lt;/p&gt;
+&lt;p&gt;Accoring to the rumours, Chiliz might be planning on expanding into the US with a 50 million dollar investment.&lt;/p&gt;
 
-&lt;p&gt;Just think how crazy that could be, if they got some big NF1 teams onto the platform.&lt;/p&gt;
+&lt;p&gt;How crazy that could be, if they got some big F1 teams onto the platform.&lt;/p&gt;
 
 &lt;p&gt;But with all that being said, I do believe that Chiliz long-term success rests on voting power, and rewards, that fans really care about.&lt;/p&gt;
 
 &lt;p&gt;In a crazy world, where anything seems possible, is it really so far-fetched to think that even major decisions, like transfers team sheets and formations, could be decided by fans in the future.&lt;/p&gt;
 
-&lt;p&gt;I imagine that’s something almost every sports fan would be interested in.&lt;/p&gt;
+&lt;p&gt;That’s perhaps something almost every sports fan would be interested in.&lt;/p&gt;
 
-&lt;p&gt;The one thing, I am wary of at the time of shooting the video, is the market cap valuations of these tokens.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Is Chiliz really worth close to three billion dollars?&lt;/p&gt;
+&lt;h5 id=&quot;links&quot;&gt;LINKS:&lt;/h5&gt;
 
-&lt;p&gt;I’ll let you decide now.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chiliz.com/en/ &quot;&gt;Chiliz website &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chiliz.net&quot;&gt; Chiliz exchange &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chiliz.com/docs/CHZ_whitepaper.pdf?__cf_chl_jschl_tk__=pmd_0AQq5wjI1F3hsD3vtat2LNw41e0RCYdAbCxeswYhsmk-1630508058-0-gqNtZGzNAeWjcnBszQi9&quot;&gt; Chiliz whitepaper &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.socios.com &quot;&gt; Socios &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.lexology.com/library/detail.aspx?g=6e550f20-37c2-4a6c-be35-a8e51b915b4d&quot;&gt; What are fan tokens? &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chiliz.zendesk.com/hc/en-us/articles/360011405940-Chiliz-net-Fee-Structure&quot;&gt; Exchange fee structure &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/socios/socios-com-polls-campaigns-that-have-made-headlines-c966040c8fa8&quot;&gt; Apollon FC takes fan engagement to next level &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://investorplace.com/2021/03/chiliz-chz-coin-what-does-the-nft-craze-mean-for-chiliz-price-predictions/&quot;&gt; AC Milan FTO &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/chiliz/the-chiliz-show-special-edition-recap-alex-looks-ahead-to-a-massive-2021-91db702c2833&quot;&gt; Token Economics &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://research.binance.com/en/projects/paris-saint-germain-fan-token&quot;&gt; PSG token release schedule &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chiliz.com/en/chiliz-swap-changing-your-erc-20-chz-to-bep-2-chz/&quot;&gt; Chiliz BEP-2 &amp;amp; ERC-20 tokens &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chiliz.zendesk.com/hc/en-us/articles/360011528219-Chiliz-announces-Token-Economics-2-0&quot;&gt; Chiliz Token Economics 2.0 &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/chiliz/status/1346461398646181890&quot;&gt; Latest CHZ token burn &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fantoken.news/chiliz-nfts-in-february/&quot;&gt; Enjin partnership &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fantoken.news/chiliz-nfts-in-february/&quot;&gt; Latest CHZ token burn &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chiliz.com/en/chiliz-integrates-with-chainlink-to-mint-nfts-in-real-time/&quot;&gt; Chainlink integration &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.binance.com/en/blog/421499824684901362/Ahead-Of-The-Game-Binance-Announces-New-Strategic-Partnership-With-Chiliz&quot;&gt; Binance partnership &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;THE NOTES WERE BASED ON THE VIDEO BELOW.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Abl9FDtblx4&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
 </content>
  </entry>
  
@@ -4389,7 +4422,11 @@ This serial number corresponds to info like when the bill was printed, where it 
 &lt;img src=&quot;/images/posts/Tokens/uniswap/uniswap.png&quot; style=&quot;max-width: 200px&quot; /&gt;
 &lt;/center&gt;
 
-&lt;h3 id=&quot;what-is-uniswap&quot;&gt;WHAT IS UNISWAP?&lt;/h3&gt;
+&lt;h2 id=&quot;what-is-uniswap&quot;&gt;WHAT IS UNISWAP?&lt;/h2&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/uniswap/0.PNG&quot; /&gt;
+&lt;/center&gt;
 
 &lt;p&gt;Uniswap is a decentralized,  permissionless exchange that allows anyone to trade  Ethereum ERC-20 tokens directly without the use of a middleman.&lt;/p&gt;
 
@@ -4412,19 +4449,21 @@ This serial number corresponds to info like when the bill was printed, where it 
 
 &lt;p&gt;So this is how a traditional,  centralized exchange works.&lt;/p&gt;
 
-&lt;h3 id=&quot;dex---decentralized-exchanges&quot;&gt;DEX - DECENTRALIZED EXCHANGES&lt;/h3&gt;
+&lt;h2 id=&quot;dex---decentralized-exchanges&quot;&gt;DEX - DECENTRALIZED EXCHANGES&lt;/h2&gt;
+
 &lt;p&gt;Now let’s talk about  decentralized exchanges, also known as DEXs.&lt;/p&gt;
 
 &lt;p&gt;DEXs are part of the decentralized  finance ecosystem.&lt;/p&gt;
 
 &lt;p&gt;Decentralized finance,  or DeFi for short, is a term given to traditional  financial services such as exchanges,  lending services, and insurance, that have been decentralized through the use  of Blockchain technology.&lt;/p&gt;
 
-&lt;h3 id=&quot;dex-and-smart-contracts&quot;&gt;DEX AND SMART CONTRACTS&lt;/h3&gt;
+&lt;h2 id=&quot;dex-and-smart-contracts&quot;&gt;DEX AND SMART CONTRACTS&lt;/h2&gt;
+
 &lt;p&gt;Now, unlike a traditional exchange that requires a controlling company  and centralized servers to operate, a DEX consists of a set of smart  contracts deployed on a blockchain.&lt;/p&gt;
 
 &lt;p&gt;In simple terms,  it’s a set of automated rules that are executed by a network  of independent computers without any central entity controlling it.&lt;/p&gt;
 
-&lt;h3 id=&quot;more-advantages-of-dexs&quot;&gt;MORE ADVANTAGES OF DEXs&lt;/h3&gt;
+&lt;h2 id=&quot;more-advantages-of-dexs&quot;&gt;MORE ADVANTAGES OF DEXs&lt;/h2&gt;
 
 &lt;p&gt;Since DEXs aren’t controlled  by anyone, they can’t be regulated  and are in fact open to everyone.&lt;/p&gt;
 
