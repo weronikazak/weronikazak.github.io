@@ -2,7 +2,7 @@
 layout: post
 title:  "Ripple - XRP and ICU"
 date:   2021-07-30 16:10:35 +0100
-categories: 
+tags:
 - cryptocurrency
 - token
 description: "What is Ripple? How does it work? Is XRP, Ripple’s cryptocurrency, a good investment? And what does this all have to do  with the banking system?"

@@ -2,7 +2,7 @@
 layout: post
 title:  "USDT, USDC, BUSD - Stablecoins"
 date:   2021-08-14 16:10:35 +0100
-categories: 
+tags:
 - cryptocurrency
 - token
 description: "Stablecoins have been in the spotlight over the last few weeks, and for all the wrong reasons. Regulators are starting to get nervous about the impact stablecoins could have not just on the crypto market, but on the financial markets as a whole."

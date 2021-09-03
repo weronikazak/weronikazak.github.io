@@ -2,7 +2,7 @@
 layout: post
 title:  "Real World Data"
 date:   2021-04-22 16:10:35 +0100
-categories: 
+tags:
 - machine learning
 description: "Coding in Python with focus on machine learning algorithms and techniques. Confusion Matrix, Measuring Classifiers, Precision, Recall, ROC Curve, Bias and Variance, K-Fold Validation, Outliers, Unbalanced Data, SMOTE, Binning, Transforming, Encoding, Normalization."
 image: 'images/posts/Machine Learning/realdata/realdata.png'

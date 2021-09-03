@@ -39,6 +39,12 @@
       <main>
         <div class="page">
 
+<script>
+	function scrollToContact() {
+		document.getElementById("contactMe").scrollIntoView({ behavior: 'smooth'});;
+	}
+</script>
+
 <!-- TINY - MEDIUM DEVICES -->
 <section id="introduction" class="container-fluid d-block d-md-none">
 	<header class="text-center col-12">
@@ -69,7 +75,7 @@
 							<button type="button" class="btn btn-category text-uppercase rounded-pill mr-2">My resume</button>
 						</a>
 
-						<button type="button" class="btn btn-category text-uppercase rounded-pill mr-2 white-btn" >Contact me</button>
+						<button type="button" class="btn btn-category text-uppercase rounded-pill mr-2 white-btn" onclick="scrollToContact()">Contact me</button>
 						
 						<a href="/pages/blog/">
 							<button type="button" class="btn btn-category text-uppercase rounded-pill white-btn" >My blog</button>
@@ -109,7 +115,7 @@
 							<button type="button" class="btn btn-category text-uppercase rounded-pill mr-2">My resume</button>
 						</a>
 
-						<button type="button" class="btn btn-category text-uppercase rounded-pill mr-2 white-btn" >Contact me</button>
+						<button type="button" class="btn btn-category text-uppercase rounded-pill mr-2 white-btn" onclick="scrollToContact()">Contact me</button>
 						
 						<a href="/pages/blog/">
 							<button type="button" class="btn btn-category text-uppercase rounded-pill white-btn" >My blog</button>
@@ -505,7 +511,7 @@
 
 <!------------------------ CONTACT ---------------------->
 <section class="container">
-	<h2 class="text-uppercase landing-title">Let's keep <span style="color: #e6e6e6;">in touch!</span></h2>
+	<h2 class="text-uppercase landing-title" id="contactMe">Let's keep <span style="color: #e6e6e6;">in touch!</span></h2>
 	
 	<div class="row">
         <div class="card col-3">
@@ -560,7 +566,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-09-03T20:29:35+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-09-04T12:03:54+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

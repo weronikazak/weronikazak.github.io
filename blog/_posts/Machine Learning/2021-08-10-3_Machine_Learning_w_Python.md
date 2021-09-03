@@ -2,7 +2,7 @@
 layout: post
 title:  "Machine Learning with Python, Part 1"
 date:   2021-04-21 16:10:35 +0100
-categories: 
+tags:
 - machine learning
 description: "Coding in Python with focus on machine learning algorithms and techniques. Train / test split, Bayesian Methods, Naive Bayes, K-Means Clustering, Entropy."
 image: 'images/posts/Machine Learning/mlpython/kmeans.png'

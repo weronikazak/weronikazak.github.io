@@ -4,7 +4,7 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-09-03T20:29:35+01:00</updated>
+ <updated>2021-09-04T12:03:54+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
@@ -2146,11 +2146,11 @@
   &lt;li&gt;and a &lt;strong&gt;Recognizable Price Pattern&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;support&quot;&gt;SUPPORT&lt;/h4&gt;
+&lt;h3 id=&quot;support&quot;&gt;SUPPORT&lt;/h3&gt;
 
 &lt;p&gt;Support refers to the &lt;strong&gt;lower limit&lt;/strong&gt; of where the price of an asset could go.&lt;/p&gt;
 
-&lt;h4 id=&quot;resistance&quot;&gt;RESISTANCE&lt;/h4&gt;
+&lt;h3 id=&quot;resistance&quot;&gt;RESISTANCE&lt;/h3&gt;
 
 &lt;p&gt;Resistance refers to the &lt;strong&gt;upper limit&lt;/strong&gt; of where the price of an asset could go.&lt;/p&gt;
 
@@ -2159,7 +2159,7 @@
 &lt;p&gt;The simplest method is to look at the lowest and highest prices hit during a given time period.&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;/images/posts/Cryptocurrency/analysis/15.PNG&quot; /&gt;
+&lt;img src=&quot;/images/posts/Cryptocurrency/analysis/15.png&quot; /&gt;
 &lt;/center&gt;
 
 &lt;hr /&gt;

@@ -2,7 +2,7 @@
 layout: post
 title:  "Technical Analysis"
 date:   2021-08-01 16:10:35 +0100
-categories: 
+tags:
 - cryptocurrency
 description: "As it turns out, technical analysis actually has some solid science behind it, and has existed for hundreds of years. The candlestick chart, that comes to mind, when you think of trading, is said to have been invented by a japanese rice merchant named Honma Munehisa almost 300 years ago."
 image: 'images/posts/Cryptocurrency/analysis/analysis.jpg'
@@ -239,11 +239,11 @@ When traders draw lines, they're normally looking for three things.
 - **Resistance**
 - and a **Recognizable Price Pattern**
 
-#### SUPPORT
+### SUPPORT
 
 Support refers to the **lower limit** of where the price of an asset could go.
 
-#### RESISTANCE
+### RESISTANCE
 
 Resistance refers to the **upper limit** of where the price of an asset could go.
 
@@ -252,7 +252,7 @@ There are many ways to assess, where the support and resistant prices could be.
 The simplest method is to look at the lowest and highest prices hit during a given time period.
 
 <center>
-<img src="/images/posts/Cryptocurrency/analysis/15.PNG" >
+<img src="/images/posts/Cryptocurrency/analysis/15.png" >
 </center>
 
 -------------------

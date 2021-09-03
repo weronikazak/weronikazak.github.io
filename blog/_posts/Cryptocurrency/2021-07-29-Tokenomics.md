@@ -2,7 +2,7 @@
 layout: post
 title:  "Tokenomics"
 date:   2021-07-29 16:10:35 +0100
-categories: 
+tags:
 - cryptocurrency
 - token
 description: "Tokenomics means token economics. It includes a whole series of metrics relating to cryptocurrency, coin or token such as supply, allocation, distribution, emission and utility."

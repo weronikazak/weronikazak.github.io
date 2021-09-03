@@ -25,7 +25,6 @@ title: Home
         var tags = {{ post.tags | jsonify }}
   
         var postDiv = document.getElementById("post-" + (++id));
-        
 
         postDiv.style.display =
           (selectedCategory == 'All' || tags.includes(selectedCategory)) 
