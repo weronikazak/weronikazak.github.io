@@ -5,7 +5,7 @@ layout: default
 
   <script type="text/javascript">
     function filterUsingCategory(selectedCategory) {
-      let btns = document.getElementsByTagName('button');
+      let btns = document.getElementsByClassName('tag-btn');
         
       for (let i = 0; i < btns.length; i++) {
         let btn = btns[i];
@@ -45,7 +45,7 @@ layout: default
     <div>
       <button type="button" 
         id="All"
-        class="btn btn-category text-uppercase rounded-pill"
+        class="btn btn-category text-uppercase rounded-pill tag-btn"
         onclick="filterUsingCategory('All')">
           ALL
       </button>
@@ -63,7 +63,7 @@ layout: default
       {% for tag in uniqTags %}
         <button id="{{ tag }}" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn" >
           {{ tag }}
         </button>
       {% endfor %}

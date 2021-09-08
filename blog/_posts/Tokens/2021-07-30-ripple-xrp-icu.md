@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ripple - XRP and ICU"
+title:  "XRP, ICU - Ripple"
 date:   2021-07-30 16:10:35 +0100
 tags:
 - cryptocurrency

@@ -4,13 +4,495 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-09-04T14:59:25+01:00</updated>
+ <updated>2021-09-07T19:46:38+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Filecoin - FIL</title>
+   <link href="http://localhost:4000/2021/Filecoin/"/>
+   <updated>2021-09-01T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2021/Filecoin</id>
+   <content type="html">&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/filecoin.png&quot; style=&quot;max-width: 200px&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;filenets-finally-here&quot;&gt;FILENET’S FINALLY HERE&lt;/h2&gt;
+
+&lt;p&gt;There have been over 5000 ICOs in the crypto space.&lt;/p&gt;
+
+&lt;p&gt;Most of these happened during the ICO booms of 2017 and 2018, with over 6.2 billion, raised in 2017 alone.&lt;/p&gt;
+
+&lt;p&gt;Only a handful of those 5000+ projects have managed to deliver, what they promised, and many of those launched their main nets this year.&lt;/p&gt;
+
+&lt;p&gt;And now it’s Filecoin’s turn to be in the spotlight.&lt;/p&gt;
+
+&lt;p&gt;It’s been more than 3 years, since Filecoin held its pre-sale and ICO, which together raised more than a quarter of a billion dollars, and at last Filecoin’s Mainnet is here.&lt;/p&gt;
+
+&lt;h2 id=&quot;protocol-labs&quot;&gt;PROTOCOL LABS&lt;/h2&gt;
+
+&lt;p&gt;Filecoin is a decentralized storage network built by Protocol Labs.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/1.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Protocol Labs is a research and development company for network protocols based in San Francisco.&lt;/p&gt;
+
+&lt;p&gt;It was founded by Stanford graduate &lt;strong&gt;Juan Bennett&lt;/strong&gt; in 2014, and received over 3 million dollars in funding with the help of the famous &lt;em&gt;Y Combinator Startup&lt;/em&gt; accelerator program.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/2.jpg&quot; style=&quot;max-width: 400px&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;One is the CEO of Protocol Labs, which has grown from a team of a dozen people to over 130 since its incorporation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The end game of Protocol Labs is to create a fast secure and decentralized internet.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;todays-centralised-internet&quot;&gt;TODAY’S CENTRALISED INTERNET&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;The internet we have today is extremely centralized&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;All of the web content we interact with is stored on centralized servers, which can suffer outages or be shut down, if they’re hosting content, which people with big guns or big wallets or both don’t want others to see.&lt;/p&gt;
+
+&lt;p&gt;The trade-off is that most of us get fast high-quality internet connections at a low price from these centralized internet providers.&lt;/p&gt;
+
+&lt;p&gt;Decentralized alternatives were not feasible in the past, because they were either too slow, too expensive, or both.&lt;/p&gt;
+
+&lt;p&gt;As such, Protocol Labs developed 2 products to address these issues and lay the groundwork for a functional fast affordable and user-friendly Web 3.0.&lt;/p&gt;
+
+&lt;h2 id=&quot;first-product---ipfs&quot;&gt;FIRST PRODUCT - IPFS&lt;/h2&gt;
+
+&lt;p&gt;The first product is called &lt;strong&gt;The Interplanetary File System (IPFS)&lt;/strong&gt;, which was released in 2015.&lt;/p&gt;
+
+&lt;p&gt;It allows anyone to receive and host web content in a manner similar to Bittorrent.&lt;/p&gt;
+
+&lt;p&gt;The ipfs was designed to function like the internet, we’re all used to, meaning, that the front end of an IPFS website looks and feels like a regular HTTP website.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/3.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Over 5 billion files were on the IPFS at the start of 2020.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Since the IPFS relies on a network of nodes, instead of centralized servers, it will someday be possible, to get a quality internet experience on other planets.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is because it will not be necessary to constantly refer back to centralized internet servers on Earth, which can take minutes, if not hours, depending on what planet you’re on.&lt;/p&gt;
+
+&lt;h2 id=&quot;second-product---filecoin&quot;&gt;SECOND PRODUCT - FILECOIN&lt;/h2&gt;
+
+&lt;p&gt;The second product is none other than &lt;strong&gt;Filecoin, a decentralized storage blockchain built on the IPFS&lt;/strong&gt; and designed in 2017.&lt;/p&gt;
+
+&lt;p&gt;Its role is to function as the incentive layer to support and grow the IPFS by rewarding those, who help in the storage and retrieval of files with Filecoin’s native FILL token.&lt;/p&gt;
+
+&lt;p&gt;In addition to supporting the IPFS, Filecoin hopes to compete with centralized cloud storage providers, such as Amazon and Google.&lt;/p&gt;
+
+&lt;p&gt;This also puts Filecoin in direct competition with other decentralized data storage cryptos, like SIA Coin and Storch.&lt;/p&gt;
+
+&lt;p&gt;Filecoin’s mainnet went live on October the 15th, after over 3 years of development.&lt;/p&gt;
+
+&lt;p&gt;This was followed by what was essentially a one-week party to celebrate called &lt;em&gt;Filecoin Liftoff&lt;/em&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/4.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;It consisted of dozens of online panels workshops and talks about Filecoin and Web 3.0.&lt;/p&gt;
+
+&lt;h2 id=&quot;filecoin---how-does-it-work-and-its-blockchain&quot;&gt;FILECOIN - HOW DOES IT WORK AND ITS BLOCKCHAIN&lt;/h2&gt;
+
+&lt;p&gt;Filecoin works like most other cryptocurrencies.&lt;/p&gt;
+
+&lt;p&gt;It has a blockchain, it has a consensus mechanism, it has mining, and it has mining rewards paid in its own native token.&lt;/p&gt;
+
+&lt;p&gt;The Filecoin blockchain is built on top of the IPFS.&lt;/p&gt;
+
+&lt;p&gt;The blockchain itself doesn’t store any files.&lt;/p&gt;
+
+&lt;p&gt;It acts as the ledger for FILL transactions and Filecoin wallet address balances.&lt;/p&gt;
+
+&lt;p&gt;The Filecoin blockchain also stores the agreements made between the miners, which store client data and the clients, which requested said data to be stored.&lt;/p&gt;
+
+&lt;h2 id=&quot;two-consensus-mechanisms&quot;&gt;TWO CONSENSUS MECHANISMS&lt;/h2&gt;
+
+&lt;p&gt;The Filecoin blockchain uses two consensus mechanisms.&lt;/p&gt;
+
+&lt;p&gt;The first consensus mechanism is called &lt;strong&gt;proof of replication&lt;/strong&gt;, which involves proving, that a given piece of data is being stored by a miner.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/5.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;A miner must write this proof to the Filecoin blockchain upon the creation of a data storage contract with a client.&lt;/p&gt;
+
+&lt;p&gt;The second consensus mechanism is called &lt;strong&gt;proof of space time&lt;/strong&gt;, which involves proving, that a miner is still storing a piece of data.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/6.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;A miner must write this proof to the Filecoin blockchain every time a client or other network participant asks to see, if they’re still storing that data.&lt;/p&gt;
+
+&lt;h2 id=&quot;coin-mining&quot;&gt;COIN MINING&lt;/h2&gt;
+
+&lt;p&gt;Unlike mining Bitcoin, Ethereum or basically every other proof-of-work cryptocurrency, &lt;strong&gt;all you need to mine Filecoin is a good computer, a reliable internet connection and plenty of hard drive space.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is because your job as a miner on Filecoin is not to burn a circuit with your makeshift ASICS mining farm, but to store a hell of a lot of encrypted user data on a thick HDD.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/7.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;In addition to the hardware, you’re also going to need to stake some FILL tokens.&lt;/p&gt;
+
+&lt;p&gt;This is to ensure that you stay on your best behavior.&lt;/p&gt;
+
+&lt;p&gt;Your collateral can be partly slashed, if you’re found to have violated the terms of your contract with a client, such as deleting the data before the agreed-upon date.&lt;/p&gt;
+
+&lt;p&gt;The exact amount of FILL you must shell out is proportional to the amount of storage, you’re providing as a percentage of the network.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/8.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;So for example, if you’re storing 1TB of data for a client, and that’s 1% of the storage available on the Filecoin network, your fill stake will need to be 1% of the total FILL currently being staked.&lt;/p&gt;
+
+&lt;p&gt;This adds extra security to the blockchain, as it means, that the cost of corruption is not just tied to the number of FILL tokens you have, but also to the amount of hardware you’re packing.&lt;/p&gt;
+
+&lt;p&gt;This also means, it becomes more expensive to corrupt the Filecoin network as more miners join.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-ways-of-staking&quot;&gt;2 WAYS OF STAKING&lt;/h2&gt;
+
+&lt;p&gt;Since the cost of the FILL, you need to stake to become a miner can be quite expensive, under some conditions &lt;strong&gt;Filecoin gives you two staking options&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Either &lt;strong&gt;you can put down the collateral upfront&lt;/strong&gt; or you can &lt;strong&gt;choose to put down less collateral up front, and use a portion of your future block rewards as collateral block&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;filecoin-rewards&quot;&gt;FILECOIN REWARDS&lt;/h2&gt;
+
+&lt;p&gt;Rewards on Filecoin are dependent on the size of the network.&lt;/p&gt;
+
+&lt;p&gt;The more the Filecoin network grows, the more FILL tokens are up for grabs from each block.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/9.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This is to promote the growth of the network and to ensure, that miners continue to be adequately compensated well into the future.&lt;/p&gt;
+
+&lt;p&gt;The block rewards each individual miner gets is proportional to the amount of storage space a miner is contributing to the network.&lt;/p&gt;
+
+&lt;p&gt;So, as with staking, if you’re contributing 1% of the total storage available on Filecoin, you will earn 1% of all block rewards.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/10.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Note that as a miner, you will earn these block rewards for simply participating on the Filecoin network.&lt;/p&gt;
+
+&lt;p&gt;For example, the FILL tokens you get directly from clients for agreeing to store their data, is the commission.&lt;/p&gt;
+
+&lt;p&gt;This can make being a Filecoin miner quite lucrative, depending on network conditions and the size of your hard drive.&lt;/p&gt;
+
+&lt;h2 id=&quot;example-storing-content-on-ipfs&quot;&gt;EXAMPLE: STORING CONTENT ON IPFS&lt;/h2&gt;
+&lt;h3 id=&quot;find-a-decentralized-app&quot;&gt;FIND A DECENTRALIZED APP&lt;/h3&gt;
+
+&lt;p&gt;Suppose you have 1TB of purely educational content, that you would like to store on Filecoin.&lt;/p&gt;
+
+&lt;p&gt;The first step is to find a decentralized storage application.&lt;/p&gt;
+
+&lt;p&gt;These are like decentralized applications on Ethereum, except that they’re built on top of Filecoin.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/11.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;And since Filecoin is built on top of IPFS decentralized storage, applications look and feel like a regular website.&lt;/p&gt;
+
+&lt;p&gt;What’s more is that, a Web 3.0 wallet like Metamask isn’t required to use them.&lt;/p&gt;
+
+&lt;p&gt;They are, quite literally, the simple front-end application you use.&lt;/p&gt;
+
+&lt;p&gt;While the Filecoin network does all the magic in the background, a list of decentralized storage applications can be found in the Filecoin docs.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/12.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;These decentralized storage applications will let you set the terms for your data storage contract.&lt;/p&gt;
+
+&lt;p&gt;This includes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the duration of the contract,&lt;/li&gt;
+  &lt;li&gt;how many times you want the data to be replicated,&lt;/li&gt;
+  &lt;li&gt;when it’s stored, and&lt;/li&gt;
+  &lt;li&gt;how much you’re willing to pay in FILL tokens for those conditions.&lt;/li&gt;
+  &lt;li&gt;you can even specify the specific storage miners you want to use.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/13.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;storge-miner-accepts&quot;&gt;STORGE MINER ACCEPTS&lt;/h3&gt;
+
+&lt;p&gt;Assuming you didn’t set an unreasonably low price for your demands, a storage miner will accept the conditions of your contract to store your data.&lt;/p&gt;
+
+&lt;p&gt;The acceptance of the contract is written to the Filecoin blockchain along with the new balance of FILL tokens in your and the storage miners wallets.&lt;/p&gt;
+
+&lt;p&gt;Every so often, the Filecoin network will ask the miners storing your data to submit a proof, that they are still storing your educational content, lest their stake is slashed.&lt;/p&gt;
+
+&lt;h3 id=&quot;you-want-to-access-the-content---retrieve-miners-get-in&quot;&gt;YOU WANT TO ACCESS THE CONTENT - RETRIEVE MINERS GET IN&lt;/h3&gt;
+
+&lt;p&gt;Now, suppose that night has fallen, and it’s time to break out the educational content.&lt;/p&gt;
+
+&lt;p&gt;When you request to retrieve the data, you’ve stored using the decentralized storage application, a signal is sent out behind the scenes to &lt;em&gt;retrieval miners&lt;/em&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/11.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;These may, or may not, also be &lt;em&gt;storage miners&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;As the name suggests, &lt;em&gt;retrieval miners&lt;/em&gt; are tasked with retrieving your data as quickly as possible.&lt;/p&gt;
+
+&lt;p&gt;Naturally, they aren’t going to do this for free.&lt;/p&gt;
+
+&lt;p&gt;You’re going to have to shell out some FILL.&lt;/p&gt;
+
+&lt;p&gt;This cost depends, on how desperate you are to study.&lt;/p&gt;
+
+&lt;p&gt;If you’re patient, it will cost you next to nothing.&lt;/p&gt;
+
+&lt;p&gt;If you need your educational content right this minute, it will cost you more.&lt;/p&gt;
+
+&lt;p&gt;Once your data is retrieved, you simply download it back to your device and voila!&lt;/p&gt;
+
+&lt;p&gt;You’re studying away.&lt;/p&gt;
+
+&lt;h2 id=&quot;differences-between-other-storage-cryptos&quot;&gt;DIFFERENCES BETWEEN OTHER STORAGE CRYPTOS&lt;/h2&gt;
+
+&lt;p&gt;How Filecoin compares to other decentralized storage crypto projects, like SIA and Storch?&lt;/p&gt;
+
+&lt;p&gt;Without drowning into the details, it all comes down to two things.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scale and economics.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;SIA and Storch are simply looking to store user data in a decentralized manner, and market their projects, as a way to make money, from extra hard drive space, you might have lying around.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/14.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;In contrast, Filecoin is just one piece of the Protocol Labs puzzle.&lt;/p&gt;
+
+&lt;p&gt;Filecoin is not just looking to store user data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It wants to become the storage layer for all Web 3.0 data, even data from other cryptocurrency blockchains.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/15.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;scaling&quot;&gt;SCALING&lt;/h2&gt;
+
+&lt;p&gt;In fact, the Protocol Labs team envisions a future, where all the data from decentralized applications built on Ethereum and other smart contract blockchains, is stored using the Filecoin network.&lt;/p&gt;
+
+&lt;p&gt;That is the scale the project is going for, and it’s a big part of why it took so long for the Filecoin net to launch earlier this year.&lt;/p&gt;
+
+&lt;p&gt;SIA had to add a layer 2 solution called Skynet to fix its scaling issues despite storing only a fraction of the data, which Filecoin aims to support.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/16.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;On the other hand, Filecoin’s scale might just be its &lt;em&gt;Achilles heel&lt;/em&gt;, as both SIA and especially Storch have lower barriers to entry to participate on their networks in terms of hardware and stake.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/17.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This could limit the sort of network participation Filecoin will require, if it wants to grow to the size that Protocol Labs is aiming for.&lt;/p&gt;
+
+&lt;h2 id=&quot;economics---lots-of-cash&quot;&gt;ECONOMICS - LOTS OF CASH&lt;/h2&gt;
+
+&lt;p&gt;Filecoin has a massive, MASSIVE, war chest.&lt;/p&gt;
+
+&lt;p&gt;Filecoin raised almost 10x more capital than Ceocoin and Storge combined.&lt;/p&gt;
+
+&lt;p&gt;Money goes a long way, when it comes to marketing and adoption, especially when you’re trying to appeal to institutions and not just your average guy.&lt;/p&gt;
+
+&lt;p&gt;Highly doubt that Protocol Labs has spent all of that money over the last 3 years.&lt;/p&gt;
+
+&lt;p&gt;Filecoin also already has nearly double the number of active storage providers than SIA and a storage capacity that is 300x larger.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/18.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This is relevant, because it means, that if you’re looking to store data on Filecoin, you will probably be able to do so for a really good price, at least for the time being.&lt;/p&gt;
+
+&lt;p&gt;This is because the large amount of storage volume and storage miners, compared to clients, increases, the likelihood that they will compete to store your data.&lt;/p&gt;
+
+&lt;p&gt;Contrast this to see a coin, where storage fees are relatively fixed, albeit still very competitive compared to centralized data storage providers like Amazon and Google.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/19.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;filecoins-tokenomics&quot;&gt;FILECOIN’S TOKENOMICS&lt;/h2&gt;
+
+&lt;p&gt;Filecoin has also put a lot of thought into its tokenomics.&lt;/p&gt;
+
+&lt;p&gt;FILL is Filecoin’s native token no ERC-20 shenanigans here.&lt;/p&gt;
+
+&lt;p&gt;It’s a deflationary asset, since FILL tokens are burned to pay for network fees, or whenever a storage miner stake is slashed.&lt;/p&gt;
+
+&lt;p&gt;FILL has a maximum supply of 2 billion with an initial supply of 600 million.&lt;/p&gt;
+
+&lt;p&gt;Of this total supply:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;70% has been set aside for Filecoin miners.&lt;/li&gt;
+  &lt;li&gt;15% will go to Protocol Labs,&lt;/li&gt;
+  &lt;li&gt;7.5% was sold during the 2017 ICO,&lt;/li&gt;
+  &lt;li&gt;2.5% has been allocated to future fundraising and ecosystem development, and&lt;/li&gt;
+  &lt;li&gt;the last 5% was reserved for the Filecoin Foundation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/20.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;The FILL tokens allocated to Protocol Labs and the Filecoin foundation have a 6 year linear vesting schedule, whereas the tokens sold during the ICO are gradually vested with every Filecoin block that’s mined, and may last anything from 6 months to 3 years.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/21.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;controversy---investors-from-the-usa-but&quot;&gt;CONTROVERSY - INVESTORS FROM THE USA BUT..?&lt;/h2&gt;
+
+&lt;p&gt;The Filecoin ICO caused a bit of controversy in the crypto space.&lt;/p&gt;
+
+&lt;p&gt;This is because it was only open to accredited investors in the United States.&lt;/p&gt;
+
+&lt;p&gt;This meant, that the only people, who are allowed to participate, were those with more than a million dollars in the bank or an annual income of more than 200,000 US dollars.&lt;/p&gt;
+
+&lt;p&gt;But when you open up one of Filecoin’s block explorers, you can see that most storage miners on the Filecoin network are apparently located in Singapore.&lt;/p&gt;
+
+&lt;p&gt;What’s more, is that the Filecoin Foundation and Protocol Labs appear to have all their allocated tokens already.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/22.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Thankfully, they don’t seem to have sold any.&lt;/p&gt;
+
+&lt;p&gt;It’s unclear, whether these tokens are locked in a smart contract, or if they’re currently accessible by both parties.&lt;/p&gt;
+
+&lt;p&gt;An important question, to say the least.&lt;/p&gt;
+
+&lt;h2 id=&quot;filecoin-foundation---whats-that-no-much-is-known&quot;&gt;FILECOIN FOUNDATION - WHAT’S THAT? NO MUCH IS KNOWN&lt;/h2&gt;
+
+&lt;p&gt;Not much is known about the Filecoin Foundation.&lt;/p&gt;
+
+&lt;p&gt;This is unfortunate, because apparently they will be given control over Filecoin by Protocol Labs at some point in the future.&lt;/p&gt;
+
+&lt;p&gt;In any case, Filecoin has outlined the 3 economic stages the network will go through.&lt;/p&gt;
+
+&lt;p&gt;In a nutshell, the emission rate of FILL tokens will decrease significantly as the network grows.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/23.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;filecoins-roadmap&quot;&gt;FILECOIN’S ROADMAP&lt;/h2&gt;
+
+&lt;p&gt;What’s the future of Filecoin?&lt;/p&gt;
+
+&lt;p&gt;Filecoin does not seem to have a clearly defined roadmap.&lt;/p&gt;
+
+&lt;p&gt;They do have a roadmap that they started in March 2020, and it seems to end with the launch of the Mainnet. It is possible, then that they’ll update it later in the future.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/23.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;The lack of a concrete roadmap is not all that surprising, considering it is fundamentally just a cog in a much larger plan by Protocol Labs to create a new decentralized internet with IPFS.&lt;/p&gt;
+
+&lt;h2 id=&quot;filecoins-improvement-proposal&quot;&gt;FILECOIN’S IMPROVEMENT PROPOSAL&lt;/h2&gt;
+
+&lt;p&gt;There’s a github repository called &lt;strong&gt;the filecoin improvement proposal&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/24.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;It looks like Filecoin community members will soon be able to table a Filecoin improvement proposal.&lt;/p&gt;
+
+&lt;p&gt;This is something quite fresh, as the github repository for IPFS seems to be no more than a month old, and does not offer many details on what the process will be, to submit one, nor what the voting conditions will be.&lt;/p&gt;
+
+&lt;p&gt;If any given the trend in crypto of transitioning to a decentralized autonomous organization.&lt;/p&gt;
+
+&lt;p&gt;I would not be surprised if Filecoin went down that route.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/25.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Then again, the fact that Protocol Labs recently modified FILL token rewards to appease angry storage miners gives a second thought.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/filecoin/26.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;info-changes-rapidly&quot;&gt;INFO CHANGES RAPIDLY&lt;/h2&gt;
+
+&lt;p&gt;What’s going on in the grass with Filecoin is subject to change.&lt;/p&gt;
+
+&lt;p&gt;In other words, a lot of details about this project are still being hammered out.&lt;/p&gt;
+
+&lt;p&gt;Some of these are important to know, and some of them may change.&lt;/p&gt;
+
+&lt;p&gt;With that out of the way, here’s the file on Filecoin.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;CONCLUSION&lt;/h2&gt;
+
+&lt;p&gt;Filecoin is a blockchain built on top of IPFS, which is a decentralized alternative to the centralized HTTP internet.&lt;/p&gt;
+
+&lt;p&gt;Filecoin gives economic incentives to those, who contribute storage space to the new decentralized web, by rewarding them in FILL tokens.&lt;/p&gt;
+
+&lt;p&gt;It seeks to be the data storage layer to Web 3.0, storing all the data from decentralized websites and applications, regardless of what blockchain they’re on.&lt;/p&gt;
+
+&lt;p&gt;Despite a few minor quirks regarding FILL token allocation and emission, the Filecoin mainnet has been strong out of the gates, offering the largest amount of storage space of any existing decentralized data storage provider currently on the market.&lt;/p&gt;
+
+&lt;p&gt;While an exact roadmap has not been hammered out, Filecoin seems eager to work closely with IPFS community after spending years developing its network under pressure from investors.&lt;/p&gt;
+
+&lt;p&gt;One of cryptocurrency’s largest ICOs has come to fruition, and there is plenty to show for it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;LINKS:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=5Uj6uR3fp-U&quot;&gt; IPFS Explained &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.filecoin.io/mine/hardware-requirements/#general-hardware-requirements&quot;&gt; Filecoin Mining Hardware Requirements &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.filecoin.io/store/&quot;&gt; Decentralized Storage Applications on Filecoin &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://spec.filecoin.io/#section-systems.filecoin_token&quot;&gt; Filecoin’s 3 Economic Stages &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.instagantt.com/shared/s/1152992274307505/latest&quot;&gt; Filecoin’s “Roadmap” &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/filecoin-project/FIPs&quot;&gt; Filecoin Improvement Proposals Github &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;THE NOTES WERE BASED ON THE VIDEO BELOW.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/I_g6PPWG5P0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+</content>
+ </entry>
  
  <entry>
    <title>How Are You?</title>
@@ -1805,7 +2287,7 @@
  </entry>
  
  <entry>
-   <title>Chiliz - CHZ</title>
+   <title>CHZ - Chiliz</title>
    <link href="http://localhost:4000/2021/Chillz/"/>
    <updated>2021-08-01T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/Chillz</id>
@@ -2960,7 +3442,7 @@
  </entry>
  
  <entry>
-   <title>Ripple - XRP and ICU</title>
+   <title>XRP, ICU - Ripple</title>
    <link href="http://localhost:4000/2021/ripple-xrp-icu/"/>
    <updated>2021-07-30T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/ripple-xrp-icu</id>
@@ -3579,7 +4061,7 @@
  </entry>
  
  <entry>
-   <title>Shiba Inu - SHIB</title>
+   <title>SHIB - Shiba Inu</title>
    <link href="http://localhost:4000/2021/Shiba_Inu/"/>
    <updated>2021-07-27T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/Shiba_Inu</id>
@@ -4918,7 +5400,7 @@ This serial number corresponds to info like when the bill was printed, where it 
  </entry>
  
  <entry>
-   <title>UniSwap</title>
+   <title>UNI - UniSwap</title>
    <link href="http://localhost:4000/2021/Uniswap/"/>
    <updated>2021-06-01T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/Uniswap</id>

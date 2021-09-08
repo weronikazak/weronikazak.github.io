@@ -42,7 +42,7 @@
   <script type="text/javascript">
     function filterUsingCategory(selectedCategory) {
 
-      let btns = document.getElementsByTagName('button');
+      let btns = document.getElementsByClassName('tag-btn');
         
       for (let i = 0; i < btns.length; i++) {
         let btn = btns[i];
@@ -289,7 +289,7 @@
     <div>
       <button type="button" 
         id="All"
-        class="btn btn-category text-uppercase rounded-pill"
+        class="btn btn-category text-uppercase rounded-pill tag-btn"
         onclick="filterUsingCategory('All')">
           ALL
       </button>
@@ -302,121 +302,121 @@
       
         <button id="flutter" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           flutter
       </button>
       
         <button id="maps" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           maps
       </button>
       
         <button id="CNN" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           CNN
       </button>
       
         <button id="android" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           android
       </button>
       
         <button id="computer vision" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           computer vision
       </button>
       
         <button id="sklearn" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           sklearn
       </button>
       
         <button id="web scrapping" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           web scrapping
       </button>
       
         <button id="pygame" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           pygame
       </button>
       
         <button id="NLP" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           NLP
       </button>
       
         <button id="web" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           web
       </button>
       
         <button id="documentation" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           documentation
       </button>
       
         <button id="audio" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           audio
       </button>
       
         <button id="python" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           python
       </button>
       
         <button id="C++" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           C++
       </button>
       
         <button id="C#" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           C#
       </button>
       
         <button id="Angular" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           Angular
       </button>
       
         <button id="Unity" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           Unity
       </button>
       
         <button id="game" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           game
       </button>
       
         <button id="Java" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           Java
       </button>
       
         <button id="GameMaker" 
         onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill">
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
           GameMaker
       </button>
       
@@ -427,7 +427,7 @@
     
     
     
-     <div class="card col-4" id="post-1" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-1" style="display:flex;">
         <img class="card-img-top" src="/images/gsc.jpg" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">How Are You?</h5>
@@ -445,14 +445,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/GSC_Project" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/GSC_Project" target="_blank">
                   <center>
@@ -466,7 +458,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-2" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-2" style="display:flex;">
         <img class="card-img-top" src="/images/trash.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Mobile Trash Classifier</h5>
@@ -486,14 +478,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/Handy-Trash-Classifier" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/Handy-Trash-Classifier" target="_blank">
                   <center>
@@ -507,7 +491,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-3" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-3" style="display:flex;">
         <img class="card-img-top" src="/images/cars.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Cars' Prices Comparison</h5>
@@ -527,14 +511,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/cars-price-comparison" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/cars-price-comparison" target="_blank">
                   <center>
@@ -548,7 +524,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-4" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-4" style="display:flex;">
         <img class="card-img-top" src="/images/twitter.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Depression Tweets Analysis</h5>
@@ -568,14 +544,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/depression-tweets" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/depression-tweets" target="_blank">
                   <center>
@@ -589,7 +557,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-5" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-5" style="display:flex;">
         <img class="card-img-top" src="/images/rps.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">AI Rock-Paper-Scissors</h5>
@@ -609,14 +577,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/AI-rock-paper-scissors" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/AI-rock-paper-scissors" target="_blank">
                   <center>
@@ -630,7 +590,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-6" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-6" style="display:flex;">
         <img class="card-img-top" src="/images/dash.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID Tracking Dashboard</h5>
@@ -650,14 +610,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/COVID-Projects/tree/master/Dashboard" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/COVID-Projects/tree/master/Dashboard" target="_blank">
                   <center>
@@ -671,7 +623,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-7" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-7" style="display:flex;">
         <img class="card-img-top" src="/images/italy.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Oslo and Rome Neighbourhoods Clustering</h5>
@@ -691,14 +643,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/South-North-Clustering" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/South-North-Clustering" target="_blank">
                   <center>
@@ -712,7 +656,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-8" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-8" style="display:flex;">
         <img class="card-img-top" src="/images/soccer.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Finding Match Highlights</h5>
@@ -732,14 +676,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/cnn-match-highlights" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/cnn-match-highlights" target="_blank">
                   <center>
@@ -753,7 +689,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-9" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-9" style="display:flex;">
         <img class="card-img-top" src="/images/movie.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Movie Recommender</h5>
@@ -773,14 +709,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/Basic-Movie-Recommender" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/Basic-Movie-Recommender" target="_blank">
                   <center>
@@ -794,7 +722,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-10" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-10" style="display:flex;">
         <img class="card-img-top" src="/images/algo.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Algorithms</h5>
@@ -814,14 +742,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/algorytmy-matura" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/algorytmy-matura" target="_blank">
                   <center>
@@ -835,7 +755,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-11" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-11" style="display:flex;">
         <img class="card-img-top" src="/images/mask.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID mask</h5>
@@ -853,14 +773,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/COVID-Projects/tree/master/Mask%20Detect" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/COVID-Projects/tree/master/Mask%20Detect" target="_blank">
                   <center>
@@ -874,7 +786,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-12" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-12" style="display:flex;">
         <img class="card-img-top" src="/images/face.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Facial Filters</h5>
@@ -892,14 +804,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/face-filters" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/face-filters" target="_blank">
                   <center>
@@ -913,7 +817,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-13" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-13" style="display:flex;">
         <img class="card-img-top" src="/images/digit.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Digit Recognizer</h5>
@@ -933,14 +837,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/Digit_Recognizer" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/Digit_Recognizer" target="_blank">
                   <center>
@@ -954,7 +850,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-14" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-14" style="display:flex;">
         <img class="card-img-top" src="/images/cluster.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID Literature Clustering</h5>
@@ -974,14 +870,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/COVID-Projects/tree/master/Literature%20Clustering" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/COVID-Projects/tree/master/Literature%20Clustering" target="_blank">
                   <center>
@@ -995,7 +883,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-15" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-15" style="display:flex;">
         <img class="card-img-top" src="/images/distance.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID Social Distancing</h5>
@@ -1013,14 +901,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/COVID-Projects/tree/master/Social%20Distancing" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/COVID-Projects/tree/master/Social%20Distancing" target="_blank">
                   <center>
@@ -1034,7 +914,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-16" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-16" style="display:flex;">
         <img class="card-img-top" src="/images/time.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Angular Timesheet</h5>
@@ -1054,14 +934,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/angular-timesheet" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/angular-timesheet" target="_blank">
                   <center>
@@ -1075,7 +947,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-17" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-17" style="display:flex;">
         <img class="card-img-top" src="/images/penguin.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Penguin Diner Bot</h5>
@@ -1095,14 +967,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/Penguin-Diner-Bot" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/Penguin-Diner-Bot" target="_blank">
                   <center>
@@ -1116,7 +980,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-18" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-18" style="display:flex;">
         <img class="card-img-top" src="/images/date.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Dating App</h5>
@@ -1136,14 +1000,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/DatingApp--Identity" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/DatingApp--Identity" target="_blank">
                   <center>
@@ -1157,7 +1013,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-19" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-19" style="display:flex;">
         <img class="card-img-top" src="/images/pizza.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Food Multiclassification</h5>
@@ -1177,14 +1033,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/food--multiclassification" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/food--multiclassification" target="_blank">
                   <center>
@@ -1198,7 +1046,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-20" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-20" style="display:flex;">
         <img class="card-img-top" src="/images/bubble.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Bubble Shooter</h5>
@@ -1218,14 +1066,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/BreakKing" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/BreakKing" target="_blank">
                   <center>
@@ -1239,7 +1079,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-21" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-21" style="display:flex;">
         <img class="card-img-top" src="/images/uber.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Uber Clone</h5>
@@ -1259,14 +1099,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/android-basic-apps/tree/master/UberClone" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/android-basic-apps/tree/master/UberClone" target="_blank">
                   <center>
@@ -1280,7 +1112,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-22" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-22" style="display:flex;">
         <img class="card-img-top" src="/images/platform.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Platform Game</h5>
@@ -1300,14 +1132,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/Platformowka" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/Platformowka" target="_blank">
                   <center>
@@ -1321,7 +1145,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-23" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-23" style="display:flex;">
         <img class="card-img-top" src="/images/gamemaker.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Platform Shooter</h5>
@@ -1339,14 +1163,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/Shooter---Platform-Gamemaker" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/Shooter---Platform-Gamemaker" target="_blank">
                   <center>
@@ -1360,7 +1176,7 @@
     </div>
     
     
-     <div class="card col-4" id="post-24" style="display:flex;">
+     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-24" style="display:flex;">
         <img class="card-img-top" src="/images/flappy.jpg" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Flappy Bird Clone</h5>
@@ -1380,14 +1196,6 @@
         </div>
        
         <div class="card-body">
-          <!-- <div class="link_button">
-                <a href="https://github.com/weronikazak/android-basic-apps/tree/master/FlappyBirdClone" target="_blank">
-                  <center>
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="/images/github.png"  alt="GitHub" width="120" height="40">
-                  </center>
-                </a>
-              </div> -->
-
               <div class="link_button">
                 <a href="https://github.com/weronikazak/android-basic-apps/tree/master/FlappyBirdClone" target="_blank">
                   <center>
@@ -1409,7 +1217,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-09-04T14:59:25+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-09-07T19:46:38+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">
