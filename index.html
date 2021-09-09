@@ -76,7 +76,7 @@ title: Home
     {% assign id = 0 %}
     {% for post in site.categories.code %}
     {% assign id = id | plus:1 %}
-     <div class="card col-lg-4 col-md-4 col-sm-6 col-6" id="post-{{id}}" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-{{id}}" style="display:flex;">
         <img class="card-img-top" src="{{ site.baseurl }}/{{ post.image }}" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">{{ post.title }}</h5>
