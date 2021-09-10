@@ -149,7 +149,7 @@ When there's no more BTC to mine, there will be no more economic incentives for 
 First of, Bitcoin dominance has been dropping like a rock since 2017, which suggests that BTC will not be the largest cryptocurrency by market cap in 2078, meaning the rest of the crypto market will not be as dependent on it anymore.
 
 <center>
-<img src="/images/posts/Cryptocurrency/btccollapse/13.PNG">
+<img src="/images/posts/Cryptocurrency/btccollapse/13.jpg">
 </center>
 
 ## HOW MUCH DO THE MINERS GET?
