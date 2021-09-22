@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "The fall of Bitcoin"
+title:  "Bitcoin's Collapse"
 date:   2021-08-22 16:10:35 +0100
 tags:
 - cryptocurrency
-description: "There is a reason why Bitcoin is often referred to as digital gold. This is because, like gold, Bitcoin has a maximum supply, and while gold has utility in electronics and medicine, Bitcoin has utility as a network, that allows you to safely transfer and store value without a middleman. This combination of scarcity and utility is what gives gold and Bitcoin their incredible value."
+description: "There is a reason why Bitcoin is often referred to as digital gold. This is because like gold, Bitcoin has a maximum supply, and while gold has utility in electronics and medicine, Bitcoin has utility as a network, that allows to safely transfer and store value without a middleman. This combination of scarcity and utility is what gives gold and Bitcoin their incredible value."
 image: 'images/posts/Cryptocurrency/btccollapse/btc.jpg'
 
 ---
@@ -17,7 +17,7 @@ image: 'images/posts/Cryptocurrency/btccollapse/btc.jpg'
 
 There is a reason why Bitcoin is often referred to as digital gold.
 
-This is because, like gold, Bitcoin has a maximum supply, and while gold has utility in electronics and medicine, Bitcoin has utility as a network, that allows you to safely transfer and store value without a middleman.
+This is because like gold, Bitcoin has a maximum supply, and while gold has utility in electronics and medicine, Bitcoin has utility as a network, that allows you to safely transfer and store value without a middleman.
 
 This combination of scarcity and utility is what gives gold and Bitcoin their incredible value.
 
