@@ -4,7 +4,7 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-09-25T06:07:15+01:00</updated>
+ <updated>2021-09-27T23:24:20+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>Filecoin - FIL</title>
+   <title>FIL - Filecoin</title>
    <link href="http://localhost:4000/2021/Filecoin/"/>
    <updated>2021-09-01T16:10:35+01:00</updated>
    <id>http://localhost:4000/2021/Filecoin</id>
