@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Model and Cost Function &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+
+
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="page">
+    <header>
+        <h1 class="landing-title">
+            
+            
+            
+
+
+                
+                Model and
+            <span style="color: #e6e6e6;">
+                Cost Function
+            </span>
+        </h1>
+    </header>
+
+  <h2 id="model-representation">Model Representation</h2>
+
+<p>To establish notation for future, we’ll use $x^{(i)}$ to denote the <strong>input</strong> variables (<em>living area in this example</em>), also called input features, and $y^{(i)}$ to denote the <strong>output</strong> or target variable that we are trying to predict (<em>price</em>).</p>
+
+<p>A pair $(x^{(i)}, y^{(i)})$ is called a <strong>training example</strong>, and the dataset that we’ll be using to learn - a list of $m$ training examples $(x^{(i)}, y^{(i)}); i = 1, …, m$ - is called a <strong>training set</strong>.</p>
+
+<p>Note that the superscript “$^(i)$” in the notations is simply an index into the training set, and has nothing to do with the exponentiation.</p>
+
+<p>We will also use $X$ to denote the space of input values, and $Y$ to denote the space of output values. In this example, $X = Y = \mathbb{R}$.</p>
+
+<p>To describe the supervised learning problem slightly more formally, our goal is, given a training set, to learn a function $h: X \to Y $, so that $h(x)$ is a “<em>good</em>” predictor for the corresponding value of y.</p>
+
+<p>For historical reasons, this function $h$ is called a <strong>hypothesis</strong>.</p>
+
+<p>Seen pictorially, the process is therefore like this:</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml2/1.png" />
+</center>
+
+<p>When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When $y$ can take on only a small number of discrete values (as as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.</p>
+
+<h2 id="cost-function">Cost Function</h2>
+
+<p>We can measure the accuracy of our hypothesis function using a <strong>cost function</strong>. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from $x$’s  and the actual output $y$’s.</p>
+
+<script type="math/tex; mode=display">J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y}_i - y_i)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h_{\theta}(x_i) - y_i)^2</script>
+
+<p>To break it apart, it is $\frac{1}{2} \bar{x}$ where $\bar{x}$ is the mean of the squares of $h_{\theta}(x_i) - y_i$, or the difference between the predicted value and the actual value.</p>
+
+<p>This function is otherwise called the “<em>squared error function</em>” or “<em>mean squared error</em>”. The mean is halved $(\frac{1}{2})$ as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the $\frac{1}{2}$ term. The following image summarizes what the cost function does:</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml2/2.png" />
+</center>
+
+<h2 id="cost-function---intuition-i">Cost Function - Intuition I</h2>
+
+<p>If we try to think of it in visual terms, our training data set is scattered on the $x-y$ plane. We are trying to make a straight line (defined by $h_{\theta}(x)$) which passes through these scattered data points.</p>
+
+<p>Our objective is to get the best possible line. The best possible line will be such so that the average squared vertical distances of the scattered points from the line will be the least. Ideally the line should pass through all the points of our training data set. In such a case, the value of $J (\theta_0, \theta_1)$ will be $0$. The following example shows the ideal situation where we have a cost function of $0$.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml2/3.png" />
+</center>
+
+<p>When $\theta_1 = 1$ , we get a slope of $1$, which goes through every single data point in our model.</p>
+
+<p>Conversely, when $\theta_1 = 0.5$, we see the vertical distance from our fit to the data points increase.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml2/4.png" />
+</center>
+
+<p>This increases our cost function to 0.58. Plotting several other points yields to the following graph:</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml2/5.png" />
+</center>
+
+<p>Thus as a goal, we should try to minimize the cost function. In this case, $\theta_1 = 1$ is our global minimum.</p>
+
+<h2 id="cost-function---intuition-ii">Cost Function - Intuition II</h2>
+
+<p>A contour plot is a graph that contains many contour lines. A contour line of a two variable function as a constant value at all points of the same line. An example of such a graph is the one to the right below.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml2/6.png" />
+</center>
+
+<p>Taking any colour and going along the “circle”, one would expect to get the same value of the cost function. For example, the three green points found on the green line above have the same value for $J(\theta_0, \theta_1)$ and as a result, they are found along the same line. The circled $x$ displays the value of the cost function for the graph on the left when $\theta_0 = 800$ and $\theta_1 = -0.15$. Taking another $h(x)$ and plotting its contour plot, one gets the following graphs:</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml2/7.png" />
+</center>
+
+<p>When $\theta_0 = 360$ and $\theta_1 = 0$, the value of $J(\theta_0, \theta_1)$ in the contour plot gets closer to the center thus reducing the cost function error. Now giving our hypothesis function a slightly positive slope results in a better fit of the data.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml2/8.png" />
+</center>
+
+<p>The graph above minimizes the cost function as much as possible and consequently, the result of $\theta_1$ and $\theta_0$ tend to be around $0.12$ and $250$ respectively. Plotting those values on our graph to the right seems to put our point in the center of the inner most “circle”.</p>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-09-30T21:38:42+01:00">2021</time> Weronika Żak</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

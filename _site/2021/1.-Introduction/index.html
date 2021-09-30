@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Machine Learning - Introduction &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+
+
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="page">
+    <header>
+        <h1 class="landing-title">
+            
+            
+            
+
+
+                
+                Machine Learning
+            <span style="color: #e6e6e6;">
+                - Introduction
+            </span>
+        </h1>
+    </header>
+
+  <h2 id="what-is-machine-learning">What is Machine Learning?</h2>
+
+<p>Two definitions of Machine Learning are offered.</p>
+
+<p>Arthur Samuel described it as:</p>
+
+<p><strong>The field of study. that gives computer the ability to learn without being explicitly programmed.</strong></p>
+
+<p>This is an older, informal definition.</p>
+
+<hr />
+
+<p>Tom Mitchell provides a more modern definition:</p>
+
+<p><strong>A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if it’s performance at task in T, as measured by P, impreves with experience E.</strong></p>
+
+<hr />
+
+<p>Example: playing checkers.</p>
+
+<ul>
+  <li>
+    <p><strong>E</strong> - the experience of playing many games of checkers</p>
+  </li>
+  <li>
+    <p><strong>T</strong> - the task of playing checkers</p>
+  </li>
+  <li>
+    <p><strong>P</strong> - the probability that the program will win the next game.</p>
+  </li>
+</ul>
+
+<p>In general, any machine learning problem can be assigned to one of two broad classifications:</p>
+
+<ul>
+  <li>
+    <p>Supervised learning</p>
+  </li>
+  <li>
+    <p>Unsupervised learning</p>
+  </li>
+</ul>
+
+<center>
+<img src="/images/posts/Machine Learning/ml1/1.png" />
+</center>
+
+<h2 id="supervised-learning">Supervised Learning</h2>
+
+<p>In supervised learning we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.</p>
+
+<p>Supervised learning problems are categorized into <strong>regression</strong> and <strong>classification</strong> problems. In</p>
+
+<p>a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to come continuoous function.</p>
+
+<p>In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.</p>
+
+<hr />
+<p><strong>Example 1:</strong></p>
+
+<p>Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.</p>
+
+<p>We could turn this example into a classification problem by instead making our ouput about whether the house <em>sells for more or less than the asking price</em>.</p>
+
+<p>Here we are classifying the houses bassed on price into two discrete categories.</p>
+
+<hr />
+
+<p><strong>Example 2:</strong></p>
+
+<p>A) <strong>Regression</strong> - given a picture of a person, we have to predict their age on the basis of the given picture.</p>
+
+<p>B) <strong>Clasification</strong> - given a patient with a tumor, we have to predict whether the tumor is malignant or benign.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml1/2.png" />
+</center>
+
+<h2 id="unsupervised-learning">Unsupervised Learning</h2>
+
+<p>Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from ddata, where we don’t necessarily know the effect of the variables.</p>
+
+<p>WE can derive this structure by clustering the data based on relationships among the variables in the data.</p>
+
+<p>With unsupervised learning there is no feedback based on the prediction results.</p>
+
+<hr />
+
+<p><strong>Example:</strong></p>
+
+<ul>
+  <li>
+    <p><strong>Clustering</strong> - take a collection of 1,000,000 diffenet genes, and find a way to automatically group these genes into groups that are somehow similar or related by differrent variables, such as lifespan, location, roles and so on.</p>
+  </li>
+  <li>
+    <p><strong>Non-clustering</strong> - the <em>Cocktail Party Algoritm</em> allows you to find structure in  chaotic environent. (i.e. identifying individual voices and music from a mesh of ounds at a cocktail party).</p>
+  </li>
+</ul>
+
+<center>
+<img src="/images/posts/Machine Learning/ml1/3.png" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/ml1/4.png" />
+</center>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-09-30T21:38:42+01:00">2021</time> Weronika Żak</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

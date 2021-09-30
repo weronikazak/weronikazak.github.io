@@ -23,6 +23,8 @@
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
   
   <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+
+
 </head>
 
 
@@ -55,6 +57,24 @@
       }
       
       var id = 0;
+      
+        var tags = ["machine learning"]
+
+        var postDiv = document.getElementById("post-" + (++id));
+
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'flex' 
+            : 'none';
+      
+        var tags = ["machine learning"]
+
+        var postDiv = document.getElementById("post-" + (++id));
+
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'flex' 
+            : 'none';
       
         var tags = ["cryptocurrency","token"]
 
@@ -281,6 +301,12 @@
       
 
       
+        <button id="machine learning" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn white-btn text-uppercase rounded-pill tag-btn" >
+          machine learning
+        </button>
+      
         <button id="cryptocurrency" 
         onclick="filterUsingCategory(this.id)"
         class="btn white-btn text-uppercase rounded-pill tag-btn" >
@@ -299,12 +325,6 @@
           economy
         </button>
       
-        <button id="machine learning" 
-        onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill tag-btn" >
-          machine learning
-        </button>
-      
     </div>
   </div>
   <br/>
@@ -314,6 +334,126 @@
     
     
     <div class="col-12 blog-article" id="post-1">
+      
+    <!-- ON SMALL DEVICES -->
+    <div class=" d-none d-sm-block ">
+      <div class="row">
+
+        <div class="col-3">
+          <img src="/images/posts/Machine Learning/ml2/0.jpg" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+  
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a href="/2021/2.-Model-and-Cost-Function/">Model and Cost Function</a></h2>
+            <p class="post-date">26 Sep 2021</p>
+            To establish notation for future, we'll use x to denote the input variables (living area in this example), also called input features, and y to denote the output or target variable that we are trying to predict (price).
+            <br>
+            <br>
+            
+            <li class="item">machine learning</li>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <!-- ON MEDIUM-LARGE DEVICES -->
+  <div class=" d-block d-sm-none mb-2">
+    <div class="row">
+      <div class="col-12">
+        <center>
+        <img src="/images/posts/Machine Learning/ml2/0.jpg" 
+              class="m-4"
+              width="126" 
+              height="126" 
+              style="width: 126px; height: 126px; object-fit: cover;">
+        </center>
+      </div>
+
+      <div class="col-12">
+        <div class="post other link">
+          <h2></span> <a href="/2021/2.-Model-and-Cost-Function/">Model and Cost Function</a></h2>
+          <p class="post-date">26 Sep 2021</p>
+          To establish notation for future, we'll use x to denote the input variables (living area in this example), also called input features, and y to denote the output or target variable that we are trying to predict (price).
+          <br>
+          <br>
+          
+          <li class="item">machine learning</li>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    <div class="col-12 blog-article" id="post-2">
+      
+    <!-- ON SMALL DEVICES -->
+    <div class=" d-none d-sm-block ">
+      <div class="row">
+
+        <div class="col-3">
+          <img src="/images/posts/Machine Learning/ml1/0.jpg" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+  
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a href="/2021/1.-Introduction/">Machine Learning - Introduction</a></h2>
+            <p class="post-date">25 Sep 2021</p>
+            Two definitions of Machine Learning are offered. Arthur Samuel described it as: 'The field of study. that gives computer the ability to learn without being explicitly programmed'. This is an older, informal definition.
+            <br>
+            <br>
+            
+            <li class="item">machine learning</li>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <!-- ON MEDIUM-LARGE DEVICES -->
+  <div class=" d-block d-sm-none mb-2">
+    <div class="row">
+      <div class="col-12">
+        <center>
+        <img src="/images/posts/Machine Learning/ml1/0.jpg" 
+              class="m-4"
+              width="126" 
+              height="126" 
+              style="width: 126px; height: 126px; object-fit: cover;">
+        </center>
+      </div>
+
+      <div class="col-12">
+        <div class="post other link">
+          <h2></span> <a href="/2021/1.-Introduction/">Machine Learning - Introduction</a></h2>
+          <p class="post-date">25 Sep 2021</p>
+          Two definitions of Machine Learning are offered. Arthur Samuel described it as: 'The field of study. that gives computer the ability to learn without being explicitly programmed'. This is an older, informal definition.
+          <br>
+          <br>
+          
+          <li class="item">machine learning</li>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    <div class="col-12 blog-article" id="post-3">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -377,7 +517,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-2">
+    <div class="col-12 blog-article" id="post-4">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -437,7 +577,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-3">
+    <div class="col-12 blog-article" id="post-5">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -501,7 +641,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-4">
+    <div class="col-12 blog-article" id="post-6">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -565,7 +705,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-5">
+    <div class="col-12 blog-article" id="post-7">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -629,7 +769,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-6">
+    <div class="col-12 blog-article" id="post-8">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -693,7 +833,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-7">
+    <div class="col-12 blog-article" id="post-9">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -757,7 +897,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-8">
+    <div class="col-12 blog-article" id="post-10">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -817,7 +957,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-9">
+    <div class="col-12 blog-article" id="post-11">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -881,7 +1021,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-10">
+    <div class="col-12 blog-article" id="post-12">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -945,7 +1085,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-11">
+    <div class="col-12 blog-article" id="post-13">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1009,7 +1149,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-12">
+    <div class="col-12 blog-article" id="post-14">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1069,7 +1209,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-13">
+    <div class="col-12 blog-article" id="post-15">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1129,7 +1269,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-14">
+    <div class="col-12 blog-article" id="post-16">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1193,7 +1333,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-15">
+    <div class="col-12 blog-article" id="post-17">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1253,7 +1393,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-16">
+    <div class="col-12 blog-article" id="post-18">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1313,7 +1453,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-17">
+    <div class="col-12 blog-article" id="post-19">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1373,7 +1513,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-18">
+    <div class="col-12 blog-article" id="post-20">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1433,7 +1573,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-19">
+    <div class="col-12 blog-article" id="post-21">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1493,7 +1633,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-20">
+    <div class="col-12 blog-article" id="post-22">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1553,7 +1693,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-21">
+    <div class="col-12 blog-article" id="post-23">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1613,7 +1753,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-22">
+    <div class="col-12 blog-article" id="post-24">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1673,11 +1813,21 @@
     </div>
     
 </div>
+
+<!-- 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      inlineMath: [['$','$']]
+    }
+  });
+</script> -->
       </main>
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-09-28T15:01:01+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-09-30T21:38:42+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

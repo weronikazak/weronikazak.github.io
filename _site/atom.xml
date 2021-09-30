@@ -4,13 +4,218 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-09-28T15:01:01+01:00</updated>
+ <updated>2021-09-30T21:38:42+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Model and Cost Function</title>
+   <link href="http://localhost:4000/2021/2.-Model-and-Cost-Function/"/>
+   <updated>2021-09-26T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2021/2. Model and Cost Function</id>
+   <content type="html">&lt;h2 id=&quot;model-representation&quot;&gt;Model Representation&lt;/h2&gt;
+
+&lt;p&gt;To establish notation for future, we’ll use $x^{(i)}$ to denote the &lt;strong&gt;input&lt;/strong&gt; variables (&lt;em&gt;living area in this example&lt;/em&gt;), also called input features, and $y^{(i)}$ to denote the &lt;strong&gt;output&lt;/strong&gt; or target variable that we are trying to predict (&lt;em&gt;price&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;A pair $(x^{(i)}, y^{(i)})$ is called a &lt;strong&gt;training example&lt;/strong&gt;, and the dataset that we’ll be using to learn - a list of $m$ training examples $(x^{(i)}, y^{(i)}); i = 1, …, m$ - is called a &lt;strong&gt;training set&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note that the superscript “$^(i)$” in the notations is simply an index into the training set, and has nothing to do with the exponentiation.&lt;/p&gt;
+
+&lt;p&gt;We will also use $X$ to denote the space of input values, and $Y$ to denote the space of output values. In this example, $X = Y = \mathbb{R}$.&lt;/p&gt;
+
+&lt;p&gt;To describe the supervised learning problem slightly more formally, our goal is, given a training set, to learn a function $h: X \to Y $, so that $h(x)$ is a “&lt;em&gt;good&lt;/em&gt;” predictor for the corresponding value of y.&lt;/p&gt;
+
+&lt;p&gt;For historical reasons, this function $h$ is called a &lt;strong&gt;hypothesis&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Seen pictorially, the process is therefore like this:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml2/1.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When $y$ can take on only a small number of discrete values (as as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;cost-function&quot;&gt;Cost Function&lt;/h2&gt;
+
+&lt;p&gt;We can measure the accuracy of our hypothesis function using a &lt;strong&gt;cost function&lt;/strong&gt;. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from $x$’s  and the actual output $y$’s.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y}_i - y_i)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h_{\theta}(x_i) - y_i)^2&lt;/script&gt;
+
+&lt;p&gt;To break it apart, it is $\frac{1}{2} \bar{x}$ where $\bar{x}$ is the mean of the squares of $h_{\theta}(x_i) - y_i$, or the difference between the predicted value and the actual value.&lt;/p&gt;
+
+&lt;p&gt;This function is otherwise called the “&lt;em&gt;squared error function&lt;/em&gt;” or “&lt;em&gt;mean squared error&lt;/em&gt;”. The mean is halved $(\frac{1}{2})$ as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the $\frac{1}{2}$ term. The following image summarizes what the cost function does:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml2/2.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;cost-function---intuition-i&quot;&gt;Cost Function - Intuition I&lt;/h2&gt;
+
+&lt;p&gt;If we try to think of it in visual terms, our training data set is scattered on the $x-y$ plane. We are trying to make a straight line (defined by $h_{\theta}(x)$) which passes through these scattered data points.&lt;/p&gt;
+
+&lt;p&gt;Our objective is to get the best possible line. The best possible line will be such so that the average squared vertical distances of the scattered points from the line will be the least. Ideally the line should pass through all the points of our training data set. In such a case, the value of $J (\theta_0, \theta_1)$ will be $0$. The following example shows the ideal situation where we have a cost function of $0$.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml2/3.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;When $\theta_1 = 1$ , we get a slope of $1$, which goes through every single data point in our model.&lt;/p&gt;
+
+&lt;p&gt;Conversely, when $\theta_1 = 0.5$, we see the vertical distance from our fit to the data points increase.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml2/4.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This increases our cost function to 0.58. Plotting several other points yields to the following graph:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml2/5.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Thus as a goal, we should try to minimize the cost function. In this case, $\theta_1 = 1$ is our global minimum.&lt;/p&gt;
+
+&lt;h2 id=&quot;cost-function---intuition-ii&quot;&gt;Cost Function - Intuition II&lt;/h2&gt;
+
+&lt;p&gt;A contour plot is a graph that contains many contour lines. A contour line of a two variable function as a constant value at all points of the same line. An example of such a graph is the one to the right below.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml2/6.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Taking any colour and going along the “circle”, one would expect to get the same value of the cost function. For example, the three green points found on the green line above have the same value for $J(\theta_0, \theta_1)$ and as a result, they are found along the same line. The circled $x$ displays the value of the cost function for the graph on the left when $\theta_0 = 800$ and $\theta_1 = -0.15$. Taking another $h(x)$ and plotting its contour plot, one gets the following graphs:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml2/7.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;When $\theta_0 = 360$ and $\theta_1 = 0$, the value of $J(\theta_0, \theta_1)$ in the contour plot gets closer to the center thus reducing the cost function error. Now giving our hypothesis function a slightly positive slope results in a better fit of the data.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml2/8.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;The graph above minimizes the cost function as much as possible and consequently, the result of $\theta_1$ and $\theta_0$ tend to be around $0.12$ and $250$ respectively. Plotting those values on our graph to the right seems to put our point in the center of the inner most “circle”.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Machine Learning - Introduction</title>
+   <link href="http://localhost:4000/2021/1.-Introduction/"/>
+   <updated>2021-09-25T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2021/1. Introduction</id>
+   <content type="html">&lt;h2 id=&quot;what-is-machine-learning&quot;&gt;What is Machine Learning?&lt;/h2&gt;
+
+&lt;p&gt;Two definitions of Machine Learning are offered.&lt;/p&gt;
+
+&lt;p&gt;Arthur Samuel described it as:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The field of study. that gives computer the ability to learn without being explicitly programmed.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is an older, informal definition.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Tom Mitchell provides a more modern definition:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if it’s performance at task in T, as measured by P, impreves with experience E.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Example: playing checkers.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;E&lt;/strong&gt; - the experience of playing many games of checkers&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;T&lt;/strong&gt; - the task of playing checkers&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;P&lt;/strong&gt; - the probability that the program will win the next game.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In general, any machine learning problem can be assigned to one of two broad classifications:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Supervised learning&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Unsupervised learning&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml1/1.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;supervised-learning&quot;&gt;Supervised Learning&lt;/h2&gt;
+
+&lt;p&gt;In supervised learning we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.&lt;/p&gt;
+
+&lt;p&gt;Supervised learning problems are categorized into &lt;strong&gt;regression&lt;/strong&gt; and &lt;strong&gt;classification&lt;/strong&gt; problems. In&lt;/p&gt;
+
+&lt;p&gt;a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to come continuoous function.&lt;/p&gt;
+
+&lt;p&gt;In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.&lt;/p&gt;
+
+&lt;p&gt;We could turn this example into a classification problem by instead making our ouput about whether the house &lt;em&gt;sells for more or less than the asking price&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here we are classifying the houses bassed on price into two discrete categories.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A) &lt;strong&gt;Regression&lt;/strong&gt; - given a picture of a person, we have to predict their age on the basis of the given picture.&lt;/p&gt;
+
+&lt;p&gt;B) &lt;strong&gt;Clasification&lt;/strong&gt; - given a patient with a tumor, we have to predict whether the tumor is malignant or benign.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml1/2.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;unsupervised-learning&quot;&gt;Unsupervised Learning&lt;/h2&gt;
+
+&lt;p&gt;Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from ddata, where we don’t necessarily know the effect of the variables.&lt;/p&gt;
+
+&lt;p&gt;WE can derive this structure by clustering the data based on relationships among the variables in the data.&lt;/p&gt;
+
+&lt;p&gt;With unsupervised learning there is no feedback based on the prediction results.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Clustering&lt;/strong&gt; - take a collection of 1,000,000 diffenet genes, and find a way to automatically group these genes into groups that are somehow similar or related by differrent variables, such as lifespan, location, roles and so on.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Non-clustering&lt;/strong&gt; - the &lt;em&gt;Cocktail Party Algoritm&lt;/em&gt; allows you to find structure in  chaotic environent. (i.e. identifying individual voices and music from a mesh of ounds at a cocktail party).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml1/3.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml1/4.png&quot; /&gt;
+&lt;/center&gt;
+</content>
+ </entry>
  
  <entry>
    <title>FIL - Filecoin</title>
