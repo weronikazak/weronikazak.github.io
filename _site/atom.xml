@@ -4,13 +4,344 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-09-30T21:38:42+01:00</updated>
+ <updated>2021-10-04T21:39:43+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Multivariate Linear Regression</title>
+   <link href="http://localhost:4000/2021/4.-Multivariate-Linear-Regression/"/>
+   <updated>2021-09-29T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2021/4. Multivariate Linear Regression</id>
+   <content type="html">&lt;h2 id=&quot;multiple-features&quot;&gt;Multiple Features&lt;/h2&gt;
+
+&lt;p&gt;Linear regression with multiple variables is also known as &lt;strong&gt;“multivate linear regression”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;We now introduce notation for equations where we can have any number of input variables.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;$x_j^{(i)}$ - value of feature $j$ in the $i$th training example&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$x^{(i)}$ - the input (features) of the $i$th training example&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$m$ - the number of training examples&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;$n$ - the number of features&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The multivariable form of the hypothesis function accomodating these multiple features is as follows:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2x_2 + \theta_3x_3 + ... + \theta_nx_n&lt;/script&gt;
+
+&lt;p&gt;In order to develop intuition about this function, we can think about $\theta_0$ as the basic price of a house, $\theta_1$ as the price per square meter, $\theta_2$ as the price per floor, etc.&lt;/p&gt;
+
+&lt;p&gt;$x_1$ will be the number of square meters in the house, $x_2$ the number of floors, etc.&lt;/p&gt;
+
+&lt;p&gt;Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_{\theta}(x) = \big[ \theta_0 \quad \theta_1 \quad ... \quad \theta_n \big] []&lt;/script&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml4/1.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This is a vectorization of our hypothesis function for one training example.&lt;/p&gt;
+
+&lt;p&gt;Note that for convenience reasons, we assume $x_0^{(i)} = 1 for (i \in 1, …, m)$. This allows us to do matrix operations with $\theta$ and $x$. Hence making the two vectors $\theta$ and $x^{(i)}$ match each other element-wise (that is, have the same number of elements: n+1).&lt;/p&gt;
+
+&lt;h2 id=&quot;gradient-descent-for-multiple-variables&quot;&gt;Gradient Descent for Multiple Variables&lt;/h2&gt;
+
+&lt;p&gt;The gradient descent equation itself is generally the same form; we just have to repeat it for our ‘n’ features:&lt;/p&gt;
+
+&lt;p&gt;repeat until convergence:
+&lt;script type=&quot;math/tex&quot;&gt;\left\{
+\theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_0^{(i)}
+\\
+\theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_1^{(i)}
+\\
+\theta_2 := \theta_2 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_2^{(i)}
+\right\}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;In other words:&lt;/p&gt;
+
+&lt;p&gt;repeat until convergence: &lt;script type=&quot;math/tex&quot;&gt;\left\{
+\theta_j := \theta_j - \alpha \frac{1}{m} \sum_{j=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)})\bullet x_j^{(i)} \quad for j:= 0...n
+\right\}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;The following image compares gradient descent with one variable to gradient descent with multiple variables:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml4/2.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;gradient-descent-in-practice-i---feature-scaling&quot;&gt;Gradient Descent in Practice I - Feature Scaling&lt;/h2&gt;
+
+&lt;p&gt;We can speed up gradient descent by having each of our input values in roughly the same range. This is because $\theta$ will descend quickly on small ranges and slowly on large ranges, annd so will oscillate inefficiently down to the optimum when the variables are very uneven.&lt;/p&gt;
+
+&lt;p&gt;The way to prevent this is to modify the ranges of our input variables so that they are all roughly the same. Ideally:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+-1 &lt;= x_{(i)} &lt;= 1 %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+-0.5 &lt;= x_{(i)} &lt;= 0.5 %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;These aren’t exact requirements; we are only trying to speed things up. The goal is to get all input variables into roughly one of these ranges, give or take a few.&lt;/p&gt;
+
+&lt;p&gt;Two techniques to help with this are &lt;strong&gt;feature scaling&lt;/strong&gt; and &lt;strong&gt;mean normalization&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Feature scalling involves dividing the input values by the range (i.e. the maximum value minus the minimum value) of the input variable, resulting in a new range of just 1.&lt;/p&gt;
+
+&lt;p&gt;Mean nrmalization involves substractinf the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just 0.&lt;/p&gt;
+
+&lt;p&gt;To implement both of these techniques, adjusst your input values as shown in this formula:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i := \frac{x_i - \mu_i}{s_i}&lt;/script&gt;
+
+&lt;p&gt;Where $\mu_i$ is the &lt;strong&gt;average&lt;/strong&gt; of all values for feature $(i)$ and $s_i$ is the range of values $(max - min)$, or $s_i$ is the standard deviation.&lt;/p&gt;
+
+&lt;p&gt;Note that dividing by the range, or dividing by the standard deviation, give different results.&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;p&gt;If $x_i$ represents housing prices with a range from 100 to 2000 and a mean value of 1000, then:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i := \frac{price - 1000}{1900}&lt;/script&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml4/3.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml4/4.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;gradient-descent-in-practice-ii---learning-rate&quot;&gt;Gradient Descent in Practice II - Learning Rate&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Debugging gradient descent.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make a plot with &lt;em&gt;number of iterations&lt;/em&gt; on the x-axis.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now plot the cost function, $J(\theta)$ over the number of iteration of gradient descent. If $J(\theta)$ ever increases, then you probably need to decrease $\alpha$.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Authomatic convergence test.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Declare convergence is $J(\theta)$ decreases by less than $E$ in one iteration, where $E$ is some small value, such as $10^{-3}$. However in practice it’s difficult to choose this threshold value.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml4/5.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;It has been proven that if learning rate $\alpha$ is sufficiently small, then $J(\theta)$ will decrease on every iteration.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml4/6.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;To summarize:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;If $\alpha$ is too small: slow convergence.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If $\alpha$ is too large: may not decrease on every iteration and thus may nnot converge&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;features-and-polynomial-regression&quot;&gt;Features and Polynomial Regression&lt;/h2&gt;
+
+&lt;p&gt;We can improve our features and the form of our hypothesis function in a couple different ways.&lt;/p&gt;
+
+&lt;p&gt;We can &lt;strong&gt;combine&lt;/strong&gt; multiple features into one. For example, we can combine $x_1$ and $x_2$ into a new feature $x_3$ by taking $x_1 \bullet x_2$.&lt;/p&gt;
+
+&lt;h4 id=&quot;polynomial-regression&quot;&gt;Polynomial Regression&lt;/h4&gt;
+
+&lt;p&gt;Our hypothesis function need not to be linear (a straight line) if that doesn’t fit the data well.&lt;/p&gt;
+
+&lt;p&gt;We can &lt;strong&gt;change the behaviour or curve&lt;/strong&gt; of our hypothesis function by making it a quadratic, cubic or square root function (or any other form).&lt;/p&gt;
+
+&lt;p&gt;For example, if our hypothesis function is $h_{\theta} = \theta_0 + \theta_1x_1$ then we can create additional features based on $x_1$, to get the quadratic function $h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2 x_1^2$ or the cubic function $h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2x_1^2 + \theta_3x_1^3$.&lt;/p&gt;
+
+&lt;p&gt;In the cubic version, we have created new features $x_2$ and $x_3$ where $x_2 = x_1^2$ and $x_3 = x_1^3$.&lt;/p&gt;
+
+&lt;p&gt;To make it a square root function, we could do: $h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2\sqrt{x_1}$.&lt;/p&gt;
+
+&lt;p&gt;One important thing to keep in mind is, if you choose your features this way then feature scalling becomes very &lt;strong&gt;important&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;p&gt;If $x_1$ has range 1-1000, then range of $x_1^2$ becomes 1 - 1,000,000, and that of $x_1^3$ becmes 1 - 1,000,000,000.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml4/7.png&quot; /&gt;
+&lt;/center&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Parameter Learning</title>
+   <link href="http://localhost:4000/2021/3.-Parameter-Learning/"/>
+   <updated>2021-09-28T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2021/3. Parameter Learning</id>
+   <content type="html">&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/1.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;gradient-descent&quot;&gt;Gradient Descent&lt;/h2&gt;
+
+&lt;p&gt;So we have our hypothesis function and we have a way of measuring how well it fits into the data. Now we need to estimate the parameters in the hypothesis function. That’s where gradient descent comes in.&lt;/p&gt;
+
+&lt;p&gt;Imagine that we graph our hypothesis function based on its fields $\theta_0$ and $\theta_1$ (actually we are graphing the cost function as a function of the parameter estimates). We are graphing $x$ and $y$ itself, but the parameter range of our hypothesis funtion and the cost resulting from selecting a perticular set of parameters.&lt;/p&gt;
+
+&lt;p&gt;We put $\theta_0$ on the &lt;em&gt;x&lt;/em&gt;-axis and $\theta_1$ on the &lt;em&gt;y&lt;/em&gt;-axis, with the cost function on the vertical &lt;em&gt;z&lt;/em&gt;-axis. The points on our graph will be the result of the cost function using our hypothesis with those specific thera parameters. The graph below depicts such a setup.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/2.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;We will know that we have succeeded, when our cost function is at the very bottom of the pits in our graph, i.e. when its value is the minimum. The red arrow show the minimum points in the graph.&lt;/p&gt;
+
+&lt;p&gt;The way we do this is by taking the derivative (the tangential line to a function) of our cost function. The slope of the tangent i the derivative at that point and it will give us a direction to move towards. We make steps down the cost function in the direction with the steepest descent. The size of each step is determined by the parameter $\alpha$, which is called the &lt;strong&gt;learning rate&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;For example, the distance between each &lt;em&gt;star&lt;/em&gt; in the graph above represents a step determined by our parameter $\alpha$. A smaller $\alpha$ would result in a maller step and a larger $\alpha$ results in a larger step.&lt;/p&gt;
+
+&lt;p&gt;The direction in which the step i taken is deetermined by the partial derivative of $J (\theta_0, \theta_1)$. Depending onn where oone starts on the graph, one could end up at different points. The image above shows us two different starting point that end up in two different places.&lt;/p&gt;
+
+&lt;p&gt;The gradient descent algorithm is:&lt;/p&gt;
+
+&lt;p&gt;repeat until convergence:&lt;/p&gt;
+
+&lt;p&gt;$\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j} J(\theta_0, \theta_1)$&lt;/p&gt;
+
+&lt;p&gt;where&lt;/p&gt;
+
+&lt;p&gt;$j = 0, 1$ represents the feature index number.&lt;/p&gt;
+
+&lt;p&gt;At each iteration $j$, one should simultaneously update the parameters $\theta_1, \theta_2, …, \theta_n$. Updating a specific parameter prior to calculating another one on the $j^{(th)}$ iteration would yield to a wrong implementation.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/3.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;gradient-descent-intuition&quot;&gt;Gradient Descent Intuition&lt;/h2&gt;
+
+&lt;p&gt;As a reminder, the formula for a gradient descent with one parameter $\theta_1$ looks like that:&lt;/p&gt;
+
+&lt;p&gt;Repeat until convergence:&lt;/p&gt;
+
+&lt;p&gt;$\theta_1 := \theta_1 - \alpha \frac{d}{d\theta_1}J(\theta_1)$&lt;/p&gt;
+
+&lt;p&gt;Regardless of the slope’s sign for $\frac{d}{d\theta_1}J(\theta_1), \theta_1$ eventually converges to its minimum value. The following graph shows that when the slope is negative, the value of $\theta_1$ increases and when it is positive, the value of $\theta_1$ decreases.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/4.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;On a side note, we should adjust our parameter $\alpha$ to ensure that the gradient descent algorithm converges in a reasonable time. Failure to converge or too much time to obtain the minimum value imply that our step size is wrong.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/5.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;How does gradient descent converge with a fixed step size $\alpha$?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The intuition behind the convergence is that $\frac{d}{d\theta_1}J(\theta_1)$ approaches $0$ as we approach the bottom of our convex function. At the minimum, the derivative will always be $0$ and thus we get:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_1 := \theta_1 - \alpha \bullet 0&lt;/script&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/6.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;gradient-descent-for-linear-regression&quot;&gt;Gradient Descent For Linear Regression&lt;/h2&gt;
+
+&lt;p&gt;When specifically applied to the case of linear regression, a new form of the gradient descent equation can be derived. We can substitute our actual cost function and our actual hypothetis function and modify the equation to:&lt;/p&gt;
+
+&lt;p&gt;repeat until convergence:
+&lt;script type=&quot;math/tex&quot;&gt;\left\{
+     \begin{array}\\
+        \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta}(x_i) - y_i) 
+        \\
+        \theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m ((h_{\theta}(x_i) - y_i)x_i)
+    \end{array}
+\right.&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;where $m$ is the size of the training set, $\theta_0$ a constant that will be changing simultaneously with $\theta_1$ and $x_i, y_i$ are values of the given training set (data).&lt;/p&gt;
+
+&lt;p&gt;Note that we have separated out the two cases for $\theta_j$ into separate equations for $\theta_0$ and $\theta_1$ and that for $\theta_1$ we are multiplying $x_i$ at the end due to the derivative. The following is a derivation of $\frac{\partial}{\partial\theta_j}J(\theta)$ for a single example:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{split}
+\frac{\partial}{\partial\theta_j}J(\theta) &amp; = \frac{\partial}{\partial\theta_j} \frac{1}{2} (h_{\theta}(x) - y)^2 
+    \\
+    &amp; = 2 \bullet \frac{1}{2} (h_{\theta}(x) - y) \bullet \frac{\partial}{\partial\theta_j}(h_{\theta}(x) - y)
+    \\
+    &amp; = (h_{\theta}(x)-y) \bullet \frac{\partial}{\partial\theta_j} \Big(\sum_{i=0}^{n}\theta_i x_i - y\Big)
+    \\
+    &amp; = (h_{\theta}(x) - y)x_j
+\end{split} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;The point of all this is that if we start with a guess for our hypothesis and then repeatedly apply these gradient descent equations, our hypothesis will become more and more accurate.&lt;/p&gt;
+
+&lt;p&gt;So, this is simply gradient descent on the original cost function $J$. This method looks at every example in the entire training set on every step, and is called &lt;strong&gt;batch gradient descent&lt;/strong&gt;. Note that, while gradient descent can be susceptible to local minima in general, the optimization problem we have posed here for linear regression has only one global, and no other local optima; thus gradient descent always converges (assuming the learning rate $\alpha$ is not too large) to the global minimum. Indeed, $J$ is a convex quadratic function. Here is an example of gradient descent as it is run to minimize a quadratic function.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/7.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;The ellipses shown above are the contours of a quadratic function. Also shown is the trajectory taken by gradient descent, which was initialized at $(48, 30)$. The $x$’s in the figure (joined by straight lines) mark the successive values of $\theta$ that gradient descent went through as it converged to its minumum.&lt;/p&gt;
+
+&lt;h2 id=&quot;slides&quot;&gt;Slides&lt;/h2&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/8.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/9.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/10.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/11.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/12.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/13.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml3/14.png&quot; /&gt;
+&lt;/center&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Model and Cost Function</title>

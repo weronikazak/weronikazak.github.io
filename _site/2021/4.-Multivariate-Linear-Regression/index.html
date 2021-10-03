@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Multivariate Linear Regression &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+
+
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="page">
+    <header>
+        <h1 class="landing-title">
+            
+            
+            
+
+
+                
+                Multivariate
+            <span style="color: #e6e6e6;">
+                Linear Regression
+            </span>
+        </h1>
+    </header>
+
+  <h2 id="multiple-features">Multiple Features</h2>
+
+<p>Linear regression with multiple variables is also known as <strong>“multivate linear regression”</strong>.</p>
+
+<p>We now introduce notation for equations where we can have any number of input variables.</p>
+
+<ul>
+  <li>
+    <p>$x_j^{(i)}$ - value of feature $j$ in the $i$th training example</p>
+  </li>
+  <li>
+    <p>$x^{(i)}$ - the input (features) of the $i$th training example</p>
+  </li>
+  <li>
+    <p>$m$ - the number of training examples</p>
+  </li>
+  <li>
+    <p>$n$ - the number of features</p>
+  </li>
+</ul>
+
+<p>The multivariable form of the hypothesis function accomodating these multiple features is as follows:</p>
+
+<script type="math/tex; mode=display">h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2x_2 + \theta_3x_3 + ... + \theta_nx_n</script>
+
+<p>In order to develop intuition about this function, we can think about $\theta_0$ as the basic price of a house, $\theta_1$ as the price per square meter, $\theta_2$ as the price per floor, etc.</p>
+
+<p>$x_1$ will be the number of square meters in the house, $x_2$ the number of floors, etc.</p>
+
+<p>Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as:</p>
+
+<script type="math/tex; mode=display">h_{\theta}(x) = \big[ \theta_0 \quad \theta_1 \quad ... \quad \theta_n \big] []</script>
+
+<center>
+<img src="/images/posts/Machine Learning/ml4/1.png" />
+</center>
+
+<p>This is a vectorization of our hypothesis function for one training example.</p>
+
+<p>Note that for convenience reasons, we assume $x_0^{(i)} = 1 for (i \in 1, …, m)$. This allows us to do matrix operations with $\theta$ and $x$. Hence making the two vectors $\theta$ and $x^{(i)}$ match each other element-wise (that is, have the same number of elements: n+1).</p>
+
+<h2 id="gradient-descent-for-multiple-variables">Gradient Descent for Multiple Variables</h2>
+
+<p>The gradient descent equation itself is generally the same form; we just have to repeat it for our ‘n’ features:</p>
+
+<p>repeat until convergence:
+<script type="math/tex">\left\{
+\theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_0^{(i)}
+\\
+\theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_1^{(i)}
+\\
+\theta_2 := \theta_2 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_2^{(i)}
+\right\}</script></p>
+
+<p>In other words:</p>
+
+<p>repeat until convergence: <script type="math/tex">\left\{
+\theta_j := \theta_j - \alpha \frac{1}{m} \sum_{j=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)})\bullet x_j^{(i)} \quad for j:= 0...n
+\right\}</script></p>
+
+<p>The following image compares gradient descent with one variable to gradient descent with multiple variables:</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml4/2.png" />
+</center>
+
+<h2 id="gradient-descent-in-practice-i---feature-scaling">Gradient Descent in Practice I - Feature Scaling</h2>
+
+<p>We can speed up gradient descent by having each of our input values in roughly the same range. This is because $\theta$ will descend quickly on small ranges and slowly on large ranges, annd so will oscillate inefficiently down to the optimum when the variables are very uneven.</p>
+
+<p>The way to prevent this is to modify the ranges of our input variables so that they are all roughly the same. Ideally:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+-1 <= x_{(i)} <= 1 %]]></script>
+
+<p>or</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+-0.5 <= x_{(i)} <= 0.5 %]]></script>
+
+<p>These aren’t exact requirements; we are only trying to speed things up. The goal is to get all input variables into roughly one of these ranges, give or take a few.</p>
+
+<p>Two techniques to help with this are <strong>feature scaling</strong> and <strong>mean normalization</strong>.</p>
+
+<p>Feature scalling involves dividing the input values by the range (i.e. the maximum value minus the minimum value) of the input variable, resulting in a new range of just 1.</p>
+
+<p>Mean nrmalization involves substractinf the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just 0.</p>
+
+<p>To implement both of these techniques, adjusst your input values as shown in this formula:</p>
+
+<script type="math/tex; mode=display">x_i := \frac{x_i - \mu_i}{s_i}</script>
+
+<p>Where $\mu_i$ is the <strong>average</strong> of all values for feature $(i)$ and $s_i$ is the range of values $(max - min)$, or $s_i$ is the standard deviation.</p>
+
+<p>Note that dividing by the range, or dividing by the standard deviation, give different results.</p>
+
+<p>Example:</p>
+
+<p>If $x_i$ represents housing prices with a range from 100 to 2000 and a mean value of 1000, then:</p>
+
+<script type="math/tex; mode=display">x_i := \frac{price - 1000}{1900}</script>
+
+<center>
+<img src="/images/posts/Machine Learning/ml4/3.png" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/ml4/4.png" />
+</center>
+
+<h2 id="gradient-descent-in-practice-ii---learning-rate">Gradient Descent in Practice II - Learning Rate</h2>
+
+<p><strong>Debugging gradient descent.</strong></p>
+
+<ol>
+  <li>
+    <p>Make a plot with <em>number of iterations</em> on the x-axis.</p>
+  </li>
+  <li>
+    <p>Now plot the cost function, $J(\theta)$ over the number of iteration of gradient descent. If $J(\theta)$ ever increases, then you probably need to decrease $\alpha$.</p>
+  </li>
+</ol>
+
+<p><strong>Authomatic convergence test.</strong></p>
+
+<ol>
+  <li>Declare convergence is $J(\theta)$ decreases by less than $E$ in one iteration, where $E$ is some small value, such as $10^{-3}$. However in practice it’s difficult to choose this threshold value.</li>
+</ol>
+
+<center>
+<img src="/images/posts/Machine Learning/ml4/5.png" />
+</center>
+
+<p>It has been proven that if learning rate $\alpha$ is sufficiently small, then $J(\theta)$ will decrease on every iteration.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml4/6.png" />
+</center>
+
+<p>To summarize:</p>
+
+<ul>
+  <li>
+    <p>If $\alpha$ is too small: slow convergence.</p>
+  </li>
+  <li>
+    <p>If $\alpha$ is too large: may not decrease on every iteration and thus may nnot converge</p>
+  </li>
+</ul>
+
+<h2 id="features-and-polynomial-regression">Features and Polynomial Regression</h2>
+
+<p>We can improve our features and the form of our hypothesis function in a couple different ways.</p>
+
+<p>We can <strong>combine</strong> multiple features into one. For example, we can combine $x_1$ and $x_2$ into a new feature $x_3$ by taking $x_1 \bullet x_2$.</p>
+
+<h4 id="polynomial-regression">Polynomial Regression</h4>
+
+<p>Our hypothesis function need not to be linear (a straight line) if that doesn’t fit the data well.</p>
+
+<p>We can <strong>change the behaviour or curve</strong> of our hypothesis function by making it a quadratic, cubic or square root function (or any other form).</p>
+
+<p>For example, if our hypothesis function is $h_{\theta} = \theta_0 + \theta_1x_1$ then we can create additional features based on $x_1$, to get the quadratic function $h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2 x_1^2$ or the cubic function $h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2x_1^2 + \theta_3x_1^3$.</p>
+
+<p>In the cubic version, we have created new features $x_2$ and $x_3$ where $x_2 = x_1^2$ and $x_3 = x_1^3$.</p>
+
+<p>To make it a square root function, we could do: $h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2\sqrt{x_1}$.</p>
+
+<p>One important thing to keep in mind is, if you choose your features this way then feature scalling becomes very <strong>important</strong>.</p>
+
+<p>For example:</p>
+
+<p>If $x_1$ has range 1-1000, then range of $x_1^2$ becomes 1 - 1,000,000, and that of $x_1^3$ becmes 1 - 1,000,000,000.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml4/7.png" />
+</center>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-10-04T21:39:43+01:00">2021</time> Weronika Żak</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

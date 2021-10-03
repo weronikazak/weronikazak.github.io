@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Parameter Learning &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+
+
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="page">
+    <header>
+        <h1 class="landing-title">
+            
+            
+            
+
+
+                
+                Parameter
+            <span style="color: #e6e6e6;">
+                Learning
+            </span>
+        </h1>
+    </header>
+
+  <center>
+<img src="/images/posts/Machine Learning/ml3/1.png" />
+</center>
+
+<h2 id="gradient-descent">Gradient Descent</h2>
+
+<p>So we have our hypothesis function and we have a way of measuring how well it fits into the data. Now we need to estimate the parameters in the hypothesis function. That’s where gradient descent comes in.</p>
+
+<p>Imagine that we graph our hypothesis function based on its fields $\theta_0$ and $\theta_1$ (actually we are graphing the cost function as a function of the parameter estimates). We are graphing $x$ and $y$ itself, but the parameter range of our hypothesis funtion and the cost resulting from selecting a perticular set of parameters.</p>
+
+<p>We put $\theta_0$ on the <em>x</em>-axis and $\theta_1$ on the <em>y</em>-axis, with the cost function on the vertical <em>z</em>-axis. The points on our graph will be the result of the cost function using our hypothesis with those specific thera parameters. The graph below depicts such a setup.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/2.png" />
+</center>
+
+<p>We will know that we have succeeded, when our cost function is at the very bottom of the pits in our graph, i.e. when its value is the minimum. The red arrow show the minimum points in the graph.</p>
+
+<p>The way we do this is by taking the derivative (the tangential line to a function) of our cost function. The slope of the tangent i the derivative at that point and it will give us a direction to move towards. We make steps down the cost function in the direction with the steepest descent. The size of each step is determined by the parameter $\alpha$, which is called the <strong>learning rate</strong>.</p>
+
+<p>For example, the distance between each <em>star</em> in the graph above represents a step determined by our parameter $\alpha$. A smaller $\alpha$ would result in a maller step and a larger $\alpha$ results in a larger step.</p>
+
+<p>The direction in which the step i taken is deetermined by the partial derivative of $J (\theta_0, \theta_1)$. Depending onn where oone starts on the graph, one could end up at different points. The image above shows us two different starting point that end up in two different places.</p>
+
+<p>The gradient descent algorithm is:</p>
+
+<p>repeat until convergence:</p>
+
+<p>$\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j} J(\theta_0, \theta_1)$</p>
+
+<p>where</p>
+
+<p>$j = 0, 1$ represents the feature index number.</p>
+
+<p>At each iteration $j$, one should simultaneously update the parameters $\theta_1, \theta_2, …, \theta_n$. Updating a specific parameter prior to calculating another one on the $j^{(th)}$ iteration would yield to a wrong implementation.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/3.png" />
+</center>
+
+<h2 id="gradient-descent-intuition">Gradient Descent Intuition</h2>
+
+<p>As a reminder, the formula for a gradient descent with one parameter $\theta_1$ looks like that:</p>
+
+<p>Repeat until convergence:</p>
+
+<p>$\theta_1 := \theta_1 - \alpha \frac{d}{d\theta_1}J(\theta_1)$</p>
+
+<p>Regardless of the slope’s sign for $\frac{d}{d\theta_1}J(\theta_1), \theta_1$ eventually converges to its minimum value. The following graph shows that when the slope is negative, the value of $\theta_1$ increases and when it is positive, the value of $\theta_1$ decreases.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/4.png" />
+</center>
+
+<p>On a side note, we should adjust our parameter $\alpha$ to ensure that the gradient descent algorithm converges in a reasonable time. Failure to converge or too much time to obtain the minimum value imply that our step size is wrong.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/5.png" />
+</center>
+
+<p><strong>How does gradient descent converge with a fixed step size $\alpha$?</strong></p>
+
+<p>The intuition behind the convergence is that $\frac{d}{d\theta_1}J(\theta_1)$ approaches $0$ as we approach the bottom of our convex function. At the minimum, the derivative will always be $0$ and thus we get:</p>
+
+<script type="math/tex; mode=display">\theta_1 := \theta_1 - \alpha \bullet 0</script>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/6.png" />
+</center>
+
+<h2 id="gradient-descent-for-linear-regression">Gradient Descent For Linear Regression</h2>
+
+<p>When specifically applied to the case of linear regression, a new form of the gradient descent equation can be derived. We can substitute our actual cost function and our actual hypothetis function and modify the equation to:</p>
+
+<p>repeat until convergence:
+<script type="math/tex">\left\{
+     \begin{array}\\
+        \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta}(x_i) - y_i) 
+        \\
+        \theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m ((h_{\theta}(x_i) - y_i)x_i)
+    \end{array}
+\right.</script></p>
+
+<p>where $m$ is the size of the training set, $\theta_0$ a constant that will be changing simultaneously with $\theta_1$ and $x_i, y_i$ are values of the given training set (data).</p>
+
+<p>Note that we have separated out the two cases for $\theta_j$ into separate equations for $\theta_0$ and $\theta_1$ and that for $\theta_1$ we are multiplying $x_i$ at the end due to the derivative. The following is a derivation of $\frac{\partial}{\partial\theta_j}J(\theta)$ for a single example:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{split}
+\frac{\partial}{\partial\theta_j}J(\theta) & = \frac{\partial}{\partial\theta_j} \frac{1}{2} (h_{\theta}(x) - y)^2 
+    \\
+    & = 2 \bullet \frac{1}{2} (h_{\theta}(x) - y) \bullet \frac{\partial}{\partial\theta_j}(h_{\theta}(x) - y)
+    \\
+    & = (h_{\theta}(x)-y) \bullet \frac{\partial}{\partial\theta_j} \Big(\sum_{i=0}^{n}\theta_i x_i - y\Big)
+    \\
+    & = (h_{\theta}(x) - y)x_j
+\end{split} %]]></script>
+
+<p>The point of all this is that if we start with a guess for our hypothesis and then repeatedly apply these gradient descent equations, our hypothesis will become more and more accurate.</p>
+
+<p>So, this is simply gradient descent on the original cost function $J$. This method looks at every example in the entire training set on every step, and is called <strong>batch gradient descent</strong>. Note that, while gradient descent can be susceptible to local minima in general, the optimization problem we have posed here for linear regression has only one global, and no other local optima; thus gradient descent always converges (assuming the learning rate $\alpha$ is not too large) to the global minimum. Indeed, $J$ is a convex quadratic function. Here is an example of gradient descent as it is run to minimize a quadratic function.</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/7.png" />
+</center>
+
+<p>The ellipses shown above are the contours of a quadratic function. Also shown is the trajectory taken by gradient descent, which was initialized at $(48, 30)$. The $x$’s in the figure (joined by straight lines) mark the successive values of $\theta$ that gradient descent went through as it converged to its minumum.</p>
+
+<h2 id="slides">Slides</h2>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/8.png" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/9.png" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/10.png" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/11.png" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/12.png" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/13.png" />
+</center>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/14.png" />
+</center>
+
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-10-04T21:39:43+01:00">2021</time> Weronika Żak</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
