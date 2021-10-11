@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Classification and Representation &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+
+
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="page">
+    <header>
+        <h1 class="landing-title">
+            
+            
+            
+
+
+                
+                Classification
+            <span style="color: #e6e6e6;">
+                and Representation
+            </span>
+        </h1>
+    </header>
+
+  <center>
+<img src="/images/posts/Machine Learning/ml6/0.jpg" />
+</center>
+
+<h2 id="classification">Classification</h2>
+
+<p>To attempt classification, one method is to use linear regression and map all predictions greater than $0.5$ as a $1$ and all less than $0.5$ as a $0$. However, this method doesn’t work well because classification is not actually a linear function.</p>
+
+<p>The classificaion problem is just like the regression problem, except that the values we now want to predict take on only a small number of discrete values.</p>
+
+<p>For now, we will focus on the <strong>binary classification problem</strong> in which $y$ can take only two values, $0$ and $1$. (Most of what we say here will also generalize to the multiple-class case.)</p>
+
+<p>For instance, if we are trying to build  spam classifier for email, then $x^{(i)}$ may be some features of a piece of email, and $y$ may be $1$ if it is a piece of spam mail, and $0$ otherwise.</p>
+
+<p>Hence $y \in { 0, 1 }$. $0$ is also called the negative class, and $1$ the positive class, and they are sometimes also denoted by the symbols “-“ and “+”. Given $x^{(i)}$, the corresponding $y^{(i)}$ is also called the label for the training example.</p>
+
+<h2 id="hypothesis-representation">Hypothesis Representation</h2>
+
+<p>We could approach the classification problem ignoring the fact that $y$ is discrete-values, and use our old linear regression algorithm to try to predict $y$ given $x$. However, it is easy to construct examples where this method performs very poorly. Intuitively, it also doesn’t make sense for $h_{\theta}(x)$ to take values larger than $1$ or smaller than $0$ when we know that $y \in { 0, 1 }$.</p>
+
+<p>To fix this, let’s change the form for our hypothesis $h_{\theta}(x)$ to satisfy $0 \ge h_{\theta}(x) \ge 1$. This is accomplished by plugging $\theta^Tx$ into the Logistic Function.</p>
+
+<p>Our new form uses the <em>Sigmoid Function</em>, also called the <em>Logistic Function</em>:</p>
+
+<script type="math/tex; mode=display">h_{\theta}(x) = g(\theta^Tx)
+\\
+z = \theta^Tx
+\\
+g(z) = \frac{1}{1+ e^{-z}}</script>
+
+<p>The following image shows us what the sigmoid function looks like:</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml6/1.png" />
+</center>
+
+<p>The function $g(z)$ shown here maps any real number to the $(0, 1)$ interval, making it useful for transforming an arbitrary-values function into a function better suited for classification.</p>
+
+<p>$h_{\theta}(x)$ will give us the <strong>probability</strong> that our input is $1$.</p>
+
+<p>For example, $h_{\theta}(x) = 0.7$ gives us a probability of %70%% that our output is $1$. Our probability that our prediction is $0$ is just the complement of our probability that it is 1 (e.g, if probability that it is $1$ is $70%$, then the probability that it is $0$ is $30%$).</p>
+
+<script type="math/tex; mode=display">h_{\theta}(x) = P(y = 1 | x; 0) = 1 - P(y = 0 | x; 0)
+\\
+P(y = 0 | x; 0) + P(y = 1 | x; 0) = 1</script>
+
+<h2 id="decision-boundary">Decision Boundary</h2>
+
+<p>In order to get our discrete $0$ or $1$ classification, we can translate the output of the hypothesis function as follows:</p>
+
+<script type="math/tex; mode=display">h_{\theta} \ge 0.5 \to y = 1
+\\
+h_{\theta} \le 0.5 \to y = 0</script>
+
+<p>The way our logistic function $g$ behaves is that when its output is greater than or equal to zero, its output is greater than or equal $0.5$:</p>
+
+<script type="math/tex; mode=display">g(z) \ge 0.5
+\\
+when \quad z \ge 0</script>
+
+<p>Remember:</p>
+
+<script type="math/tex; mode=display">z = 0, \quad e^0 \Rightarrow g(z) = \frac{1}{2}
+\\
+z \to \infty, \quad e^{-\infty} \to 0 \Rightarrow g(z) = 1
+\\
+z \to -\infty, \quad e^{\infty} \to \infty \Rightarrow g(z) = 0</script>
+
+<p>So if our input to $g$ is $\theta^TX$, then that means:</p>
+
+<script type="math/tex; mode=display">h_{\theta}(x) = g(\theta^Tx) \ge 0.5
+\\
+when \quad \theta^Tx \ge 0</script>
+
+<p>From these statements we can now say:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\theta^Tx \ge 0 \Leftarrow y = 1
+\\
+\theta^Tx < 0 \Leftarrow y = 0 %]]></script>
+
+<p>The <strong>decision boundary</strong> is the line that separates the area where $y = 0$ and where $y = 1$. It is created by our hypothesis function.</p>
+
+<p>Example:</p>
+
+<script type="math/tex; mode=display">\theta = \begin{bmatrix}
+           5 \\
+           -1 \\
+           0
+         \end{bmatrix}
+\\
+y = 1 \quad if \quad 5 + (-1)x_1 + 0x_2 \ge 0
+\\
+5 - x_1 \ge 0
+\\
+-x_1 \ge -5
+\\
+x_1 \le 5</script>
+
+<p>In this case, our decision boundary is a straight vertical line placed on the graph, where x_1 = 5, and everything to the left of that denotes $y = 1$, while everything to the right denotes $y = 0$.</p>
+
+<p>Again, the input to the sigmoid function $g(z)$ (e.g. $\theta^TX$ deosn’t need to be linear, and could be a function that describes a circle (e.g. $z = \theta_0 + \theta_1x_1^2 + \theta_2x_2^2 $ or any shape to fit our data.</p>
+
+<h3 id="the-notes-were-based-on--this-course-by-andrew-ng-">THE NOTES WERE BASED ON <a href="https://www.coursera.org/learn/machine-learning"> THIS COURSE BY ANDREW NG </a>.</h3>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-10-11T21:18:52+01:00">2021</time> Weronika Żak</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

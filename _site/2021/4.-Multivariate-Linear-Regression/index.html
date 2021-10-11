@@ -65,9 +65,13 @@
         </h1>
     </header>
 
-  <h2 id="multiple-features">Multiple Features</h2>
+  <center>
+<img src="/images/posts/Machine Learning/ml4/0.jpg" />
+</center>
 
-<p>Linear regression with multiple variables is also known as <strong>“multivate linear regression”</strong>.</p>
+<h2 id="multiple-features">Multiple Features</h2>
+
+<p>Linear regression with multiple variables is also known as <strong>“multivariate linear regression”</strong>.</p>
 
 <p>We now introduce notation for equations where we can have any number of input variables.</p>
 
@@ -133,7 +137,7 @@
 
 <h2 id="gradient-descent-in-practice-i---feature-scaling">Gradient Descent in Practice I - Feature Scaling</h2>
 
-<p>We can speed up gradient descent by having each of our input values in roughly the same range. This is because $\theta$ will descend quickly on small ranges and slowly on large ranges, annd so will oscillate inefficiently down to the optimum when the variables are very uneven.</p>
+<p>We can speed up gradient descent by having each of our input values in roughly the same range. This is because $\theta$ will descend quickly on small ranges and slowly on large ranges, and so will oscillate inefficiently down to the optimum when the variables are very uneven.</p>
 
 <p>The way to prevent this is to modify the ranges of our input variables so that they are all roughly the same. Ideally:</p>
 
@@ -151,9 +155,9 @@
 
 <p>Feature scalling involves dividing the input values by the range (i.e. the maximum value minus the minimum value) of the input variable, resulting in a new range of just 1.</p>
 
-<p>Mean nrmalization involves substractinf the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just 0.</p>
+<p>Mean normalization involves substracting the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just 0.</p>
 
-<p>To implement both of these techniques, adjusst your input values as shown in this formula:</p>
+<p>To implement both of these techniques, adjust your input values as shown in this formula:</p>
 
 <script type="math/tex; mode=display">x_i := \frac{x_i - \mu_i}{s_i}</script>
 
@@ -211,7 +215,7 @@
     <p>If $\alpha$ is too small: slow convergence.</p>
   </li>
   <li>
-    <p>If $\alpha$ is too large: may not decrease on every iteration and thus may nnot converge</p>
+    <p>If $\alpha$ is too large: may not decrease on every iteration and thus may not converge</p>
   </li>
 </ul>
 
@@ -243,13 +247,15 @@
 <img src="/images/posts/Machine Learning/ml4/7.png" />
 </center>
 
+<h3 id="the-notes-were-based-on--this-course-by-andrew-ng-">THE NOTES WERE BASED ON <a href="https://www.coursera.org/learn/machine-learning"> THIS COURSE BY ANDREW NG </a>.</h3>
+
 </article>
 
       </main>
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-10-04T21:39:43+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-10-11T21:18:52+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

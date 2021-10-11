@@ -66,16 +66,20 @@
     </header>
 
   <center>
-<img src="/images/posts/Machine Learning/ml3/1.png" />
+<img src="/images/posts/Machine Learning/ml3/0.jpg" />
 </center>
 
 <h2 id="gradient-descent">Gradient Descent</h2>
+
+<center>
+<img src="/images/posts/Machine Learning/ml3/1.png" />
+</center>
 
 <p>So we have our hypothesis function and we have a way of measuring how well it fits into the data. Now we need to estimate the parameters in the hypothesis function. That’s where gradient descent comes in.</p>
 
 <p>Imagine that we graph our hypothesis function based on its fields $\theta_0$ and $\theta_1$ (actually we are graphing the cost function as a function of the parameter estimates). We are graphing $x$ and $y$ itself, but the parameter range of our hypothesis funtion and the cost resulting from selecting a perticular set of parameters.</p>
 
-<p>We put $\theta_0$ on the <em>x</em>-axis and $\theta_1$ on the <em>y</em>-axis, with the cost function on the vertical <em>z</em>-axis. The points on our graph will be the result of the cost function using our hypothesis with those specific thera parameters. The graph below depicts such a setup.</p>
+<p>We put $\theta_0$ on the <em>x</em>-axis and $\theta_1$ on the <em>y</em>-axis, with the cost function on the vertical <em>z</em>-axis. The points on our graph will be the result of the cost function using our hypothesis with those specific theta parameters. The graph below depicts such a setup.</p>
 
 <center>
 <img src="/images/posts/Machine Learning/ml3/2.png" />
@@ -85,9 +89,9 @@
 
 <p>The way we do this is by taking the derivative (the tangential line to a function) of our cost function. The slope of the tangent i the derivative at that point and it will give us a direction to move towards. We make steps down the cost function in the direction with the steepest descent. The size of each step is determined by the parameter $\alpha$, which is called the <strong>learning rate</strong>.</p>
 
-<p>For example, the distance between each <em>star</em> in the graph above represents a step determined by our parameter $\alpha$. A smaller $\alpha$ would result in a maller step and a larger $\alpha$ results in a larger step.</p>
+<p>For example, the distance between each <em>star</em> in the graph above represents a step determined by our parameter $\alpha$. A smaller $\alpha$ would result in a smaller step and a larger $\alpha$ results in a larger step.</p>
 
-<p>The direction in which the step i taken is deetermined by the partial derivative of $J (\theta_0, \theta_1)$. Depending onn where oone starts on the graph, one could end up at different points. The image above shows us two different starting point that end up in two different places.</p>
+<p>The direction in which the step i taken is determined by the partial derivative of $J (\theta_0, \theta_1)$. Depending onn where one starts on the graph, one could end up at different points. The image above shows us two different starting point that end up in two different places.</p>
 
 <p>The gradient descent algorithm is:</p>
 
@@ -171,7 +175,7 @@
 <img src="/images/posts/Machine Learning/ml3/7.png" />
 </center>
 
-<p>The ellipses shown above are the contours of a quadratic function. Also shown is the trajectory taken by gradient descent, which was initialized at $(48, 30)$. The $x$’s in the figure (joined by straight lines) mark the successive values of $\theta$ that gradient descent went through as it converged to its minumum.</p>
+<p>The ellipses shown above are the contours of a quadratic function. Also shown is the trajectory taken by gradient descent, which was initialized at $(48, 30)$. The $x$’s in the figure (joined by straight lines) mark the successive values of $\theta$ that gradient descent went through as it converged to its minimum.</p>
 
 <h2 id="slides">Slides</h2>
 
@@ -203,6 +207,7 @@
 <img src="/images/posts/Machine Learning/ml3/14.png" />
 </center>
 
+<h3 id="the-notes-were-based-on--this-course-by-andrew-ng-">THE NOTES WERE BASED ON <a href="https://www.coursera.org/learn/machine-learning"> THIS COURSE BY ANDREW NG </a>.</h3>
 
 </article>
 
@@ -210,7 +215,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-10-04T21:39:43+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-10-11T21:18:52+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">
