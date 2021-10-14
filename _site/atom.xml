@@ -4,13 +4,496 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-10-11T21:18:52+01:00</updated>
+ <updated>2021-10-14T16:54:01+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>ALGO - Algorand</title>
+   <link href="http://localhost:4000/2021/ALGO-Algorand/"/>
+   <updated>2021-10-07T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2021/ALGO - Algorand</id>
+   <content type="html">&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/algo.png&quot; style=&quot;max-width: 200px&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;goverment-seeking-for-help-around-crypto-space&quot;&gt;GOVERMENT SEEKING FOR HELP AROUND CRYPTO SPACE&lt;/h2&gt;
+
+&lt;p&gt;Over the last few months governments around the world have been rushing to develop their own central bank digital currencies or CBDCs.&lt;/p&gt;
+
+&lt;p&gt;It didn’t take them long to realize that developing a digital currency is no easy task and this has led some governments to turn to the cryptocurrency space for assistance.&lt;/p&gt;
+
+&lt;p&gt;Dozens of enterprise oriented crypto projects have consequently offered themselves up to fill the role as the blockchain that will host the perfect CBDC.&lt;/p&gt;
+
+&lt;p&gt;One of these crypto projects is &lt;strong&gt;Algorand&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Over the last few months Algorand has been in talks with dozens of governments around the world to launch their CBDCs and has secured multiple institutional partnerships as well.&lt;/p&gt;
+
+&lt;h2 id=&quot;silvio-micali---the-founder&quot;&gt;SILVIO MICALI - THE FOUNDER&lt;/h2&gt;
+
+&lt;p&gt;Algorand was founded in 2017 by MIT professor Silvio Micali.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/1.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Silvio is famous for being the co-creator of various cryptographic technologies like &lt;strong&gt;zero knowledge proofs&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/2.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;He’s also the 2012 Turing Award recipient, which is like the Nobel Prize for technology.&lt;/p&gt;
+
+&lt;p&gt;Silvio says, that he was inspired to create Algorand after hearing about the famous block train trilemma of scalability decentralization and security proposed by Ethereum founder Vitalik Buterian in 2016.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/3.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Silvio argues that the idea that you can only choose between two of the three is false and he’s also critical of the shortcomings of the proof-of-work and proof-of-stake consensus mechanisms.&lt;/p&gt;
+
+&lt;p&gt;Naturally Algorand is the solution to these problems.&lt;/p&gt;
+
+&lt;h2 id=&quot;algorand-overview&quot;&gt;ALGORAND OVERVIEW&lt;/h2&gt;
+
+&lt;p&gt;Like many cryptocurrency projects, Algorand is technically managed by the non-profit &lt;em&gt;Algorand Foundation&lt;/em&gt; based in Singapore, which commissions Algorand inc., a for-profit software company in the United States to develop and maintain the Algorand blockchain.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/4.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Algorand is also one of the best funded cryptocurrency projects in the space raising nearly &lt;strong&gt;130 million dollars&lt;/strong&gt; between its public and private sales of ALGO in 2018 and 2019.&lt;/p&gt;
+
+&lt;p&gt;The Algorand blockchain went live in June of 2019 and enabled its smart contract functionality in later 2020 with its 2.0 upgrade.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/5.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;pure-proof-of-stake&quot;&gt;PURE PROOF OF STAKE&lt;/h2&gt;
+
+&lt;p&gt;Algorand uses a unique consensus mechanism called &lt;strong&gt;pure proof of stake&lt;/strong&gt;, which makes it possible to process &lt;strong&gt;1000 transactions per second&lt;/strong&gt; without sacrificing security or decentralization.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/6.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Pure proof of stake involves 2 types of nodes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;participant nodes, and&lt;/li&gt;
+  &lt;li&gt;relay nodes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Participant nodes participate in consensus and relay nodes facilitate the communication between participant nodes.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/7.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;In pure proof of stake 1000 participant nodes are randomly chosen to produce a block.&lt;/p&gt;
+
+&lt;p&gt;Then one of those 1000 winning participant nodes is randomly selected to add its block to the Algorand blockchain.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/8.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;In both cases the chances of being selected are proportional to how much ALGO a participant node has staked.&lt;/p&gt;
+
+&lt;p&gt;The random selection process and blockchain data are managed and stored by relay nodes.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/9.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This setup makes it possible for mobile phones and even basic computers to participate on the Algorand blockchain as participant nodes and allows for instant settlement on Algorand.&lt;/p&gt;
+
+&lt;p&gt;No waiting around for multiple block confirmations.&lt;/p&gt;
+
+&lt;p&gt;With these facts it should come as no surprise that there are now over 10 million Algorand wallet addresses and over 500 projects building on the Algorand blockchain.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/10.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;algorand-tokenomics---overview&quot;&gt;ALGORAND TOKENOMICS - OVERVIEW&lt;/h2&gt;
+
+&lt;p&gt;In November, Circle’s USDC stablecoin officially launched on the Algorand blockchain and there’s currently over 100 million USDC circulating on Algorand.&lt;/p&gt;
+
+&lt;p&gt;Algorand’s USDC has an interesting total supply of 18.4 trillion.&lt;/p&gt;
+
+&lt;p&gt;Perhaps this is a glitch or an attempt by Algorand to match the total dollar money supply. Ambitious goals.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/14.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Shortly afterwards, Algorand founder, Silvio Micali, proposed a new governance structure and roadmap for the project, which will make it possible for regular ALGO holders to have a say in how the network is run.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/11.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;carbon-credits&quot;&gt;CARBON CREDITS&lt;/h2&gt;
+
+&lt;p&gt;In December Algorand partnered with Climate Trade, a carbon credits trading platform.&lt;/p&gt;
+
+&lt;p&gt;This will see tokenized carbon credits issued and traded on the Algorand blockchain.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/15.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;For those unfamiliar, carbon credits are given to companies by regulators when they do something that is considered to be good for the environment, such as installing solar panels on their buildings.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/16.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;While this carbon credit scheme is intended to reduce greenhouse emissions, it has instead created a multi-billion dollar carbon credit trading market, which Algorand will now be a part of.&lt;/p&gt;
+
+&lt;h2 id=&quot;issue-with-oracle-tokens&quot;&gt;ISSUE WITH ORACLE TOKENS&lt;/h2&gt;
+
+&lt;p&gt;Interestingly, it seems Algorand didn’t have a data Oracle until February 2020, when they partnered with Razor Network.&lt;/p&gt;
+
+&lt;p&gt;Decentralized applications often require data Oracles for asset prices and other off-chain data.&lt;/p&gt;
+
+&lt;p&gt;The long absence of an Oracle might be why Algorand doesn’t host any well-known Dapps.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/17.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;partnerships&quot;&gt;PARTNERSHIPS&lt;/h2&gt;
+
+&lt;p&gt;In March 2020 Algorand partnered with Meld Gold to bring tokenized gold and silver to the Algorand blockchain.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/18.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Algorand also partnered with the SIAE, the largest Italian copywriting agency with over 4 million copyrights, which are now publicly verifiable on the Algorand blockchain.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/19.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;In April Algorand partnered with Vesta Equity to tokenize real estate.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/20.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This will make it possible for individuals to own a part of a residential or commercial property via the Algorand blockchain.&lt;/p&gt;
+
+&lt;p&gt;Balancer also announced that it would be expanding to Algorand.&lt;/p&gt;
+
+&lt;p&gt;Vancore is currently one of the biggest DeFi protocols on Ethereum with over 2 billion dollars in total value locked.&lt;/p&gt;
+
+&lt;p&gt;Just a few days ago Algorand partnered with ANoteMusic, a platform that connects investors to musicians.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/21.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;problems-with-algo-in-the-past&quot;&gt;PROBLEMS WITH ALGO IN THE PAST&lt;/h2&gt;
+
+&lt;p&gt;Another thing that Algorand has done over the last few months is update ALGO’s tokenomics.&lt;/p&gt;
+
+&lt;p&gt;As a brief recap, ALGO has a maximum supply of 10 billion.&lt;/p&gt;
+
+&lt;p&gt;Only 25 million of these tokens were sold during the public ICO in June 2019, shortly before Algorand’s mainnet launch.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/22.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;The price tag per ALGO for this public ICO was a whopping $2.04, which is a fraction of the cost that private investors probably paid for their ALGO tokens.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/23.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Not surprisingly, the price of ALGO began to tank shortly after listing as the Algorand team, the Algorand Foundation and all the private investors began to sell some of their tokens.&lt;/p&gt;
+
+&lt;p&gt;To say that retail investors were angry is an understatement.&lt;/p&gt;
+
+&lt;p&gt;Algorand’s response was to offer 2 ALGO token buybacks in August 2019 and June 2020.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;The Algorand Foundation nearly all 25 million ALGO have been redeemed&lt;/em&gt;” meaning, just about every retail investor, who purchased ALGO opted to go for the buyback option rather than hold.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/24.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This makes sense considering the 90% buyback.&lt;/p&gt;
+
+&lt;p&gt;Price was 4x higher than the market price of ALGO at the time.&lt;/p&gt;
+
+&lt;p&gt;Though these repurchase tokens are noted as having been burned, they are technically custodied by the Algorand Foundation, which has also apparently been staking these redeemed tokens.&lt;/p&gt;
+
+&lt;p&gt;To make things worse, ALGO’s fixed supply means, that there is a limited amount of time before the pre-mined tokens used to pay for participation node and relay node rewards run out.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/26.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;algos-economic-structure&quot;&gt;ALGO’S ECONOMIC STRUCTURE&lt;/h2&gt;
+
+&lt;p&gt;Obviously, this economic structure is not sustainable for Algorand’s long-term growth, which is why the Algorand Foundation reworked ALGO’s emission and allocation in December 2019.&lt;/p&gt;
+
+&lt;p&gt;For starters, the ALGO tokens allocated to all parties will now unlock over 10 years instead of 4 years.&lt;/p&gt;
+
+&lt;p&gt;This means Algorand will need to have enough adoption to survive from transaction fees after 2030.&lt;/p&gt;
+
+&lt;p&gt;In addition, the 2.75 billion ALGO, that was reserved for future token sales, will be reallocated to community incentives governance and ecosystem support.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/25.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;2.5 billion of these ALGO tokens will be allocated to governance participation alone, which requires you to lock your ALGO for extended periods of time to earn a share of that ALGO.&lt;/p&gt;
+
+&lt;p&gt;ALGO’s updated 10-year emission schedule can be seen here for reference.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/26.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Over 20 million ALGO tokens are being given out as participant node rewards every month.&lt;/p&gt;
+
+&lt;p&gt;It’s also worth pointing out that over 55% of ALGO’s total supply is technically in circulation and seems to correspond to the amount of ALGO currently being staked online and offline.&lt;/p&gt;
+
+&lt;h2 id=&quot;algos-price-not-pumping&quot;&gt;ALGO’S PRICE NOT PUMPING?&lt;/h2&gt;
+
+&lt;p&gt;Unfortunately, algorithm’s modification of ALGO’s emission and allocation has not done much for its price.&lt;/p&gt;
+
+&lt;p&gt;ALGO has only gone up 3x since the start of the year, which is much less than most cryptos.&lt;/p&gt;
+
+&lt;p&gt;This is somewhat surprising given Algorand’s impressive technology, active development, institutional partnerships and community growth.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/27.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;The cause of ALGO’s poor price action seems to be something called “&lt;em&gt;early backer accelerated vesting&lt;/em&gt;”.&lt;/p&gt;
+
+&lt;h2 id=&quot;early-backer-acceleration&quot;&gt;EARLY BACKER ACCELERATION&lt;/h2&gt;
+
+&lt;p&gt;This tokenomic change was proposed by Algorand’s early backers in late November 2019.&lt;/p&gt;
+
+&lt;p&gt;Basically in exchange for reducing their initial ALGO allocations, Algorand’s early backers can unlock more of their remaining tokens, if the price of ALGO goes above the average price of ALGO in the previous month.&lt;/p&gt;
+
+&lt;p&gt;The Algorand Foundation has been providing regular updates about this accelerated vesting schedule and the most recent one was triggered in April 2020.&lt;/p&gt;
+
+&lt;p&gt;What’s crazy about this update is that early investors were able to claim more of their ALGO tokens, because the average price of ALGO had gone up by less than a cent, compared to the previous month.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/28.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;This accelerated vesting scheme is why ALGO’s parabolic price move in February came to a sudden stop.&lt;/p&gt;
+
+&lt;p&gt;An accelerated vesting schedule update on February the 22nd supports this theory.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/29.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;It’s not the early backers that are actively selling their ALGO either.&lt;/p&gt;
+
+&lt;p&gt;The Algorand Foundation has been actively selling its ALGO coins to fund operations and ecosystem expansion.&lt;/p&gt;
+
+&lt;p&gt;This can be seen in the Algorand Foundation’s monthly transparency reports.&lt;/p&gt;
+
+&lt;h2 id=&quot;structured-selling&quot;&gt;STRUCTURED SELLING&lt;/h2&gt;
+
+&lt;p&gt;Similarly to the accelerated vesting schedule, the Algorand Foundation has its own scheme called &lt;strong&gt;structured selling&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This structured selling happens every day and is apparently done automatically.&lt;/p&gt;
+
+&lt;p&gt;When the following conditions are met, the ALGO being sold must account for less than 5% of the total trading volume in a given day.&lt;/p&gt;
+
+&lt;p&gt;All ALGO sales must be made above the current market price and ALGO selling stops, if the price drops too much compared to its recent average price or drops by more than 10%.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/30.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;What this means is that, &lt;strong&gt;whenever the price of ALGO goes up, Algorand’s early backers and the Algorand Foundation will sell, thereby suppressing its price potential&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;To make things worse, there are not many demand drivers for ALGO.&lt;/p&gt;
+
+&lt;p&gt;Staking rewards are low and the minimum stake is just 1 ALGO.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/31.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;There also aren’t any popular Dapps on Algorand, at least not yet.&lt;/p&gt;
+
+&lt;p&gt;There seems to be some hope on the technical side however.&lt;/p&gt;
+
+&lt;h2 id=&quot;algo-advantages-and-governance-influence&quot;&gt;ALGO ADVANTAGES AND GOVERNANCE INFLUENCE&lt;/h2&gt;
+
+&lt;p&gt;ALGO has been consolidating for quite some time and could be poised for a breakout to the upside.&lt;/p&gt;
+
+&lt;p&gt;Assuming Bitcoin doesn’t crash, of course.&lt;/p&gt;
+
+&lt;p&gt;More importantly, ALGO is listed on major u.s exchanges, namely Coinbase.&lt;/p&gt;
+
+&lt;p&gt;ALGO’s low price tag is likely attractive to inexperienced retail investors, who’ve been flocking to Coinbase by the millions in recent months, and Algorand could also be on the brink of securing a CBDC contract.&lt;/p&gt;
+
+&lt;p&gt;Governments around the world have been turning to the cryptocurrency space for assistance with their CBDCs.&lt;/p&gt;
+
+&lt;p&gt;This is primarily because all the developers, who know how to build robust digital currencies and decentralized applications, work in crypto, and the things they’ve made have been battle tested too.&lt;/p&gt;
+
+&lt;p&gt;There is a possibility, that Stellar would be selected as the blockchain to host the digital US dollar.&lt;/p&gt;
+
+&lt;p&gt;The reasning for this is the Stellar Foundation’s close work with regulators in the United States and its partnership with Circle, which issues the USDC stablecoin, that is quickly becoming a CBDC template.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/32.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;stellar-and-algo---comparison&quot;&gt;STELLAR AND ALGO - COMPARISON&lt;/h2&gt;
+
+&lt;p&gt;Algorand is a more likely CBDC blockchain candidate than Stella and this is for a few reasons.&lt;/p&gt;
+
+&lt;h5 id=&quot;first-reason---decentralization&quot;&gt;FIRST REASON - (DE)CENTRALIZATION&lt;/h5&gt;
+
+&lt;p&gt;First, &lt;strong&gt;Stella is much more centralized than Algorand&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;It only has 24 validator nodes compared to Algorand’s 1100 participation and relay nodes.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/33.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;That said, Algorand is also technically “centralized”, since there are only about 100 relay nodes that handle the bulk of blockchain operations.&lt;/p&gt;
+
+&lt;p&gt;Still, Stella is apparently centralized enough to have a single point of failure, as revealed by the downtime it experienced in April 2021.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/34.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;According to blockchain’s Stella Explorer, nearly a quarter of all transactions also failed in the past 24 hours, which would be unacceptable for a CBDC network.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/35.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h5 id=&quot;second-reason---speed&quot;&gt;SECOND REASON - SPEED&lt;/h5&gt;
+
+&lt;p&gt;Second, &lt;strong&gt;Algorand seems to be much faster than Stella&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Although &lt;strong&gt;Stella’s theoretical transaction speed is 4,000 tps, this is closer to just a few hundred tps in practice&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/36.PNG&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;By contrast, &lt;strong&gt;Algorand can process 1,000 transactions per second&lt;/strong&gt; and Algorand CEO, Sean Ford, noted in a recent interview that developers are currently working on increasing algorithms tps to &lt;strong&gt;10,000&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;While both Stella and Algorand have transaction times of about 5 seconds transactions, on Algorand have instant finality.&lt;/p&gt;
+
+&lt;p&gt;This does not seem to be the case for Stella transactions.&lt;/p&gt;
+
+&lt;h5 id=&quot;third-reason---contracts-with-governments&quot;&gt;THIRD REASON - CONTRACTS WITH GOVERNMENTS&lt;/h5&gt;
+
+&lt;p&gt;Third, &lt;strong&gt;Algorand already has a CBDC contract with the Republic of the Marshall Islands&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Stella also recently announced that it had partnered with the Ukrainian government&lt;/strong&gt; to launch its CBDC, but Algorand’s CBDC will likely launch sooner.&lt;/p&gt;
+
+&lt;p&gt;Given the timeline and scale of the project, this will give other governments confidence, that Algorand’s blockchain is robust enough for a CBDC, and this sort of first mover advantage is everything in cryptocurrency.&lt;/p&gt;
+
+&lt;h5 id=&quot;fourth-reason---well-known-founders&quot;&gt;FOURTH REASON - WELL KNOWN FOUNDERS&lt;/h5&gt;
+
+&lt;p&gt;Fourth, Algorand was created by someone with serious credentials from one of the top universities in the United States.&lt;/p&gt;
+
+&lt;p&gt;Stella was created by Jed McCaleb, who actually dropped out of the same university Silvio Mccarley received his PhD from.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Tokens/algorand/37.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h5 id=&quot;fifth-reason---tokens&quot;&gt;FIFTH REASON - TOKENS&lt;/h5&gt;
+
+&lt;p&gt;Finally, the crypto ratings council considers Stella’s LUNAs token to be more like a security than a currency, whereas Algorand’s ALGO token is more like a currency than a security.&lt;/p&gt;
+
+&lt;p&gt;This is important because a security designation could crush Stella and XLM the same way it’s crushed Ripple and XRP.&lt;/p&gt;
+
+&lt;p&gt;The only caveat with this comparison is that governments are likely to use a permissioned version of the cryptocurrency blockchains they’re considering, meaning it won’t increase demand for either of their tokens in any case.&lt;/p&gt;
+
+&lt;p&gt;Algorand seems to be at the top of the CBDC list in the United States and that announcement alone could send ALGO to the moon.&lt;/p&gt;
+
+&lt;p&gt;Algorand is one of the few cryptocurrency projects that has serious academic credentials to back it up.&lt;/p&gt;
+
+&lt;h2 id=&quot;lack-of-communication-with-community&quot;&gt;LACK OF COMMUNICATION WITH COMMUNITY&lt;/h2&gt;
+
+&lt;p&gt;While credentials don’t really matter in the crypto space, they go a long way in convincing early investors and this case is no exception.&lt;/p&gt;
+
+&lt;p&gt;Algorand has some seriously solid tech and has also been strategic in how it’s used the funds in its massive war chest.&lt;/p&gt;
+
+&lt;p&gt;There’s just one small problem and that’s that money can’t buy adoption in cryptocurrency.&lt;/p&gt;
+
+&lt;p&gt;Community outreach and price action tend to be the primary drivers of adoption and Algorand seems to have neglected the importance of these factors.&lt;/p&gt;
+
+&lt;p&gt;When flipping through Algorand’s updates it’s obvious to see that it’s catering to public and private institutions and doing the bare minimum to keep people in crypto interested in the project.&lt;/p&gt;
+
+&lt;p&gt;While Algorand might have 10 million wallet addresses on its blockchain, its social media presence wallet downloads and lack of Dapps suggest, that there are only a few thousand active Algorand users.&lt;/p&gt;
+
+&lt;h2 id=&quot;weird-tokenomics-making-it-hard-to-get-through&quot;&gt;WEIRD TOKENOMICS MAKING IT HARD TO GET THROUGH&lt;/h2&gt;
+
+&lt;p&gt;This is definitely a contributing factor to ALGO’s subpar price action, but most of that damage seems to be coming from its terribly thought out tokenomics.&lt;/p&gt;
+
+&lt;p&gt;Despite the fact that the Algorand Foundation has a dedicated economic advisory committee, it somehow hasn’t managed to figure out that demand must outweigh supply for prices to rise.&lt;/p&gt;
+
+&lt;p&gt;In its defense, private investors have poured hundreds of millions of dollars into the project and they’re begging for some sort of return without schemes like accelerated vesting, they may abandon Algorand like its early retail investors.&lt;/p&gt;
+
+&lt;p&gt;The fact that little or any of the Algorand foundation’s funds are in assets, other than the ALGO token means, it’s really stuck between a rock and a hard place.&lt;/p&gt;
+
+&lt;p&gt;If it continues to appease private investors, it will crash the price of ALGO and lose the small community it’s built.&lt;/p&gt;
+
+&lt;p&gt;If it accelerates its development to onboard more users and investors it crashes the price of ALGO and loses all of that momentum.&lt;/p&gt;
+
+&lt;p&gt;This is why my fingers are crossed for more CBDC announcements from Algorand.&lt;/p&gt;
+
+&lt;h2 id=&quot;will-outrun-ethereum&quot;&gt;WILL OUTRUN ETHEREUM?&lt;/h2&gt;
+
+&lt;p&gt;That seems to be the one area, where it could shine, and it’s been aggressively marketing itself as the ideal blockchain for CBDCs.&lt;/p&gt;
+
+&lt;p&gt;Algorand is up there, but it could be overshadowed by other giants like Ethereum.&lt;/p&gt;
+
+&lt;p&gt;Simply because it has failed to implement the economic incentives required to create network effects.&lt;/p&gt;
+
+&lt;p&gt;Let’s hope is not lost by any meansm though it’s probably a matter of time before we hear more news about Algorand and CBDCs.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;links&quot;&gt;LINKS:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://algoexplorer.io/asset/31566704&quot;&gt; Trillions of USDC on Algorand &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://algorand.foundation/governance/algo-dynamics&quot;&gt; New ALGO Tokenomics &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://algorandfoundation.cdn.prismic.io/algorandfoundation/eb2a8c69-2262-42f8-99a4-09df485207b5_EIP-11252019AF_+Conditional+Accelerated+Vesting+Nov+30.pdf&quot;&gt; ALGO Accelerated Vesting &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://algorand.foundation/news/october2020-transparency&quot;&gt; Algorand Foundation Structured Selling &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;THE NOTES WERE BASED ON THE VIDEO BELOW.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;center&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7NdjivxrDoc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/center&gt;
+</content>
+ </entry>
  
  <entry>
    <title>OCEAN - Ocean Protocol</title>
@@ -423,18 +906,17 @@
 &lt;h5 id=&quot;links&quot;&gt;LINKS:&lt;/h5&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=5Uj6uR3fp-U&quot;&gt; IPFS Explained &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.filecoin.io/mine/hardware-requirements/#general-hardware-requirements&quot;&gt; Filecoin Mining Hardware Requirements &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.filecoin.io/store/&quot;&gt; Decentralized Storage Applications on Filecoin &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://spec.filecoin.io/#section-systems.filecoin_token&quot;&gt; Filecoin’s 3 Economic Stages &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://app.instagantt.com/shared/s/1152992274307505/latest&quot;&gt; Filecoin’s “Roadmap” &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/filecoin-project/FIPs&quot;&gt; Filecoin Improvement Proposals Github &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wayback.archive-it.org/12090/20190328175637/https://ec.europa.eu/digital-single-market/en/news/final-results-european-data-market-study-measuring-size-and-trends-eu-data-economy&quot;&gt; European data market valued at €739 billion &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://oceanprotocol.com/technology/roadmap#papers&quot;&gt; Ocean Protocol business strategy &amp;amp; whitepaper &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.wired.com/2016/01/in-a-huge-breakthrough-googles-ai-beats-a-top-player-at-the-game-of-go/&quot;&gt; Google AI crushes Go grandmaster &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.oceanprotocol.com/ocean-token-swap-completed-new-contract-live-f0768423b3e1&quot;&gt; Ocean token supply cap &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.oceanprotocol.com/filecoin-storage-integrated-with-ocean-protocol-by-protofire-896dd03a1f04&quot;&gt; Filecoin integration &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;THE NOTES WERE BASED ON THE VIDEO BELOW.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;center&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/I_g6PPWG5P0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Jr6ZuePmV-g&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
 </content>
  </entry>
@@ -1626,17 +2108,18 @@ x_1 \le 5&lt;/script&gt;
 &lt;h5 id=&quot;links&quot;&gt;LINKS:&lt;/h5&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wayback.archive-it.org/12090/20190328175637/https://ec.europa.eu/digital-single-market/en/news/final-results-european-data-market-study-measuring-size-and-trends-eu-data-economy&quot;&gt; European data market valued at €739 billion &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://oceanprotocol.com/technology/roadmap#papers&quot;&gt; Ocean Protocol business strategy &amp;amp; whitepaper &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.wired.com/2016/01/in-a-huge-breakthrough-googles-ai-beats-a-top-player-at-the-game-of-go/&quot;&gt; Google AI crushes Go grandmaster &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.oceanprotocol.com/ocean-token-swap-completed-new-contract-live-f0768423b3e1&quot;&gt; Ocean token supply cap &lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.oceanprotocol.com/filecoin-storage-integrated-with-ocean-protocol-by-protofire-896dd03a1f04&quot;&gt; Filecoin integration &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=5Uj6uR3fp-U&quot;&gt; IPFS Explained &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.filecoin.io/mine/hardware-requirements/#general-hardware-requirements&quot;&gt; Filecoin Mining Hardware Requirements &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.filecoin.io/store/&quot;&gt; Decentralized Storage Applications on Filecoin &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://spec.filecoin.io/#section-systems.filecoin_token&quot;&gt; Filecoin’s 3 Economic Stages &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://app.instagantt.com/shared/s/1152992274307505/latest&quot;&gt; Filecoin’s “Roadmap” &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/filecoin-project/FIPs&quot;&gt; Filecoin Improvement Proposals Github &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;THE NOTES WERE BASED ON THE VIDEO BELOW.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;center&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Jr6ZuePmV-g&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/I_g6PPWG5P0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
 </content>
  </entry>

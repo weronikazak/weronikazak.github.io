@@ -5,8 +5,8 @@ image: 'images/italy.png'
 description: "About
 Oslo and Rome Neighbourhoods Clustering. Using Folium, Pandas and Sklearn."
 tags:
-- web scrapping
-- documentation
-- sklearn
+- python
+- data science
+- machine learning
 github: 'https://github.com/weronikazak/South-North-Clustering'
 ---

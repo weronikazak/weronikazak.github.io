@@ -6,12 +6,12 @@ tags:
 - cryptocurrency
 - token
 description: "Over the last few months governments around the world have been rushing to develop their own central bank digital currencies or CBDCs. It didn't take them long to realize that developing a digital currency is no easy task and this has led some governments to turn to the cryptocurrency space for assistance. Dozens of enterprise oriented crypto projects have consequently offered themselves up to fill the role as the blockchain that will host the perfect CBDC. One of these crypto projects is Algorand."
-image: 'images/posts/Tokens/ocean/ocean.png'
+image: 'images/posts/Tokens/algorand/algo.png'
 
 ---
 
 <center>
-<img src="/images/posts/Tokens/algorand/algorand.png" style="max-width: 200px">
+<img src="/images/posts/Tokens/algorand/algo.png" style="max-width: 200px">
 </center>
 
 ## GOVERMENT SEEKING FOR HELP AROUND CRYPTO SPACE
@@ -65,11 +65,17 @@ Algorand is also one of the best funded cryptocurrency projects in the space rai
 
 The Algorand blockchain went live in June of 2019 and enabled its smart contract functionality in later 2020 with its 2.0 upgrade.
 
+<center>
+<img src="/images/posts/Tokens/algorand/5.PNG">
+</center>
+
 ## PURE PROOF OF STAKE
 
 Algorand uses a unique consensus mechanism called **pure proof of stake**, which makes it possible to process **1000 transactions per second** without sacrificing security or decentralization.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Tokens/algorand/6.PNG">
+</center>
 
 Pure proof of stake involves 2 types of nodes:
 
@@ -78,17 +84,25 @@ Pure proof of stake involves 2 types of nodes:
 
 Participant nodes participate in consensus and relay nodes facilitate the communication between participant nodes.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Tokens/algorand/7.png">
+</center>
 
 In pure proof of stake 1000 participant nodes are randomly chosen to produce a block.
 
 Then one of those 1000 winning participant nodes is randomly selected to add its block to the Algorand blockchain.
 
+<center>
+<img src="/images/posts/Tokens/algorand/8.PNG">
+</center>
+
 In both cases the chances of being selected are proportional to how much ALGO a participant node has staked.
 
-![image.png](attachment:image.png)
-
 The random selection process and blockchain data are managed and stored by relay nodes.
+
+<center>
+<img src="/images/posts/Tokens/algorand/9.PNG">
+</center>
 
 This setup makes it possible for mobile phones and even basic computers to participate on the Algorand blockchain as participant nodes and allows for instant settlement on Algorand.
 
@@ -96,19 +110,27 @@ No waiting around for multiple block confirmations.
 
 With these facts it should come as no surprise that there are now over 10 million Algorand wallet addresses and over 500 projects building on the Algorand blockchain.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Tokens/algorand/10.PNG">
+</center>
 
 ## ALGORAND TOKENOMICS - OVERVIEW
 
-In November, Circle's USDC stablecoin officially launched on the Algorand blockchain and there's currently over 100 million usdc circulating on Algorand.
+In November, Circle's USDC stablecoin officially launched on the Algorand blockchain and there's currently over 100 million USDC circulating on Algorand.
 
 Algorand's USDC has an interesting total supply of 18.4 trillion.
 
 Perhaps this is a glitch or an attempt by Algorand to match the total dollar money supply. Ambitious goals.
 
-Shortly afterwards, Algorand founder, Silvio Mccarley, proposed a new governance structure and roadmap for the project, which will make it possible for regular ALGO holders to have a say in how the network is run.
+<center>
+<img src="/images/posts/Tokens/algorand/14.PNG">
+</center>
 
-![image.png](attachment:image.png)
+Shortly afterwards, Algorand founder, Silvio Micali, proposed a new governance structure and roadmap for the project, which will make it possible for regular ALGO holders to have a say in how the network is run.
+
+<center>
+<img src="/images/posts/Tokens/algorand/11.PNG">
+</center>
 
 ## CARBON CREDITS
 
@@ -116,29 +138,50 @@ In December Algorand partnered with Climate Trade, a carbon credits trading plat
 
 This will see tokenized carbon credits issued and traded on the Algorand blockchain.
 
+<center>
+<img src="/images/posts/Tokens/algorand/15.PNG">
+</center>
+
 For those unfamiliar, carbon credits are given to companies by regulators when they do something that is considered to be good for the environment, such as installing solar panels on their buildings.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Tokens/algorand/16.jpg">
+</center>
 
 While this carbon credit scheme is intended to reduce greenhouse emissions, it has instead created a multi-billion dollar carbon credit trading market, which Algorand will now be a part of.
 
-![image.png](attachment:image.png)
 
 ## ISSUE WITH ORACLE TOKENS
 
-Interestingly, it seems Algorand didn't have a data Oracle until February 2020, when they partnered with Razer Network.
+Interestingly, it seems Algorand didn't have a data Oracle until February 2020, when they partnered with Razor Network.
 
 Decentralized applications often require data Oracles for asset prices and other off-chain data.
 
 The long absence of an Oracle might be why Algorand doesn't host any well-known Dapps.
 
+<center>
+<img src="/images/posts/Tokens/algorand/17.png">
+</center>
+
 ## PARTNERSHIPS
 
 In March 2020 Algorand partnered with Meld Gold to bring tokenized gold and silver to the Algorand blockchain.
 
-Algorand also partnered with the SIA, the largest Italian copywriting agency with over 4 million copyrights, which are now publicly verifiable on the Algorand blockchain.
+<center>
+<img src="/images/posts/Tokens/algorand/18.jpg">
+</center>
+
+Algorand also partnered with the SIAE, the largest Italian copywriting agency with over 4 million copyrights, which are now publicly verifiable on the Algorand blockchain.
+
+<center>
+<img src="/images/posts/Tokens/algorand/19.jpg">
+</center>
 
 In April Algorand partnered with Vesta Equity to tokenize real estate.
+
+<center>
+<img src="/images/posts/Tokens/algorand/20.PNG">
+</center>
 
 This will make it possible for individuals to own a part of a residential or commercial property via the Algorand blockchain.
 
@@ -146,7 +189,11 @@ Balancer also announced that it would be expanding to Algorand.
 
 Vancore is currently one of the biggest DeFi protocols on Ethereum with over 2 billion dollars in total value locked.
 
-Just a few days ago Algorand partnered with a Note Music, a platform that connects investors to musicians.
+Just a few days ago Algorand partnered with ANoteMusic, a platform that connects investors to musicians.
+
+<center>
+<img src="/images/posts/Tokens/algorand/21.PNG">
+</center>
 
 ## PROBLEMS WITH ALGO IN THE PAST
 
@@ -154,11 +201,17 @@ Another thing that Algorand has done over the last few months is update ALGO's t
 
 As a brief recap, ALGO has a maximum supply of 10 billion.
 
-Only 25 million of these tokens were sold during the public ICO in June 2019.
+Only 25 million of these tokens were sold during the public ICO in June 2019, shortly before Algorand's mainnet launch.
 
-Shortly before Algorand's mainnet launch the price tag per ALGO for this public ICO was a whopping $2.04, which is a fraction of the cost that private investors probably paid for their ALGO tokens.
+<center>
+<img src="/images/posts/Tokens/algorand/22.PNG">
+</center>
 
-![image.png](attachment:image.png)
+The price tag per ALGO for this public ICO was a whopping $2.04, which is a fraction of the cost that private investors probably paid for their ALGO tokens.
+
+<center>
+<img src="/images/posts/Tokens/algorand/23.PNG">
+</center>
 
 Not surprisingly, the price of ALGO began to tank shortly after listing as the Algorand team, the Algorand Foundation and all the private investors began to sell some of their tokens.
 
@@ -166,23 +219,23 @@ To say that retail investors were angry is an understatement.
 
 Algorand's response was to offer 2 ALGO token buybacks in August 2019 and June 2020.
 
-![image.png](attachment:image.png)
-
 "*The Algorand Foundation nearly all 25 million ALGO have been redeemed*" meaning, just about every retail investor, who purchased ALGO opted to go for the buyback option rather than hold.
+
+<center>
+<img src="/images/posts/Tokens/algorand/24.PNG">
+</center>
 
 This makes sense considering the 90% buyback.
 
 Price was 4x higher than the market price of ALGO at the time.
 
-![image.png](attachment:image.png)
-
 Though these repurchase tokens are noted as having been burned, they are technically custodied by the Algorand Foundation, which has also apparently been staking these redeemed tokens.
-
-![image.png](attachment:image.png)
 
 To make things worse, ALGO's fixed supply means, that there is a limited amount of time before the pre-mined tokens used to pay for participation node and relay node rewards run out.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Tokens/algorand/26.jpg">
+</center>
 
 ## ALGO'S ECONOMIC STRUCTURE
 
@@ -194,19 +247,21 @@ This means Algorand will need to have enough adoption to survive from transactio
 
 In addition, the 2.75 billion ALGO, that was reserved for future token sales, will be reallocated to community incentives governance and ecosystem support.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Tokens/algorand/25.PNG">
+</center>
 
 2.5 billion of these ALGO tokens will be allocated to governance participation alone, which requires you to lock your ALGO for extended periods of time to earn a share of that ALGO.
 
 ALGO's updated 10-year emission schedule can be seen here for reference.
 
-![image.png](attachment:image.png)
+<center>
+<img src="/images/posts/Tokens/algorand/26.PNG">
+</center>
 
 Over 20 million ALGO tokens are being given out as participant node rewards every month.
 
 It's also worth pointing out that over 55% of ALGO's total supply is technically in circulation and seems to correspond to the amount of ALGO currently being staked online and offline.
-
-![image.png](attachment:image.png)
 
 ## ALGO'S PRICE NOT PUMPING?
 
@@ -214,13 +269,13 @@ Unfortunately, algorithm's modification of ALGO's emission and allocation has no
 
 ALGO has only gone up 3x since the start of the year, which is much less than most cryptos.
 
-![image.png](attachment:image.png)
-
 This is somewhat surprising given Algorand's impressive technology, active development, institutional partnerships and community growth.
 
-The cause of ALGO's poor price action seems to be something called "*early backer accelerated vesting*".
+<center>
+<img src="/images/posts/Tokens/algorand/27.PNG">
+</center>
 
-![image.png](attachment:image.png)
+The cause of ALGO's poor price action seems to be something called "*early backer accelerated vesting*".
 
 ## EARLY BACKER ACCELERATION
 
@@ -232,9 +287,17 @@ The Algorand Foundation has been providing regular updates about this accelerate
 
 What's crazy about this update is that early investors were able to claim more of their ALGO tokens, because the average price of ALGO had gone up by less than a cent, compared to the previous month.
 
+<center>
+<img src="/images/posts/Tokens/algorand/28.PNG">
+</center>
+
 This accelerated vesting scheme is why ALGO's parabolic price move in February came to a sudden stop.
 
 An accelerated vesting schedule update on February the 22nd supports this theory.
+
+<center>
+<img src="/images/posts/Tokens/algorand/29.PNG">
+</center>
 
 It's not the early backers that are actively selling their ALGO either.
 
@@ -252,17 +315,23 @@ When the following conditions are met, the ALGO being sold must account for less
 
 All ALGO sales must be made above the current market price and ALGO selling stops, if the price drops too much compared to its recent average price or drops by more than 10%.
 
+<center>
+<img src="/images/posts/Tokens/algorand/30.PNG">
+</center>
+
 What this means is that, **whenever the price of ALGO goes up, Algorand's early backers and the Algorand Foundation will sell, thereby suppressing its price potential**.
 
 To make things worse, there are not many demand drivers for ALGO.
 
 Staking rewards are low and the minimum stake is just 1 ALGO.
 
+<center>
+<img src="/images/posts/Tokens/algorand/31.PNG">
+</center>
+
 There also aren't any popular Dapps on Algorand, at least not yet.
 
 There seems to be some hope on the technical side however.
-
-![image.png](attachment:image.png)
 
 ## ALGO ADVANTAGES AND GOVERNANCE INFLUENCE
 
@@ -278,9 +347,13 @@ Governments around the world have been turning to the cryptocurrency space for a
 
 This is primarily because all the developers, who know how to build robust digital currencies and decentralized applications, work in crypto, and the things they've made have been battle tested too.
 
-There is a possibility, that Stella would be selected as the blockchain to host the digital US dollar.
+There is a possibility, that Stellar would be selected as the blockchain to host the digital US dollar.
 
-The reasning for this is the Stella Foundation's close work with regulators in the United States and its partnership with Circle, which issues the USDC stablecoin, that is quickly becoming a CBDC template.
+The reasning for this is the Stellar Foundation's close work with regulators in the United States and its partnership with Circle, which issues the USDC stablecoin, that is quickly becoming a CBDC template.
+
+<center>
+<img src="/images/posts/Tokens/algorand/32.PNG">
+</center>
 
 ## STELLAR AND ALGO - COMPARISON
 
@@ -292,17 +365,37 @@ First, **Stella is much more centralized than Algorand**.
 
 It only has 24 validator nodes compared to Algorand's 1100 participation and relay nodes.
 
+<center>
+<img src="/images/posts/Tokens/algorand/33.PNG">
+</center>
+
+
 That said, Algorand is also technically "centralized", since there are only about 100 relay nodes that handle the bulk of blockchain operations.
 
-Still, Stella is apparently centralized enough to have a single point of failure, as revealed by the downtime it experienced in April this year.
+Still, Stella is apparently centralized enough to have a single point of failure, as revealed by the downtime it experienced in April 2021.
+
+<center>
+<img src="/images/posts/Tokens/algorand/34.PNG">
+</center>
+
 
 According to blockchain's Stella Explorer, nearly a quarter of all transactions also failed in the past 24 hours, which would be unacceptable for a CBDC network.
+
+<center>
+<img src="/images/posts/Tokens/algorand/35.PNG">
+</center>
+
 
 ##### SECOND REASON - SPEED
 
 Second, **Algorand seems to be much faster than Stella**. 
 
 Although **Stella's theoretical transaction speed is 4,000 tps, this is closer to just a few hundred tps in practice**.
+
+<center>
+<img src="/images/posts/Tokens/algorand/36.PNG">
+</center>
+
 
 By contrast, **Algorand can process 1,000 transactions per second** and Algorand CEO, Sean Ford, noted in a recent interview that developers are currently working on increasing algorithms tps to **10,000**.
 
@@ -324,6 +417,10 @@ Fourth, Algorand was created by someone with serious credentials from one of the
 
 Stella was created by Jed McCaleb, who actually dropped out of the same university Silvio Mccarley received his PhD from.
 
+<center>
+<img src="/images/posts/Tokens/algorand/37.jpg">
+</center>
+
 ##### FIFTH REASON - TOKENS
 
 Finally, the crypto ratings council considers Stella's LUNAs token to be more like a security than a currency, whereas Algorand's ALGO token is more like a currency than a security.
@@ -335,10 +432,6 @@ The only caveat with this comparison is that governments are likely to use a per
 Algorand seems to be at the top of the CBDC list in the United States and that announcement alone could send ALGO to the moon.
 
 Algorand is one of the few cryptocurrency projects that has serious academic credentials to back it up.
-
-![image.png](attachment:image.png)
-
-![image.png](attachment:image.png)
 
 ## LACK OF COMMUNICATION WITH COMMUNITY
 
@@ -393,5 +486,5 @@ Let's hope is not lost by any meansm though it's probably a matter of time befor
 **THE NOTES WERE BASED ON THE VIDEO BELOW.**
 
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Jr6ZuePmV-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7NdjivxrDoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
