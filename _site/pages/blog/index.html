@@ -58,6 +58,24 @@
       
       var id = 0;
       
+        var tags = ["machine learning"]
+
+        var postDiv = document.getElementById("post-" + (++id));
+
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'flex' 
+            : 'none';
+      
+        var tags = ["machine learning"]
+
+        var postDiv = document.getElementById("post-" + (++id));
+
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'flex' 
+            : 'none';
+      
         var tags = ["cryptocurrency","token"]
 
         var postDiv = document.getElementById("post-" + (++id));
@@ -355,6 +373,12 @@
       
 
       
+        <button id="machine learning" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn white-btn text-uppercase rounded-pill tag-btn" >
+          machine learning
+        </button>
+      
         <button id="cryptocurrency" 
         onclick="filterUsingCategory(this.id)"
         class="btn white-btn text-uppercase rounded-pill tag-btn" >
@@ -365,12 +389,6 @@
         onclick="filterUsingCategory(this.id)"
         class="btn white-btn text-uppercase rounded-pill tag-btn" >
           token
-        </button>
-      
-        <button id="machine learning" 
-        onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill tag-btn" >
-          machine learning
         </button>
       
         <button id="economy" 
@@ -388,6 +406,126 @@
     
     
     <div class="col-12 blog-article" id="post-1">
+      
+    <!-- ON SMALL DEVICES -->
+    <div class=" d-none d-sm-block ">
+      <div class="row">
+
+        <div class="col-3">
+          <img src="/images/posts/Machine Learning/ml8/0.jpg" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+  
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a href="/2021/8.-Multiclass-Classification/">Multiclass Classification</a></h2>
+            <p class="post-date">16 Oct 2021</p>
+            Now we will approach the classification of data when we have more than two categories. Instead of y = {0, 1} we will expand our definition so that y = {0, 1 ... n}. Since y = {0, 1 ... n}, we divide our problem into n + 1 (+1 because the index starts at 0) binary classification problems; in each one, we predict the probability that y is a member of one of our classes.
+            <br>
+            <br>
+            
+            <li class="item">machine learning</li>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <!-- ON MEDIUM-LARGE DEVICES -->
+  <div class=" d-block d-sm-none mb-2">
+    <div class="row">
+      <div class="col-12">
+        <center>
+        <img src="/images/posts/Machine Learning/ml8/0.jpg" 
+              class="m-4"
+              width="126" 
+              height="126" 
+              style="width: 126px; height: 126px; object-fit: cover;">
+        </center>
+      </div>
+
+      <div class="col-12">
+        <div class="post other link">
+          <h2></span> <a href="/2021/8.-Multiclass-Classification/">Multiclass Classification</a></h2>
+          <p class="post-date">16 Oct 2021</p>
+          Now we will approach the classification of data when we have more than two categories. Instead of y = {0, 1} we will expand our definition so that y = {0, 1 ... n}. Since y = {0, 1 ... n}, we divide our problem into n + 1 (+1 because the index starts at 0) binary classification problems; in each one, we predict the probability that y is a member of one of our classes.
+          <br>
+          <br>
+          
+          <li class="item">machine learning</li>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    <div class="col-12 blog-article" id="post-2">
+      
+    <!-- ON SMALL DEVICES -->
+    <div class=" d-none d-sm-block ">
+      <div class="row">
+
+        <div class="col-3">
+          <img src="/images/posts/Machine Learning/ml7/0.jpg" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+  
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a href="/2021/7.-Logic-Regression-Model/">Logic Regression Model</a></h2>
+            <p class="post-date">12 Oct 2021</p>
+            We cannot use the same cost dunction that we use for linear regression because the Logistic Regression will cause the output to be wavy, causing many local optima. In ther words, it will not be a convex function. Instead, our cost function for lgistic regression looks like this.
+            <br>
+            <br>
+            
+            <li class="item">machine learning</li>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <!-- ON MEDIUM-LARGE DEVICES -->
+  <div class=" d-block d-sm-none mb-2">
+    <div class="row">
+      <div class="col-12">
+        <center>
+        <img src="/images/posts/Machine Learning/ml7/0.jpg" 
+              class="m-4"
+              width="126" 
+              height="126" 
+              style="width: 126px; height: 126px; object-fit: cover;">
+        </center>
+      </div>
+
+      <div class="col-12">
+        <div class="post other link">
+          <h2></span> <a href="/2021/7.-Logic-Regression-Model/">Logic Regression Model</a></h2>
+          <p class="post-date">12 Oct 2021</p>
+          We cannot use the same cost dunction that we use for linear regression because the Logistic Regression will cause the output to be wavy, causing many local optima. In ther words, it will not be a convex function. Instead, our cost function for lgistic regression looks like this.
+          <br>
+          <br>
+          
+          <li class="item">machine learning</li>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    <div class="col-12 blog-article" id="post-3">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -451,7 +589,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-2">
+    <div class="col-12 blog-article" id="post-4">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -519,7 +657,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-3">
+    <div class="col-12 blog-article" id="post-5">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -579,7 +717,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-4">
+    <div class="col-12 blog-article" id="post-6">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -639,7 +777,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-5">
+    <div class="col-12 blog-article" id="post-7">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -699,7 +837,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-6">
+    <div class="col-12 blog-article" id="post-8">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -759,7 +897,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-7">
+    <div class="col-12 blog-article" id="post-9">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -819,7 +957,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-8">
+    <div class="col-12 blog-article" id="post-10">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -879,7 +1017,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-9">
+    <div class="col-12 blog-article" id="post-11">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -943,7 +1081,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-10">
+    <div class="col-12 blog-article" id="post-12">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1003,7 +1141,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-11">
+    <div class="col-12 blog-article" id="post-13">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1067,7 +1205,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-12">
+    <div class="col-12 blog-article" id="post-14">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1131,7 +1269,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-13">
+    <div class="col-12 blog-article" id="post-15">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1195,7 +1333,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-14">
+    <div class="col-12 blog-article" id="post-16">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1259,7 +1397,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-15">
+    <div class="col-12 blog-article" id="post-17">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1323,7 +1461,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-16">
+    <div class="col-12 blog-article" id="post-18">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1383,7 +1521,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-17">
+    <div class="col-12 blog-article" id="post-19">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1447,7 +1585,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-18">
+    <div class="col-12 blog-article" id="post-20">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1511,7 +1649,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-19">
+    <div class="col-12 blog-article" id="post-21">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1575,7 +1713,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-20">
+    <div class="col-12 blog-article" id="post-22">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1635,7 +1773,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-21">
+    <div class="col-12 blog-article" id="post-23">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1695,7 +1833,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-22">
+    <div class="col-12 blog-article" id="post-24">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1759,7 +1897,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-23">
+    <div class="col-12 blog-article" id="post-25">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1819,7 +1957,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-24">
+    <div class="col-12 blog-article" id="post-26">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1879,7 +2017,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-25">
+    <div class="col-12 blog-article" id="post-27">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1939,7 +2077,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-26">
+    <div class="col-12 blog-article" id="post-28">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1999,7 +2137,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-27">
+    <div class="col-12 blog-article" id="post-29">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -2059,7 +2197,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-28">
+    <div class="col-12 blog-article" id="post-30">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -2119,7 +2257,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-29">
+    <div class="col-12 blog-article" id="post-31">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -2179,7 +2317,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-30">
+    <div class="col-12 blog-article" id="post-32">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -2253,7 +2391,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-10-21T10:57:58+01:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-10-23T12:58:28+01:00">2021</time> Weronika Żak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

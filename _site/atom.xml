@@ -4,13 +4,165 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-10-21T10:57:58+01:00</updated>
+ <updated>2021-10-23T12:58:28+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Żak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Multiclass Classification</title>
+   <link href="http://localhost:4000/2021/8.-Multiclass-Classification/"/>
+   <updated>2021-10-16T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2021/8. Multiclass Classification</id>
+   <content type="html">&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml8/0.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;multiclass-classification-one-vs-all&quot;&gt;Multiclass Classification: One-vs-All&lt;/h2&gt;
+
+&lt;p&gt;Now we will approach the classification of data when we have more than two categories. Instead of $y = { 0, 1 }$ we will expand our definition so that $y = { 0, 1 … n }$.&lt;/p&gt;
+
+&lt;p&gt;Since $y = { 0, 1 … n }$, we divide our problem into $n + 1$ ($+ 1$ because the index starts at 0) binary classification problems; in each one, we predict the probability that $y$ is a member of one of our classes.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+&amp; y \in \{ 0, 1, ... n \} \\
+&amp; h_{\theta}^{(0)}(x) = P(y = 0 | x; 0) \\
+&amp; h_{\theta}^{(1)}(x) = P(y = 1 | x; 0) \\
+&amp; ... \\
+&amp; h_{\theta}^{(n)}(x) = P(y = n | x; 0) \\
+&amp; \text{prediction} = \text{max}(h_{\theta}^{(i)}(x))
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;We are cascialyy choosing one class and then lumping all the others into a single second class. We do this repeatedly, applying binary logistic regression to each case, and then use the hypothesis that returned the highest value as our prediction.&lt;/p&gt;
+
+&lt;p&gt;The following image shows how one could classift 3 classes:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml8/1.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h4 id=&quot;to-summarize&quot;&gt;To summarize:&lt;/h4&gt;
+
+&lt;p&gt;Train a logic regresion classifier $h_{\theta}(x)$ for each class to predict the probability that $y = i$.&lt;/p&gt;
+
+&lt;p&gt;To make a prediction on a new $x$, pick the class that maximizes $h_{\theta}(x)$.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Logic Regression Model</title>
+   <link href="http://localhost:4000/2021/7.-Logic-Regression-Model/"/>
+   <updated>2021-10-12T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2021/7. Logic Regression Model</id>
+   <content type="html">&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml7/0.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;cost-function&quot;&gt;Cost Function&lt;/h2&gt;
+
+&lt;p&gt;We cannot use the same cost dunction that we use for linear regression because the Logistic Regression will cause the output to be wavy, causing many local optima. In ther words, it will not be a convex function.&lt;/p&gt;
+
+&lt;p&gt;Instead, our cost function for lgistic regression looks like:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta) = \frac{1}{m} \sum^m_{i = 1} \text{Cost}(h_{\theta}(x^{(i)}), y^{(i)})
+\\
+\text{Cost}(h_{\theta}, y) = -log(h_{\theta}(x)) \quad \text{if y} = 1
+\\
+\text{Cost}(h_{\theta}, y) = -log(1 - h_{\theta}(x)) \quad \text{if y} = 0&lt;/script&gt;
+
+&lt;p&gt;When $y = 1$, we get the following plot for $J(\theta)$ vs $h_{\theta}(x)$:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml7/1.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Similarly, when $y = 0$, we get the following plot for $J(\theta)$ vs $h_{\theta}(x)$:&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Machine Learning/ml7/2.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\text{Cost}(h_{\theta}(x), y) = 0 \quad \text{if} \ h_{\theta}(x) = y
+\\
+\text{Cost}(h_{\theta}(x), y) \to \infty \quad \text{if y} = 0 \ \text{and} \ h_{\theta}(x) \to 1
+\\
+\text{Cost}(h_{\theta}(x), y) \to \infty \quad \text{if y} = 1 \ \text{and} \ h_{\theta}(x) \to 0&lt;/script&gt;
+
+&lt;p&gt;If our correct answer $y$ is $0$, the the cost function will be $0$ if our hypothesis function also outputs $0$. If our hypothesis approaches $1$, then the cost function will approach infinity.&lt;/p&gt;
+
+&lt;p&gt;If our correct answer $y$ is $1$, the the cost function will be $0$ if our hypothesis function outputs $1$. If our hypothesis approaches $0$, then the cost function will approach infinity.&lt;/p&gt;
+
+&lt;p&gt;Note that writing the cost function in this way, guarantees that $J(\theta)$ is convex for logistic regression.&lt;/p&gt;
+
+&lt;h2 id=&quot;simplified-cost-function-and-gradient-descent&quot;&gt;Simplified Cost Function and Gradient Descent&lt;/h2&gt;
+
+&lt;p&gt;We can compress our cost funtion’s two conditional cases into one case:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\text{Cost}(h_{\theta}(x), y) = -y \text{log}(h_{\theta}(x)) - (1 - y) \text{log}(1 - h_{\theta}(x))&lt;/script&gt;
+
+&lt;p&gt;Notice that when $y$ is equal to $1$, then the second term $(1 - y) \text{log}(1 - h_{\theta}(x))$ will be zero and will not affect the result. If $y$ is equal to $0$, then the first term $-y\text{log}(h_{\theta}(x))$ will be zero and will not affect the result.&lt;/p&gt;
+
+&lt;p&gt;We can fully write out out entire cost function as follows:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta) = -\frac{1}{m} \sum^m_{i=1} [ y^{(i)}\text{log}(h_{\theta}(x^{(i)})) + (1 - y^{(i)}) \text{log}(1 - h_{\theta}(x^{(i)})) ]&lt;/script&gt;
+
+&lt;p&gt;A vectorized implementation is:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;h = g(X\theta)
+\\
+J(\theta) = \frac{1}{m} \bullet \big(-y^T \text{log}(h) - (1 - y)^T \text{log}(1 - h) \big)&lt;/script&gt;
+
+&lt;h4 id=&quot;gradient-descent&quot;&gt;Gradient Descent&lt;/h4&gt;
+
+&lt;p&gt;Remember that the general form of gradient descent is:&lt;/p&gt;
+
+&lt;p&gt;$\text{Repeat:} { $&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta)&lt;/script&gt;
+
+&lt;p&gt;$} $&lt;/p&gt;
+
+&lt;p&gt;We can work out the derivative part using calculus to get:&lt;/p&gt;
+
+&lt;p&gt;$\text{Repeat:} { $&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_j := \theta_j - \frac{\alpha}{m} \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x_j^{(i)}&lt;/script&gt;
+
+&lt;p&gt;$} $&lt;/p&gt;
+
+&lt;p&gt;Notice that this algorithm is identical to the one we used in linear regression. We still have to simultaneously update all values in theta.&lt;/p&gt;
+
+&lt;p&gt;A vectoriazed implementation is:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta := \theta = \frac{\alpha}{m}X^T(g(X\theta) - \vec{y})&lt;/script&gt;
+
+&lt;h2 id=&quot;advanced-optimization&quot;&gt;Advanced Optimization&lt;/h2&gt;
+
+&lt;p&gt;“&lt;em&gt;Conjugate gradient&lt;/em&gt;”, “&lt;em&gt;BFGS&lt;/em&gt;” and “&lt;em&gt;L-BFGS&lt;/em&gt;” are more sophisticated, faster ways to optimize $\theta$, that can be used instead of gradient descent. It’s suggested that one should not write these sophisticated algorithms theirself (unless they’re an expert in numerical computing), but use the libraries instead, as they’re already tested and highly optimized.&lt;/p&gt;
+
+&lt;p&gt;First, we need to provide a function that evaluates the following two functions for a given input value $\theta$:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta)
+\\
+\frac{\partial}{\partial\theta_j}J(\theta)&lt;/script&gt;
+
+&lt;p&gt;We can write a single function that returns both of these (Octave):&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function [jVal, gradient] = costFunction(theta)
+    jVal = [...code to compute J(theta)...];
+    gradient = [...code to compute derivative of J(theta)...]
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+</content>
+ </entry>
  
  <entry>
    <title>ALGO - Algorand</title>

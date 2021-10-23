@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Multiclass Classification &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+
+
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="page">
+    <header>
+        <h1 class="landing-title">
+            
+            
+            
+
+
+                
+                Multiclass
+            <span style="color: #e6e6e6;">
+                Classification
+            </span>
+        </h1>
+    </header>
+
+  <center>
+<img src="/images/posts/Machine Learning/ml8/0.jpg" />
+</center>
+
+<h2 id="multiclass-classification-one-vs-all">Multiclass Classification: One-vs-All</h2>
+
+<p>Now we will approach the classification of data when we have more than two categories. Instead of $y = { 0, 1 }$ we will expand our definition so that $y = { 0, 1 … n }$.</p>
+
+<p>Since $y = { 0, 1 … n }$, we divide our problem into $n + 1$ ($+ 1$ because the index starts at 0) binary classification problems; in each one, we predict the probability that $y$ is a member of one of our classes.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}
+& y \in \{ 0, 1, ... n \} \\
+& h_{\theta}^{(0)}(x) = P(y = 0 | x; 0) \\
+& h_{\theta}^{(1)}(x) = P(y = 1 | x; 0) \\
+& ... \\
+& h_{\theta}^{(n)}(x) = P(y = n | x; 0) \\
+& \text{prediction} = \text{max}(h_{\theta}^{(i)}(x))
+\end{align} %]]></script>
+
+<p>We are cascialyy choosing one class and then lumping all the others into a single second class. We do this repeatedly, applying binary logistic regression to each case, and then use the hypothesis that returned the highest value as our prediction.</p>
+
+<p>The following image shows how one could classift 3 classes:</p>
+
+<center>
+<img src="/images/posts/Machine Learning/ml8/1.png" />
+</center>
+
+<h4 id="to-summarize">To summarize:</h4>
+
+<p>Train a logic regresion classifier $h_{\theta}(x)$ for each class to predict the probability that $y = i$.</p>
+
+<p>To make a prediction on a new $x$, pick the class that maximizes $h_{\theta}(x)$.</p>
+
+<h3 id="the-notes-were-based-on--this-course-by-andrew-ng-">THE NOTES WERE BASED ON <a href="https://www.coursera.org/learn/machine-learning"> THIS COURSE BY ANDREW NG </a>.</h3>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-10-23T12:58:23+01:00">2021</time> Weronika Żak</span> &middot;
+            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
