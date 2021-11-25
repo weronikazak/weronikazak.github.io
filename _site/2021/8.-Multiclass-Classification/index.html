@@ -24,6 +24,8 @@
   
   <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
 
 </head>
 
@@ -71,23 +73,26 @@
 
 <h2 id="multiclass-classification-one-vs-all">Multiclass Classification: One-vs-All</h2>
 
-<p>Now we will approach the classification of data when we have more than two categories. Instead of $y = { 0, 1 }$ we will expand our definition so that $y = { 0, 1 … n }$.</p>
+<p>Now, we will approach the classification of data when we have more than two categories. Instead of $y = { 0, 1 }$ we will expand our definition so that $y = { 0, 1 … n }$.</p>
 
 <p>Since $y = { 0, 1 … n }$, we divide our problem into $n + 1$ ($+ 1$ because the index starts at 0) binary classification problems; in each one, we predict the probability that $y$ is a member of one of our classes.</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="latex-eq">
+$$
 \begin{align}
-& y \in \{ 0, 1, ... n \} \\
-& h_{\theta}^{(0)}(x) = P(y = 0 | x; 0) \\
-& h_{\theta}^{(1)}(x) = P(y = 1 | x; 0) \\
-& ... \\
-& h_{\theta}^{(n)}(x) = P(y = n | x; 0) \\
-& \text{prediction} = \text{max}(h_{\theta}^{(i)}(x))
-\end{align} %]]></script>
+&amp; y \in \{ 0, 1, ... n \} \\
+&amp; h_{\theta}^{(0)}(x) = P(y = 0 | x; 0) \\
+&amp; h_{\theta}^{(1)}(x) = P(y = 1 | x; 0) \\
+&amp; ... \\
+&amp; h_{\theta}^{(n)}(x) = P(y = n | x; 0) \\
+&amp; \text{prediction} = \text{max}(h_{\theta}^{(i)}(x))
+\end{align}
+$$
+</div>
 
-<p>We are cascialyy choosing one class and then lumping all the others into a single second class. We do this repeatedly, applying binary logistic regression to each case, and then use the hypothesis that returned the highest value as our prediction.</p>
+<p>We are basically choosing one class and then lumping all the others into a single second class. We do this repeatedly, applying binary logistic regression to each case, and then use the hypothesis that returned the highest value as our prediction.</p>
 
-<p>The following image shows how one could classift 3 classes:</p>
+<p>The following image shows how one could classify 3 classes:</p>
 
 <center>
 <img src="/images/posts/Machine Learning/ml8/1.png" />
@@ -107,7 +112,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-14T18:12:47+00:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-25T09:40:58+00:00">2021</time> Weronika Zak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

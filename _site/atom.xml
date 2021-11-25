@@ -4,10 +4,10 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-11-14T18:12:47+00:00</updated>
+ <updated>2021-11-25T09:40:58+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
-   <name>Weronika Żak</name>
+   <name>Weronika Zak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
@@ -23,7 +23,7 @@
 
 &lt;h2 id=&quot;the-problem-of-overfitting&quot;&gt;The Problem of Overfitting&lt;/h2&gt;
 
-&lt;p&gt;Consider the problem of predicting $y$ from $y \in R$. The leftmost figure below shows the result of fitting a $y = \theta_0 + \theta_1x$ to a dataset. We see that the data doesn’t really lie on straight line, and so the fit is not very good.&lt;/p&gt;
+&lt;p&gt;Consider the problem of predicting $y$ from $y \in R$. The leftmost figure below shows the result of fitting a $y = \theta_0 + \theta_1x$ to a dataset. We see that the data doesn’t really lie on straight line, and so the fit isn’t very good.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;/images/posts/Machine Learning/ml9/1.png&quot; /&gt;
@@ -31,25 +31,27 @@
 
 &lt;p&gt;Instead, if we had added an extra feature $x^2$, and fit $y = \theta_0 + \theta_1x + \theta_2x^2$, then we obtain a slightly better fit to the data (middle figure).&lt;/p&gt;
 
-&lt;p&gt;Naively, it might seem that the more featyres we add, the better.&lt;/p&gt;
+&lt;p&gt;Naively, it might seem that the more features we add, the better.&lt;/p&gt;
 
-&lt;p&gt;Howeverm there is alse a dange in adding too many features: The rightmost figure is the result of fitting a $t^{th}$ order polynomial $y = \sum^5_{j=0}\theta_jx^j$. We see that even though the fitted curve passes through the data perfectly, we would not expect this to be a very good predict of, sat, housing prices($y$) for different living areas ($x$). Without formally defining hat these terms mean, we’ll say the figure on the left shows an instance of underfitting - in which the data clearly shows structure not captured by the model - and the figure on the left show an instance of &lt;strong&gt;underfitting&lt;/strong&gt; - in which the data clearly shows structure not captured by the model - and the figure on the righht is an example of &lt;strong&gt;overfitting&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;However, there is alse a danger in adding too many features: The rightmost figure is the result of fitting a $t^{th}$ order polynomial $y = \sum^5_{j=0}\theta_jx^j$.&lt;/p&gt;
 
-&lt;p&gt;Underfitting, or high bias, is when the form of our hypothesis function $h$ maps poorly to the trend of the data. It is usually caused by a funcation that is too simple or uses too few features.&lt;/p&gt;
+&lt;p&gt;We see that even though the fitted curve passes through the data perfectly, we would not expect this to be a very good predict of, say, housing prices ($y$) for different living areas ($x$). Without formally defining what these terms mean, we’ll say the figure on the left shows an instance of underfitting - in which the data clearly shows structure not captured by the model - and the figure on the left shows an instance of &lt;strong&gt;underfitting&lt;/strong&gt; - in which the data clearly shows structure not captured by the model - and the figure on the right is an example of &lt;strong&gt;overfitting&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;At the other extreme, overfitting, or high variance, is caused by a hypothesis function that fits the available data bur does not generalize well to predict new data. It is usually caused by a complicated function that creates a lot of unnecessary curves and angles unrelated to the data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Underfitting, or high bias&lt;/strong&gt;, is when the form of our hypothesis function $h$ maps poorly to the trend of the data. It is usually caused by a funcation that is too simple or uses too few features.&lt;/p&gt;
+
+&lt;p&gt;At the other extreme, &lt;strong&gt;overfitting, or high variance&lt;/strong&gt;, is caused by a hypothesis function that fits the available data, but does not generalize well to predict new data. It is usually caused by a complicated function that creates a lot of unnecessary curves and angles unrelated to the data.&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;This terminology is applied both to both linear and logistic regression. There are two main options to address the issue of overfitting:&lt;/p&gt;
+&lt;p&gt;This terminology is applied both to linear and logistic regression. There are two main options to address the issue of overfitting:&lt;/p&gt;
 
-&lt;p&gt;1) Reduce the number of features:&lt;/p&gt;
+&lt;p&gt;1) &lt;strong&gt;Reduce the number of features&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Manually select which features to keep.&lt;/li&gt;
   &lt;li&gt;Use a model selection algorithm.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;2) Regularization:&lt;/p&gt;
+&lt;p&gt;2) &lt;strong&gt;Regularization&lt;/strong&gt;:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Keep all the features, but reduce the magnitude of parameters $\theta_j$.&lt;/li&gt;
   &lt;li&gt;Regularization works well when we have a lot of sightly useful features.&lt;/li&gt;
@@ -57,29 +59,45 @@
 
 &lt;h2 id=&quot;cost-function&quot;&gt;Cost Function&lt;/h2&gt;
 
-&lt;p&gt;If we have overfitting from our hypothesis function, we can reduce the weight that some of the terms in our function carry by increasing their cost.&lt;/p&gt;
+&lt;p&gt;If we have overfitting from our hypothesis function, we can reduce the weight, that some of the terms in our function carry, by increasing their cost.&lt;/p&gt;
 
 &lt;p&gt;Say we wanted to make the following function more quadratic:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_0 + \theta_1x + \theta_2x^2 + \theta_3x^3 + \theta_4x^4&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\theta_0 + \theta_1x + \theta_2x^2 + \theta_3x^3 + \theta_4x^4
+$$
+&lt;/div&gt;
 
-&lt;p&gt;We’ll want to eliminate the influence of $\theta_3x^3$ and $\theta_4x^4$. Without actually detting rid of these features or changing the form of our hypothesis, we can instead modify our &lt;strong&gt;cost function&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We’ll want to eliminate the influence of $\theta_3x^3$ and $\theta_4x^4$. Without actually getting rid of these features or changing the form of our hypothesis, we can instead modify our &lt;strong&gt;cost function&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\text{min}_{\theta} \ \frac{1}{2m} \sum^{m}_{i=1}(h_{\theta}(x^{(i)}) - y^{(i)})^2 + 1000 \bullet \theta_3^2 + 1000 \bullet \theta^2_4&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\text{min}_{\theta} \ \frac{1}{2m} \sum^{m}_{i=1}(h_{\theta}(x^{(i)}) - y^{(i)})^2 + 1000 \cdot \theta_3^2 + 1000 \cdot \theta^2_4
+$$
+&lt;/div&gt;
 
 &lt;p&gt;We’ve added two extra terms at the end to inflate the cost of $\theta_3$ and $\theta_4$.&lt;/p&gt;
 
-&lt;p&gt;Now, in order for the cost function to get close to zero, we will have to reduce the values of $\theta_3$ and $\theta_4$ to near zero, This will in turn greatly reduce the values of $\theta_3x^3$a and $\theta_4x^4$ in our hypothesis function. As a result, we see that the new hypothesis (depicted by the pink curve) looks like a quadratic function but fits the data better due to the extra small terms $\theta_3x^3$ and $\theta_4x^4$.&lt;/p&gt;
+&lt;p&gt;Now, in order for the cost function to get close to zero, we will have to reduce the values of $\theta_3$ and $\theta_4$ to near zero.&lt;/p&gt;
+
+&lt;p&gt;This will in turn greatly reduce the values of $\theta_3x^3$a and $\theta_4x^4$ in our hypothesis function.&lt;/p&gt;
+
+&lt;p&gt;As a result, we see that the new hypothesis (depicted by the pink curve) looks like a quadratic function, but fits the data better, due to the extra small terms $\theta_3x^3$ and $\theta_4x^4$.&lt;/p&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;/images/posts/Machine Learning/ml9/2.png&quot; /&gt;
 &lt;/center&gt;
 
-&lt;p&gt;We could also regularize all of our parameters in a single ummation as:&lt;/p&gt;
+&lt;p&gt;We could also regularize all of our parameters in a single summation as:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\text{min}_{\theta} \frac{m}{i=1}(h_{\theta}(x^{(i)}) - y^{(i)})^2 + \lambda \ \sum^n_{j=1} \theta^2_j&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\text{min}_{\theta} \sum^{m}_{i=1}(h_{\theta}(x^{(i)}) - y^{(i)})^2 + \lambda \ \sum^n_{j=1} \theta^2_j
+$$
+&lt;/div&gt;
 
-&lt;p&gt;The $\lambda$ is the &lt;strong&gt;regularization parameter&lt;/strong&gt;. It determines how much the costs of our theta parameters are inflated.&lt;/p&gt;
+&lt;p&gt;The $\lambda$ is the &lt;strong&gt;regularization parameter&lt;/strong&gt;. It determines how much the costs of our theta parameters is inflated.&lt;/p&gt;
 
 &lt;p&gt;Using the above cost function with extra summation, we can smooth the output of our hypothesis function to reduce overfitting. If lambda is chosen to be too large, it may smooth out the function too much and cause underfitting. Hence, what would happen if $\lambda = 0$ or is too small?&lt;/p&gt;
 
@@ -89,43 +107,53 @@
 
 &lt;h4 id=&quot;gradient-descent&quot;&gt;Gradient Descent&lt;/h4&gt;
 
-&lt;p&gt;We will modify our gradient descent function to separate out $\theta_0$ from the rest of the parameters because we do not want to penalize $\theta_0$.&lt;/p&gt;
+&lt;p&gt;We will modify our gradient descent function to separate out $\theta_0$ from the rest of the parameters, because we don’t want to penalize $\theta_0$.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
 \begin{align}
-&amp; \text{Repeat:} \{ \\
-&amp; \theta_0 := \theta_0 - \alpha \ \frac{1}{m} \ \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x^{(i)}_0 \\
-&amp; \theta_0 := \theta_0 - \alpha \ \big[ \big( \frac{1}{m} \ \sum^m_{i=1}(h_{\theta}(x^{(i)}) - y^{(i)})x^{(i)}_j \big) + \frac{\lambda}{m} \theta_j \big] \qquad j \in \{ 1, 2, ..., n \} \\
-&amp; \}
-\end{align} %]]&gt;&lt;/script&gt;
+&amp;amp; \text{Repeat:} \{ \\
+&amp;amp; \hspace{5em} \theta_0 := \theta_0 - \alpha \ \frac{1}{m} \ \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x^{(i)}_0 \\
+&amp;amp; \hspace{5em} \theta_0 := \theta_0 - \alpha \ \big[ \big( \frac{1}{m} \ \sum^m_{i=1}(h_{\theta}(x^{(i)}) - y^{(i)})x^{(i)}_j \big) + \frac{\lambda}{m} \theta_j \big] \qquad j \in \{ 1, 2, ..., n \} \\
+&amp;amp; \}
+\end{align}
+$$
+&lt;/div&gt;
 
-&lt;p&gt;The term $\frac{\lambda}{m} \theta_j$ performs our regularization. With ome manipulation ur update rule can also be represented as:&lt;/p&gt;
+&lt;p&gt;The term $\frac{\lambda}{m} \theta_j$ performs our regularization. With one manipulation our update rule can also be represented as:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_j := \theta_j (1 - \alpha \frac{\lambda}{m}) - \alpha \frac{1}{m} \sum^m_{i=1}(h_{\theta}(x^{(i)}) - y^{(i)})x^{(i)}_j&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\theta_j := \theta_j (1 - \alpha \frac{\lambda}{m}) - \alpha \frac{1}{m} \sum^m_{i=1}(h_{\theta}(x^{(i)}) - y^{(i)})x^{(i)}_j
+$$
+&lt;/div&gt;
 
-&lt;p&gt;The first term in the above equation, $1 - \alpha \frac{\lambda}{m}$ will always be less than $1$. Intuitively you can see it as reduing the value of $\theta_j$ by some amount on every update. Notice that the second term is now exactly the same as it was before.&lt;/p&gt;
+&lt;p&gt;The first term in the above equation, $1 - \alpha \frac{\lambda}{m}$ will always be less than $1$. Intuitively, you can see it as reduing the value of $\theta_j$ by some amount on every update. Notice that the second term is now exactly the same as it was before.&lt;/p&gt;
 
 &lt;h4 id=&quot;normal-equation&quot;&gt;Normal Equation&lt;/h4&gt;
 
-&lt;p&gt;Now let’s approach regularization using the alternate method of the non-iterative normal equation.&lt;/p&gt;
+&lt;p&gt;Now, let’s approach regularization using the alternate method of the non-iterative normal equation.&lt;/p&gt;
 
-&lt;p&gt;To add in regularization, the equation is the same as our original, xcept that we add another term inside the parenthesis:&lt;/p&gt;
+&lt;p&gt;To add in regularization, the equation is the same as our original, except that we add another term inside the parenthesis:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
 \begin{align}
-&amp; \theta = \big( X^TX + \lambda \bullet L)^{-1}X^Ty \\
-&amp; \text{where} \ L = \begin{bmatrix}
-0 &amp; \quad &amp; \quad &amp; \quad  &amp; \quad \\
-\quad &amp; 1 &amp; \quad &amp; \quad  &amp; \quad \\
-\quad &amp; \quad &amp; 1 &amp; \quad  &amp; \quad \\
-\quad &amp; \quad &amp; \quad &amp; \ddots  &amp; \quad \\
-\quad  &amp; \quad  &amp; \quad &amp; \quad  &amp;1 
+&amp;amp; \theta = \big( X^TX + \lambda \cdot L)^{-1}X^Ty \\
+&amp;amp; \text{where} \ L = \begin{bmatrix}
+0 &amp;amp; \quad &amp;amp; \quad &amp;amp; \quad  &amp;amp; \quad \\
+\quad &amp;amp; 1 &amp;amp; \quad &amp;amp; \quad  &amp;amp; \quad \\
+\quad &amp;amp; \quad &amp;amp; 1 &amp;amp; \quad  &amp;amp; \quad \\
+\quad &amp;amp; \quad &amp;amp; \quad &amp;amp; \ddots  &amp;amp; \quad \\
+\quad  &amp;amp; \quad  &amp;amp; \quad &amp;amp; \quad  &amp;amp;1 
 \end{bmatrix}
-\end{align} %]]&gt;&lt;/script&gt;
+\end{align}
+$$
+&lt;/div&gt;
 
-&lt;p&gt;$L$ is a matrix with $0$ at the top left and $1$s down the diagonal, with $0$s wverywhere else. It should have dimension $(n + 1) \times (n + 1)$. Intuitively, this is the identity matrix (though we are not including $x+0$), multiplied with a single real number $\lambda$.&lt;/p&gt;
+&lt;p&gt;$L$ is a matrix with $0$ at the top left and $1$s down the diagonal, with $0$s wverywhere else. It should have dimension $(n + 1) \times (n + 1)$. Intuitively, this is the &lt;strong&gt;identity matrix (though we are not including $x+0$)&lt;/strong&gt;, multiplied with a single real number $\lambda$.&lt;/p&gt;
 
-&lt;p&gt;Recall that if $m &amp;lt; n$, then $X^TX$ is non-invertible. However, when we add the term $\lambda \bullet L$, then $X^TX + \lambda \bullet L$ becomes invertible.&lt;/p&gt;
+&lt;p&gt;Recall that if $m &amp;lt; n$, then $X^TX$ is non-invertible. However, when we add the term $\lambda \cdot L$, then $X^TX + \lambda \cdot L$ becomes invertible.&lt;/p&gt;
 
 &lt;h2 id=&quot;regularized-logistic-regression&quot;&gt;Regularized Logistic Regression&lt;/h2&gt;
 
@@ -139,17 +167,27 @@
 
 &lt;p&gt;Recall that our cost function for logistic regression was:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta) = -\frac{1}{m} \sum^m_{i=1} \big[ y^{(i)} \text{log}(h_{\theta}(x^{(i)})) + (1 - y^{(i)}) \text{log}(1 - h_{\theta}(x^{(i)})) \big]&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+J(\theta) = -\frac{1}{m} \sum^m_{i=1} \big[ y^{(i)} \text{log}(h_{\theta}(x^{(i)})) + (1 - y^{(i)}) \text{log}(1 - h_{\theta}(x^{(i)})) \big]
+$$
+&lt;/div&gt;
 
 &lt;p&gt;We can regularize this equation by adding a term to the end:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta) = -\frac{1}{m} \sum^m_{i=1} \big[ y^{(i)} \text{log}(h_{\theta}(x^{(i)})) + (1 - y^{(i)}) \text{log}(1 - h_{\theta}(x^{(i)})) \big] + \frac{\lambda}{2m} \sum^n_{j=1} \theta^2_j&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+J(\theta) = -\frac{1}{m} \sum^m_{i=1} \big[ y^{(i)} \text{log}(h_{\theta}(x^{(i)})) + (1 - y^{(i)}) \text{log}(1 - h_{\theta}(x^{(i)})) \big] + \frac{\lambda}{2m} \sum^n_{j=1} \theta^2_j
+$$
+&lt;/div&gt;
 
-&lt;p&gt;The second sum, $\sum^n_{j=1} \theta^2_j$ &lt;strong&gt;means to explicitly exclude&lt;/strong&gt; the bias term, $\theta_0$. I. e. the $\theta$ vector is indexed from $0$ to $n$ (holding $n + 1$ values, $\theta_0 through $theta_n$), and this sum explicitly skips $\theta_0$, by running from $1$ to $n$, skipping $0$. Thus, when computing the equation, we should xontinously update the two following equations:&lt;/p&gt;
+&lt;p&gt;The second sum, $\sum^n_{j=1} \theta^2_j$ &lt;strong&gt;means to explicitly exclude&lt;/strong&gt; the bias term, $\theta_0$. I. e. the $\theta$ vector is indexed from $0$ to $n$ (holding $n + 1$ values, $\theta_0$ through $\theta_n$), and this sum explicitly skips $\theta_0$, by running from $1$ to $n$, skipping $0$. Thus, when computing the equation, we should continuously update the two following equations:&lt;/p&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;/images/posts/Machine Learning/ml9/4.png&quot; /&gt;
 &lt;/center&gt;
+
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
 </content>
  </entry>
  
@@ -164,23 +202,26 @@
 
 &lt;h2 id=&quot;multiclass-classification-one-vs-all&quot;&gt;Multiclass Classification: One-vs-All&lt;/h2&gt;
 
-&lt;p&gt;Now we will approach the classification of data when we have more than two categories. Instead of $y = { 0, 1 }$ we will expand our definition so that $y = { 0, 1 … n }$.&lt;/p&gt;
+&lt;p&gt;Now, we will approach the classification of data when we have more than two categories. Instead of $y = { 0, 1 }$ we will expand our definition so that $y = { 0, 1 … n }$.&lt;/p&gt;
 
 &lt;p&gt;Since $y = { 0, 1 … n }$, we divide our problem into $n + 1$ ($+ 1$ because the index starts at 0) binary classification problems; in each one, we predict the probability that $y$ is a member of one of our classes.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
 \begin{align}
-&amp; y \in \{ 0, 1, ... n \} \\
-&amp; h_{\theta}^{(0)}(x) = P(y = 0 | x; 0) \\
-&amp; h_{\theta}^{(1)}(x) = P(y = 1 | x; 0) \\
-&amp; ... \\
-&amp; h_{\theta}^{(n)}(x) = P(y = n | x; 0) \\
-&amp; \text{prediction} = \text{max}(h_{\theta}^{(i)}(x))
-\end{align} %]]&gt;&lt;/script&gt;
+&amp;amp; y \in \{ 0, 1, ... n \} \\
+&amp;amp; h_{\theta}^{(0)}(x) = P(y = 0 | x; 0) \\
+&amp;amp; h_{\theta}^{(1)}(x) = P(y = 1 | x; 0) \\
+&amp;amp; ... \\
+&amp;amp; h_{\theta}^{(n)}(x) = P(y = n | x; 0) \\
+&amp;amp; \text{prediction} = \text{max}(h_{\theta}^{(i)}(x))
+\end{align}
+$$
+&lt;/div&gt;
 
-&lt;p&gt;We are cascialyy choosing one class and then lumping all the others into a single second class. We do this repeatedly, applying binary logistic regression to each case, and then use the hypothesis that returned the highest value as our prediction.&lt;/p&gt;
+&lt;p&gt;We are basically choosing one class and then lumping all the others into a single second class. We do this repeatedly, applying binary logistic regression to each case, and then use the hypothesis that returned the highest value as our prediction.&lt;/p&gt;
 
-&lt;p&gt;The following image shows how one could classift 3 classes:&lt;/p&gt;
+&lt;p&gt;The following image shows how one could classify 3 classes:&lt;/p&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;/images/posts/Machine Learning/ml8/1.png&quot; /&gt;
@@ -207,15 +248,19 @@
 
 &lt;h2 id=&quot;cost-function&quot;&gt;Cost Function&lt;/h2&gt;
 
-&lt;p&gt;We cannot use the same cost dunction that we use for linear regression because the Logistic Regression will cause the output to be wavy, causing many local optima. In ther words, it will not be a convex function.&lt;/p&gt;
+&lt;p&gt;We cannot use the same cost function, that we use for linear regression, because the Logistic Regression will cause the output to be wavy, causing many local optimas. In other words, it won’t be a convex function.&lt;/p&gt;
 
-&lt;p&gt;Instead, our cost function for lgistic regression looks like:&lt;/p&gt;
+&lt;p&gt;Instead, our cost function for logistic regression looks like:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta) = \frac{1}{m} \sum^m_{i = 1} \text{Cost}(h_{\theta}(x^{(i)}), y^{(i)})
-\\
-\text{Cost}(h_{\theta}, y) = -log(h_{\theta}(x)) \quad \text{if y} = 1
-\\
-\text{Cost}(h_{\theta}, y) = -log(1 - h_{\theta}(x)) \quad \text{if y} = 0&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\begin{align}
+&amp;amp;J(\theta) = \frac{1}{m} \sum^m_{i = 1} \text{Cost}(h_{\theta}(x^{(i)}), y^{(i)}) \\
+&amp;amp;\text{Cost}(h_{\theta}, y) = -log(h_{\theta}(x)) \quad \quad \quad \text{if y} = 1 \\
+&amp;amp;\text{Cost}(h_{\theta}, y) = -log(1 - h_{\theta}(x)) \quad \text{if y} = 0
+\end{align}
+$$
+&lt;/div&gt;
 
 &lt;p&gt;When $y = 1$, we get the following plot for $J(\theta)$ vs $h_{\theta}(x)$:&lt;/p&gt;
 
@@ -229,11 +274,15 @@
 &lt;img src=&quot;/images/posts/Machine Learning/ml7/2.png&quot; /&gt;
 &lt;/center&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\text{Cost}(h_{\theta}(x), y) = 0 \quad \text{if} \ h_{\theta}(x) = y
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\text{Cost}(h_{\theta}(x), y) = 0 \quad \text{if} \ h_{\theta}(x) = y
 \\
 \text{Cost}(h_{\theta}(x), y) \to \infty \quad \text{if y} = 0 \ \text{and} \ h_{\theta}(x) \to 1
 \\
-\text{Cost}(h_{\theta}(x), y) \to \infty \quad \text{if y} = 1 \ \text{and} \ h_{\theta}(x) \to 0&lt;/script&gt;
+\text{Cost}(h_{\theta}(x), y) \to \infty \quad \text{if y} = 1 \ \text{and} \ h_{\theta}(x) \to 0
+$$
+&lt;/div&gt;
 
 &lt;p&gt;If our correct answer $y$ is $0$, the the cost function will be $0$ if our hypothesis function also outputs $0$. If our hypothesis approaches $1$, then the cost function will approach infinity.&lt;/p&gt;
 
@@ -245,43 +294,67 @@
 
 &lt;p&gt;We can compress our cost funtion’s two conditional cases into one case:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\text{Cost}(h_{\theta}(x), y) = -y \text{log}(h_{\theta}(x)) - (1 - y) \text{log}(1 - h_{\theta}(x))&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\text{Cost}(h_{\theta}(x), y) = -y \text{log}(h_{\theta}(x)) - (1 - y) \text{log}(1 - h_{\theta}(x))
+$$
+&lt;/div&gt;
 
 &lt;p&gt;Notice that when $y$ is equal to $1$, then the second term $(1 - y) \text{log}(1 - h_{\theta}(x))$ will be zero and will not affect the result. If $y$ is equal to $0$, then the first term $-y\text{log}(h_{\theta}(x))$ will be zero and will not affect the result.&lt;/p&gt;
 
 &lt;p&gt;We can fully write out out entire cost function as follows:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta) = -\frac{1}{m} \sum^m_{i=1} [ y^{(i)}\text{log}(h_{\theta}(x^{(i)})) + (1 - y^{(i)}) \text{log}(1 - h_{\theta}(x^{(i)})) ]&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+J(\theta) = -\frac{1}{m} \sum^m_{i=1} [ y^{(i)}\text{log}(h_{\theta}(x^{(i)})) + (1 - y^{(i)}) \text{log}(1 - h_{\theta}(x^{(i)})) ]
+$$
+&lt;/div&gt;
 
 &lt;p&gt;A vectorized implementation is:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;h = g(X\theta)
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+h = g(X\theta)
 \\
-J(\theta) = \frac{1}{m} \bullet \big(-y^T \text{log}(h) - (1 - y)^T \text{log}(1 - h) \big)&lt;/script&gt;
+J(\theta) = \frac{1}{m} \cdot \big(-y^T \text{log}(h) - (1 - y)^T \text{log}(1 - h) \big)
+$$
+&lt;/div&gt;
 
 &lt;h4 id=&quot;gradient-descent&quot;&gt;Gradient Descent&lt;/h4&gt;
 
 &lt;p&gt;Remember that the general form of gradient descent is:&lt;/p&gt;
 
-&lt;p&gt;$\text{Repeat:} { $&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta)&lt;/script&gt;
-
-&lt;p&gt;$} $&lt;/p&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\begin{align}
+&amp;amp; \text{Repeat:} \{ \\
+&amp;amp; \hspace{5em} \theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta) \\
+&amp;amp; \}
+\end{align}
+$$
+&lt;/div&gt;
 
 &lt;p&gt;We can work out the derivative part using calculus to get:&lt;/p&gt;
 
-&lt;p&gt;$\text{Repeat:} { $&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_j := \theta_j - \frac{\alpha}{m} \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x_j^{(i)}&lt;/script&gt;
-
-&lt;p&gt;$} $&lt;/p&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\begin{align}
+&amp;amp; \text{Repeat:} \{ \\
+&amp;amp;\hspace{5em} \theta_j := \theta_j - \frac{\alpha}{m} \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x_j^{(i)} \\
+&amp;amp; \}
+\end{align}
+$$
+&lt;/div&gt;
 
 &lt;p&gt;Notice that this algorithm is identical to the one we used in linear regression. We still have to simultaneously update all values in theta.&lt;/p&gt;
 
 &lt;p&gt;A vectoriazed implementation is:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta := \theta = \frac{\alpha}{m}X^T(g(X\theta) - \vec{y})&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\theta := \theta = \frac{\alpha}{m}X^T(g(X\theta) - \vec{y})
+$$
+&lt;/div&gt;
 
 &lt;h2 id=&quot;advanced-optimization&quot;&gt;Advanced Optimization&lt;/h2&gt;
 
@@ -289,9 +362,13 @@ J(\theta) = \frac{1}{m} \bullet \big(-y^T \text{log}(h) - (1 - y)^T \text{log}(1
 
 &lt;p&gt;First, we need to provide a function that evaluates the following two functions for a given input value $\theta$:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta)
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+J(\theta)
 \\
-\frac{\partial}{\partial\theta_j}J(\theta)&lt;/script&gt;
+\frac{\partial}{\partial\theta_j}J(\theta)
+$$
+&lt;/div&gt;
 
 &lt;p&gt;We can write a single function that returns both of these (Octave):&lt;/p&gt;
 
@@ -1225,7 +1302,7 @@ end
 
 &lt;h2 id=&quot;classification&quot;&gt;Classification&lt;/h2&gt;
 
-&lt;p&gt;To attempt classification, one method is to use linear regression and map all predictions greater than $0.5$ as a $1$ and all less than $0.5$ as a $0$. However, this method doesn’t work well because classification is not actually a linear function.&lt;/p&gt;
+&lt;p&gt;To attempt classification, one method is to use linear regression and map all predictions greater than $0.5$ as a $1$, and all less than $0.5$ as a $0$. However, this method doesn’t work well because classification is not actually a linear function.&lt;/p&gt;
 
 &lt;p&gt;The classificaion problem is just like the regression problem, except that the values we now want to predict take on only a small number of discrete values.&lt;/p&gt;
 
@@ -1233,7 +1310,7 @@ end
 
 &lt;p&gt;For instance, if we are trying to build  spam classifier for email, then $x^{(i)}$ may be some features of a piece of email, and $y$ may be $1$ if it is a piece of spam mail, and $0$ otherwise.&lt;/p&gt;
 
-&lt;p&gt;Hence $y \in { 0, 1 }$. $0$ is also called the negative class, and $1$ the positive class, and they are sometimes also denoted by the symbols “-“ and “+”. Given $x^{(i)}$, the corresponding $y^{(i)}$ is also called the label for the training example.&lt;/p&gt;
+&lt;p&gt;Hence $y \in { 0, 1 }$. $0$ is also called the &lt;strong&gt;negative class&lt;/strong&gt;, and $1$ the &lt;strong&gt;positive class&lt;/strong&gt;, and they are sometimes also denoted by the symbols “-“ and “+”. Given $x^{(i)}$, the corresponding $y^{(i)}$ is also called the label for the training example.&lt;/p&gt;
 
 &lt;h2 id=&quot;hypothesis-representation&quot;&gt;Hypothesis Representation&lt;/h2&gt;
 
@@ -1243,11 +1320,15 @@ end
 
 &lt;p&gt;Our new form uses the &lt;em&gt;Sigmoid Function&lt;/em&gt;, also called the &lt;em&gt;Logistic Function&lt;/em&gt;:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_{\theta}(x) = g(\theta^Tx)
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+h_{\theta}(x) = g(\theta^Tx)
 \\
 z = \theta^Tx
 \\
-g(z) = \frac{1}{1+ e^{-z}}&lt;/script&gt;
+g(z) = \frac{1}{1+ e^{-z}}
+$$
+&lt;/div&gt;
 
 &lt;p&gt;The following image shows us what the sigmoid function looks like:&lt;/p&gt;
 
@@ -1261,50 +1342,75 @@ g(z) = \frac{1}{1+ e^{-z}}&lt;/script&gt;
 
 &lt;p&gt;For example, $h_{\theta}(x) = 0.7$ gives us a probability of %70%% that our output is $1$. Our probability that our prediction is $0$ is just the complement of our probability that it is 1 (e.g, if probability that it is $1$ is $70%$, then the probability that it is $0$ is $30%$).&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_{\theta}(x) = P(y = 1 | x; 0) = 1 - P(y = 0 | x; 0)
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+h_{\theta}(x) = P(y = 1 | x; 0) = 1 - P(y = 0 | x; 0)
 \\
-P(y = 0 | x; 0) + P(y = 1 | x; 0) = 1&lt;/script&gt;
+P(y = 0 | x; 0) + P(y = 1 | x; 0) = 1
+$$
+&lt;/div&gt;
 
 &lt;h2 id=&quot;decision-boundary&quot;&gt;Decision Boundary&lt;/h2&gt;
 
 &lt;p&gt;In order to get our discrete $0$ or $1$ classification, we can translate the output of the hypothesis function as follows:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_{\theta} \ge 0.5 \to y = 1
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+h_{\theta} \ge 0.5 \to y = 1
 \\
-h_{\theta} \le 0.5 \to y = 0&lt;/script&gt;
+h_{\theta} \le 0.5 \to y = 0
+$$
+&lt;/div&gt;
 
 &lt;p&gt;The way our logistic function $g$ behaves is that when its output is greater than or equal to zero, its output is greater than or equal $0.5$:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;g(z) \ge 0.5
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+g(z) \ge 0.5
 \\
-when \quad z \ge 0&lt;/script&gt;
+when \quad z \ge 0
+$$
+&lt;/div&gt;
 
 &lt;p&gt;Remember:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;z = 0, \quad e^0 \Rightarrow g(z) = \frac{1}{2}
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+z = 0, \quad e^0 \Rightarrow g(z) = \frac{1}{2}
 \\
 z \to \infty, \quad e^{-\infty} \to 0 \Rightarrow g(z) = 1
 \\
-z \to -\infty, \quad e^{\infty} \to \infty \Rightarrow g(z) = 0&lt;/script&gt;
+z \to -\infty, \quad e^{\infty} \to \infty \Rightarrow g(z) = 0
+$$
+&lt;/div&gt;
 
 &lt;p&gt;So if our input to $g$ is $\theta^TX$, then that means:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_{\theta}(x) = g(\theta^Tx) \ge 0.5
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+h_{\theta}(x) = g(\theta^Tx) \ge 0.5
 \\
-when \quad \theta^Tx \ge 0&lt;/script&gt;
+when \quad \theta^Tx \ge 0
+$$
+&lt;/div&gt;
 
 &lt;p&gt;From these statements we can now say:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
 \theta^Tx \ge 0 \Leftarrow y = 1
 \\
-\theta^Tx &lt; 0 \Leftarrow y = 0 %]]&gt;&lt;/script&gt;
+\theta^Tx &amp;lt;div 0 \Leftarrow y = 0
+$$
+&lt;/div&gt;
 
 &lt;p&gt;The &lt;strong&gt;decision boundary&lt;/strong&gt; is the line that separates the area where $y = 0$ and where $y = 1$. It is created by our hypothesis function.&lt;/p&gt;
 
 &lt;p&gt;Example:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta = \begin{bmatrix}
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\theta = \begin{bmatrix}
            5 \\
            -1 \\
            0
@@ -1316,7 +1422,9 @@ y = 1 \quad if \quad 5 + (-1)x_1 + 0x_2 \ge 0
 \\
 -x_1 \ge -5
 \\
-x_1 \le 5&lt;/script&gt;
+x_1 \le 5
+$$
+&lt;/div&gt;
 
 &lt;p&gt;In this case, our decision boundary is a straight vertical line placed on the graph, where x_1 = 5, and everything to the left of that denotes $y = 1$, while everything to the right denotes $y = 0$.&lt;/p&gt;
 
@@ -1339,7 +1447,11 @@ x_1 \le 5&lt;/script&gt;
 
 &lt;p&gt;Gradient descent gives one way of minimizing $J$. Let’s discuss a second way of doing so, this time performing the minimization explicitly and without resorting to an iterative algorithm. In the &lt;em&gt;Normal Equation&lt;/em&gt; method, we will minimize $J$ by explicitly taking its derivatives with respect to the $\theta_j$s and setting them to 0. This allows us to find the optimum theta without iteration. The normal equation formula is given below:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta = (X^TX)^{-1}X^Ty&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\theta = (X^TX)^{-1}X^Ty
+$$
+&lt;/div&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;/images/posts/Machine Learning/ml5/1.png&quot; /&gt;
@@ -1416,7 +1528,11 @@ x_1 \le 5&lt;/script&gt;
 
 &lt;p&gt;Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_{\theta}(x) = \big[ \theta_0 \quad \theta_1 \quad ... \quad \theta_n \big] []&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+h_{\theta}(x) = \big[ \theta_0 \quad \theta_1 \quad ... \quad \theta_n \big] []
+$$
+&lt;/div&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;/images/posts/Machine Learning/ml4/1.png&quot; /&gt;

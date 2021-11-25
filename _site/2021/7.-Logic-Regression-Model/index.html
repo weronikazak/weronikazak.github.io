@@ -24,6 +24,8 @@
   
   <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
 
 </head>
 
@@ -71,15 +73,19 @@
 
 <h2 id="cost-function">Cost Function</h2>
 
-<p>We cannot use the same cost dunction that we use for linear regression because the Logistic Regression will cause the output to be wavy, causing many local optima. In ther words, it will not be a convex function.</p>
+<p>We cannot use the same cost function, that we use for linear regression, because the Logistic Regression will cause the output to be wavy, causing many local optimas. In other words, it won’t be a convex function.</p>
 
-<p>Instead, our cost function for lgistic regression looks like:</p>
+<p>Instead, our cost function for logistic regression looks like:</p>
 
-<script type="math/tex; mode=display">J(\theta) = \frac{1}{m} \sum^m_{i = 1} \text{Cost}(h_{\theta}(x^{(i)}), y^{(i)})
-\\
-\text{Cost}(h_{\theta}, y) = -log(h_{\theta}(x)) \quad \text{if y} = 1
-\\
-\text{Cost}(h_{\theta}, y) = -log(1 - h_{\theta}(x)) \quad \text{if y} = 0</script>
+<div class="latex-eq">
+$$
+\begin{align}
+&amp;J(\theta) = \frac{1}{m} \sum^m_{i = 1} \text{Cost}(h_{\theta}(x^{(i)}), y^{(i)}) \\
+&amp;\text{Cost}(h_{\theta}, y) = -log(h_{\theta}(x)) \quad \quad \quad \text{if y} = 1 \\
+&amp;\text{Cost}(h_{\theta}, y) = -log(1 - h_{\theta}(x)) \quad \text{if y} = 0
+\end{align}
+$$
+</div>
 
 <p>When $y = 1$, we get the following plot for $J(\theta)$ vs $h_{\theta}(x)$:</p>
 
@@ -93,11 +99,15 @@
 <img src="/images/posts/Machine Learning/ml7/2.png" />
 </center>
 
-<script type="math/tex; mode=display">\text{Cost}(h_{\theta}(x), y) = 0 \quad \text{if} \ h_{\theta}(x) = y
+<div class="latex-eq">
+$$
+\text{Cost}(h_{\theta}(x), y) = 0 \quad \text{if} \ h_{\theta}(x) = y
 \\
 \text{Cost}(h_{\theta}(x), y) \to \infty \quad \text{if y} = 0 \ \text{and} \ h_{\theta}(x) \to 1
 \\
-\text{Cost}(h_{\theta}(x), y) \to \infty \quad \text{if y} = 1 \ \text{and} \ h_{\theta}(x) \to 0</script>
+\text{Cost}(h_{\theta}(x), y) \to \infty \quad \text{if y} = 1 \ \text{and} \ h_{\theta}(x) \to 0
+$$
+</div>
 
 <p>If our correct answer $y$ is $0$, the the cost function will be $0$ if our hypothesis function also outputs $0$. If our hypothesis approaches $1$, then the cost function will approach infinity.</p>
 
@@ -109,43 +119,67 @@
 
 <p>We can compress our cost funtion’s two conditional cases into one case:</p>
 
-<script type="math/tex; mode=display">\text{Cost}(h_{\theta}(x), y) = -y \text{log}(h_{\theta}(x)) - (1 - y) \text{log}(1 - h_{\theta}(x))</script>
+<div class="latex-eq">
+$$
+\text{Cost}(h_{\theta}(x), y) = -y \text{log}(h_{\theta}(x)) - (1 - y) \text{log}(1 - h_{\theta}(x))
+$$
+</div>
 
 <p>Notice that when $y$ is equal to $1$, then the second term $(1 - y) \text{log}(1 - h_{\theta}(x))$ will be zero and will not affect the result. If $y$ is equal to $0$, then the first term $-y\text{log}(h_{\theta}(x))$ will be zero and will not affect the result.</p>
 
 <p>We can fully write out out entire cost function as follows:</p>
 
-<script type="math/tex; mode=display">J(\theta) = -\frac{1}{m} \sum^m_{i=1} [ y^{(i)}\text{log}(h_{\theta}(x^{(i)})) + (1 - y^{(i)}) \text{log}(1 - h_{\theta}(x^{(i)})) ]</script>
+<div class="latex-eq">
+$$
+J(\theta) = -\frac{1}{m} \sum^m_{i=1} [ y^{(i)}\text{log}(h_{\theta}(x^{(i)})) + (1 - y^{(i)}) \text{log}(1 - h_{\theta}(x^{(i)})) ]
+$$
+</div>
 
 <p>A vectorized implementation is:</p>
 
-<script type="math/tex; mode=display">h = g(X\theta)
+<div class="latex-eq">
+$$
+h = g(X\theta)
 \\
-J(\theta) = \frac{1}{m} \bullet \big(-y^T \text{log}(h) - (1 - y)^T \text{log}(1 - h) \big)</script>
+J(\theta) = \frac{1}{m} \cdot \big(-y^T \text{log}(h) - (1 - y)^T \text{log}(1 - h) \big)
+$$
+</div>
 
 <h4 id="gradient-descent">Gradient Descent</h4>
 
 <p>Remember that the general form of gradient descent is:</p>
 
-<p>$\text{Repeat:} { $</p>
-
-<script type="math/tex; mode=display">\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta)</script>
-
-<p>$} $</p>
+<div class="latex-eq">
+$$
+\begin{align}
+&amp; \text{Repeat:} \{ \\
+&amp; \hspace{5em} \theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta) \\
+&amp; \}
+\end{align}
+$$
+</div>
 
 <p>We can work out the derivative part using calculus to get:</p>
 
-<p>$\text{Repeat:} { $</p>
-
-<script type="math/tex; mode=display">\theta_j := \theta_j - \frac{\alpha}{m} \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x_j^{(i)}</script>
-
-<p>$} $</p>
+<div class="latex-eq">
+$$
+\begin{align}
+&amp; \text{Repeat:} \{ \\
+&amp;\hspace{5em} \theta_j := \theta_j - \frac{\alpha}{m} \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x_j^{(i)} \\
+&amp; \}
+\end{align}
+$$
+</div>
 
 <p>Notice that this algorithm is identical to the one we used in linear regression. We still have to simultaneously update all values in theta.</p>
 
 <p>A vectoriazed implementation is:</p>
 
-<script type="math/tex; mode=display">\theta := \theta = \frac{\alpha}{m}X^T(g(X\theta) - \vec{y})</script>
+<div class="latex-eq">
+$$
+\theta := \theta = \frac{\alpha}{m}X^T(g(X\theta) - \vec{y})
+$$
+</div>
 
 <h2 id="advanced-optimization">Advanced Optimization</h2>
 
@@ -153,9 +187,13 @@ J(\theta) = \frac{1}{m} \bullet \big(-y^T \text{log}(h) - (1 - y)^T \text{log}(1
 
 <p>First, we need to provide a function that evaluates the following two functions for a given input value $\theta$:</p>
 
-<script type="math/tex; mode=display">J(\theta)
+<div class="latex-eq">
+$$
+J(\theta)
 \\
-\frac{\partial}{\partial\theta_j}J(\theta)</script>
+\frac{\partial}{\partial\theta_j}J(\theta)
+$$
+</div>
 
 <p>We can write a single function that returns both of these (Octave):</p>
 
@@ -173,7 +211,7 @@ end
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-14T18:12:47+00:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-25T09:40:58+00:00">2021</time> Weronika Zak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

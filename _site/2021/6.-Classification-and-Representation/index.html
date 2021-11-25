@@ -24,6 +24,8 @@
   
   <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
 
 </head>
 
@@ -71,7 +73,7 @@
 
 <h2 id="classification">Classification</h2>
 
-<p>To attempt classification, one method is to use linear regression and map all predictions greater than $0.5$ as a $1$ and all less than $0.5$ as a $0$. However, this method doesn’t work well because classification is not actually a linear function.</p>
+<p>To attempt classification, one method is to use linear regression and map all predictions greater than $0.5$ as a $1$, and all less than $0.5$ as a $0$. However, this method doesn’t work well because classification is not actually a linear function.</p>
 
 <p>The classificaion problem is just like the regression problem, except that the values we now want to predict take on only a small number of discrete values.</p>
 
@@ -79,7 +81,7 @@
 
 <p>For instance, if we are trying to build  spam classifier for email, then $x^{(i)}$ may be some features of a piece of email, and $y$ may be $1$ if it is a piece of spam mail, and $0$ otherwise.</p>
 
-<p>Hence $y \in { 0, 1 }$. $0$ is also called the negative class, and $1$ the positive class, and they are sometimes also denoted by the symbols “-“ and “+”. Given $x^{(i)}$, the corresponding $y^{(i)}$ is also called the label for the training example.</p>
+<p>Hence $y \in { 0, 1 }$. $0$ is also called the <strong>negative class</strong>, and $1$ the <strong>positive class</strong>, and they are sometimes also denoted by the symbols “-“ and “+”. Given $x^{(i)}$, the corresponding $y^{(i)}$ is also called the label for the training example.</p>
 
 <h2 id="hypothesis-representation">Hypothesis Representation</h2>
 
@@ -89,11 +91,15 @@
 
 <p>Our new form uses the <em>Sigmoid Function</em>, also called the <em>Logistic Function</em>:</p>
 
-<script type="math/tex; mode=display">h_{\theta}(x) = g(\theta^Tx)
+<div class="latex-eq">
+$$
+h_{\theta}(x) = g(\theta^Tx)
 \\
 z = \theta^Tx
 \\
-g(z) = \frac{1}{1+ e^{-z}}</script>
+g(z) = \frac{1}{1+ e^{-z}}
+$$
+</div>
 
 <p>The following image shows us what the sigmoid function looks like:</p>
 
@@ -107,50 +113,75 @@ g(z) = \frac{1}{1+ e^{-z}}</script>
 
 <p>For example, $h_{\theta}(x) = 0.7$ gives us a probability of %70%% that our output is $1$. Our probability that our prediction is $0$ is just the complement of our probability that it is 1 (e.g, if probability that it is $1$ is $70%$, then the probability that it is $0$ is $30%$).</p>
 
-<script type="math/tex; mode=display">h_{\theta}(x) = P(y = 1 | x; 0) = 1 - P(y = 0 | x; 0)
+<div class="latex-eq">
+$$
+h_{\theta}(x) = P(y = 1 | x; 0) = 1 - P(y = 0 | x; 0)
 \\
-P(y = 0 | x; 0) + P(y = 1 | x; 0) = 1</script>
+P(y = 0 | x; 0) + P(y = 1 | x; 0) = 1
+$$
+</div>
 
 <h2 id="decision-boundary">Decision Boundary</h2>
 
 <p>In order to get our discrete $0$ or $1$ classification, we can translate the output of the hypothesis function as follows:</p>
 
-<script type="math/tex; mode=display">h_{\theta} \ge 0.5 \to y = 1
+<div class="latex-eq">
+$$
+h_{\theta} \ge 0.5 \to y = 1
 \\
-h_{\theta} \le 0.5 \to y = 0</script>
+h_{\theta} \le 0.5 \to y = 0
+$$
+</div>
 
 <p>The way our logistic function $g$ behaves is that when its output is greater than or equal to zero, its output is greater than or equal $0.5$:</p>
 
-<script type="math/tex; mode=display">g(z) \ge 0.5
+<div class="latex-eq">
+$$
+g(z) \ge 0.5
 \\
-when \quad z \ge 0</script>
+when \quad z \ge 0
+$$
+</div>
 
 <p>Remember:</p>
 
-<script type="math/tex; mode=display">z = 0, \quad e^0 \Rightarrow g(z) = \frac{1}{2}
+<div class="latex-eq">
+$$
+z = 0, \quad e^0 \Rightarrow g(z) = \frac{1}{2}
 \\
 z \to \infty, \quad e^{-\infty} \to 0 \Rightarrow g(z) = 1
 \\
-z \to -\infty, \quad e^{\infty} \to \infty \Rightarrow g(z) = 0</script>
+z \to -\infty, \quad e^{\infty} \to \infty \Rightarrow g(z) = 0
+$$
+</div>
 
 <p>So if our input to $g$ is $\theta^TX$, then that means:</p>
 
-<script type="math/tex; mode=display">h_{\theta}(x) = g(\theta^Tx) \ge 0.5
+<div class="latex-eq">
+$$
+h_{\theta}(x) = g(\theta^Tx) \ge 0.5
 \\
-when \quad \theta^Tx \ge 0</script>
+when \quad \theta^Tx \ge 0
+$$
+</div>
 
 <p>From these statements we can now say:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="latex-eq">
+$$
 \theta^Tx \ge 0 \Leftarrow y = 1
 \\
-\theta^Tx < 0 \Leftarrow y = 0 %]]></script>
+\theta^Tx &lt;div 0 \Leftarrow y = 0
+$$
+</div>
 
 <p>The <strong>decision boundary</strong> is the line that separates the area where $y = 0$ and where $y = 1$. It is created by our hypothesis function.</p>
 
 <p>Example:</p>
 
-<script type="math/tex; mode=display">\theta = \begin{bmatrix}
+<div class="latex-eq">
+$$
+\theta = \begin{bmatrix}
            5 \\
            -1 \\
            0
@@ -162,7 +193,9 @@ y = 1 \quad if \quad 5 + (-1)x_1 + 0x_2 \ge 0
 \\
 -x_1 \ge -5
 \\
-x_1 \le 5</script>
+x_1 \le 5
+$$
+</div>
 
 <p>In this case, our decision boundary is a straight vertical line placed on the graph, where x_1 = 5, and everything to the left of that denotes $y = 1$, while everything to the right denotes $y = 0$.</p>
 
@@ -176,7 +209,7 @@ x_1 \le 5</script>
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-14T18:12:47+00:00">2021</time> Weronika Żak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-25T09:40:58+00:00">2021</time> Weronika Zak</span> &middot;
             <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">

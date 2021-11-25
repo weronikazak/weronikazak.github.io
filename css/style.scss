@@ -160,3 +160,23 @@ article h1, article h2, article h3, article h4, article h5 {
 article b, article strong {
     background-color: #1DDECB;
 }
+
+.card a:hover {
+    text-decoration-color: #1DDECB !important;
+}
+
+.btn:focus,
+.btn:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}
+
+#the-notes-were-based-on--this-course-by-andrew-ng->a:hover{
+    color: #e1e1e1;
+    text-decoration: none;
+}
+
+.latex-eq {
+    border: #e1e1e1 2px solid;
+    margin: 20px 0;
+}
