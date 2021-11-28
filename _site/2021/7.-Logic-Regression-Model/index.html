@@ -150,25 +150,23 @@ $$
 <p>Remember that the general form of gradient descent is:</p>
 
 <div class="latex-eq">
+$\text{Repeat:} \{ \\ $
 $$
 \begin{align}
-&amp; \text{Repeat:} \{ \\
-&amp; \hspace{5em} \theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta) \\
-&amp; \}
+\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta) \\
 \end{align}
 $$
+$\}$
 </div>
 
 <p>We can work out the derivative part using calculus to get:</p>
 
 <div class="latex-eq">
+$\text{Repeat:} \{ \\ $
 $$
-\begin{align}
-&amp; \text{Repeat:} \{ \\
-&amp;\hspace{5em} \theta_j := \theta_j - \frac{\alpha}{m} \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x_j^{(i)} \\
-&amp; \}
-\end{align}
+\theta_j := \theta_j - \frac{\alpha}{m} \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x_j^{(i)}
 $$
+$\}$
 </div>
 
 <p>Notice that this algorithm is identical to the one we used in linear regression. We still have to simultaneously update all values in theta.</p>
@@ -195,15 +193,7 @@ J(\theta)
 $$
 </div>
 
-<p>We can write a single function that returns both of these (Octave):</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function [jVal, gradient] = costFunction(theta)
-    jVal = [...code to compute J(theta)...];
-    gradient = [...code to compute derivative of J(theta)...]
-end
-</code></pre></div></div>
-
-<h3 id="the-notes-were-based-on--this-course-by-andrew-ng-">THE NOTES WERE BASED ON <a href="https://www.coursera.org/learn/machine-learning"> THIS COURSE BY ANDREW NG </a>.</h3>
+<h3 id="the-notes-were-based-on--this-course-by-andrew-ng">THE NOTES WERE BASED ON <a class="link-white-highlight" href="https://www.coursera.org/learn/machine-learning"> THIS COURSE BY ANDREW NG</a>.</h3>
 
 </article>
 
@@ -211,11 +201,11 @@ end
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-25T09:40:58+00:00">2021</time> Weronika Zak</span> &middot;
-            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-28T11:33:00+00:00">2021</time> Weronika Zak</span> &middot;
+            <span>Powered by <a class="link-white-highlight" href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">
-          <a href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+          <a class="link-white-highlight" href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
         </div>
       </footer>
     </div>

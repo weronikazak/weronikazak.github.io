@@ -94,7 +94,11 @@
 
 <p>The multivariable form of the hypothesis function accomodating these multiple features is as follows:</p>
 
-<script type="math/tex; mode=display">h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2x_2 + \theta_3x_3 + ... + \theta_nx_n</script>
+<div class="latex-eq">
+$$ 
+h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2x_2 + \theta_3x_3 + ... + \theta_nx_n 
+$$
+</div>
 
 <p>In order to develop intuition about this function, we can think about $\theta_0$ as the basic price of a house, $\theta_1$ as the price per square meter, $\theta_2$ as the price per floor, etc.</p>
 
@@ -104,7 +108,13 @@
 
 <div class="latex-eq">
 $$
-h_{\theta}(x) = \big[ \theta_0 \quad \theta_1 \quad ... \quad \theta_n \big] []
+\begin{align}
+h_{\theta}(x) = \big[ \theta_0 \quad \theta_1 \quad ... \quad \theta_n \big] 
+    \begin{bmatrix} 
+    x_0 \\ x_1 \\ \vdots \\ x_n
+    \end{bmatrix}
+     = \theta^Tx
+\end{align}
 $$
 </div>
 
@@ -120,20 +130,27 @@ $$
 
 <p>The gradient descent equation itself is generally the same form; we just have to repeat it for our ‘n’ features:</p>
 
-<p>repeat until convergence:
-<script type="math/tex">\left\{
-\theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_0^{(i)}
-\\
-\theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_1^{(i)}
-\\
-\theta_2 := \theta_2 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_2^{(i)}
-\right\}</script></p>
+<div class="latex-eq">
+$\text{Repeat until convergence:} \{ \\ $
+$$
+\begin{align}
+&amp;\theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \cdot x_0^{(i)} \\
+&amp;\theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \cdot x_1^{(i)} \\
+&amp;\theta_2 := \theta_2 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \cdot x_2^{(i)} \\
+\end{align}
+$$
+$\}$
+</div>
 
 <p>In other words:</p>
 
-<p>repeat until convergence: <script type="math/tex">\left\{
-\theta_j := \theta_j - \alpha \frac{1}{m} \sum_{j=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)})\bullet x_j^{(i)} \quad for j:= 0...n
-\right\}</script></p>
+<div class="latex-eq">
+$\text{Repeat until convergence:} \{ \\ $
+$$
+\theta_j := \theta_j - \alpha \frac{1}{m} \sum_{j=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)})\cdot x_j^{(i)} \quad \text{for} \ j:= 0...n \\
+$$
+$\}$
+</div>
 
 <p>The following image compares gradient descent with one variable to gradient descent with multiple variables:</p>
 
@@ -147,13 +164,19 @@ $$
 
 <p>The way to prevent this is to modify the ranges of our input variables so that they are all roughly the same. Ideally:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
--1 <= x_{(i)} <= 1 %]]></script>
+<div class="latex-eq">
+$$
+-1 &lt;= x_{(i)} &lt;= 1
+$$
+</div>
 
 <p>or</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
--0.5 <= x_{(i)} <= 0.5 %]]></script>
+<div class="latex-eq">
+$$
+-0.5 &lt;= x_{(i)} &lt;= 0.5
+$$
+</div>
 
 <p>These aren’t exact requirements; we are only trying to speed things up. The goal is to get all input variables into roughly one of these ranges, give or take a few.</p>
 
@@ -165,7 +188,11 @@ $$
 
 <p>To implement both of these techniques, adjust your input values as shown in this formula:</p>
 
-<script type="math/tex; mode=display">x_i := \frac{x_i - \mu_i}{s_i}</script>
+<div class="latex-eq">
+$$
+x_i := \frac{x_i - \mu_i}{s_i}
+$$
+</div>
 
 <p>Where $\mu_i$ is the <strong>average</strong> of all values for feature $(i)$ and $s_i$ is the range of values $(max - min)$, or $s_i$ is the standard deviation.</p>
 
@@ -175,7 +202,11 @@ $$
 
 <p>If $x_i$ represents housing prices with a range from 100 to 2000 and a mean value of 1000, then:</p>
 
-<script type="math/tex; mode=display">x_i := \frac{price - 1000}{1900}</script>
+<div class="latex-eq">
+$$
+x_i := \frac{price - 1000}{1900}
+$$
+</div>
 
 <center>
 <img src="/images/posts/Machine Learning/ml4/3.png" />
@@ -229,7 +260,7 @@ $$
 
 <p>We can improve our features and the form of our hypothesis function in a couple different ways.</p>
 
-<p>We can <strong>combine</strong> multiple features into one. For example, we can combine $x_1$ and $x_2$ into a new feature $x_3$ by taking $x_1 \bullet x_2$.</p>
+<p>We can <strong>combine</strong> multiple features into one. For example, we can combine $x_1$ and $x_2$ into a new feature $x_3$ by taking $x_1 \cdot x_2$.</p>
 
 <h4 id="polynomial-regression">Polynomial Regression</h4>
 
@@ -253,7 +284,7 @@ $$
 <img src="/images/posts/Machine Learning/ml4/7.png" />
 </center>
 
-<h3 id="the-notes-were-based-on--this-course-by-andrew-ng-">THE NOTES WERE BASED ON <a href="https://www.coursera.org/learn/machine-learning"> THIS COURSE BY ANDREW NG </a>.</h3>
+<h3 id="the-notes-were-based-on--this-course-by-andrew-ng">THE NOTES WERE BASED ON <a class="link-white-highlight" href="https://www.coursera.org/learn/machine-learning"> THIS COURSE BY ANDREW NG</a>.</h3>
 
 </article>
 
@@ -261,11 +292,11 @@ $$
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-25T09:40:58+00:00">2021</time> Weronika Zak</span> &middot;
-            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-28T11:33:00+00:00">2021</time> Weronika Zak</span> &middot;
+            <span>Powered by <a class="link-white-highlight" href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">
-          <a href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+          <a class="link-white-highlight" href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
         </div>
       </footer>
     </div>

@@ -171,12 +171,47 @@ article b, article strong {
     outline:0px !important;
 }
 
-#the-notes-were-based-on--this-course-by-andrew-ng->a:hover{
+#the-notes-were-based-on--this-course-by-andrew-ng->a:hover, 
+.link-white-highlight:hover{
     color: #e1e1e1;
     text-decoration: none;
 }
 
 .latex-eq {
-    border: #e1e1e1 2px solid;
+    border: #e1e1e136 2px solid;
     margin: 20px 0;
 }
+
+@media only screen and (min-width: 768px) {
+    .latex-eq {
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .latex-eq {
+        overflow-x: scroll;
+    }
+}
+
+// prettier scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

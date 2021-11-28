@@ -97,13 +97,15 @@
 
 <p>The gradient descent algorithm is:</p>
 
-<p>repeat until convergence:</p>
+<div class="latex-eq">
+$\text{Repeat until convergence:} \{ \\ $
+$$
+\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j} J(\theta_0, \theta_1)
+$$
+$\}$
+</div>
 
-<p>$\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j} J(\theta_0, \theta_1)$</p>
-
-<p>where</p>
-
-<p>$j = 0, 1$ represents the feature index number.</p>
+<p>Where $j = 0, 1$ represents the feature index number.</p>
 
 <p>At each iteration $j$, one should simultaneously update the parameters $\theta_1, \theta_2, …, \theta_n$. Updating a specific parameter prior to calculating another one on the $j^{(th)}$ iteration would yield to a wrong implementation.</p>
 
@@ -115,9 +117,13 @@
 
 <p>As a reminder, the formula for a gradient descent with one parameter $\theta_1$ looks like that:</p>
 
-<p>Repeat until convergence:</p>
-
-<p>$\theta_1 := \theta_1 - \alpha \frac{d}{d\theta_1}J(\theta_1)$</p>
+<div class="latex-eq">
+$\text{Repeat until convergence:} \{ \\ $
+$$
+\theta_1 := \theta_1 - \alpha \frac{d}{d\theta_1}J(\theta_1) \\
+$$
+$\}$
+</div>
 
 <p>Regardless of the slope’s sign for $\frac{d}{d\theta_1}J(\theta_1), \theta_1$ eventually converges to its minimum value. The following graph shows that when the slope is negative, the value of $\theta_1$ increases and when it is positive, the value of $\theta_1$ decreases.</p>
 
@@ -135,7 +141,11 @@
 
 <p>The intuition behind the convergence is that $\frac{d}{d\theta_1}J(\theta_1)$ approaches $0$ as we approach the bottom of our convex function. At the minimum, the derivative will always be $0$ and thus we get:</p>
 
-<script type="math/tex; mode=display">\theta_1 := \theta_1 - \alpha \bullet 0</script>
+<div class="latex-eq">
+$$
+\theta_1 := \theta_1 - \alpha \cdot 0
+$$
+</div>
 
 <center>
 <img src="/images/posts/Machine Learning/ml3/6.png" />
@@ -145,29 +155,35 @@
 
 <p>When specifically applied to the case of linear regression, a new form of the gradient descent equation can be derived. We can substitute our actual cost function and our actual hypothetis function and modify the equation to:</p>
 
-<p>repeat until convergence:
-<script type="math/tex">\left\{
-     \begin{array}\\
-        \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta}(x_i) - y_i) 
-        \\
-        \theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m ((h_{\theta}(x_i) - y_i)x_i)
-    \end{array}
-\right.</script></p>
+<div class="latex-eq">
+$\text{Repeat until convergence:} \{ \\ $
+$$
+\begin{align}
+&amp;\theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta}(x_i) - y_i) 
+\\
+&amp;\theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m ((h_{\theta}(x_i) - y_i)x_i)
+\end{align}
+$$
+$\}$
+</div>
 
 <p>where $m$ is the size of the training set, $\theta_0$ a constant that will be changing simultaneously with $\theta_1$ and $x_i, y_i$ are values of the given training set (data).</p>
 
 <p>Note that we have separated out the two cases for $\theta_j$ into separate equations for $\theta_0$ and $\theta_1$ and that for $\theta_1$ we are multiplying $x_i$ at the end due to the derivative. The following is a derivation of $\frac{\partial}{\partial\theta_j}J(\theta)$ for a single example:</p>
 
-<script type="math/tex; mode=display">% <![CDATA[
+<div class="latex-eq">
+$$
 \begin{split}
-\frac{\partial}{\partial\theta_j}J(\theta) & = \frac{\partial}{\partial\theta_j} \frac{1}{2} (h_{\theta}(x) - y)^2 
+\frac{\partial}{\partial\theta_j}J(\theta) &amp; = \frac{\partial}{\partial\theta_j} \frac{1}{2} (h_{\theta}(x) - y)^2 
     \\
-    & = 2 \bullet \frac{1}{2} (h_{\theta}(x) - y) \bullet \frac{\partial}{\partial\theta_j}(h_{\theta}(x) - y)
+    &amp; = 2 \cdot \frac{1}{2} (h_{\theta}(x) - y) \cdot \frac{\partial}{\partial\theta_j}(h_{\theta}(x) - y)
     \\
-    & = (h_{\theta}(x)-y) \bullet \frac{\partial}{\partial\theta_j} \Big(\sum_{i=0}^{n}\theta_i x_i - y\Big)
+    &amp; = (h_{\theta}(x)-y) \cdot \frac{\partial}{\partial\theta_j} \Big(\sum_{i=0}^{n}\theta_i x_i - y\Big)
     \\
-    & = (h_{\theta}(x) - y)x_j
-\end{split} %]]></script>
+    &amp; = (h_{\theta}(x) - y)x_j
+\end{split}
+$$
+</div>
 
 <p>The point of all this is that if we start with a guess for our hypothesis and then repeatedly apply these gradient descent equations, our hypothesis will become more and more accurate.</p>
 
@@ -209,7 +225,7 @@
 <img src="/images/posts/Machine Learning/ml3/14.png" />
 </center>
 
-<h3 id="the-notes-were-based-on--this-course-by-andrew-ng-">THE NOTES WERE BASED ON <a href="https://www.coursera.org/learn/machine-learning"> THIS COURSE BY ANDREW NG </a>.</h3>
+<h3 id="the-notes-were-based-on--this-course-by-andrew-ng">THE NOTES WERE BASED ON <a class="link-white-highlight" href="https://www.coursera.org/learn/machine-learning"> THIS COURSE BY ANDREW NG</a>.</h3>
 
 </article>
 
@@ -217,11 +233,11 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-25T09:40:58+00:00">2021</time> Weronika Zak</span> &middot;
-            <span>Powered by <a href="http://jekyllrb.com/">Jekyll</a></span>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2021-11-28T11:33:00+00:00">2021</time> Weronika Zak</span> &middot;
+            <span>Powered by <a class="link-white-highlight" href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">
-          <a href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+          <a class="link-white-highlight" href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
         </div>
       </footer>
     </div>

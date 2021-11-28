@@ -4,7 +4,7 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2021-11-25T09:40:58+00:00</updated>
+ <updated>2021-11-28T11:33:00+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Zak</name>
@@ -187,7 +187,7 @@ $$
 &lt;img src=&quot;/images/posts/Machine Learning/ml9/4.png&quot; /&gt;
 &lt;/center&gt;
 
-&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng&quot;&gt;THE NOTES WERE BASED ON &lt;a class=&quot;link-white-highlight&quot; href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG&lt;/a&gt;.&lt;/h3&gt;
 </content>
  </entry>
  
@@ -233,7 +233,7 @@ $$
 
 &lt;p&gt;To make a prediction on a new $x$, pick the class that maximizes $h_{\theta}(x)$.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng&quot;&gt;THE NOTES WERE BASED ON &lt;a class=&quot;link-white-highlight&quot; href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG&lt;/a&gt;.&lt;/h3&gt;
 </content>
  </entry>
  
@@ -325,25 +325,23 @@ $$
 &lt;p&gt;Remember that the general form of gradient descent is:&lt;/p&gt;
 
 &lt;div class=&quot;latex-eq&quot;&gt;
+$\text{Repeat:} \{ \\ $
 $$
 \begin{align}
-&amp;amp; \text{Repeat:} \{ \\
-&amp;amp; \hspace{5em} \theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta) \\
-&amp;amp; \}
+\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j}J(\theta) \\
 \end{align}
 $$
+$\}$
 &lt;/div&gt;
 
 &lt;p&gt;We can work out the derivative part using calculus to get:&lt;/p&gt;
 
 &lt;div class=&quot;latex-eq&quot;&gt;
+$\text{Repeat:} \{ \\ $
 $$
-\begin{align}
-&amp;amp; \text{Repeat:} \{ \\
-&amp;amp;\hspace{5em} \theta_j := \theta_j - \frac{\alpha}{m} \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x_j^{(i)} \\
-&amp;amp; \}
-\end{align}
+\theta_j := \theta_j - \frac{\alpha}{m} \sum^m_{i=1} (h_{\theta}(x^{(i)}) - y^{(i)})x_j^{(i)}
 $$
+$\}$
 &lt;/div&gt;
 
 &lt;p&gt;Notice that this algorithm is identical to the one we used in linear regression. We still have to simultaneously update all values in theta.&lt;/p&gt;
@@ -370,15 +368,7 @@ J(\theta)
 $$
 &lt;/div&gt;
 
-&lt;p&gt;We can write a single function that returns both of these (Octave):&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function [jVal, gradient] = costFunction(theta)
-    jVal = [...code to compute J(theta)...];
-    gradient = [...code to compute derivative of J(theta)...]
-end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng&quot;&gt;THE NOTES WERE BASED ON &lt;a class=&quot;link-white-highlight&quot; href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG&lt;/a&gt;.&lt;/h3&gt;
 </content>
  </entry>
  
@@ -1340,13 +1330,15 @@ $$
 
 &lt;p&gt;$h_{\theta}(x)$ will give us the &lt;strong&gt;probability&lt;/strong&gt; that our input is $1$.&lt;/p&gt;
 
-&lt;p&gt;For example, $h_{\theta}(x) = 0.7$ gives us a probability of %70%% that our output is $1$. Our probability that our prediction is $0$ is just the complement of our probability that it is 1 (e.g, if probability that it is $1$ is $70%$, then the probability that it is $0$ is $30%$).&lt;/p&gt;
+&lt;p&gt;For example, $h_{\theta}(x) = 0.7$ gives us a probability of %70%% that our output is $1$. Our probability that our prediction is $0$ is just the complement of our probability that it is 1 (e.g, if probability that it is $1$ is $70\%$, then the probability that it is $0$ is $30\%$).&lt;/p&gt;
 
 &lt;div class=&quot;latex-eq&quot;&gt;
 $$
-h_{\theta}(x) = P(y = 1 | x; 0) = 1 - P(y = 0 | x; 0)
+\begin{align}
+&amp;amp;h_{\theta}(x) = P(y = 1 | x; 0) = 1 - P(y = 0 | x; 0)
 \\
-P(y = 0 | x; 0) + P(y = 1 | x; 0) = 1
+&amp;amp;P(y = 0 | x; 0) + P(y = 1 | x; 0) = 1
+\end{align}
 $$
 &lt;/div&gt;
 
@@ -1398,9 +1390,11 @@ $$
 
 &lt;div class=&quot;latex-eq&quot;&gt;
 $$
-\theta^Tx \ge 0 \Leftarrow y = 1
+\begin{align}
+&amp;amp;\theta^Tx \ge 0 \Leftarrow y = 1
 \\
-\theta^Tx &amp;lt;div 0 \Leftarrow y = 0
+&amp;amp;\theta^Tx &amp;lt; \text{div} \ 0 \Leftarrow y = 0
+\end{align}
 $$
 &lt;/div&gt;
 
@@ -1430,7 +1424,7 @@ $$
 
 &lt;p&gt;Again, the input to the sigmoid function $g(z)$ (e.g. $\theta^TX$ deosn’t need to be linear, and could be a function that describes a circle (e.g. $z = \theta_0 + \theta_1x_1^2 + \theta_2x_2^2 $ or any shape to fit our data.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng&quot;&gt;THE NOTES WERE BASED ON &lt;a class=&quot;link-white-highlight&quot; href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG&lt;/a&gt;.&lt;/h3&gt;
 </content>
  </entry>
  
@@ -1484,7 +1478,7 @@ $$
 
 &lt;p&gt;Solutions to the above problems include deleting a feature, that is linearly dependent with another or deleting one or more features when there are too many features.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng&quot;&gt;THE NOTES WERE BASED ON &lt;a class=&quot;link-white-highlight&quot; href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG&lt;/a&gt;.&lt;/h3&gt;
 </content>
  </entry>
  
@@ -1520,7 +1514,11 @@ $$
 
 &lt;p&gt;The multivariable form of the hypothesis function accomodating these multiple features is as follows:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2x_2 + \theta_3x_3 + ... + \theta_nx_n&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$ 
+h_{\theta}(x) = \theta_0 + \theta_1x_1 + \theta_2x_2 + \theta_3x_3 + ... + \theta_nx_n 
+$$
+&lt;/div&gt;
 
 &lt;p&gt;In order to develop intuition about this function, we can think about $\theta_0$ as the basic price of a house, $\theta_1$ as the price per square meter, $\theta_2$ as the price per floor, etc.&lt;/p&gt;
 
@@ -1530,7 +1528,13 @@ $$
 
 &lt;div class=&quot;latex-eq&quot;&gt;
 $$
-h_{\theta}(x) = \big[ \theta_0 \quad \theta_1 \quad ... \quad \theta_n \big] []
+\begin{align}
+h_{\theta}(x) = \big[ \theta_0 \quad \theta_1 \quad ... \quad \theta_n \big] 
+    \begin{bmatrix} 
+    x_0 \\ x_1 \\ \vdots \\ x_n
+    \end{bmatrix}
+     = \theta^Tx
+\end{align}
 $$
 &lt;/div&gt;
 
@@ -1546,20 +1550,27 @@ $$
 
 &lt;p&gt;The gradient descent equation itself is generally the same form; we just have to repeat it for our ‘n’ features:&lt;/p&gt;
 
-&lt;p&gt;repeat until convergence:
-&lt;script type=&quot;math/tex&quot;&gt;\left\{
-\theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_0^{(i)}
-\\
-\theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_1^{(i)}
-\\
-\theta_2 := \theta_2 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \bullet x_2^{(i)}
-\right\}&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$\text{Repeat until convergence:} \{ \\ $
+$$
+\begin{align}
+&amp;amp;\theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \cdot x_0^{(i)} \\
+&amp;amp;\theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \cdot x_1^{(i)} \\
+&amp;amp;\theta_2 := \theta_2 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta} (x^{(i)}) - y^{(i)}) \cdot x_2^{(i)} \\
+\end{align}
+$$
+$\}$
+&lt;/div&gt;
 
 &lt;p&gt;In other words:&lt;/p&gt;
 
-&lt;p&gt;repeat until convergence: &lt;script type=&quot;math/tex&quot;&gt;\left\{
-\theta_j := \theta_j - \alpha \frac{1}{m} \sum_{j=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)})\bullet x_j^{(i)} \quad for j:= 0...n
-\right\}&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$\text{Repeat until convergence:} \{ \\ $
+$$
+\theta_j := \theta_j - \alpha \frac{1}{m} \sum_{j=1}^{m} (h_{\theta}(x^{(i)}) - y^{(i)})\cdot x_j^{(i)} \quad \text{for} \ j:= 0...n \\
+$$
+$\}$
+&lt;/div&gt;
 
 &lt;p&gt;The following image compares gradient descent with one variable to gradient descent with multiple variables:&lt;/p&gt;
 
@@ -1573,13 +1584,19 @@ $$
 
 &lt;p&gt;The way to prevent this is to modify the ranges of our input variables so that they are all roughly the same. Ideally:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
--1 &lt;= x_{(i)} &lt;= 1 %]]&gt;&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+-1 &amp;lt;= x_{(i)} &amp;lt;= 1
+$$
+&lt;/div&gt;
 
 &lt;p&gt;or&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
--0.5 &lt;= x_{(i)} &lt;= 0.5 %]]&gt;&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+-0.5 &amp;lt;= x_{(i)} &amp;lt;= 0.5
+$$
+&lt;/div&gt;
 
 &lt;p&gt;These aren’t exact requirements; we are only trying to speed things up. The goal is to get all input variables into roughly one of these ranges, give or take a few.&lt;/p&gt;
 
@@ -1591,7 +1608,11 @@ $$
 
 &lt;p&gt;To implement both of these techniques, adjust your input values as shown in this formula:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i := \frac{x_i - \mu_i}{s_i}&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+x_i := \frac{x_i - \mu_i}{s_i}
+$$
+&lt;/div&gt;
 
 &lt;p&gt;Where $\mu_i$ is the &lt;strong&gt;average&lt;/strong&gt; of all values for feature $(i)$ and $s_i$ is the range of values $(max - min)$, or $s_i$ is the standard deviation.&lt;/p&gt;
 
@@ -1601,7 +1622,11 @@ $$
 
 &lt;p&gt;If $x_i$ represents housing prices with a range from 100 to 2000 and a mean value of 1000, then:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;x_i := \frac{price - 1000}{1900}&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+x_i := \frac{price - 1000}{1900}
+$$
+&lt;/div&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;/images/posts/Machine Learning/ml4/3.png&quot; /&gt;
@@ -1655,7 +1680,7 @@ $$
 
 &lt;p&gt;We can improve our features and the form of our hypothesis function in a couple different ways.&lt;/p&gt;
 
-&lt;p&gt;We can &lt;strong&gt;combine&lt;/strong&gt; multiple features into one. For example, we can combine $x_1$ and $x_2$ into a new feature $x_3$ by taking $x_1 \bullet x_2$.&lt;/p&gt;
+&lt;p&gt;We can &lt;strong&gt;combine&lt;/strong&gt; multiple features into one. For example, we can combine $x_1$ and $x_2$ into a new feature $x_3$ by taking $x_1 \cdot x_2$.&lt;/p&gt;
 
 &lt;h4 id=&quot;polynomial-regression&quot;&gt;Polynomial Regression&lt;/h4&gt;
 
@@ -1679,7 +1704,7 @@ $$
 &lt;img src=&quot;/images/posts/Machine Learning/ml4/7.png&quot; /&gt;
 &lt;/center&gt;
 
-&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng&quot;&gt;THE NOTES WERE BASED ON &lt;a class=&quot;link-white-highlight&quot; href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG&lt;/a&gt;.&lt;/h3&gt;
 </content>
  </entry>
  
@@ -1718,13 +1743,15 @@ $$
 
 &lt;p&gt;The gradient descent algorithm is:&lt;/p&gt;
 
-&lt;p&gt;repeat until convergence:&lt;/p&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$\text{Repeat until convergence:} \{ \\ $
+$$
+\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j} J(\theta_0, \theta_1)
+$$
+$\}$
+&lt;/div&gt;
 
-&lt;p&gt;$\theta_j := \theta_j - \alpha \frac{\partial}{\partial\theta_j} J(\theta_0, \theta_1)$&lt;/p&gt;
-
-&lt;p&gt;where&lt;/p&gt;
-
-&lt;p&gt;$j = 0, 1$ represents the feature index number.&lt;/p&gt;
+&lt;p&gt;Where $j = 0, 1$ represents the feature index number.&lt;/p&gt;
 
 &lt;p&gt;At each iteration $j$, one should simultaneously update the parameters $\theta_1, \theta_2, …, \theta_n$. Updating a specific parameter prior to calculating another one on the $j^{(th)}$ iteration would yield to a wrong implementation.&lt;/p&gt;
 
@@ -1736,9 +1763,13 @@ $$
 
 &lt;p&gt;As a reminder, the formula for a gradient descent with one parameter $\theta_1$ looks like that:&lt;/p&gt;
 
-&lt;p&gt;Repeat until convergence:&lt;/p&gt;
-
-&lt;p&gt;$\theta_1 := \theta_1 - \alpha \frac{d}{d\theta_1}J(\theta_1)$&lt;/p&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$\text{Repeat until convergence:} \{ \\ $
+$$
+\theta_1 := \theta_1 - \alpha \frac{d}{d\theta_1}J(\theta_1) \\
+$$
+$\}$
+&lt;/div&gt;
 
 &lt;p&gt;Regardless of the slope’s sign for $\frac{d}{d\theta_1}J(\theta_1), \theta_1$ eventually converges to its minimum value. The following graph shows that when the slope is negative, the value of $\theta_1$ increases and when it is positive, the value of $\theta_1$ decreases.&lt;/p&gt;
 
@@ -1756,7 +1787,11 @@ $$
 
 &lt;p&gt;The intuition behind the convergence is that $\frac{d}{d\theta_1}J(\theta_1)$ approaches $0$ as we approach the bottom of our convex function. At the minimum, the derivative will always be $0$ and thus we get:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\theta_1 := \theta_1 - \alpha \bullet 0&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
+\theta_1 := \theta_1 - \alpha \cdot 0
+$$
+&lt;/div&gt;
 
 &lt;center&gt;
 &lt;img src=&quot;/images/posts/Machine Learning/ml3/6.png&quot; /&gt;
@@ -1766,29 +1801,35 @@ $$
 
 &lt;p&gt;When specifically applied to the case of linear regression, a new form of the gradient descent equation can be derived. We can substitute our actual cost function and our actual hypothetis function and modify the equation to:&lt;/p&gt;
 
-&lt;p&gt;repeat until convergence:
-&lt;script type=&quot;math/tex&quot;&gt;\left\{
-     \begin{array}\\
-        \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta}(x_i) - y_i) 
-        \\
-        \theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m ((h_{\theta}(x_i) - y_i)x_i)
-    \end{array}
-\right.&lt;/script&gt;&lt;/p&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$\text{Repeat until convergence:} \{ \\ $
+$$
+\begin{align}
+&amp;amp;\theta_0 := \theta_0 - \alpha \frac{1}{m} \sum_{i=1}^m (h_{\theta}(x_i) - y_i) 
+\\
+&amp;amp;\theta_1 := \theta_1 - \alpha \frac{1}{m} \sum_{i=1}^m ((h_{\theta}(x_i) - y_i)x_i)
+\end{align}
+$$
+$\}$
+&lt;/div&gt;
 
 &lt;p&gt;where $m$ is the size of the training set, $\theta_0$ a constant that will be changing simultaneously with $\theta_1$ and $x_i, y_i$ are values of the given training set (data).&lt;/p&gt;
 
 &lt;p&gt;Note that we have separated out the two cases for $\theta_j$ into separate equations for $\theta_0$ and $\theta_1$ and that for $\theta_1$ we are multiplying $x_i$ at the end due to the derivative. The following is a derivation of $\frac{\partial}{\partial\theta_j}J(\theta)$ for a single example:&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$
 \begin{split}
-\frac{\partial}{\partial\theta_j}J(\theta) &amp; = \frac{\partial}{\partial\theta_j} \frac{1}{2} (h_{\theta}(x) - y)^2 
+\frac{\partial}{\partial\theta_j}J(\theta) &amp;amp; = \frac{\partial}{\partial\theta_j} \frac{1}{2} (h_{\theta}(x) - y)^2 
     \\
-    &amp; = 2 \bullet \frac{1}{2} (h_{\theta}(x) - y) \bullet \frac{\partial}{\partial\theta_j}(h_{\theta}(x) - y)
+    &amp;amp; = 2 \cdot \frac{1}{2} (h_{\theta}(x) - y) \cdot \frac{\partial}{\partial\theta_j}(h_{\theta}(x) - y)
     \\
-    &amp; = (h_{\theta}(x)-y) \bullet \frac{\partial}{\partial\theta_j} \Big(\sum_{i=0}^{n}\theta_i x_i - y\Big)
+    &amp;amp; = (h_{\theta}(x)-y) \cdot \frac{\partial}{\partial\theta_j} \Big(\sum_{i=0}^{n}\theta_i x_i - y\Big)
     \\
-    &amp; = (h_{\theta}(x) - y)x_j
-\end{split} %]]&gt;&lt;/script&gt;
+    &amp;amp; = (h_{\theta}(x) - y)x_j
+\end{split}
+$$
+&lt;/div&gt;
 
 &lt;p&gt;The point of all this is that if we start with a guess for our hypothesis and then repeatedly apply these gradient descent equations, our hypothesis will become more and more accurate.&lt;/p&gt;
 
@@ -1830,7 +1871,7 @@ $$
 &lt;img src=&quot;/images/posts/Machine Learning/ml3/14.png&quot; /&gt;
 &lt;/center&gt;
 
-&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng&quot;&gt;THE NOTES WERE BASED ON &lt;a class=&quot;link-white-highlight&quot; href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG&lt;/a&gt;.&lt;/h3&gt;
 </content>
  </entry>
  
@@ -1869,7 +1910,11 @@ $$
 
 &lt;p&gt;We can measure the accuracy of our hypothesis function using a &lt;strong&gt;cost function&lt;/strong&gt;. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from $x$’s  and the actual output $y$’s.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y}_i - y_i)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h_{\theta}(x_i) - y_i)^2&lt;/script&gt;
+&lt;div class=&quot;latex-eq&quot;&gt;
+$$ 
+J(\theta_0, \theta_1) = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y}_i - y_i)^2 = \frac{1}{2m} \sum_{i=1}^{m} (h_{\theta}(x_i) - y_i)^2 
+$$
+&lt;/div&gt;
 
 &lt;p&gt;To break it apart, it is $\frac{1}{2} \bar{x}$ where $\bar{x}$ is the mean of the squares of $h_{\theta}(x_i) - y_i$, or the difference between the predicted value and the actual value.&lt;/p&gt;
 
@@ -1927,7 +1972,7 @@ $$
 
 &lt;p&gt;The graph above minimizes the cost function as much as possible and consequently, the result of $\theta_1$ and $\theta_0$ tend to be around $0.12$ and $250$ respectively. Plotting those values on our graph to the right seems to put our point in the center of the inner most “circle”.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng&quot;&gt;THE NOTES WERE BASED ON &lt;a class=&quot;link-white-highlight&quot; href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG&lt;/a&gt;.&lt;/h3&gt;
 </content>
  </entry>
  
@@ -1958,7 +2003,7 @@ $$
 
 &lt;hr /&gt;
 
-&lt;p&gt;Example: playing checkers.&lt;/p&gt;
+&lt;p&gt;EXAMPLE: playing checkers.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -1998,7 +2043,7 @@ $$
 &lt;p&gt;In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EXAMPLE 1:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.&lt;/p&gt;
 
@@ -2008,7 +2053,7 @@ $$
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EXAMPLE 2:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;A) &lt;strong&gt;Regression&lt;/strong&gt; - given a picture of a person, we have to predict their age on the basis of the given picture.&lt;/p&gt;
 
@@ -2028,7 +2073,7 @@ $$
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EXAMPLE:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2047,7 +2092,7 @@ $$
 &lt;img src=&quot;/images/posts/Machine Learning/ml1/4.png&quot; /&gt;
 &lt;/center&gt;
 
-&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng-&quot;&gt;THE NOTES WERE BASED ON &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG &lt;/a&gt;.&lt;/h3&gt;
+&lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng&quot;&gt;THE NOTES WERE BASED ON &lt;a class=&quot;link-white-highlight&quot; href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG&lt;/a&gt;.&lt;/h3&gt;
 </content>
  </entry>
  
