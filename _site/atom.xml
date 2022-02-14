@@ -4,13 +4,31 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2022-02-14T14:20:01+00:00</updated>
+ <updated>2022-02-14T14:47:21+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Zak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>BrandAid</title>
+   <link href="http://localhost:4000/2022/Brandaid/"/>
+   <updated>2022-02-01T00:00:00+00:00</updated>
+   <id>http://localhost:4000/2022/Brandaid</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>MAXZ</title>
+   <link href="http://localhost:4000/2022/MAXZ/"/>
+   <updated>2022-01-01T00:00:00+00:00</updated>
+   <id>http://localhost:4000/2022/MAXZ</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>Solving the Problem of Overfitting</title>
@@ -1425,6 +1443,15 @@ $$
 &lt;p&gt;Again, the input to the sigmoid function $g(z)$ (e.g. $\theta^TX$ deosn’t need to be linear, and could be a function that describes a circle (e.g. $z = \theta_0 + \theta_1x_1^2 + \theta_2x_2^2 $ or any shape to fit our data.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-notes-were-based-on--this-course-by-andrew-ng&quot;&gt;THE NOTES WERE BASED ON &lt;a class=&quot;link-white-highlight&quot; href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt; THIS COURSE BY ANDREW NG&lt;/a&gt;.&lt;/h3&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Active Prospects</title>
+   <link href="http://localhost:4000/2021/ActiveProspects/"/>
+   <updated>2021-10-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2021/ActiveProspects</id>
+   <content type="html">
 </content>
  </entry>
  
