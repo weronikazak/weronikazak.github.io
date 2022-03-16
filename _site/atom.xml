@@ -4,13 +4,22 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2022-02-14T14:47:21+00:00</updated>
+ <updated>2022-03-18T07:51:21+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Zak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>NF3D</title>
+   <link href="http://localhost:4000/2022/NF3D/"/>
+   <updated>2022-03-01T00:00:00+00:00</updated>
+   <id>http://localhost:4000/2022/NF3D</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>BrandAid</title>
