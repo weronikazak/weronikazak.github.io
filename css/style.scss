@@ -26,6 +26,19 @@
 @import "pages/landing";
 @import "pages/posts";
 
+// $leadingColour: #1DDECB;
+// $darkerBaseColour: #15a597;
+
+.surname-letter {
+    color:$leadingColour;
+    font-weight:bold;
+}
+
+.profile-picture {
+    border-left: $leadingColour solid 4px;
+    border-bottom: $leadingColour solid 5px;
+}
+
 .card {
     background-color: #1E1E1E;
 }
@@ -45,7 +58,7 @@
 }
 
 .btn-category{
-    background: #1DDECB;
+    background: $leadingColour;
     display: inline-block;
     font-weight: bold;
 }
@@ -57,12 +70,12 @@
 }
 
 .btn-category:hover{
-    background: #15a597;
+    background: $darkerBaseColour;
 }
 
 .item {
-    color: #1DDECB;
-    border: #1DDECB solid 1px;
+    color: $leadingColour;
+    border: $leadingColour solid 1px;
     background: #1E1E1E;
     text-decoration: none;
     display: inline-block;
@@ -99,10 +112,6 @@
     color: #e6e6e6;
 }
 
-.details {
-    // margin:60px;
-}
-
 section {
     margin-bottom: 7vh;
     background: #1E1E1E;
@@ -114,7 +123,7 @@ section div li {
 }
 
 section div li::before {
-    color: #15a597;
+    color: $darkerBaseColour;
     content: "\2022";
     font-weight: bold;
     display: inline-block;
@@ -129,7 +138,7 @@ section div li::before {
 
 .role {
     font-size: 14px;
-    color: #15a597;
+    color: $darkerBaseColour;
 }
 
 .blog-article{
@@ -154,15 +163,15 @@ body {
 }
 
 article h1, article h2, article h3, article h4, article h5 {
-    color: #1DDECB;
+    color: $leadingColour;
 }
 
 article b, article strong {
-    background-color: #1DDECB;
+    background-color: $leadingColour;
 }
 
 .card a:hover {
-    text-decoration-color: #1DDECB !important;
+    text-decoration-color: $leadingColour !important;
 }
 
 .btn:focus,

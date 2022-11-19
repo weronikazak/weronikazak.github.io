@@ -2,10 +2,11 @@
  * _landing.scss
  * Styles for the landing page
  */
+ 
 
 .landing-title {
     color: $post-title-color;
     text-align: center;
-    border-bottom: 1px solid #89fff3;
+    border-bottom: 1px solid $lightColour;
     padding-bottom: 0.7rem;
 }

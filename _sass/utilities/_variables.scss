@@ -10,6 +10,11 @@ $font-size-mobile: 15px;
 
 $code-font-stack: 'Source Code Pro', monospace;
 
+$randomVar: random(360);
+$leadingColour: hsl($randomVar, 77%, 49%);
+$darkerBaseColour: hsl($randomVar, 77%, 36%);
+$lightColour: hsl($randomVar, 100%, 77%);
+
 // Body
 $body-text-color: #E6E6E6;
 $body-background-color: #212121;
@@ -17,7 +22,7 @@ $body-top-border-color: #E6E6E6;
 $body-top-border-width: 5px;
 
 // Links
-$link-color: #1DDECB;
+$link-color: $leadingColour;
 
 // Navigation
 $nav-bottom-border-color: #E6E6E6;
@@ -26,14 +31,14 @@ $nav-bottom-border-width: 1px;
 $nav-link-color: #E6E6E6;
 $nav-link-padding-y: 0.7rem;
 $nav-link-padding-x: 1.5rem;
-$nav-link-underline-color: #1DDECB;
-$nav-link-color-hover:#1DDECB;
+$nav-link-underline-color: $leadingColour;
+$nav-link-color-hover:$leadingColour;
 
 $nav-icon-color: #ffffff;
-$nav-icon-background-color: #15a597;
+$nav-icon-background-color: $darkerBaseColour;
 
 // Blog post headings and page titles
-$post-title-color: #1DDECB;
+$post-title-color: $leadingColour;
 $post-date-color: #9a9a9a;
 
 // Message box
