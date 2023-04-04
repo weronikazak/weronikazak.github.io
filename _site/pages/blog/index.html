@@ -434,7 +434,7 @@
           <div class="post other link">
             <h2></span> <a class="link-white-highlight" href="/2021/9.-Solving-the-Problem-of-Overfitting/">Solving the Problem of Overfitting</a></h2>
             <p class="post-date">10 Nov 2021</p>
-            Consider the problem of predicting y from y ∈ R. The leftmost figure below shows the result of fitting a <i>y = θ0 +θ1 * x</i>  to a dataset. We see that the data doesn't really lie on straight line, and so the fit is not very good.
+            Overfitting arises when a hypothesis function is too complex, while underfitting occurs when it's too simple. To address overfitting, we can manually select features or use regularization to reduce the weight of some terms in the function. Regularization works well when we have a lot of slightly useful features.
             <br>
             <br>
             
@@ -463,7 +463,7 @@
         <div class="post other link">
           <h2></span> <a class="link-white-highlight" href="/2021/9.-Solving-the-Problem-of-Overfitting/">Solving the Problem of Overfitting</a></h2>
           <p class="post-date">10 Nov 2021</p>
-          Consider the problem of predicting y from y ∈ R. The leftmost figure below shows the result of fitting a <i>y = θ0 +θ1 * x</i>  to a dataset. We see that the data doesn't really lie on straight line, and so the fit is not very good.
+          Overfitting arises when a hypothesis function is too complex, while underfitting occurs when it's too simple. To address overfitting, we can manually select features or use regularization to reduce the weight of some terms in the function. Regularization works well when we have a lot of slightly useful features.
           <br>
           <br>
           
@@ -494,7 +494,7 @@
           <div class="post other link">
             <h2></span> <a class="link-white-highlight" href="/2021/8.-Multiclass-Classification/">Multiclass Classification</a></h2>
             <p class="post-date">16 Oct 2021</p>
-            Now we will approach the classification of data when we have more than two categories. Instead of y = {0, 1} we will expand our definition so that y = {0, 1 ... n}. Since y = {0, 1 ... n}, we divide our problem into n + 1 (+1 because the index starts at 0) binary classification problems; in each one, we predict the probability that y is a member of one of our classes.
+            Multiclass classification is approached by expanding the definition of y to include more than two categories. This problem is divided into n+1 binary classification problems, and binary logistic regression is applied to each case to predict which class the data belongs to. The hypothesis that returns the highest value is used as the prediction.
             <br>
             <br>
             
@@ -523,7 +523,7 @@
         <div class="post other link">
           <h2></span> <a class="link-white-highlight" href="/2021/8.-Multiclass-Classification/">Multiclass Classification</a></h2>
           <p class="post-date">16 Oct 2021</p>
-          Now we will approach the classification of data when we have more than two categories. Instead of y = {0, 1} we will expand our definition so that y = {0, 1 ... n}. Since y = {0, 1 ... n}, we divide our problem into n + 1 (+1 because the index starts at 0) binary classification problems; in each one, we predict the probability that y is a member of one of our classes.
+          Multiclass classification is approached by expanding the definition of y to include more than two categories. This problem is divided into n+1 binary classification problems, and binary logistic regression is applied to each case to predict which class the data belongs to. The hypothesis that returns the highest value is used as the prediction.
           <br>
           <br>
           
@@ -554,7 +554,7 @@
           <div class="post other link">
             <h2></span> <a class="link-white-highlight" href="/2021/7.-Logic-Regression-Model/">Logic Regression Model</a></h2>
             <p class="post-date">12 Oct 2021</p>
-            We cannot use the same cost function, that we use for linear regression, because the Logistic Regression will cause the output to be wavy, causing many local optimas. In other words, it won't be a convex function. Instead, our cost function for logistic regression looks like this...
+            This post explains how to create a cost function for logistic regression that is convex and can be optimized using gradient descent. The cost function is defined in terms of the log-likelihood of the model and is derived using maximum likelihood estimation. The article also provides the formula for gradient descent and introduces more advanced optimization algorithms, such as Conjugate Gradient, BFGS, and L-BFGS.
             <br>
             <br>
             
@@ -583,7 +583,7 @@
         <div class="post other link">
           <h2></span> <a class="link-white-highlight" href="/2021/7.-Logic-Regression-Model/">Logic Regression Model</a></h2>
           <p class="post-date">12 Oct 2021</p>
-          We cannot use the same cost function, that we use for linear regression, because the Logistic Regression will cause the output to be wavy, causing many local optimas. In other words, it won't be a convex function. Instead, our cost function for logistic regression looks like this...
+          This post explains how to create a cost function for logistic regression that is convex and can be optimized using gradient descent. The cost function is defined in terms of the log-likelihood of the model and is derived using maximum likelihood estimation. The article also provides the formula for gradient descent and introduces more advanced optimization algorithms, such as Conjugate Gradient, BFGS, and L-BFGS.
           <br>
           <br>
           
@@ -746,7 +746,7 @@
           <div class="post other link">
             <h2></span> <a class="link-white-highlight" href="/2021/6.-Classification-and-Representation/">Classification and Representation</a></h2>
             <p class="post-date">01 Oct 2021</p>
-            To attempt classification, one method is to use linear regression and map all predictions greater than 0.5 as a 1 and all less than 0.5 as a 0. However, this method doesn't work well because classification is not actually a linear function.
+            This post discusses binary classification problems where y can only take on two values, 0 and 1. It explains how to use the logistic function to change the form of the hypothesis function and ensure that it returns values between 0 and 1. Iu also introduces the decision boundary and how it helps determine the class that a particular data point belongs to.
             <br>
             <br>
             
@@ -775,7 +775,7 @@
         <div class="post other link">
           <h2></span> <a class="link-white-highlight" href="/2021/6.-Classification-and-Representation/">Classification and Representation</a></h2>
           <p class="post-date">01 Oct 2021</p>
-          To attempt classification, one method is to use linear regression and map all predictions greater than 0.5 as a 1 and all less than 0.5 as a 0. However, this method doesn't work well because classification is not actually a linear function.
+          This post discusses binary classification problems where y can only take on two values, 0 and 1. It explains how to use the logistic function to change the form of the hypothesis function and ensure that it returns values between 0 and 1. Iu also introduces the decision boundary and how it helps determine the class that a particular data point belongs to.
           <br>
           <br>
           
@@ -2462,7 +2462,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2023-04-05T00:15:17+01:00">2023</time> Weronika Zak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2023-04-05T00:25:09+01:00">2023</time> Weronika Zak</span> &middot;
             <span>Powered by <a class="link-white-highlight" href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">
