@@ -4,7 +4,7 @@ title:  "Google Summer of Code 2023"
 date:   2023-08-24 16:10:35 +0100
 tags:
 - other
-description: "Overfitting arises when a hypothesis function is too complex, while underfitting occurs when it's too simple. To address overfitting, we can manually select features or use regularization to reduce the weight of some terms in the function. Regularization works well when we have a lot of slightly useful features."
+description: "cclib is an open source library, written in Python, for parsing and interpreting the results of computational chemistry packages. The goals of cclib include extracting data from different files, creating an interface for computational chemistry results, etc."
 image: 'images/posts/Other/gsoc/gsoc.png'
 
 ---
