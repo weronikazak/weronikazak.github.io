@@ -4,13 +4,96 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2023-08-25T13:08:24+01:00</updated>
+ <updated>2023-08-25T14:31:39+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Zak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Google Summer of Code 2023</title>
+   <link href="http://localhost:4000/2023/Google-Summer-of-Code/"/>
+   <updated>2023-08-24T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2023/Google Summer of Code</id>
+   <content type="html">&lt;h2 id=&quot;implementation-of-gamess-dat-and-nbo-parsers&quot;&gt;Implementation of GAMESS .dat and NBO Parsers&lt;/h2&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Other/gsoc/cc.jpg&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;description&quot;&gt;Description&lt;/h2&gt;
+&lt;p&gt;cclib is an open source library, written in Python, for parsing and interpreting the results of computational chemistry packages. The goals of cclib include extracting data from different files, creating an interface for computational chemistry results, facilitating the use of universal algorithms, and ensuring easy collaboration with other open source chemistry software.&lt;/p&gt;
+
+&lt;p&gt;The aim of my GSoC project was to create two parsers for this library. These parsers were meant to extract attributes from GAMESS .dat and NBO files. While these formats had been previously requested by chemistry engineers, there was a lack of support for them. This is the problem I chose to work on this summer.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-accomplished&quot;&gt;What I Accomplished&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;gamess-dat-parser-creation&quot;&gt;GAMESS .dat Parser Creation&lt;/h4&gt;
+    &lt;p&gt;My first task was to create a parser for the GAMESS .dat files. With the help of my mentors, I was able to identify which parts of the generated files contained important data and which attributes they corresponded to. Once we were certain that we had extracted everything possible, I proceeded to test the parser, and it was deployed in the latest release.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;nbo-parser-creation&quot;&gt;NBO Parser Creation&lt;/h4&gt;
+    &lt;p&gt;Compared to the previous GAMESS .dat parser, working on the NBO parser was more challenging. There wasn’t a lot of information available to link existing attributes, so I had to create new custom ones and develop a dedicated testing class for them. I also needed to upgrade some utility functions. Thankfully, with the guidance of my mentors, I was able to successfully make it work.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;making-some-features-in-the-cclib-library-more-useful&quot;&gt;Making some features in the cclib library more useful&lt;/h4&gt;
+    &lt;p&gt;During the development of the parsers mentioned above, I encountered some issues related to testing and utility functions. They weren’t compatible with my approach, so I needed to create additional functions or conditions. These adjustments included introducing a new extractable attribute for the NBO parser, adding an extra parameter to an existing function that works with two-dimensional arrays, and creating a method to test attributes that are dictionary of dictionaries.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pull-requests&quot;&gt;Pull Requests&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cclib/cclib/pull/1208&quot;&gt;Add a parser for GAMESS .dat&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cclib/cclib/pull/1214&quot;&gt;Parser for Gamess .dat - continuation and fixes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cclib/cclib/pull/1228&quot;&gt;Add optional index parameter to extend_attribute&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cclib/cclib/pull/1229&quot;&gt;Little fixes to the Gamess .dat parser&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cclib/cclib/pull/1233&quot;&gt;Parser for NBO files&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cclib/cclib/pull/1244&quot;&gt;NBO Parser: Mapping extracted values to attributes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cclib/cclib/pull/1251&quot;&gt;Create and test new attributes for the NBO parser&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cclib/cclib/pull/1258&quot;&gt;Add attribute _dictofdicts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;current-state&quot;&gt;Current State&lt;/h2&gt;
+&lt;p&gt;The GAMESS .dat parser is now in the newest version of the library, which at the time of writing is 1.8.0. The NBO parser is mostly done and will be released in the next version.&lt;/p&gt;
+
+&lt;h2 id=&quot;remaining-tasks&quot;&gt;Remaining Tasks&lt;/h2&gt;
+&lt;p&gt;Although the main goals have been achieved, certain functions or attributes were too complex for me to extract given my understanding of the subject. These aspects will probably need to be handled by experts in the field.&lt;/p&gt;
+
+&lt;h2 id=&quot;code-merged-upstream&quot;&gt;Code Merged Upstream&lt;/h2&gt;
+&lt;p&gt;The parsers I made are now part of the main library. The GAMESS .dat parser is already released, and the NBO parser will be added soon.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-i-learnt&quot;&gt;What I Learnt&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;open-source-software-development&quot;&gt;Open-Source Software Development&lt;/h4&gt;
+    &lt;p&gt;I improved my skills in building tools like parsers, which help extracting important data from complex files.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;finding-important-data&quot;&gt;Finding Important Data&lt;/h4&gt;
+    &lt;p&gt;I learnt to navigate and locate important data within specific types of files, such as GAMESS .dat and NBO files. With the help of mentors and documentation, I connected them to the right attributes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;collaboration&quot;&gt;Collaboration&lt;/h4&gt;
+    &lt;p&gt;I learnt how teamwork can solve problems and make work go smoother.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;challenges-i-faced&quot;&gt;Challenges I Faced&lt;/h2&gt;
+
+&lt;p&gt;My major difficulty was linked to my understanding of the subject. I needed to heavily depend on my mentors and their expertise in the field to assist me in identifying and comprehending the values I was extracting.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Being part of GSoC and helping out with the cclib project was a great experience. I genuinely hope that the work I did will make cclib even more useful for chemistry engineers, students and researchers. I’m excited to see the project grow in the future.&lt;/p&gt;
+
+&lt;p&gt;Big thanks to GSoC, cclib, and my mentors - Amanda, Eric and Shiv for their patience, guidance and help! 😊&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>cclib</title>

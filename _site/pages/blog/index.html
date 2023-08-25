@@ -60,6 +60,15 @@
       
       var id = 0;
       
+        var tags = ["other"]
+
+        var postDiv = document.getElementById("post-" + (++id));
+
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'flex' 
+            : 'none';
+      
         var tags = ["machine learning"]
 
         var postDiv = document.getElementById("post-" + (++id));
@@ -240,6 +249,12 @@
       
 
       
+        <button id="other" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn white-btn text-uppercase rounded-pill tag-btn" >
+          other
+        </button>
+      
         <button id="machine learning" 
         onclick="filterUsingCategory(this.id)"
         class="btn white-btn text-uppercase rounded-pill tag-btn" >
@@ -255,6 +270,66 @@
     
     
     <div class="col-12 blog-article" id="post-1">
+      
+    <!-- ON SMALL DEVICES -->
+    <div class=" d-none d-sm-block ">
+      <div class="row">
+
+        <div class="col-3">
+          <img src="/images/posts/Other/gsoc/gsoc.png" 
+                class="m-4"
+                width="126" 
+                height="126" 
+                style="width: 126px; height: 126px; object-fit: cover;">
+        </div>
+  
+        <div class="col-9">
+          <div class="post other link">
+            <h2></span> <a class="link-white-highlight" href="/2023/Google-Summer-of-Code/">Google Summer of Code 2023</a></h2>
+            <p class="post-date">24 Aug 2023</p>
+            Overfitting arises when a hypothesis function is too complex, while underfitting occurs when it's too simple. To address overfitting, we can manually select features or use regularization to reduce the weight of some terms in the function. Regularization works well when we have a lot of slightly useful features.
+            <br>
+            <br>
+            
+            <li class="item">other</li>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <!-- ON MEDIUM-LARGE DEVICES -->
+  <div class=" d-block d-sm-none mb-2">
+    <div class="row">
+      <div class="col-12">
+        <center>
+        <img src="/images/posts/Other/gsoc/gsoc.png" 
+              class="m-4"
+              width="126" 
+              height="126" 
+              style="width: 126px; height: 126px; object-fit: cover;">
+        </center>
+      </div>
+
+      <div class="col-12">
+        <div class="post other link">
+          <h2></span> <a class="link-white-highlight" href="/2023/Google-Summer-of-Code/">Google Summer of Code 2023</a></h2>
+          <p class="post-date">24 Aug 2023</p>
+          Overfitting arises when a hypothesis function is too complex, while underfitting occurs when it's too simple. To address overfitting, we can manually select features or use regularization to reduce the weight of some terms in the function. Regularization works well when we have a lot of slightly useful features.
+          <br>
+          <br>
+          
+          <li class="item">other</li>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    <div class="col-12 blog-article" id="post-2">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -314,7 +389,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-2">
+    <div class="col-12 blog-article" id="post-3">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -374,7 +449,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-3">
+    <div class="col-12 blog-article" id="post-4">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -434,7 +509,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-4">
+    <div class="col-12 blog-article" id="post-5">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -494,7 +569,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-5">
+    <div class="col-12 blog-article" id="post-6">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -554,7 +629,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-6">
+    <div class="col-12 blog-article" id="post-7">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -614,7 +689,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-7">
+    <div class="col-12 blog-article" id="post-8">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -674,7 +749,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-8">
+    <div class="col-12 blog-article" id="post-9">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -734,7 +809,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-9">
+    <div class="col-12 blog-article" id="post-10">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -794,7 +869,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-10">
+    <div class="col-12 blog-article" id="post-11">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -854,7 +929,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-11">
+    <div class="col-12 blog-article" id="post-12">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -914,7 +989,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-12">
+    <div class="col-12 blog-article" id="post-13">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -974,7 +1049,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-13">
+    <div class="col-12 blog-article" id="post-14">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1034,7 +1109,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-14">
+    <div class="col-12 blog-article" id="post-15">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1094,7 +1169,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-15">
+    <div class="col-12 blog-article" id="post-16">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1154,7 +1229,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-16">
+    <div class="col-12 blog-article" id="post-17">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1214,7 +1289,7 @@
     </div>
     
     
-    <div class="col-12 blog-article" id="post-17">
+    <div class="col-12 blog-article" id="post-18">
       
     <!-- ON SMALL DEVICES -->
     <div class=" d-none d-sm-block ">
@@ -1288,7 +1363,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2023-08-25T13:08:24+01:00">2023</time> Weronika Zak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2023-08-25T14:31:39+01:00">2023</time> Weronika Zak</span> &middot;
             <span>Powered by <a class="link-white-highlight" href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">
