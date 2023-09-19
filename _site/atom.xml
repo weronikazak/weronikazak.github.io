@@ -4,7 +4,7 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2023-09-14T19:45:51+01:00</updated>
+ <updated>2023-09-19T07:58:10+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Zak</name>
@@ -92,6 +92,15 @@
 &lt;p&gt;Being part of GSoC and helping out with the cclib project was a great experience. I genuinely hope that the work I did will make cclib even more useful for chemistry engineers, students and researchers. I’m excited to see the project grow in the future.&lt;/p&gt;
 
 &lt;p&gt;Big thanks to GSoC, cclib, and my mentors - Amanda, Eric and Shiv for their patience, guidance and help! 😊&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>StowAway</title>
+   <link href="http://localhost:4000/2023/StowAway/"/>
+   <updated>2023-08-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2023/StowAway</id>
+   <content type="html">
 </content>
  </entry>
  
