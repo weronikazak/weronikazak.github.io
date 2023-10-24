@@ -4,7 +4,7 @@ title:  "Atlassian Codegeist 2023"
 date:   2023-10-24 16:10:35 +0100
 tags:
 - other
-description: ""
+description: "Ah, documentation. Every developer's Achilles heel. I can't count the number of times I've found myself switching between screens, trying to simultaneously remember what each part of my code does while documenting it."
 image: 'images/posts/Other/dione/codegeist.png'
 
 ---
