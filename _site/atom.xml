@@ -4,7 +4,7 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2023-11-19T17:33:25+00:00</updated>
+ <updated>2023-11-19T17:42:17+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Zak</name>
@@ -82,6 +82,15 @@
 &lt;img src=&quot;/images/posts/Other/dione/dione-girl.png&quot; /&gt;
 &lt;i style=&quot;font-size:12px; color: gray&quot;&gt; Document as you go! &lt;/i&gt;
 &lt;/center&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dione</title>
+   <link href="http://localhost:4000/2023/Dione/"/>
+   <updated>2023-10-01T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2023/Dione</id>
+   <content type="html">
 </content>
  </entry>
  

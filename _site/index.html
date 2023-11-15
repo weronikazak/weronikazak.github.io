@@ -61,6 +61,15 @@
       
       var id = 0;
       
+        var tags = ["javascript","react"]
+  
+        var postDiv = document.getElementById("post-" + (++id));
+
+        postDiv.style.display =
+          (selectedCategory == 'All' || tags.includes(selectedCategory)) 
+            ? 'flex' 
+            : 'none';
+      
         var tags = ["react","javascript"]
   
         var postDiv = document.getElementById("post-" + (++id));
@@ -367,16 +376,16 @@
       
 
       
-        <button id="react" 
-        onclick="filterUsingCategory(this.id)"
-        class="btn white-btn text-uppercase rounded-pill tag-btn">
-          react
-      </button>
-      
         <button id="javascript" 
         onclick="filterUsingCategory(this.id)"
         class="btn white-btn text-uppercase rounded-pill tag-btn">
           javascript
+      </button>
+      
+        <button id="react" 
+        onclick="filterUsingCategory(this.id)"
+        class="btn white-btn text-uppercase rounded-pill tag-btn">
+          react
       </button>
       
         <button id="python" 
@@ -459,6 +468,37 @@
     
     
      <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-1" style="display:flex;">
+        <img class="card-img-top" src="/images/dione.png" alt="Card">
+        <div class="card-block">
+          <h5 class="card-title text-center text-uppercase">Dione</h5>
+          <p class="card-text text-center">Visual Code Extension for managing workflow in Confluence</p>
+
+          <div class="list-group list-group-horizontal">
+          <ul>
+          
+          <li class="item">javascript</li>
+          
+          <li class="item">react</li>
+          
+          </ul>
+        </div>
+        </div>
+       
+        <div class="card-body">
+              <div class="link_button">
+                <a href="https://github.com/weronikazak/Dione-VSC-Extension" target="_blank">
+                  <center>
+                    <button type="button" class="btn btn-certificate text-uppercase rounded-pill mr-2">
+                      GitHub
+                    </button>
+                  </center>
+                </a>
+              </div>
+      </div>
+    </div>
+    
+    
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-2" style="display:flex;">
         <img class="card-img-top" src="/images/stowaway.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">StowAway</h5>
@@ -489,7 +529,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-2" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-3" style="display:flex;">
         <img class="card-img-top" src="/images/cclib.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">cclib</h5>
@@ -518,7 +558,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-3" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-4" style="display:flex;">
         <img class="card-img-top" src="/images/vanguard.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Vanguard</h5>
@@ -549,7 +589,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-4" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-5" style="display:flex;">
         <img class="card-img-top" src="/images/nf3d.PNG" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">NF3D</h5>
@@ -580,7 +620,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-5" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-6" style="display:flex;">
         <img class="card-img-top" src="/images/brandaid.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">BrandAid</h5>
@@ -611,7 +651,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-6" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-7" style="display:flex;">
         <img class="card-img-top" src="/images/maxz.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">MAXZ</h5>
@@ -642,7 +682,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-7" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-8" style="display:flex;">
         <img class="card-img-top" src="/images/activeprospects.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Active Prospects</h5>
@@ -671,7 +711,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-8" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-9" style="display:flex;">
         <img class="card-img-top" src="/images/gsc.jpg" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">How Are You?</h5>
@@ -700,7 +740,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-9" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-10" style="display:flex;">
         <img class="card-img-top" src="/images/trash.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Mobile Trash Classifier</h5>
@@ -735,7 +775,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-10" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-11" style="display:flex;">
         <img class="card-img-top" src="/images/cars.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Cars' Prices Comparison</h5>
@@ -766,7 +806,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-11" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-12" style="display:flex;">
         <img class="card-img-top" src="/images/twitter.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Depression Tweets Analysis</h5>
@@ -799,7 +839,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-12" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-13" style="display:flex;">
         <img class="card-img-top" src="/images/rps.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">AI Rock-Paper-Scissors</h5>
@@ -830,7 +870,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-13" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-14" style="display:flex;">
         <img class="card-img-top" src="/images/dash.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID Tracking Dashboard</h5>
@@ -861,7 +901,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-14" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-15" style="display:flex;">
         <img class="card-img-top" src="/images/italy.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Oslo and Rome Neighbourhoods Clustering</h5>
@@ -894,7 +934,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-15" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-16" style="display:flex;">
         <img class="card-img-top" src="/images/soccer.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Finding Match Highlights</h5>
@@ -925,7 +965,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-16" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-17" style="display:flex;">
         <img class="card-img-top" src="/images/movie.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Movie Recommender</h5>
@@ -956,7 +996,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-17" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-18" style="display:flex;">
         <img class="card-img-top" src="/images/algo.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Algorithms</h5>
@@ -987,7 +1027,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-18" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-19" style="display:flex;">
         <img class="card-img-top" src="/images/mask.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID mask</h5>
@@ -1018,7 +1058,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-19" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-20" style="display:flex;">
         <img class="card-img-top" src="/images/face.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Snapchat Filters</h5>
@@ -1049,7 +1089,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-20" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-21" style="display:flex;">
         <img class="card-img-top" src="/images/digit.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Digit Recognizer</h5>
@@ -1080,7 +1120,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-21" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-22" style="display:flex;">
         <img class="card-img-top" src="/images/cluster.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID Literature Clustering</h5>
@@ -1111,7 +1151,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-22" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-23" style="display:flex;">
         <img class="card-img-top" src="/images/distance.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">COVID Social Distancing</h5>
@@ -1142,7 +1182,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-23" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-24" style="display:flex;">
         <img class="card-img-top" src="/images/time.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Angular Timesheet</h5>
@@ -1173,7 +1213,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-24" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-25" style="display:flex;">
         <img class="card-img-top" src="/images/penguin.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Penguin Diner Bot</h5>
@@ -1204,7 +1244,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-25" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-26" style="display:flex;">
         <img class="card-img-top" src="/images/date.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Dating App</h5>
@@ -1235,7 +1275,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-26" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-27" style="display:flex;">
         <img class="card-img-top" src="/images/pizza.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Food Multiclassification</h5>
@@ -1266,7 +1306,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-27" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-28" style="display:flex;">
         <img class="card-img-top" src="/images/bubble.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Bubble Shooter</h5>
@@ -1295,7 +1335,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-28" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-29" style="display:flex;">
         <img class="card-img-top" src="/images/uber.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Uber Clone</h5>
@@ -1326,7 +1366,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-29" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-30" style="display:flex;">
         <img class="card-img-top" src="/images/platform.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Platform Game</h5>
@@ -1355,7 +1395,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-30" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-31" style="display:flex;">
         <img class="card-img-top" src="/images/gamemaker.png" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Platform Shooter</h5>
@@ -1384,7 +1424,7 @@
     </div>
     
     
-     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-31" style="display:flex;">
+     <div class="card col-6 col-sm-6 col-md-4 col-lg-4" id="post-32" style="display:flex;">
         <img class="card-img-top" src="/images/flappy.jpg" alt="Card">
         <div class="card-block">
           <h5 class="card-title text-center text-uppercase">Flappy Bird Clone</h5>
@@ -1423,7 +1463,7 @@
 
       <footer class="footer">
         <small>
-            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2023-11-19T17:33:25+00:00">2023</time> Weronika Zak</span> &middot;
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2023-11-19T17:42:17+00:00">2023</time> Weronika Zak</span> &middot;
             <span>Powered by <a class="link-white-highlight" href="http://jekyllrb.com/">Jekyll</a></span>
         </small>
         <div class="ftr-links">
