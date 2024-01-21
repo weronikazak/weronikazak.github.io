@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      AWS Machine Learning Specialty Bite Size Recap 3/3 &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about me</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">my blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="page">
+    <header>
+        <h1 class="landing-title">
+            
+            
+            
+
+
+                
+                AWS Machine Learning Specialty
+            <span style="color: #e6e6e6;">
+                Bite Size Recap 3/3
+            </span>
+        </h1>
+    </header>
+
+  <h2 id="aws-machine-learning-specialty-33">AWS Machine Learning Specialty 3/3</h2>
+
+<h3 id="amazon-ml-evaluation-metrics">Amazon ML Evaluation Metrics</h3>
+<ul>
+  <li><strong>Area Under the Curve (AUC)</strong>
+    <ul>
+      <li>Measures model’s ability to predict higher scores for positive examples.</li>
+      <li>Independent of score cut-off, providing insight into prediction accuracy without threshold selection.</li>
+    </ul>
+  </li>
+  <li><strong>Receiver Operating Characteristic (ROC) Curve</strong>
+    <ul>
+      <li>Graphical plot showing diagnostic ability as the discrimination threshold varies.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="evaluate-with-scatter-plot">Evaluate with Scatter Plot</h3>
+<ul>
+  <li>Represent relationships between variables, not model evaluation.</li>
+</ul>
+
+<h3 id="evaluate-with-root-mean-square-error-rmse">Evaluate with Root Mean Square Error (RMSE)</h3>
+<ul>
+  <li>BAd for binary classification; used for regression models.</li>
+</ul>
+
+<h3 id="credit-risk-scenario">Credit Risk Scenario</h3>
+<ul>
+  <li>High accuracy might mislead if not balanced with true positives and false positives.</li>
+  <li>AUC of 0.9, even with lower accuracy, is considered better for identifying risky loans.</li>
+</ul>
+
+<h3 id="amazon-sagemaker-autopilot">Amazon SageMaker AutoPilot</h3>
+<ul>
+  <li>Simplifies ML model training by handling feature engineering, model training, and selection.</li>
+  <li>Requires only the upload of a training dataset to S3.</li>
+</ul>
+
+<h3 id="k-nn-models">k-NN Models</h3>
+<ul>
+  <li>Use Euclidean distance to measure similarity between target data and a specific class.</li>
+</ul>
+
+<h3 id="aws-data-pipeline">AWS Data Pipeline</h3>
+<ul>
+  <li>Reliably processes and moves data between AWS compute/storage services and on-premises sources.</li>
+  <li>Transfers results efficiently to services like Amazon S3, Amazon RDS, Amazon DynamoDB, and Amazon EMR.</li>
+</ul>
+
+<h3 id="sagemaker-training-job">SageMaker Training Job</h3>
+<ul>
+  <li>Includes training data S3 URL, ML compute instance configuration, output S3 bucket URL, and training code ECR path.</li>
+</ul>
+
+<h3 id="aws-dms-connection">AWS DMS Connection</h3>
+<ul>
+  <li>Can’t directly set up connections between Amazon RDS SQL Server or Amazon DynamoDB and SageMaker.</li>
+</ul>
+
+<h3 id="buffering-in-amazon-kinesis-data-firehose">Buffering in Amazon Kinesis Data Firehose</h3>
+<ul>
+  <li>Buffers incoming streaming data based on size or time before delivering to destinations.</li>
+  <li>Buffer size ranges from 1MB to 128MB for Amazon S3 and 1MB to 100MB for Amazon Elasticsearch Service.</li>
+  <li>Dynamically adjusts buffer size to catch up if data delivery to the destination falls behind data writing.</li>
+</ul>
+
+<h3 id="evaluation-metrics-formulas">Evaluation Metrics Formulas</h3>
+<ul>
+  <li><strong>Recall</strong> TP / (TP + FN)</li>
+  <li><strong>False Negative Rate</strong> FN / (FN + TP)</li>
+  <li><strong>Cost Function</strong> (3 * FN) + FP</li>
+</ul>
+
+<h3 id="transfer-learning">Transfer Learning</h3>
+<ul>
+  <li>Network initialized with pre-trained weights.</li>
+  <li>Top fully connected layer initialized with random weights.</li>
+  <li>Fine-tuning of the whole network with new data.</li>
+  <li>Suitable for training with smaller datasets.</li>
+</ul>
+
+<h3 id="imputing-missing-values">Imputing Missing Values</h3>
+<ul>
+  <li>Commonly involves replacing missing values with mean or median.</li>
+  <li>Understanding data is crucial before choosing a replacement strategy.</li>
+  <li>Supervised learning for approximating missing values often yields better results.</li>
+</ul>
+
+<h3 id="amazon-sagemaker-data-formats">Amazon SageMaker Data Formats</h3>
+<ul>
+  <li>Protobuf recordIO format recommended for training.</li>
+  <li>Pipe mode streams data directly from Amazon S3, providing faster start times and better throughput.</li>
+  <li>Pipe mode doesn’t support Apache Parquet; File mode is slower and default but less efficient.</li>
+</ul>
+
+<h3 id="synthetic-minority-oversampling-technique-smote">Synthetic Minority Oversampling Technique (SMOTE)</h3>
+<ul>
+  <li>Oversampling approach for the minority class, creating synthetic examples.</li>
+  <li>Involves introducing synthetic examples along line segments of minority class nearest neighbors.</li>
+  <li>Preferable for dealing with imbalanced datasets, such as fraudulent cases.</li>
+</ul>
+
+<h3 id="apache-spark-on-amazon-emr">Apache Spark on Amazon EMR</h3>
+<ul>
+  <li>Best place for running Apache Spark.</li>
+  <li>Allows easy creation of managed Spark clusters.</li>
+  <li>Includes libraries for machine learning (MLlib), stream processing (Spark Streaming), and graph processing (GraphX).</li>
+  <li>Collaborative filtering leverages other users’ experiences.</li>
+</ul>
+
+<h3 id="apache-hbase-and-machine-learning">Apache HBase and Machine Learning</h3>
+<ul>
+  <li>Apache HBase is a non-relational distributed database, not suitable for machine learning tasks.</li>
+  <li>Content-based filtering is more suited for predicting based on product attributes.</li>
+</ul>
+
+<h3 id="aws-panorama-for-computer-vision">AWS Panorama for Computer Vision</h3>
+<ul>
+  <li>AWS Panorama allows bringing computer vision to on-premises cameras.</li>
+  <li>Enables predictions locally with high accuracy and low latency.</li>
+  <li>Suitable for leveraging existing IP cameras without AI capabilities.</li>
+</ul>
+
+<h3 id="term-frequency---inverse-document-frequency-tfidf">Term Frequency - Inverse Document Frequency (TfIdf)</h3>
+<ul>
+  <li>Algorithm to convert text data into a numerical representation.</li>
+  <li>Utilizes Term Frequency (word frequency in a sentence) and Inverse Document Frequency (word frequency in the whole corpus).</li>
+  <li>Scikit-learn CountVectorizer Class is incorrect; it provides a simple word count.</li>
+</ul>
+
+<h3 id="amazon-s3-storage-classes">Amazon S3 Storage Classes</h3>
+<ul>
+  <li>S3 Standard-IA designed for long-lived, infrequently accessed data.</li>
+  <li>Retrieval fee applicable; suitable for infrequent access.</li>
+  <li>Incurring costs using an EC2 instance is incorrect; Glacier Deep Archive provides delayed access; 30-day wait before transitioning to Standard-IA.</li>
+</ul>
+
+<h3 id="aws-step-functions">AWS Step Functions</h3>
+<ul>
+  <li>Serverless function orchestrator for sequencing AWS Lambda functions and multiple services.</li>
+  <li>Visual interface for creating and running checkpointed and event-driven workflows.</li>
+  <li>Efficient orchestration of multiple ETL jobs possible.</li>
+</ul>
+
+<h3 id="amazon-sagemaker-object2vec">Amazon SageMaker Object2Vec</h3>
+<ul>
+  <li>General-purpose neural embedding algorithm.</li>
+  <li>Highly customizable; learns low-dimensional dense embeddings.</li>
+  <li>Not suitable for extracting embeddings representing compliance in a claim.</li>
+</ul>
+
+<h3 id="svm-with-radial-basis-function-rbf-kernel">SVM with Radial Basis Function (RBF) Kernel</h3>
+<ul>
+  <li>Variation of SVM for separating non-linear data.</li>
+  <li>Efficiently maps data to a higher dimension.</li>
+  <li>Suitable for separating randomly distributed data in a 2-D space.</li>
+</ul>
+
+<p>Happy learning! :)</p>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2024-01-25T22:23:56+00:00">2024</time> Weronika Zak</span> &middot;
+            <span>Powered by <a class="link-white-highlight" href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a class="link-white-highlight" href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>

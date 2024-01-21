@@ -4,7 +4,7 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2024-01-25T19:07:53+00:00</updated>
+ <updated>2024-01-25T22:23:56+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Zak</name>
@@ -364,15 +364,310 @@
  </entry>
  
  <entry>
-   <title>AWS Machine Learning Specialty: Bite Size Recap 1/3</title>
-   <link href="http://localhost:4000/2023/AWS-ML/"/>
-   <updated>2023-07-07T16:10:35+01:00</updated>
-   <id>http://localhost:4000/2023/AWS-ML</id>
+   <title>AWS Machine Learning Specialty Bite Size Recap 3/3</title>
+   <link href="http://localhost:4000/2023/AWS-ML-3/"/>
+   <updated>2023-07-08T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2023/AWS-ML-3</id>
+   <content type="html">&lt;h2 id=&quot;aws-machine-learning-specialty-33&quot;&gt;AWS Machine Learning Specialty 3/3&lt;/h2&gt;
+
+&lt;h3 id=&quot;amazon-ml-evaluation-metrics&quot;&gt;Amazon ML Evaluation Metrics&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Area Under the Curve (AUC)&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Measures model’s ability to predict higher scores for positive examples.&lt;/li&gt;
+      &lt;li&gt;Independent of score cut-off, providing insight into prediction accuracy without threshold selection.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Receiver Operating Characteristic (ROC) Curve&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Graphical plot showing diagnostic ability as the discrimination threshold varies.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;evaluate-with-scatter-plot&quot;&gt;Evaluate with Scatter Plot&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Represent relationships between variables, not model evaluation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;evaluate-with-root-mean-square-error-rmse&quot;&gt;Evaluate with Root Mean Square Error (RMSE)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;BAd for binary classification; used for regression models.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;credit-risk-scenario&quot;&gt;Credit Risk Scenario&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;High accuracy might mislead if not balanced with true positives and false positives.&lt;/li&gt;
+  &lt;li&gt;AUC of 0.9, even with lower accuracy, is considered better for identifying risky loans.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;amazon-sagemaker-autopilot&quot;&gt;Amazon SageMaker AutoPilot&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Simplifies ML model training by handling feature engineering, model training, and selection.&lt;/li&gt;
+  &lt;li&gt;Requires only the upload of a training dataset to S3.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;k-nn-models&quot;&gt;k-NN Models&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Use Euclidean distance to measure similarity between target data and a specific class.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;aws-data-pipeline&quot;&gt;AWS Data Pipeline&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reliably processes and moves data between AWS compute/storage services and on-premises sources.&lt;/li&gt;
+  &lt;li&gt;Transfers results efficiently to services like Amazon S3, Amazon RDS, Amazon DynamoDB, and Amazon EMR.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;sagemaker-training-job&quot;&gt;SageMaker Training Job&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Includes training data S3 URL, ML compute instance configuration, output S3 bucket URL, and training code ECR path.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;aws-dms-connection&quot;&gt;AWS DMS Connection&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Can’t directly set up connections between Amazon RDS SQL Server or Amazon DynamoDB and SageMaker.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;buffering-in-amazon-kinesis-data-firehose&quot;&gt;Buffering in Amazon Kinesis Data Firehose&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Buffers incoming streaming data based on size or time before delivering to destinations.&lt;/li&gt;
+  &lt;li&gt;Buffer size ranges from 1MB to 128MB for Amazon S3 and 1MB to 100MB for Amazon Elasticsearch Service.&lt;/li&gt;
+  &lt;li&gt;Dynamically adjusts buffer size to catch up if data delivery to the destination falls behind data writing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;evaluation-metrics-formulas&quot;&gt;Evaluation Metrics Formulas&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Recall&lt;/strong&gt; TP / (TP + FN)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;False Negative Rate&lt;/strong&gt; FN / (FN + TP)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cost Function&lt;/strong&gt; (3 * FN) + FP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;transfer-learning&quot;&gt;Transfer Learning&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Network initialized with pre-trained weights.&lt;/li&gt;
+  &lt;li&gt;Top fully connected layer initialized with random weights.&lt;/li&gt;
+  &lt;li&gt;Fine-tuning of the whole network with new data.&lt;/li&gt;
+  &lt;li&gt;Suitable for training with smaller datasets.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;imputing-missing-values&quot;&gt;Imputing Missing Values&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Commonly involves replacing missing values with mean or median.&lt;/li&gt;
+  &lt;li&gt;Understanding data is crucial before choosing a replacement strategy.&lt;/li&gt;
+  &lt;li&gt;Supervised learning for approximating missing values often yields better results.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;amazon-sagemaker-data-formats&quot;&gt;Amazon SageMaker Data Formats&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Protobuf recordIO format recommended for training.&lt;/li&gt;
+  &lt;li&gt;Pipe mode streams data directly from Amazon S3, providing faster start times and better throughput.&lt;/li&gt;
+  &lt;li&gt;Pipe mode doesn’t support Apache Parquet; File mode is slower and default but less efficient.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;synthetic-minority-oversampling-technique-smote&quot;&gt;Synthetic Minority Oversampling Technique (SMOTE)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Oversampling approach for the minority class, creating synthetic examples.&lt;/li&gt;
+  &lt;li&gt;Involves introducing synthetic examples along line segments of minority class nearest neighbors.&lt;/li&gt;
+  &lt;li&gt;Preferable for dealing with imbalanced datasets, such as fraudulent cases.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;apache-spark-on-amazon-emr&quot;&gt;Apache Spark on Amazon EMR&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Best place for running Apache Spark.&lt;/li&gt;
+  &lt;li&gt;Allows easy creation of managed Spark clusters.&lt;/li&gt;
+  &lt;li&gt;Includes libraries for machine learning (MLlib), stream processing (Spark Streaming), and graph processing (GraphX).&lt;/li&gt;
+  &lt;li&gt;Collaborative filtering leverages other users’ experiences.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;apache-hbase-and-machine-learning&quot;&gt;Apache HBase and Machine Learning&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Apache HBase is a non-relational distributed database, not suitable for machine learning tasks.&lt;/li&gt;
+  &lt;li&gt;Content-based filtering is more suited for predicting based on product attributes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;aws-panorama-for-computer-vision&quot;&gt;AWS Panorama for Computer Vision&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;AWS Panorama allows bringing computer vision to on-premises cameras.&lt;/li&gt;
+  &lt;li&gt;Enables predictions locally with high accuracy and low latency.&lt;/li&gt;
+  &lt;li&gt;Suitable for leveraging existing IP cameras without AI capabilities.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;term-frequency---inverse-document-frequency-tfidf&quot;&gt;Term Frequency - Inverse Document Frequency (TfIdf)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Algorithm to convert text data into a numerical representation.&lt;/li&gt;
+  &lt;li&gt;Utilizes Term Frequency (word frequency in a sentence) and Inverse Document Frequency (word frequency in the whole corpus).&lt;/li&gt;
+  &lt;li&gt;Scikit-learn CountVectorizer Class is incorrect; it provides a simple word count.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;amazon-s3-storage-classes&quot;&gt;Amazon S3 Storage Classes&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;S3 Standard-IA designed for long-lived, infrequently accessed data.&lt;/li&gt;
+  &lt;li&gt;Retrieval fee applicable; suitable for infrequent access.&lt;/li&gt;
+  &lt;li&gt;Incurring costs using an EC2 instance is incorrect; Glacier Deep Archive provides delayed access; 30-day wait before transitioning to Standard-IA.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;aws-step-functions&quot;&gt;AWS Step Functions&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Serverless function orchestrator for sequencing AWS Lambda functions and multiple services.&lt;/li&gt;
+  &lt;li&gt;Visual interface for creating and running checkpointed and event-driven workflows.&lt;/li&gt;
+  &lt;li&gt;Efficient orchestration of multiple ETL jobs possible.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;amazon-sagemaker-object2vec&quot;&gt;Amazon SageMaker Object2Vec&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;General-purpose neural embedding algorithm.&lt;/li&gt;
+  &lt;li&gt;Highly customizable; learns low-dimensional dense embeddings.&lt;/li&gt;
+  &lt;li&gt;Not suitable for extracting embeddings representing compliance in a claim.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;svm-with-radial-basis-function-rbf-kernel&quot;&gt;SVM with Radial Basis Function (RBF) Kernel&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Variation of SVM for separating non-linear data.&lt;/li&gt;
+  &lt;li&gt;Efficiently maps data to a higher dimension.&lt;/li&gt;
+  &lt;li&gt;Suitable for separating randomly distributed data in a 2-D space.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy learning! :)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>AWS Machine Learning Specialty Bite Size Recap 2/3</title>
+   <link href="http://localhost:4000/2023/AWS-ML-2/"/>
+   <updated>2023-07-08T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2023/AWS-ML-2</id>
    <content type="html">&lt;!-- &lt;center&gt;
 &lt;img src=&quot;/images/posts/Other/aws/aws_ml.png&quot;&gt;
 &lt;/center&gt; --&gt;
 
-&lt;h2 id=&quot;aws-machine-learning-specialty-13&quot;&gt;AWS Machine Learning Specialty 1/3&lt;/h2&gt;
+&lt;h2 id=&quot;aws-machine-learning-specialty-23&quot;&gt;AWS Machine Learning Specialty 2/3&lt;/h2&gt;
+
+&lt;h3 id=&quot;model-retraining&quot;&gt;Model Retraining&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Retraining with a larger number of epochs doesn’t make sense if the model has already reached the global minimum on test data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;dropout-regularization&quot;&gt;Dropout Regularization&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Applying dropout regularization at the flatten layer is incorrect.&lt;/li&gt;
+  &lt;li&gt;Dropout is typically used to combat overfitting, and its application depends on the gap between validation error and training error.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;model-complexity&quot;&gt;Model Complexity&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Augmenting model complexity by increasing the number of layers is incorrect.&lt;/li&gt;
+  &lt;li&gt;Increasing layers may negatively impact the model, potentially causing overfitting.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;aws-glue-data-catalog&quot;&gt;AWS Glue Data Catalog&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Contains references to data used in ETL jobs.&lt;/li&gt;
+  &lt;li&gt;Essential for creating data warehouses or data lakes.&lt;/li&gt;
+  &lt;li&gt;Serves as an index for location, schema, and runtime metrics.&lt;/li&gt;
+  &lt;li&gt;Information stored as metadata tables.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;emr-cluster-vs-aws-glue&quot;&gt;EMR Cluster vs. AWS Glue&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Creating an EMR cluster involves more configuration effort than AWS Glue.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;aws-data-pipeline-and-aws-glue-data-catalog&quot;&gt;AWS Data Pipeline and AWS Glue Data Catalog&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Using AWS Data Pipeline to automate data transformation jobs and AWS Glue Data Catalog for storing metadata is incorrect.&lt;/li&gt;
+  &lt;li&gt;Requires configuring and managing compute resources for EMR.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;amazon-emr&quot;&gt;Amazon EMR&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Instantly provisions capacity for data-intensive tasks.&lt;/li&gt;
+  &lt;li&gt;Suitable for applications like web indexing, data mining, log file analysis, machine learning, and more.&lt;/li&gt;
+  &lt;li&gt;Eliminates the need for time-consuming setup, management, or tuning of clusters.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;amazon-quicksight&quot;&gt;Amazon QuickSight&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Scalable, serverless, embeddable BI service.&lt;/li&gt;
+  &lt;li&gt;Machine learning-powered business intelligence for the cloud.&lt;/li&gt;
+  &lt;li&gt;Enables easy creation and publication of interactive BI dashboards with ML-powered insights.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;generating-precision-recall-data&quot;&gt;Generating Precision-Recall Data&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Amazon EMR is the best choice for generating precision-recall data, especially for big data processing (150TB).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;custom-cloudwatch-dashboards&quot;&gt;Custom CloudWatch Dashboards&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Direct creation of custom CloudWatch dashboards from S3 data is not possible.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;redshift-in-the-scenario&quot;&gt;Redshift in the Scenario&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Redshift has no application in this scenario; it is only used to store the output of EMR.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pipe-input-mode-vs-file-input-mode-in-sagemaker&quot;&gt;Pipe Input Mode vs. File Input Mode in SageMaker&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Pipe Input Mode&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Data fed on-the-fly into the algorithm container without involving disk I/O.&lt;/li&gt;
+  &lt;li&gt;Shortens download process and reduces startup time.&lt;/li&gt;
+  &lt;li&gt;Generally better read throughput than File input mode.&lt;/li&gt;
+  &lt;li&gt;Enables training on datasets larger than the 16 TB EBS volume size limit.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;File Input Mode&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Default mode for training in Amazon SageMaker.&lt;/li&gt;
+  &lt;li&gt;Increases throughput but not the best choice among the given options.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;amazon-elastic-inference&quot;&gt;Amazon Elastic Inference&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Allows attaching low-cost GPU-powered acceleration to EC2, Sagemaker, or ECS tasks.&lt;/li&gt;
+  &lt;li&gt;Reduces deep learning inference costs by up to 75%.&lt;/li&gt;
+  &lt;li&gt;Supports TensorFlow, Apache MXNet, PyTorch, and ONNX models.&lt;/li&gt;
+  &lt;li&gt;Enables precise configuration of GPU-powered inference acceleration.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;text-cleaning-in-nlp&quot;&gt;Text Cleaning in NLP&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Integral stage in NLP pipeline for structured processing of unstructured texts.&lt;/li&gt;
+  &lt;li&gt;Examples include lowercase conversion, word tokenization, stop word removal, HTML tag removal, stemming, lemmatization, etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;fixing-spelling-errors&quot;&gt;Fixing Spelling Errors&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Correcting a specific word (“niht” to “night”) is impractical for all posts.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;part-of-speech-pos-tagging&quot;&gt;Part-of-Speech (PoS) Tagging&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Primarily used for categorizing words in a text corpus, not for text preprocessing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;one-hot-encoding-vs-word2vec&quot;&gt;One-Hot Encoding vs. Word2Vec&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;One-hot encoding is unsuitable for Word2Vec as it poorly captures semantics between words.&lt;/li&gt;
+  &lt;li&gt;Tokenization is a better approach for processing individual words.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;sagemaker-object2vec-algorithm-components&quot;&gt;SageMaker Object2Vec Algorithm Components&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Two input channels, two encoders (enc0 and enc1), and a comparator.&lt;/li&gt;
+  &lt;li&gt;Comparator compares embeddings and outputs scores indicating relationship strength.&lt;/li&gt;
+  &lt;li&gt;Encoders convert objects into fixed-length embedding vectors for comparison.&lt;/li&gt;
+  &lt;li&gt;Dropout hyperparameter reduces overfitting by trimming codependent neurons.&lt;/li&gt;
+  &lt;li&gt;L1 regularization is not available for Amazon SageMaker Object2Vec; it’s used for simple regression models.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Happy learning! :)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>AWS Machine Learning Specialty: Bite Size Recap 1/3</title>
+   <link href="http://localhost:4000/2023/AWS-ML/"/>
+   <updated>2023-07-07T16:10:35+01:00</updated>
+   <id>http://localhost:4000/2023/AWS-ML</id>
+   <content type="html">&lt;h2 id=&quot;aws-machine-learning-specialty-13&quot;&gt;AWS Machine Learning Specialty 1/3&lt;/h2&gt;
 
 &lt;h3 id=&quot;amazon-personalize&quot;&gt;Amazon Personalize&lt;/h3&gt;
 &lt;ul&gt;
