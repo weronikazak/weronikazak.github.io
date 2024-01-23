@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      AWS Machine Learning Specialty: Bite Size Recap 1/3 &middot; portfolio - weronika zak
+    
+  </title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic|Source+Code+Pro:400,700" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon.png">
+  
+  <link rel="alternate" type="application/atom+xml" title="portfolio - weronika zak" href="/atom.xml">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+
+</head>
+
+
+  <body>
+    <nav class="nav-main">
+      <ul>
+        <li class="hvr-underline-reveal"><a href="/pages/about/">about me</a></li>
+        <li class="logo"><a class="hvr-ripple-out" href="/">W</a></li>
+        <li class="hvr-underline-reveal"><a href="/pages/blog/">my blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="container content">
+      <main>
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<article class="page">
+    <header>
+        <h1 class="landing-title">
+            
+            
+            
+
+
+                
+                AWS Machine Learning Specialty:
+            <span style="color: #e6e6e6;">
+                Bite Size Recap 1/3
+            </span>
+        </h1>
+    </header>
+
+  <!-- <center>
+<img src="/images/posts/Other/aws/aws_ml.png">
+</center> -->
+
+<h2 id="aws-machine-learning-specialty-13">AWS Machine Learning Specialty 1/3</h2>
+
+<h3 id="amazon-personalize">Amazon Personalize</h3>
+<ul>
+  <li>Configure an event tracker in Amazon Personalize to record real-time user interactions using AWS Python SDK, AWS Amplify, or AWS CLI.</li>
+  <li>If the system is trained on historical data, it may yield poor results over time. Create an event tracker based on real-time user interactions to overcome this challenge.</li>
+  <li>A “recipe” is a term specifying an appropriate algorithm for a given use case.</li>
+</ul>
+
+<h3 id="aws-glue-data-catalog">AWS Glue Data Catalog</h3>
+<ul>
+  <li>Contains references to data used as sources and targets for extract, transform, and load (ETL) jobs in AWS Glue.</li>
+</ul>
+
+<h3 id="amazon-athena">Amazon Athena</h3>
+<ul>
+  <li>Allows easy data analysis in AWS S3 using standard SQL.</li>
+  <li>Operates in a serverless manner.</li>
+</ul>
+
+<h3 id="aws-glue">AWS Glue</h3>
+<ul>
+  <li>Operates in a serverless manner.</li>
+  <li>Used for ETL jobs.</li>
+</ul>
+
+<h3 id="athena-and-aws-glue-combined-usage">Athena and AWS Glue Combined Usage</h3>
+<ul>
+  <li>Use AWS Glue for ETL jobs and Athena for SQL queries on processed data.</li>
+  <li>Supports various data formats, including CSV, TSV, JSON, Textfiles, Apache ORC, and Apache Parquet.</li>
+  <li>Compression, partitioning, and using columnar formats like Apache Parquet can enhance performance and reduce costs.</li>
+  <li>Parquet and ORC support predicate pushdown, optimizing query execution based on statistics stored in blocks.</li>
+  <li>Athena charges based on the amount of data scanned per query, allowing cost savings through data partitioning, compression, and columnar conversion.</li>
+</ul>
+
+<h3 id="apache-parquet">Apache Parquet</h3>
+<ul>
+  <li>Open-source columnar storage format.</li>
+  <li>2x faster and takes up 6x less storage in Amazon S3 compared to other text formats.</li>
+  <li>Copyable to Amazon Redshift cluster from Amazon S3.</li>
+  <li>Configurable and runnable transformation jobs from CSV to Parquet using AWS Glue.</li>
+  <li>Well-suited for AWS analytics services like Amazon Athena and Amazon Redshift Spectrum.</li>
+</ul>
+
+<h3 id="kinesis-data-analytics">Kinesis Data Analytics</h3>
+<ul>
+  <li>Cannot directly run queries against data stored in S3 bucket.</li>
+</ul>
+
+<h3 id="aws-batch">AWS Batch</h3>
+<ul>
+  <li>Enables easy running of thousands of batch computing jobs on AWS.</li>
+  <li>No need to install and manage batch computing software or server clusters.</li>
+  <li>Focus on analyzing results and solving problems.</li>
+</ul>
+
+<h3 id="ai-knowledge">AI Knowledge</h3>
+<ul>
+  <li><strong>Transfer Learning:</strong>
+    <ul>
+      <li>Network initialized with pre-trained weights; only the top fully connected layer has random weights.</li>
+      <li>Whole network fine-tuned with new data.</li>
+    </ul>
+  </li>
+  <li><strong>Bias and Variance:</strong>
+    <ul>
+      <li>Bias: Error when a model simplifies assumptions towards a target variable.</li>
+      <li>Variance: Error when a model becomes too sensitive to small fluctuations on unseen data.</li>
+      <li>High-bias model is underfitting; high-variance model is overfitting; a balanced model has low bias and low variance.</li>
+    </ul>
+  </li>
+  <li><strong>Reducing Bias Error:</strong>
+    <ul>
+      <li>Add more images to training data through data augmentation methods.</li>
+    </ul>
+  </li>
+  <li><strong>Neural Network Layers:</strong>
+    <ul>
+      <li>The number of layers needed depends on the complexity of the problem.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="bayesian-network">Bayesian Network</h3>
+<ul>
+  <li>Representation of a joint probability distribution of random variables with a possible mutual causal relationship.</li>
+  <li>Nodes represent random variables, edges represent causal relationships, and each node has a conditional probability distribution.</li>
+</ul>
+
+<h3 id="pearsons-correlation-coefficient">Pearson’s Correlation Coefficient</h3>
+<ul>
+  <li>Measures statistical relationship between two variables.</li>
+  <li>Closer to 1 indicates positive correlation; closer to -1 suggests negative correlation; near 0 means weaker correlation.</li>
+</ul>
+
+<h3 id="logarithmic-transformation">Logarithmic Transformation</h3>
+<ul>
+  <li>Helps positively skewed data conform to normally distributed data.</li>
+  <li>Positively skewed distribution has values clustering to the left with a longer right tail.</li>
+  <li>Normal distribution is symmetrical about the mean.</li>
+</ul>
+
+<h3 id="laplace-transform">Laplace Transform</h3>
+<ul>
+  <li>Transformation method simplifying complex differential equations into algebraic equations.</li>
+  <li>Mainly used for digital signal processing.</li>
+</ul>
+
+<h3 id="amazon-emr-spot-instances">Amazon EMR Spot Instances</h3>
+<ul>
+  <li>Task nodes process data but do not hold persistent data in HDFS.</li>
+  <li>If terminated due to rising Spot prices, no data is lost.</li>
+  <li>Consider running Core nodes in Spot instances only when data loss is tolerable.</li>
+</ul>
+
+<p>Happy learning! :)</p>
+
+</article>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+            <span class="copyright"><i class="fa fa-copyright"></i> <time datetime="2024-01-25T19:07:53+00:00">2024</time> Weronika Zak</span> &middot;
+            <span>Powered by <a class="link-white-highlight" href="http://jekyllrb.com/">Jekyll</a></span>
+        </small>
+        <div class="ftr-links">
+          <a class="link-white-highlight" href="https://github.com/weronikazak"><i class="fa fa-github-alt"></i></a>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
