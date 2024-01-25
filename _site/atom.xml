@@ -4,13 +4,190 @@
  <title>portfolio - weronika zak</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2023-11-19T17:47:34+00:00</updated>
+ <updated>2024-01-25T18:10:42+00:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Weronika Zak</name>
    <email>weronika.w.zak@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>re:Invent 2023</title>
+   <link href="http://localhost:4000/2023/reInvent/"/>
+   <updated>2023-12-08T15:10:35+00:00</updated>
+   <id>http://localhost:4000/2023/reInvent</id>
+   <content type="html">&lt;center&gt;
+&lt;img src=&quot;/images/posts/Other/reinvent/reinvent2.png&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;reinvent-2023&quot;&gt;re:Invent 2023&lt;/h2&gt;
+
+&lt;p&gt;I couldn’t really imagine a better way of saying goodbye to 2023 than diving headfirst into the tech wonderland that was AWS re:Invent. From November 28 to December 2 2023, Las Vegas transformed into a hub of innovation, and I found myself right in the middle of it all.&lt;/p&gt;
+
+&lt;p&gt;During his keynote, Adam Selipsky came out with a bunch of interesting statements, which I thought I would wrap up here for the lazy ones who value TLDRs.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Other/reinvent/reinvent_me.jpg&quot; /&gt;
+&lt;i style=&quot;font-size:12px; color: gray&quot;&gt; Enjoying the experience &lt;/i&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;amazon-q&quot;&gt;Amazon Q&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Other/reinvent/awsq.png&quot; /&gt;
+&lt;i style=&quot;font-size:12px; color: gray&quot;&gt; Amazon Q &lt;/i&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;whats-going-on&quot;&gt;What’s Going On?&lt;/h4&gt;
+
+&lt;p&gt;What Is It?&lt;/p&gt;
+
+&lt;p&gt;Amazon Q lets users create their own smart AI helpers for work. Unlike typical chatbots, Amazon Q goes beyond answering questions and handles tasks like creating documents, presentations, reports, and emails. Powered by Amazon’s Titan Language Generator, it imitates human speech in different areas and uses the Titan Image Generator to create realistic images.&lt;/p&gt;
+
+&lt;h4 id=&quot;why-is-it-cool&quot;&gt;Why Is It Cool?&lt;/h4&gt;
+
+&lt;p&gt;Amazon Q have a potential to be a game-changer, making work easier by streamlining various tasks within the company, helping with decision-making, and propelling creativity and innovation in companies.&lt;/p&gt;
+
+&lt;h4 id=&quot;use-cases&quot;&gt;Use Cases&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Market Trends Report:
+ Marketing teams can use Amazon Q to generate a report on the latest market trends.&lt;/li&gt;
+  &lt;li&gt;Client Proposal Creation:
+ Sales teams can employ Amazon Q to craft a proposal for a potential client.&lt;/li&gt;
+  &lt;li&gt;Efficient Email Responses:
+ Customer service teams can use Amazon Q to draft quick and efficient email responses to customer inquiries.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;aws-graviton4-and-aws-trainium2&quot;&gt;AWS Graviton4 and AWS Trainium2&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Other/reinvent/tranium.jpg&quot; /&gt;
+&lt;i style=&quot;font-size:12px; color: gray&quot;&gt; Chips, in partnership with NVIDIA &lt;/i&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;whats-going-on-1&quot;&gt;What’s Going On?&lt;/h4&gt;
+
+&lt;p&gt;AWS introduced two new chips for faster and more cost-effective generative AI and other workloads. AWS Graviton4, the fourth-gen Arm-based processors, offer up to 40% better price-performance and 2x better performance per watt than comparable x86-based instances. AWS Trainium2, the second-gen custom ML chip, boasts up to 4x better price-performance and 30% lower latency than its predecessor. Both chips support popular frameworks like TensorFlow, PyTorch, MXNet, and Amazon SageMaker.&lt;/p&gt;
+
+&lt;h4 id=&quot;why-is-it-cool-1&quot;&gt;Why Is It Cool?&lt;/h4&gt;
+
+&lt;p&gt;These new chips from AWS bring a significant boost in speed, cost efficiency, and energy savings for running AI workloads.&lt;/p&gt;
+
+&lt;h4 id=&quot;use-cases-1&quot;&gt;Use Cases&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Faster Market Analysis&lt;/strong&gt;
+ Accelerate market analysis tasks using AWS Graviton4 for quicker insights.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Quick Model Training&lt;/strong&gt;
+ Data scientists can use AWS Trainium2 to train machine learning models faster, improving overall efficiency.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cost-Effective AI Applications&lt;/strong&gt;
+ Develop cost-effective AI applications with improved performance using these chips, supporting popular frameworks like TensorFlow and PyTorch.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;amazon-bedrock&quot;&gt;Amazon Bedrock&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Other/reinvent/bedrock.png&quot; /&gt;
+&lt;i style=&quot;font-size:12px; color: gray&quot;&gt; Amazon Bedrock &lt;/i&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;whats-going-on-2&quot;&gt;What’s Going On?&lt;/h4&gt;
+
+&lt;p&gt;Amazon Bedrock is a fully managed service that lets you jump into large language models (LLMs) and foundation models (FMs) from top AI companies using just one API. Foundation models are pre-trained neural networks that can do a bunch of different things, and with Bedrock, you can use and tweak them as you wish.&lt;/p&gt;
+
+&lt;h4 id=&quot;why-is-it-cool-2&quot;&gt;Why Is It Cool?&lt;/h4&gt;
+
+&lt;p&gt;Amazon Bedrock simplifies working with advanced AI models. It gives you access to powerful models without the hassle of dealing with infrastructure, security, or high costs.&lt;/p&gt;
+
+&lt;h4 id=&quot;use-cases-2&quot;&gt;Use Cases&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Creative Content Generation&lt;/strong&gt;
+ Content creators can use Amazon Bedrock to generate diverse and creative content by combining different foundation models.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Tailored AI Solutions&lt;/strong&gt;
+ Developers can customize foundation models to create tailored AI solutions for specific tasks without the headache of managing infrastructure.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Streamlined Task Execution&lt;/strong&gt;
+ Businesses can use Amazon Bedrock for multistep task execution, streamlining complex processes without worrying about security or hefty costs.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;amazon-sagemaker&quot;&gt;Amazon SageMaker&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;/images/posts/Other/reinvent/sagemaker.png&quot; /&gt;
+&lt;i style=&quot;font-size:12px; color: gray&quot;&gt; Amazon SageMaker &lt;/i&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;what-is-it&quot;&gt;What Is It?&lt;/h4&gt;
+
+&lt;p&gt;Amazon SageMaker is a one-stop-shop for machine learning, which makes it easy to develop, train, and deploy generative AI models. Recently, it introduced a few interesting features to make working with generative AI even smoother:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Generative AI Studio&lt;/strong&gt;
+  A platform that makes developing and testing models easy.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Generative AI SDK&lt;/strong&gt;
+  A library in Python that simplifies creating and tweaking generative AI models.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Generative AI Algorithms&lt;/strong&gt;
+  Ready-to-use algorithms for common generative AI tasks, so there’s no need to start from scratch.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Generative AI Inference&lt;/strong&gt;
+  A service that makes it quick and easy to use generative AI models in real-time.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Generative AI Marketplace&lt;/strong&gt;
+  A marketplace with pre-made generative AI models ready to use.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;why-is-it-cool-3&quot;&gt;Why Is It Cool?&lt;/h4&gt;
+
+&lt;p&gt;Amazon SageMaker takes the complexity out of working with generative AI. It has everything needed to build, train, and deploy models. All in one place.&lt;/p&gt;
+
+&lt;h4 id=&quot;use-cases-3&quot;&gt;Use Cases&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Easy Model Development&lt;/strong&gt;
+  Generative AI Studio to quickly develop and test new generative AI models in no time.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Simple Model Manipulation&lt;/strong&gt;
+  Developers can use the Generative AI SDK to easily create and tweak generative AI models using high-level APIs.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Efficient Model Deployment&lt;/strong&gt;
+  Businesses can use Generative AI Inference to deploy generative AI models quickly and efficiently for low-latency and scalable inference.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Ready-to-Use Models&lt;/strong&gt;
+  It’s now possible to browse the Generative AI Marketplace for pre-built models and solutions, saving time and effort in development.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.aboutamazon.com/news/aws-reinvent-2023-live&quot;&gt;You can find more information about the other services here!&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Atlassian Codegeist 2023</title>
@@ -23,7 +200,7 @@
 
 &lt;h2 id=&quot;my-odyssey-journey-with-dione-and-codegeist&quot;&gt;My Odyssey Journey with Dione and Codegeist&lt;/h2&gt;
 
-&lt;p&gt;Ah, documentation. Every developer’s Achilles heel. I can’t count the number of times I’ve found myself switching between screens, trying to simultaneously remember what each part of my code does while documenting it.&lt;/p&gt;
+&lt;p&gt;Documentation. Every developer’s Achilles heel. I can’t count the number of times I’ve found myself switching between screens, trying to simultaneously remember what each part of my code does while documenting it.&lt;/p&gt;
 
 &lt;p&gt;The tediousness of this process is what sparked the idea for Dione, a tool designed to ease the burden of documentation for developers like me and probably YOU.&lt;/p&gt;
 

@@ -4,7 +4,7 @@ title:  "Atlassian Codegeist 2023"
 date:   2023-10-24 16:10:35 +0100
 tags:
 - other
-description: "Ah, documentation. Every developer's Achilles heel. I can't count the number of times I've found myself switching between screens, trying to simultaneously remember what each part of my code does while documenting it."
+description: "Documentation. Every developer's Achilles heel. I can't count the number of times I've found myself switching between screens, trying to simultaneously remember what each part of my code does while documenting it."
 image: 'images/posts/Other/dione/codegeist.png'
 
 ---
@@ -18,7 +18,7 @@ image: 'images/posts/Other/dione/codegeist.png'
 ## My Odyssey Journey with Dione and Codegeist 
 
 
-Ah, documentation. Every developer's Achilles heel. I can't count the number of times I've found myself switching between screens, trying to simultaneously remember what each part of my code does while documenting it. 
+Documentation. Every developer's Achilles heel. I can't count the number of times I've found myself switching between screens, trying to simultaneously remember what each part of my code does while documenting it. 
 
 The tediousness of this process is what sparked the idea for Dione, a tool designed to ease the burden of documentation for developers like me and probably YOU.
 
